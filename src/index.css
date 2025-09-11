@@ -1,3 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+@import "tailwindcss" reference;
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+              :root {
+                --color-blue-dark: #002552;
+                --color-azure-dark: #0ea5e9;
+                --color-green: #72fa93;
+                --color-cream: #F4F4F4;
+              }
+  
+  * {
+    border-color: #e2e8f0;
+  }
+  
+  body {
+    @apply bg-white text-slate-800;
+    font-family: 'Montserrat', sans-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+  
+  .glass-dark {
+    @apply bg-black/20 backdrop-blur-md border border-white/10;
+  }
+  
+  .gradient-text {
+    background: linear-gradient(to right, var(--color-green), var(--color-blue-dark));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .bg-blue-dark {
+    background-color: var(--color-blue-dark);
+  }
+  
+  .bg-azure-dark {
+    background-color: var(--color-azure-dark);
+  }
+  
+  .bg-green {
+    background-color: var(--color-green);
+  }
+  
+  .bg-cream {
+    background-color: var(--color-cream);
+  }
+  
+  .text-blue-dark {
+    color: var(--color-blue-dark);
+  }
+  
+  .text-azure-dark {
+    color: var(--color-azure-dark);
+  }
+  
+  .text-green {
+    color: var(--color-green);
+  }
+  
+  .text-cream {
+    color: var(--color-cream);
+  }
+  
+  .border-blue-dark {
+    border-color: var(--color-blue-dark);
+  }
+  
+  .border-azure-dark {
+    border-color: var(--color-azure-dark);
+  }
+  
+  .border-green {
+    border-color: var(--color-green);
+  }
+  
+  .border-cream {
+    border-color: var(--color-cream);
+  }
+  
+  .modern-shadow {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+  
+  .modern-shadow-lg {
+    box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .animate-blob {
+    animation: blob 7s infinite;
+  }
+  
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
+
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
