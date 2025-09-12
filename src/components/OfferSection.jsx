@@ -1,21 +1,21 @@
 import { motion } from 'framer-motion'
 import { Check, Star, Clock } from 'lucide-react'
+import { useState } from 'react'
+import BookingPopup from './BookingPopup'
 
 export default function OfferSection() {
-  const handlePackageSelection = () => {
-    // Scroll to the packages section (which is this same section)
-    // or you can modify this to scroll to a specific part within the section
-    const packagesSection = document.getElementById('offer-section');
-    if (packagesSection) {
-      packagesSection.scrollIntoView({ behavior: 'smooth' });
-    }
-    
-    // You can also add additional functionality here like:
-    // - Opening a contact form
-    // - Redirecting to a booking page
-    // - Showing a modal with contact information
-    console.log('Package selection button clicked - ready for booking!');
-  };
+  const [isPopupOpen, setIsPopupOpen] = useState(false)
+  const [selectedPackage, setSelectedPackage] = useState('')
+
+  const handlePackageSelection = (packageType) => {
+    setSelectedPackage(packageType)
+    setIsPopupOpen(true)
+  }
+
+  const handleClosePopup = () => {
+    setIsPopupOpen(false)
+    setSelectedPackage('')
+  }
 
   return (
     <section id="offer-section" className="py-20 bg-blue-dark text-white overflow-x-hidden">
@@ -28,7 +28,7 @@ export default function OfferSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-black mb-6">
-            Un'opportunità <span className="text-green">SPECIALE</span>
+            Un'offerta <span className="text-green">SPECIALE</span>
             <br />
             riservata solo a chi è già nostro cliente
           </h2>
@@ -75,6 +75,7 @@ export default function OfferSection() {
             <div className="text-center">
               <p className="text-gray-400 mb-6">Per chi vuole solo iniziare, senza impegno. Ma con qualità Mobilitas.</p>
               <motion.button 
+                onClick={() => handlePackageSelection('base')}
                 className="group relative w-full overflow-hidden bg-cream text-primary font-bold py-4 px-8 rounded-2xl shadow-2xl hover:shadow-cream/50 transition-all duration-500 transform hover:scale-105 border-2 border-blue-dark hover:border-blue-dark/80"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -151,6 +152,7 @@ export default function OfferSection() {
               <p className="text-gray-400 italic text-base mb-2">⚠️ Solo 15 pacchetti disponibili con questo prezzo!</p>
               <p className="text-gray-300 mb-6">Pensato per chi vuole continuare a sentirsi bene anche dopo la camminata.</p>
               <motion.button 
+                onClick={() => handlePackageSelection('premium')}
                 className="group relative w-full overflow-hidden bg-gradient-to-r from-green via-green to-azure-dark text-primary font-black py-5 px-8 rounded-2xl shadow-2xl hover:shadow-green/50 transition-all duration-500 transform hover:scale-105 border-4 border-cream hover:border-green/50"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -179,54 +181,14 @@ export default function OfferSection() {
             </div>
           </motion.div>
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center mt-12"
-        >
-          <div className="bg-blue-dark/80 p-6 rounded-2xl mb-8">
-            <div className="flex items-center justify-center space-x-4 text-lg font-bold">
-              <Clock className="w-6 h-6" />
-              <span>TEMPO LIMITATO</span>
-            </div>
-            <p className="text-white text-sm mt-2">
-              Le offerte con sconto hanno i posti limitati e sono aperte fino al 25 settembre – oppure fino a esaurimento posti
-            </p>
-          </div>
-
-          <motion.button 
-            onClick={handlePackageSelection}
-            className="group relative overflow-hidden bg-gradient-to-r from-green via-azure-dark to-green text-primary font-black py-6 px-12 rounded-3xl text-xl shadow-2xl hover:shadow-green/50 transition-all duration-500 transform hover:scale-105 border-4 border-cream hover:border-azure-dark"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <div className="absolute inset-0 bg-gradient-to-r from-cream/20 to-azure-dark/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <div className="relative flex items-center justify-center space-x-4">
-              <motion.span 
-                className="text-2xl"
-                animate={{ scale: [1, 1.2, 1] }}
-                transition={{ duration: 1.5, repeat: Infinity }}
-              >
-                ⚡
-              </motion.span>
-              <span>Scegli ora il tuo pacchetto e assicurati il tuo posto</span>
-              <motion.div
-                className="w-6 h-6"
-                animate={{ rotate: [0, 360] }}
-                transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-              >
-                🎯
-              </motion.div>
-            </div>
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cream/20 to-transparent -skew-x-12 transform translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
-            <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-cream via-azure-dark to-cream transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
-            <div className="absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-cream via-azure-dark to-cream transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-right delay-200"></div>
-          </motion.button>
-        </motion.div>
       </div>
+
+      {/* Booking Popup */}
+      <BookingPopup 
+        isOpen={isPopupOpen}
+        onClose={handleClosePopup}
+        packageType={selectedPackage}
+      />
     </section>
   )
 }

@@ -119,7 +119,7 @@ export default function ClosingSection() {
                   transition={{ duration: 0.6, delay: 1.3 }}
                   viewport={{ once: true }}
                 >
-                  Per questo ci piacerebbe vederti lì.
+                  Per questo ci piacerebbe averti con noi!
                 </motion.p>
               </div>
             </motion.div>

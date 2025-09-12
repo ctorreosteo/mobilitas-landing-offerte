@@ -51,25 +51,21 @@ export default function WhySection() {
               {[
                 { 
                   title: "Rigenerazione Naturale", 
-                  description: "Respira aria pulita e ricarica le tue energie nella natura", 
                   icon: Mountain, 
                   color: "azure-dark" 
                 },
                 { 
                   title: "Benessere del Corpo", 
-                  description: "Movimento dolce guidato dai nostri osteopati esperti", 
                   icon: Heart, 
                   color: "blue-dark" 
                 },
                 { 
                   title: "Momento Sociale", 
-                  description: "Condividi un'esperienza autentica con altri pazienti Mobilitas", 
                   icon: Users, 
                   color: "azure-dark" 
                 },
                 { 
                   title: "Energia Rinnovata", 
-                  description: "Ritrova la vitalità e la motivazione per il tuo benessere", 
                   icon: Zap, 
                   color: "blue-dark" 
                 }

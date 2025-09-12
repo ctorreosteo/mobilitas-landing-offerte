@@ -23,11 +23,11 @@ export default function FirstWalk() {
     },
     {
       q: "Quanto dura l'evento?",
-      a: "Circa mezza giornata. Il ritrovo è previsto in mattinata, la camminata dura qualche ora con pausa pranzo inclusa, e si conclude con stretching e respirazione."
+      a: "Circa 3-4 ore. Il ritrovo è previsto nel primo pomeriggio, la camminata dura qualche ora con pausa merenda inclusa, e si conclude con stretching e respirazione."
     },
     {
       q: "Cosa devo portare?",
-      a: "Solo abbigliamento comodo e scarpe da camminata o da ginnastica. Pensiamo noi al pranzo, alla guida e all'organizzazione."
+      a: "Solo abbigliamento comodo e scarpe da camminata o da ginnastica. Pensiamo noi alla merenda, alla guida e all'organizzazione. Se ti fa piacere, porta un amico o parente!"
     },
     {
       q: "E se piove?",
