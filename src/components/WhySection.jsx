@@ -32,7 +32,7 @@ export default function WhySection() {
 
             <div className="mt-8 p-6 bg-azure-dark/10 rounded-xl border-l-4 border-azure-dark">
               <p className="text-azure-dark font-bold text-lg">
-                Non è sport estremo. Non è fitness.
+                È un'esperienza naturale e accessibile.
                 <br />
                 È un primo passo. È un gesto di cura verso te stesso.
               </p>

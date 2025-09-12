@@ -18,10 +18,16 @@
     border-color: #e2e8f0;
   }
   
+  #root {
+    overflow-x: hidden;
+  }
+  
   body {
     @apply bg-white text-slate-800;
     font-family: 'Montserrat', sans-serif;
     font-feature-settings: "rlig" 1, "calt" 1;
+    margin: 0;
+    padding: 0;
   }
   
   h1, h2, h3, h4, h5, h6 {

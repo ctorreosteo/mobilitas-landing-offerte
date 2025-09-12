@@ -104,7 +104,5 @@ Tutto il testo utilizza il font **Montserrat** con i seguenti pesi disponibili:
 - **WhySection**: Sfondo panna/verde chiaro, accenti verdi
 - **ExperienceSection**: Card con colori alternati verde/blu scuro
 - **OfferSection**: Sfondo blu scuro, pacchetti con accenti verdi
-- **TestimonialSection**: Sfondo panna/verde chiaro, stelle verdi
-- **UrgencySection**: Sfondo blu scuro, elementi verdi
 - **FAQSection**: Sfondo panna, accenti verdi
 - **ClosingSection**: Sfondo blu scuro, call-to-action verdi

@@ -2,8 +2,23 @@ import { motion } from 'framer-motion'
 import { Check, Star, Clock } from 'lucide-react'
 
 export default function OfferSection() {
+  const handlePackageSelection = () => {
+    // Scroll to the packages section (which is this same section)
+    // or you can modify this to scroll to a specific part within the section
+    const packagesSection = document.getElementById('offer-section');
+    if (packagesSection) {
+      packagesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    
+    // You can also add additional functionality here like:
+    // - Opening a contact form
+    // - Redirecting to a booking page
+    // - Showing a modal with contact information
+    console.log('Package selection button clicked - ready for booking!');
+  };
+
   return (
-    <section className="py-20 bg-blue-dark text-white">
+    <section id="offer-section" className="py-20 bg-blue-dark text-white overflow-x-hidden">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -15,10 +30,10 @@ export default function OfferSection() {
           <h2 className="text-4xl md:text-5xl font-black mb-6">
             Un'opportunità <span className="text-green">SPECIALE</span>
             <br />
-            riservata solo a chi è già passato da noi
+            riservata solo a chi è già nostro cliente
           </h2>
           <p className="text-xl text-gray-300 max-w-4xl mx-auto">
-            Per questa prima edizione di Mobilitas Walk, abbiamo riservato ai nostri pazienti due pacchetti esclusivi, 
+            Per questa prima edizione della Mobilitas Walk, abbiamo riservato ai nostri pazienti due pacchetti esclusivi, 
             pensati per farti vivere l'esperienza nel modo che preferisci.
           </p>
         </motion.div>
@@ -34,7 +49,11 @@ export default function OfferSection() {
           >
             <div className="text-center mb-6">
               <h3 className="text-2xl font-bold text-white mb-2">🎫 PACCHETTO BASE</h3>
-              <div className="text-4xl font-bold text-green mb-2">5€</div>
+              <div className="text-4xl font-bold mb-2">
+                <span className="text-red-400 line-through text-2xl">20€</span>
+                {" "}
+                <span className="text-green">5€</span>
+              </div>
               <p className="text-gray-300">La tua prima esperienza Mobilitas Walk</p>
             </div>
 
@@ -44,7 +63,7 @@ export default function OfferSection() {
                 "Pranzo al sacco fornito da noi",
                 "Sacchetta brandizzata Mobilitas",
                 "Accesso al gruppo riservato su WhatsApp",
-                "Foto e riprese dell'evento"
+                "Foto e riprese dell'evento in omaggio"
               ].map((feature, index) => (
                 <div key={index} className="flex items-center space-x-3">
                   <Check className="w-5 h-5 text-green" />
@@ -56,11 +75,11 @@ export default function OfferSection() {
             <div className="text-center">
               <p className="text-gray-400 mb-6">Per chi vuole solo iniziare, senza impegno. Ma con qualità Mobilitas.</p>
               <motion.button 
-                className="group relative w-full overflow-hidden bg-gradient-to-r from-blue-dark via-blue-dark to-azure-dark text-cream font-bold py-4 px-8 rounded-2xl shadow-2xl hover:shadow-blue-dark/50 transition-all duration-500 transform hover:scale-105 border-2 border-cream/20 hover:border-cream/40"
+                className="group relative w-full overflow-hidden bg-cream text-blue-dark font-bold py-4 px-8 rounded-2xl shadow-2xl hover:shadow-cream/50 transition-all duration-500 transform hover:scale-105 border-2 border-blue-dark hover:border-blue-dark/80"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-azure-dark/20 to-green/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-dark/10 to-azure-dark/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative flex items-center justify-center space-x-3">
                   <span className="text-lg">🎫</span>
                   <span className="text-lg">Scegli Pacchetto Base</span>
@@ -93,31 +112,49 @@ export default function OfferSection() {
 
             <div className="text-center mb-6">
               <h3 className="text-2xl font-bold text-white mb-2">🌟 PACCHETTO PREMIUM</h3>
-              <div className="text-4xl font-bold text-green mb-2">29€</div>
-              <p className="text-gray-300">Il pacchetto più scelto dai nostri pazienti</p>
+              <div className="text-4xl font-bold mb-2">
+                <span className="text-red-400 line-through text-2xl">140€</span>
+                {" "}
+                <span className="text-green">39€</span>
+              </div>
+              <p className="text-sky-300 italic">Valore complessivo: oltre 140€</p>
             </div>
 
             <div className="space-y-4 mb-8">
-              {[
-                "Tutto quello che è incluso nel Pacchetto Base",
-                "1 pressoterapia in studio a prezzo ridotto (60€ → 29€)",
-                "1 pressoterapia in omaggio (completamente gratuita)"
-              ].map((feature, index) => (
-                <div key={index} className="flex items-center space-x-3">
-                  <Check className="w-5 h-5 text-white" />
-                  <span className="text-white font-medium">{feature}</span>
-                </div>
-              ))}
+              <div className="flex items-center space-x-3">
+                <Check className="w-5 h-5 text-white" />
+                <span className="text-white font-medium">Tutto quello che è incluso nel Pacchetto Base</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Check className="w-5 h-5 text-white" />
+                <span className="text-white font-medium">
+                  1 pressoterapia in studio a prezzo ridotto (
+                  <span className="text-red-400 line-through">60€</span>
+                  {" "}
+                  <span className="text-green-400 font-bold">29€</span>
+                  )
+                </span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Check className="w-5 h-5 text-white" />
+                <span className="text-white font-medium">
+                  1 pressoterapia in omaggio (
+                  <span className="text-red-400 line-through">60€</span>
+                  {" "}
+                  <span className="text-green-400 font-bold">0€</span>
+                  )
+                </span>
+              </div>
             </div>
 
             <div className="bg-green/20 p-4 rounded-lg mb-6">
               <p className="text-white font-bold text-center">
-                Valore complessivo: oltre 120€
+                Il pacchetto più scelto dai nostri pazienti!
               </p>
             </div>
 
             <div className="text-center">
-              <p className="text-gray-300 mb-2">Solo 20 pacchetti disponibili.</p>
+              <p className="text-gray-300 mb-2">Solo 15 pacchetti disponibili con questo prezzo.</p>
               <p className="text-gray-300 mb-6">Pensato per chi vuole continuare a sentirsi bene anche dopo la camminata.</p>
               <motion.button 
                 className="group relative w-full overflow-hidden bg-gradient-to-r from-green via-green to-azure-dark text-blue-dark font-black py-5 px-8 rounded-2xl shadow-2xl hover:shadow-green/50 transition-all duration-500 transform hover:scale-105 border-4 border-cream hover:border-green/50"
@@ -162,11 +199,12 @@ export default function OfferSection() {
               <span>TEMPO LIMITATO</span>
             </div>
             <p className="text-white text-sm mt-2">
-              Prenotazioni aperte fino al 25 settembre – oppure fino a esaurimento posti
+              Le offerte con sconto hanno i posti limitati e sono aperte fino al 25 settembre – oppure fino a esaurimento posti
             </p>
           </div>
 
           <motion.button 
+            onClick={handlePackageSelection}
             className="group relative overflow-hidden bg-gradient-to-r from-green via-azure-dark to-green text-blue-dark font-black py-6 px-12 rounded-3xl text-xl shadow-2xl hover:shadow-green/50 transition-all duration-500 transform hover:scale-105 border-4 border-cream hover:border-azure-dark"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

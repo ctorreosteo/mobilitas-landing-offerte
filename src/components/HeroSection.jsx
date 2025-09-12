@@ -2,8 +2,15 @@ import { motion } from 'framer-motion'
 import { Users, Utensils, Heart, Gift, Star, ChevronDown, Clock } from 'lucide-react'
 
 export default function HeroSection({ y }) {
+  const scrollToOffers = () => {
+    const offersSection = document.getElementById('offer-section');
+    if (offersSection) {
+      offersSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-dark to-blue-dark/90">
+    <section className="relative min-h-screen flex flex-col justify-between overflow-hidden bg-gradient-to-br from-blue-dark to-blue-dark/90 py-12 overflow-x-hidden">
       {/* Nature Background */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-15"
@@ -21,13 +28,13 @@ export default function HeroSection({ y }) {
       <div className="absolute inset-0 bg-blue-dark/85"></div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 text-center flex-1 flex flex-col justify-center">
         {/* Badge */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="inline-flex items-center px-6 py-3 bg-cream text-blue-dark rounded-full text-sm font-bold mb-8 uppercase tracking-wide shadow-xl border-2 border-blue-dark"
+          className="inline-flex items-center justify-center px-6 py-3 bg-red-100 text-blue-dark rounded-full text-sm font-bold -mb-5 uppercase tracking-wide shadow-xl border-2 border-red-200 mx-auto"
         >
           <Star className="w-4 h-4 mr-2 text-blue-dark fill-current" />
           Solo per pazienti Mobilitas
@@ -38,7 +45,7 @@ export default function HeroSection({ y }) {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mb-12"
+          className="mb-8"
         >
           <div className="relative">
             {/* Multi-layer Background Effects */}
@@ -47,62 +54,25 @@ export default function HeroSection({ y }) {
             
             {/* Main Title Container */}
             <div className="relative z-10">
-              <h1 className="text-5xl md:text-9xl font-black leading-tight mb-6">
-                {/* MOBILITAS with Enhanced Effects */}
+              <h1 className="text-6xl md:text-8xl font-black leading-tight -mb-6">
+                {/* MOBILITAS with Modern Design */}
                 <motion.span 
-                  className="block text-blue-dark relative"
-                  style={{
-                    textShadow: '0 0 30px rgba(0, 37, 82, 1), 0 0 60px rgba(0, 37, 82, 0.8), 0 0 90px rgba(0, 37, 82, 0.6), 0 0 120px rgba(0, 37, 82, 0.4), 0 6px 12px rgba(0, 0, 0, 0.4)',
-                    filter: 'drop-shadow(0 0 40px rgba(0, 37, 82, 0.7)) drop-shadow(0 0 80px rgba(0, 37, 82, 0.5))'
-                  }}
-                  animate={{ 
-                    textShadow: [
-                      '0 0 30px rgba(0, 37, 82, 1), 0 0 60px rgba(0, 37, 82, 0.8), 0 0 90px rgba(0, 37, 82, 0.6), 0 0 120px rgba(0, 37, 82, 0.4), 0 6px 12px rgba(0, 0, 0, 0.4)',
-                      '0 0 50px rgba(0, 37, 82, 1.2), 0 0 100px rgba(0, 37, 82, 1), 0 0 150px rgba(0, 37, 82, 0.8), 0 0 200px rgba(0, 37, 82, 0.6), 0 8px 16px rgba(0, 0, 0, 0.5)',
-                      '0 0 30px rgba(0, 37, 82, 1), 0 0 60px rgba(0, 37, 82, 0.8), 0 0 90px rgba(0, 37, 82, 0.6), 0 0 120px rgba(0, 37, 82, 0.4), 0 6px 12px rgba(0, 0, 0, 0.4)'
-                    ],
-                    filter: [
-                      'drop-shadow(0 0 40px rgba(0, 37, 82, 0.7)) drop-shadow(0 0 80px rgba(0, 37, 82, 0.5))',
-                      'drop-shadow(0 0 60px rgba(0, 37, 82, 1)) drop-shadow(0 0 120px rgba(0, 37, 82, 0.7))',
-                      'drop-shadow(0 0 40px rgba(0, 37, 82, 0.7)) drop-shadow(0 0 80px rgba(0, 37, 82, 0.5))'
-                    ]
-                  }}
-                  transition={{ 
-                    duration: 3, 
-                    repeat: Infinity, 
-                    ease: "easeInOut" 
-                  }}
+                  className="block text-blue-dark relative font-extrabold tracking-tight"
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.2 }}
                 >
                   MOBILITAS
                 </motion.span>
                 
-                {/* WALK with Enhanced Effects */}
+                {/* 1st WALK with Modern Design */}
                 <motion.span 
-                  className="block text-blue-dark relative"
-                  style={{
-                    textShadow: '0 0 30px rgba(0, 37, 82, 1), 0 0 60px rgba(0, 37, 82, 0.8), 0 0 90px rgba(0, 37, 82, 0.6), 0 0 120px rgba(0, 37, 82, 0.4), 0 6px 12px rgba(0, 0, 0, 0.4)',
-                    filter: 'drop-shadow(0 0 40px rgba(0, 37, 82, 0.7)) drop-shadow(0 0 80px rgba(0, 37, 82, 0.5))'
-                  }}
-                  animate={{ 
-                    textShadow: [
-                      '0 0 30px rgba(0, 37, 82, 1), 0 0 60px rgba(0, 37, 82, 0.8), 0 0 90px rgba(0, 37, 82, 0.6), 0 0 120px rgba(0, 37, 82, 0.4), 0 6px 12px rgba(0, 0, 0, 0.4)',
-                      '0 0 50px rgba(0, 37, 82, 1.2), 0 0 100px rgba(0, 37, 82, 1), 0 0 150px rgba(0, 37, 82, 0.8), 0 0 200px rgba(0, 37, 82, 0.6), 0 8px 16px rgba(0, 0, 0, 0.5)',
-                      '0 0 30px rgba(0, 37, 82, 1), 0 0 60px rgba(0, 37, 82, 0.8), 0 0 90px rgba(0, 37, 82, 0.6), 0 0 120px rgba(0, 37, 82, 0.4), 0 6px 12px rgba(0, 0, 0, 0.4)'
-                    ],
-                    filter: [
-                      'drop-shadow(0 0 40px rgba(0, 37, 82, 0.7)) drop-shadow(0 0 80px rgba(0, 37, 82, 0.5))',
-                      'drop-shadow(0 0 60px rgba(0, 37, 82, 1)) drop-shadow(0 0 120px rgba(0, 37, 82, 0.7))',
-                      'drop-shadow(0 0 40px rgba(0, 37, 82, 0.7)) drop-shadow(0 0 80px rgba(0, 37, 82, 0.5))'
-                    ]
-                  }}
-                  transition={{ 
-                    duration: 3, 
-                    repeat: Infinity, 
-                    ease: "easeInOut",
-                    delay: 1
-                  }}
+                  className="block text-blue-dark relative font-extrabold tracking-tight"
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.4 }}
                 >
-                  WALK
+                  1<sup className="text-4xl md:text-6xl">st</sup> WALK
                 </motion.span>
               </h1>
               
@@ -199,7 +169,7 @@ export default function HeroSection({ y }) {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-lg md:text-4xl text-blue-dark mb-6 md:mb-8 max-w-4xl mx-auto leading-relaxed font-semibold"
+          className="text-lg md:text-4xl text-blue-dark mb-4 md:mb-6 max-w-4xl mx-auto leading-relaxed font-semibold"
         >
           Il tuo primo passo verso una nuova energia
         </motion.p>
@@ -208,7 +178,7 @@ export default function HeroSection({ y }) {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="text-base md:text-2xl text-blue-dark/80 mb-8 md:mb-12 max-w-4xl mx-auto leading-relaxed"
+          className="text-base md:text-2xl text-blue-dark/80 mb-6 md:mb-8 max-w-4xl mx-auto leading-relaxed"
         >
           Unisciti a noi per una camminata rigenerante nella natura, pensata per risvegliare il corpo e liberare la mente.
           <br />
@@ -220,12 +190,12 @@ export default function HeroSection({ y }) {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="bg-cream text-blue-dark py-4 px-6 md:py-6 md:px-8 rounded-2xl mb-8 md:mb-12 inline-block shadow-2xl border-4 border-blue-dark"
+          className="bg-cream text-blue-dark py-4 px-6 md:py-6 md:px-8 rounded-2xl mb-6 md:mb-8 inline-block shadow-2xl border-4 border-blue-dark"
         >
           <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-sm md:text-xl font-black">
             <div className="flex items-center space-x-2">
               <Clock className="w-5 h-5 md:w-8 md:h-8 text-blue-dark" />
-              <span>POSTI LIMITATI A 50</span>
+              <span>POSTI LIMITATI A 80 persone</span>
             </div>
             <span className="text-blue-dark text-xl md:text-3xl hidden md:block">•</span>
             <span className="text-center md:text-left">PRENOTAZIONI FINO AL 25 SETTEMBRE</span>
@@ -240,9 +210,9 @@ export default function HeroSection({ y }) {
           className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-8 md:mb-12 max-w-6xl mx-auto"
         >
           {[
-            { icon: Users, text: "Camminata guidata con osteopati" },
+            { icon: Users, text: "Camminata guidata con il Team Mobilitas" },
             { icon: Utensils, text: "Pranzo incluso" },
-            { icon: Heart, text: "Esperienza per il tuo benessere" },
+            { icon: Heart, text: "Esperienza per il tuo benessere e la tua salute" },
             { icon: Gift, text: "Offerta speciale solo per pazienti" }
           ].map((feature, index) => (
             <motion.div 
@@ -270,53 +240,45 @@ export default function HeroSection({ y }) {
           className="text-center space-y-8"
         >
           <motion.button 
-            className="bg-cream text-blue-dark font-black py-6 px-12 rounded-2xl text-2xl shadow-2xl hover:shadow-cream/50 transition-all duration-300 transform hover:scale-105 uppercase tracking-wide border-4 border-blue-dark"
+            onClick={scrollToOffers}
+            className="group relative bg-blue-dark text-cream font-black py-6 px-12 rounded-3xl text-2xl shadow-2xl hover:shadow-blue-dark/50 transition-all duration-300 transform hover:scale-105 uppercase tracking-wide border-2 border-cream/30 hover:border-cream/60"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Scegli ora il tuo pacchetto
+            <div className="absolute inset-0 bg-gradient-to-r from-azure-dark/20 to-green/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
+            <div className="relative flex items-center justify-center space-x-3">
+              <span className="text-xl">🎯</span>
+              <span>Scegli ora il tuo pacchetto</span>
+              <motion.div
+                className="w-5 h-5"
+                animate={{ rotate: [0, 15, -15, 0] }}
+                transition={{ duration: 2, repeat: Infinity }}
+              >
+                ✨
+              </motion.div>
+            </div>
           </motion.button>
-          
-          <motion.div 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 1.2 }}
-            className="flex items-center justify-center space-x-8 text-blue-dark text-lg font-semibold"
-          >
-            <div className="flex items-center space-x-3">
-              <span className="text-2xl">⚡</span>
-              <span>Accesso immediato</span>
-            </div>
-            <div className="flex items-center space-x-3">
-              <span className="text-2xl">🔒</span>
-              <span>Pagamento sicuro</span>
-            </div>
-            <div className="flex items-center space-x-3">
-              <span className="text-2xl">💯</span>
-              <span>Garanzia soddisfatti</span>
-            </div>
-          </motion.div>
-        </motion.div>
-
-        {/* Scroll indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1.2 }}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center"
-        >
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="bg-cream p-4 rounded-full shadow-xl border-2 border-blue-dark mx-auto"
-          >
-            <ChevronDown className="w-8 h-8 text-blue-dark" />
-          </motion.div>
-          <p className="text-blue-dark text-sm mt-2 font-semibold">
-            Scorri per scoprire
-          </p>
         </motion.div>
       </div>
+
+      {/* Scroll indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 1.2 }}
+        className="relative z-10 text-center pb-8"
+      >
+        <motion.div
+          animate={{ y: [0, 10, 0] }}
+          transition={{ duration: 2, repeat: Infinity }}
+          className="bg-cream p-4 rounded-full shadow-xl border-2 border-blue-dark mx-auto inline-block"
+        >
+          <ChevronDown className="w-8 h-8 text-blue-dark" />
+        </motion.div>
+        <p className="text-blue-dark text-sm mt-3 font-semibold">
+          Scorri per scoprire
+        </p>
+      </motion.div>
     </section>
   )
 }
