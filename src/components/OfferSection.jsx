@@ -75,7 +75,7 @@ export default function OfferSection() {
             <div className="text-center">
               <p className="text-gray-400 mb-6">Per chi vuole solo iniziare, senza impegno. Ma con qualità Mobilitas.</p>
               <motion.button 
-                className="group relative w-full overflow-hidden bg-cream text-blue-dark font-bold py-4 px-8 rounded-2xl shadow-2xl hover:shadow-cream/50 transition-all duration-500 transform hover:scale-105 border-2 border-blue-dark hover:border-blue-dark/80"
+                className="group relative w-full overflow-hidden bg-cream text-primary font-bold py-4 px-8 rounded-2xl shadow-2xl hover:shadow-cream/50 transition-all duration-500 transform hover:scale-105 border-2 border-blue-dark hover:border-blue-dark/80"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -105,7 +105,7 @@ export default function OfferSection() {
             className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 relative transform scale-105"
           >
             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-              <span className="bg-yellow-400 text-black px-4 py-2 rounded-full text-sm font-bold">
+              <span className="bg-yellow-400 text-primary px-4 py-2 rounded-full text-sm font-bold">
                 Il più scelto
               </span>
             </div>
@@ -117,7 +117,7 @@ export default function OfferSection() {
                 {" "}
                 <span className="text-green">39€</span>
               </div>
-              <p className="text-sky-300 italic">Valore complessivo: oltre 140€</p>
+              <p className="text-sky-300 italic">Il pacchetto più scelto dai nostri pazienti!</p>
             </div>
 
             <div className="space-y-4 mb-8">
@@ -131,7 +131,7 @@ export default function OfferSection() {
                   1 pressoterapia in studio a prezzo ridotto (
                   <span className="text-red-400 line-through">60€</span>
                   {" "}
-                  <span className="text-green-400 font-bold">29€</span>
+                  <span className="text-green-400 font-bold">34€</span>
                   )
                 </span>
               </div>
@@ -147,17 +147,11 @@ export default function OfferSection() {
               </div>
             </div>
 
-            <div className="bg-green/20 p-4 rounded-lg mb-6">
-              <p className="text-white font-bold text-center">
-                Il pacchetto più scelto dai nostri pazienti!
-              </p>
-            </div>
-
             <div className="text-center">
-              <p className="text-gray-300 mb-2">Solo 15 pacchetti disponibili con questo prezzo.</p>
+              <p className="text-gray-400 italic text-base mb-2">⚠️ Solo 15 pacchetti disponibili con questo prezzo!</p>
               <p className="text-gray-300 mb-6">Pensato per chi vuole continuare a sentirsi bene anche dopo la camminata.</p>
               <motion.button 
-                className="group relative w-full overflow-hidden bg-gradient-to-r from-green via-green to-azure-dark text-blue-dark font-black py-5 px-8 rounded-2xl shadow-2xl hover:shadow-green/50 transition-all duration-500 transform hover:scale-105 border-4 border-cream hover:border-green/50"
+                className="group relative w-full overflow-hidden bg-gradient-to-r from-green via-green to-azure-dark text-primary font-black py-5 px-8 rounded-2xl shadow-2xl hover:shadow-green/50 transition-all duration-500 transform hover:scale-105 border-4 border-cream hover:border-green/50"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -205,7 +199,7 @@ export default function OfferSection() {
 
           <motion.button 
             onClick={handlePackageSelection}
-            className="group relative overflow-hidden bg-gradient-to-r from-green via-azure-dark to-green text-blue-dark font-black py-6 px-12 rounded-3xl text-xl shadow-2xl hover:shadow-green/50 transition-all duration-500 transform hover:scale-105 border-4 border-cream hover:border-azure-dark"
+            className="group relative overflow-hidden bg-gradient-to-r from-green via-azure-dark to-green text-primary font-black py-6 px-12 rounded-3xl text-xl shadow-2xl hover:shadow-green/50 transition-all duration-500 transform hover:scale-105 border-4 border-cream hover:border-azure-dark"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >

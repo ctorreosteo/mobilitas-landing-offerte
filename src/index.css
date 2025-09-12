@@ -23,7 +23,8 @@
   }
   
   body {
-    @apply bg-white text-slate-800;
+    @apply bg-white;
+    color: var(--color-blue-dark);
     font-family: 'Montserrat', sans-serif;
     font-feature-settings: "rlig" 1, "calt" 1;
     margin: 0;
@@ -36,6 +37,22 @@
 }
 
 @layer components {
+  .text-primary {
+    color: var(--color-blue-dark);
+  }
+  
+  .text-secondary {
+    color: var(--color-azure-dark);
+  }
+  
+  .text-accent {
+    color: var(--color-green);
+  }
+  
+  .text-light {
+    color: var(--color-cream);
+  }
+  
   .glass {
     @apply bg-white/10 backdrop-blur-md border border-white/20;
   }

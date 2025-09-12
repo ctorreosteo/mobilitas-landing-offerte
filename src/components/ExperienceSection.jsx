@@ -69,10 +69,10 @@ export default function ExperienceSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-black text-blue-dark mb-6">
+          <h2 className="text-4xl md:text-5xl font-black text-primary mb-6">
             Un'esperienza semplice, naturale, rigenerante
           </h2>
-          <p className="text-xl text-blue-dark max-w-3xl mx-auto">
+          <p className="text-xl text-primary max-w-3xl mx-auto">
             Non serve essere allenati. Non serve preparazione. Basta venire con la voglia di respirare, muoverti e stare bene.
             Abbiamo pensato a ogni dettaglio per rendere questa camminata leggera, piacevole e accessibile a tutti.
           </p>
@@ -89,10 +89,10 @@ export default function ExperienceSection() {
               className="bg-white/90 border-azure-dark/20 p-6 rounded-2xl border hover:shadow-lg transition-shadow backdrop-blur-sm"
             >
               <div className="w-12 h-12 bg-azure-dark/10 rounded-full flex items-center justify-center mb-4">
-                <step.icon className="w-6 h-6 text-azure-dark" />
+                <step.icon className="w-6 h-6 text-secondary" />
               </div>
-              <h3 className="text-xl font-semibold text-blue-dark mb-3">{step.title}</h3>
-              <p className="text-blue-dark leading-relaxed">{step.description}</p>
+              <h3 className="text-xl font-semibold text-primary mb-3">{step.title}</h3>
+              <p className="text-primary leading-relaxed">{step.description}</p>
             </motion.div>
           ))}
         </div>
@@ -105,7 +105,7 @@ export default function ExperienceSection() {
           className="text-center mt-16"
         >
           <motion.p 
-            className="text-xl md:text-2xl text-blue-dark mb-8 font-medium"
+            className="text-xl md:text-2xl text-primary mb-8 font-medium"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -116,7 +116,7 @@ export default function ExperienceSection() {
           
           <motion.button 
             onClick={scrollToOffers}
-            className="group relative overflow-hidden bg-gradient-to-r from-green to-green/90 text-blue-dark font-black py-6 px-12 rounded-3xl text-xl shadow-2xl hover:shadow-green/50 transition-all duration-500 transform hover:scale-105 border-4 border-green/30 hover:border-green/60"
+            className="group relative overflow-hidden bg-gradient-to-r from-green to-green/90 text-primary font-black py-6 px-12 rounded-3xl text-xl shadow-2xl hover:shadow-green/50 transition-all duration-500 transform hover:scale-105 border-4 border-green/30 hover:border-green/60"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             initial={{ opacity: 0, y: 20 }}

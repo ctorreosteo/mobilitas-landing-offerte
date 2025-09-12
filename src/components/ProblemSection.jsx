@@ -12,12 +12,12 @@ export default function ProblemSection() {
           viewport={{ once: true }}
           className="text-center mb-12 md:mb-16"
         >
-          <h2 className="text-3xl md:text-6xl font-black text-blue-dark mb-6 md:mb-8">
+          <h2 className="text-3xl md:text-6xl font-black text-primary mb-6 md:mb-8">
             Unisciti alla community di chi
             <br />
-            <span className="text-blue-dark">si prende cura di sé</span>
+            <span className="text-primary">si prende cura di sé</span>
           </h2>
-          <p className="text-lg md:text-xl text-blue-dark/80 max-w-4xl mx-auto">
+          <p className="text-lg md:text-xl text-primary/80 max-w-4xl mx-auto">
             In una società che vuole tenerci spenti e senza energie, 
             <strong> noi scegliamo di essere vivi, energici e consapevoli</strong>
           </p>
@@ -33,8 +33,8 @@ export default function ProblemSection() {
             className="space-y-6 md:space-y-8"
           >
             <div className="text-center mb-6 md:mb-8">
-              <h3 className="text-2xl md:text-3xl font-black text-blue-dark mb-3 md:mb-4">⚡ LA SFIDA</h3>
-              <p className="text-blue-dark/70 text-sm md:text-base">Contro il sistema moderno che ci vuole spenti</p>
+              <h3 className="text-2xl md:text-3xl font-black text-primary mb-3 md:mb-4">⚡ LA SFIDA</h3>
+              <p className="text-primary/70 text-sm md:text-base">Contro il sistema moderno che ci vuole spenti</p>
             </div>
 
             {[
@@ -65,13 +65,13 @@ export default function ProblemSection() {
                 viewport={{ once: true }}
                 className="bg-orange-50 border-l-4 border-orange-400 p-4 md:p-8 rounded-2xl hover:shadow-lg transition-all duration-300"
               >
-                <div className="flex items-start space-x-3 md:space-x-4">
-                  <div className="w-8 h-8 md:w-12 md:h-12 bg-orange-100 rounded-xl flex items-center justify-center">
+                <div className="flex items-start">
+                  <div className="w-8 h-8 md:w-12 md:h-12 bg-orange-100 rounded-xl flex items-center justify-center flex-shrink-0">
                     <item.icon className="w-4 h-4 md:w-6 md:h-6 text-orange-600" />
                   </div>
-                  <div>
-                    <h4 className="text-base md:text-xl font-bold text-blue-dark mb-1 md:mb-2">{item.title}</h4>
-                    <p className="text-blue-dark font-semibold text-sm md:text-lg">{item.subtitle}</p>
+                  <div className="ml-3 md:ml-4">
+                    <h4 className="text-base md:text-xl font-bold text-primary mb-1 md:mb-2 mt-0">{item.title}</h4>
+                    <p className="text-primary font-semibold text-sm md:text-lg">{item.subtitle}</p>
                   </div>
                 </div>
               </motion.div>
@@ -87,8 +87,8 @@ export default function ProblemSection() {
             className="space-y-8"
           >
             <div className="text-center mb-6 md:mb-8">
-              <h3 className="text-2xl md:text-3xl font-black text-blue-dark mb-3 md:mb-4">💚 LA NOSTRA COMMUNITY</h3>
-              <p className="text-blue-dark/70 text-sm md:text-base">Persone che scelgono di prendersi cura di sé</p>
+              <h3 className="text-2xl md:text-3xl font-black text-primary mb-3 md:mb-4">❤️ LA NOSTRA COMMUNITY</h3>
+              <p className="text-primary/70 text-sm md:text-base">Persone che scelgono di prendersi cura di sé</p>
             </div>
 
             {[
@@ -119,13 +119,13 @@ export default function ProblemSection() {
                 viewport={{ once: true }}
                 className="bg-emerald-50 border-l-4 border-emerald-400 p-4 md:p-8 rounded-2xl hover:shadow-lg transition-all duration-300"
               >
-                <div className="flex items-start space-x-3 md:space-x-4">
-                  <div className="w-8 h-8 md:w-12 md:h-12 bg-emerald-100 rounded-xl flex items-center justify-center">
+                <div className="flex items-start">
+                  <div className="w-8 h-8 md:w-12 md:h-12 bg-emerald-100 rounded-xl flex items-center justify-center flex-shrink-0">
                     <item.icon className="w-4 h-4 md:w-6 md:h-6 text-emerald-600" />
                   </div>
-                  <div>
-                    <h4 className="text-base md:text-xl font-bold text-blue-dark mb-1 md:mb-2">{item.title}</h4>
-                    <p className="text-blue-dark font-semibold text-sm md:text-lg">{item.subtitle}</p>
+                  <div className="ml-3 md:ml-4">
+                    <h4 className="text-base md:text-xl font-bold text-primary mb-1 md:mb-2 mt-0">{item.title}</h4>
+                    <p className="text-primary font-semibold text-sm md:text-lg">{item.subtitle}</p>
                   </div>
                 </div>
               </motion.div>

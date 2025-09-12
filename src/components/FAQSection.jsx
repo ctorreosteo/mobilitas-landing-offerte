@@ -13,10 +13,10 @@ export default function FAQSection({ faqs, faqOpen, setFaqOpen }) {
           className="text-center mb-16"
         >
           <HelpCircle className="w-16 h-16 text-green mx-auto mb-6" />
-          <h2 className="text-4xl md:text-5xl font-black text-blue-dark mb-6">
+          <h2 className="text-4xl md:text-5xl font-black text-primary mb-6">
             Hai ancora qualche dubbio?
           </h2>
-          <p className="text-xl text-blue-dark">Abbiamo le risposte che cerchi</p>
+          <p className="text-xl text-primary">Abbiamo le risposte che cerchi</p>
         </motion.div>
 
         <div className="space-y-4">
@@ -33,9 +33,9 @@ export default function FAQSection({ faqs, faqOpen, setFaqOpen }) {
                 onClick={() => setFaqOpen(faqOpen === index ? null : index)}
                 className="w-full p-6 text-left flex items-center justify-between hover:bg-slate-100 transition-colors"
               >
-                <span className="text-lg font-semibold text-blue-dark pr-4">{faq.q}</span>
+                <span className="text-lg font-semibold text-primary pr-4">{faq.q}</span>
                 <ChevronDown 
-                  className={`w-5 h-5 text-azure-dark transition-transform flex-shrink-0 ${
+                  className={`w-5 h-5 text-secondary transition-transform flex-shrink-0 ${
                     faqOpen === index ? 'rotate-180' : ''
                   }`} 
                 />
@@ -48,7 +48,7 @@ export default function FAQSection({ faqs, faqOpen, setFaqOpen }) {
                   transition={{ duration: 0.3 }}
                   className="px-6 pb-6"
                 >
-                  <p className="text-blue-dark leading-relaxed">{faq.a}</p>
+                  <p className="text-primary leading-relaxed">{faq.a}</p>
                 </motion.div>
               )}
             </motion.div>

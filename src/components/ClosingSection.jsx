@@ -27,9 +27,9 @@ export default function ClosingSection() {
             viewport={{ once: true }}
             className="relative"
           >
-            <h2 className="text-4xl md:text-6xl font-black text-blue-dark leading-tight mb-8">
+            <h2 className="text-4xl md:text-6xl font-black text-primary leading-tight mb-8">
               <span className="block">Mobilitas 1<sup>st</sup> Walk</span>
-              <span className="block text-blue-dark">E vogliamo che tu ci sia.</span>
+              <span className="block text-primary">E vogliamo che tu ci sia.</span>
             </h2>
           </motion.div>
 
@@ -45,10 +45,10 @@ export default function ClosingSection() {
             >
               <div className="flex items-center justify-center mb-6">
                 <div className="w-16 h-16 bg-blue-dark/10 rounded-full flex items-center justify-center">
-                  <Heart className="w-8 h-8 text-blue-dark" />
+                  <Heart className="w-8 h-8 text-primary" />
                 </div>
               </div>
-              <p className="text-lg md:text-xl text-blue-dark/80 leading-relaxed">
+              <p className="text-lg md:text-xl text-primary/80 leading-relaxed">
                 Mobilitas Walk non è solo una camminata. È il nostro modo di continuare a prenderci cura di te, 
                 fuori dallo studio, con lo stesso impegno e la stessa attenzione di sempre.
               </p>
@@ -64,10 +64,10 @@ export default function ClosingSection() {
             >
               <div className="flex items-center justify-center mb-6">
                 <div className="w-16 h-16 bg-blue-dark/10 rounded-full flex items-center justify-center">
-                  <Users className="w-8 h-8 text-blue-dark" />
+                  <Users className="w-8 h-8 text-primary" />
                 </div>
               </div>
-              <p className="text-lg md:text-xl text-blue-dark/80 leading-relaxed">
+              <p className="text-lg md:text-xl text-primary/80 leading-relaxed">
                 Se sei già stato nostro paziente, sai cosa intendiamo. E ora vogliamo offrirti un'occasione nuova: 
                 stare meglio, muoverti, respirare… e farlo insieme.
               </p>
@@ -87,13 +87,13 @@ export default function ClosingSection() {
                   transition={{ duration: 4, repeat: Infinity }}
                   className="w-16 h-16 bg-blue-dark/10 rounded-full flex items-center justify-center"
                 >
-                  <Star className="w-8 h-8 text-blue-dark" />
+                  <Star className="w-8 h-8 text-primary" />
                 </motion.div>
               </div>
               
               <div className="space-y-6">
                 <motion.p 
-                  className="text-2xl md:text-3xl font-black text-blue-dark"
+                  className="text-2xl md:text-3xl font-black text-primary"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.9 }}
@@ -103,7 +103,7 @@ export default function ClosingSection() {
                 </motion.p>
                 
                 <motion.p 
-                  className="text-2xl md:text-3xl font-black text-blue-dark"
+                  className="text-2xl md:text-3xl font-black text-primary"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 1.1 }}
@@ -113,7 +113,7 @@ export default function ClosingSection() {
                 </motion.p>
                 
                 <motion.p 
-                  className="text-2xl md:text-3xl font-black text-blue-dark"
+                  className="text-2xl md:text-3xl font-black text-primary"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 1.3 }}
@@ -139,11 +139,11 @@ export default function ClosingSection() {
                 transition={{ duration: 2, repeat: Infinity }}
                 className="w-12 h-12 bg-blue-dark/10 rounded-full flex items-center justify-center"
               >
-                <Sparkles className="w-6 h-6 text-blue-dark" />
+                <Sparkles className="w-6 h-6 text-primary" />
               </motion.div>
-              <p className="text-xl text-blue-dark/80 font-medium">Ci vediamo alla camminata,</p>
+              <p className="text-xl text-primary/80 font-medium">Ci vediamo alla camminata,</p>
             </div>
-            <p className="text-3xl font-black text-blue-dark">
+            <p className="text-3xl font-black text-primary">
               Il team Mobilitas
             </p>
           </motion.div>

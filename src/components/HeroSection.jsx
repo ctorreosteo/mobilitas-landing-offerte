@@ -34,9 +34,9 @@ export default function HeroSection({ y }) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="inline-flex items-center justify-center px-6 py-3 bg-red-100 text-blue-dark rounded-full text-sm font-bold -mb-5 uppercase tracking-wide shadow-xl border-2 border-red-200 mx-auto"
+          className="inline-flex items-center justify-center px-6 py-3 bg-red-100 text-primary rounded-full text-sm font-bold -mb-5 uppercase tracking-wide shadow-xl border-2 border-red-200 mx-auto"
         >
-          <Star className="w-4 h-4 mr-2 text-blue-dark fill-current" />
+          <Star className="w-4 h-4 mr-2 text-primary fill-current" />
           Solo per pazienti Mobilitas
         </motion.div>
 
@@ -57,7 +57,7 @@ export default function HeroSection({ y }) {
               <h1 className="text-6xl md:text-8xl font-black leading-tight -mb-6">
                 {/* MOBILITAS with Modern Design */}
                 <motion.span 
-                  className="block text-blue-dark relative font-extrabold tracking-tight"
+                  className="block text-primary relative font-extrabold tracking-tight"
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
@@ -67,7 +67,7 @@ export default function HeroSection({ y }) {
                 
                 {/* 1st WALK with Modern Design */}
                 <motion.span 
-                  className="block text-blue-dark relative font-extrabold tracking-tight"
+                  className="block text-primary relative font-extrabold tracking-tight"
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
@@ -169,7 +169,7 @@ export default function HeroSection({ y }) {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-lg md:text-4xl text-blue-dark mb-4 md:mb-6 max-w-4xl mx-auto leading-relaxed font-semibold"
+          className="text-lg md:text-4xl text-primary mb-4 md:mb-6 max-w-4xl mx-auto leading-relaxed font-semibold"
         >
           Il tuo primo passo verso una nuova energia
         </motion.p>
@@ -178,11 +178,11 @@ export default function HeroSection({ y }) {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="text-base md:text-2xl text-blue-dark/80 mb-6 md:mb-8 max-w-4xl mx-auto leading-relaxed"
+          className="text-base md:text-2xl text-primary/80 mb-6 md:mb-8 max-w-4xl mx-auto leading-relaxed"
         >
           Unisciti a noi per una camminata rigenerante nella natura, pensata per risvegliare il corpo e liberare la mente.
           <br />
-          <span className="text-azure-dark font-bold text-lg md:text-2xl">È un'esperienza esclusiva riservata ai pazienti Mobilitas.</span>
+          <span className="text-secondary font-bold text-lg md:text-2xl">È un'esperienza esclusiva riservata ai pazienti Mobilitas.</span>
         </motion.p>
 
         {/* Urgency Bar */}
@@ -190,15 +190,15 @@ export default function HeroSection({ y }) {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="bg-cream text-blue-dark py-4 px-6 md:py-6 md:px-8 rounded-2xl mb-6 md:mb-8 inline-block shadow-2xl border-4 border-blue-dark"
+          className="bg-cream text-primary py-4 px-6 md:py-6 md:px-8 rounded-2xl mb-6 md:mb-8 inline-block shadow-2xl border-4 border-blue-dark"
         >
           <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-sm md:text-xl font-black">
             <div className="flex items-center space-x-2">
-              <Clock className="w-5 h-5 md:w-8 md:h-8 text-blue-dark" />
-              <span>POSTI LIMITATI A 80 persone</span>
+              <Clock className="w-5 h-5 md:w-8 md:h-8 text-primary" />
+              <span className="text-primary">POSTI LIMITATI A 80 persone</span>
             </div>
-            <span className="text-blue-dark text-xl md:text-3xl hidden md:block">•</span>
-            <span className="text-center md:text-left">PRENOTAZIONI FINO AL 25 SETTEMBRE</span>
+            <span className="text-primary text-xl md:text-3xl hidden md:block">•</span>
+            <span className="text-primary text-center md:text-left">PRENOTAZIONI FINO AL 25 SETTEMBRE</span>
           </div>
         </motion.div>
 
@@ -225,7 +225,7 @@ export default function HeroSection({ y }) {
               <div className="w-12 h-12 md:w-20 md:h-20 bg-blue-dark rounded-2xl flex items-center justify-center mb-3 md:mb-6 mx-auto shadow-lg">
                 <feature.icon className="w-6 h-6 md:w-10 md:h-10 text-cream" />
               </div>
-              <p className="text-blue-dark font-bold text-xs md:text-lg text-center leading-tight md:leading-relaxed">
+              <p className="text-primary font-bold text-xs md:text-lg text-center leading-tight md:leading-relaxed">
                 {feature.text}
               </p>
             </motion.div>
@@ -273,9 +273,9 @@ export default function HeroSection({ y }) {
           transition={{ duration: 2, repeat: Infinity }}
           className="bg-cream p-4 rounded-full shadow-xl border-2 border-blue-dark mx-auto inline-block"
         >
-          <ChevronDown className="w-8 h-8 text-blue-dark" />
+          <ChevronDown className="w-8 h-8 text-primary" />
         </motion.div>
-        <p className="text-blue-dark text-sm mt-3 font-semibold">
+        <p className="text-primary text-sm mt-3 font-semibold">
           Scorri per scoprire
         </p>
       </motion.div>
