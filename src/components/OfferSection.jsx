@@ -128,7 +128,7 @@ export default function OfferSection() {
               <div className="flex items-center space-x-3">
                 <Check className="w-5 h-5 text-white" />
                 <span className="text-white font-medium">
-                  1 pressoterapia in studio a prezzo ridotto (
+                  1 seduta di pressoterapia in studio a prezzo ridotto (
                   <span className="text-red-400 line-through">60€</span>
                   {" "}
                   <span className="text-green-400 font-bold">34€</span>
@@ -138,7 +138,7 @@ export default function OfferSection() {
               <div className="flex items-center space-x-3">
                 <Check className="w-5 h-5 text-white" />
                 <span className="text-white font-medium">
-                  1 pressoterapia in omaggio (
+                  1 seduta di pressoterapia in omaggio (
                   <span className="text-red-400 line-through">60€</span>
                   {" "}
                   <span className="text-green-400 font-bold">0€</span>

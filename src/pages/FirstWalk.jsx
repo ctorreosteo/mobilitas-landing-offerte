@@ -4,6 +4,7 @@ import HeroSection from '../components/HeroSection'
 import ProblemSection from '../components/ProblemSection'
 import WhySection from '../components/WhySection'
 import ExperienceSection from '../components/ExperienceSection'
+import WalkDetailsSection from '../components/WalkDetailsSection'
 import OfferSection from '../components/OfferSection'
 import FAQSection from '../components/FAQSection'
 import ClosingSection from '../components/ClosingSection'
@@ -61,6 +62,9 @@ export default function FirstWalk() {
       
       {/* Experience Section */}
       <ExperienceSection />
+      
+      {/* Walk Details Section */}
+      <WalkDetailsSection />
       
       {/* Offer Section */}
       <OfferSection />
