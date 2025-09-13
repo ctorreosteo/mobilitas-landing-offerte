@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
-import HeroSection from '../components/HeroSection'
-import ProblemSection from '../components/ProblemSection'
-import WhySection from '../components/WhySection'
-import ExperienceSection from '../components/ExperienceSection'
-import WalkDetailsSection from '../components/WalkDetailsSection'
-import OfferSection from '../components/OfferSection'
-import FAQSection from '../components/FAQSection'
-import ClosingSection from '../components/ClosingSection'
+import HeroSection from '../components/firstwalk-sections/HeroSection'
+import ProblemSection from '../components/firstwalk-sections/ProblemSection'
+import WhySection from '../components/firstwalk-sections/WhySection'
+import ExperienceSection from '../components/firstwalk-sections/ExperienceSection'
+import WalkDetailsSection from '../components/firstwalk-sections/WalkDetailsSection'
+import OfferSection from '../components/firstwalk-sections/OfferSection'
+import FAQSection from '../components/firstwalk-sections/FAQSection'
+import ClosingSection from '../components/firstwalk-sections/ClosingSection'
 
 export default function FirstWalk() {
   const [faqOpen, setFaqOpen] = useState(null)
