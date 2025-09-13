@@ -2,6 +2,28 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { X, User, Phone } from 'lucide-react'
 import { useState } from 'react'
 
+// Utility functions for data cleaning
+const cleanName = (name) => {
+  return name.trim().replace(/\s+/g, ' ').split(' ').map(word => 
+    word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+  ).join(' ')
+}
+
+const cleanPhone = (phone) => {
+  return phone.trim().replace(/\s+/g, '')
+}
+
+const formatCurrentDate = () => {
+  const now = new Date()
+  const day = String(now.getDate()).padStart(2, '0')
+  const month = String(now.getMonth() + 1).padStart(2, '0')
+  const year = now.getFullYear()
+  const hours = String(now.getHours()).padStart(2, '0')
+  const minutes = String(now.getMinutes()).padStart(2, '0')
+  
+  return `${day}/${month}/${year} ${hours}:${minutes}`
+}
+
 export default function BookingPopup({ isOpen, onClose, packageType }) {
   const [formData, setFormData] = useState({
     nome: '',
@@ -11,6 +33,7 @@ export default function BookingPopup({ isOpen, onClose, packageType }) {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [error, setError] = useState(null)
 
   const handleInputChange = (e) => {
     const { name, value } = e.target
@@ -23,24 +46,58 @@ export default function BookingPopup({ isOpen, onClose, packageType }) {
   const handleSubmit = async (e) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setError(null)
     
-    // Simula invio form (qui potresti integrare con un'API)
-    await new Promise(resolve => setTimeout(resolve, 2000))
-    
-    setIsSubmitting(false)
-    setIsSubmitted(true)
-    
-    // Chiudi popup dopo 3 secondi
-    setTimeout(() => {
-      setIsSubmitted(false)
-      setFormData({ nome: '', cognome: '', cellulare: '', orarioChiamata: '' })
-      onClose()
-    }, 3000)
+    try {
+      // Get the selected option text
+      const orarioSelect = document.getElementById('orarioChiamata')
+      const selectedOption = orarioSelect.options[orarioSelect.selectedIndex]
+      const orarioText = selectedOption ? selectedOption.text : formData.orarioChiamata
+
+      // Clean and format the form data
+      const cleanedData = {
+        data: formatCurrentDate(),
+        nome: cleanName(formData.nome),
+        cognome: cleanName(formData.cognome),
+        cellulare: cleanPhone(formData.cellulare),
+        orario: orarioText,
+        pacchetto: packageType === 'base' ? 'Pacchetto Base - 5€' : (packageType === 'premium' ? 'Pacchetto Premium - 39€' : 'Pacchetto non specificato')
+      }
+      
+      // Send data to Zapier webhook
+      const response = await fetch('https://hooks.zapier.com/hooks/catch/19401274/ud03yay/', {
+        method: 'POST',
+        body: JSON.stringify(cleanedData)
+      })
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`)
+      }
+      
+      const result = await response.json()
+      console.log('Zapier webhook response:', result)
+      
+      setIsSubmitting(false)
+      setIsSubmitted(true)
+      
+      // Chiudi popup dopo 3 secondi
+      setTimeout(() => {
+        setIsSubmitted(false)
+        setFormData({ nome: '', cognome: '', cellulare: '', orarioChiamata: '' })
+        onClose()
+      }, 3000)
+      
+    } catch (error) {
+      console.error('Error sending data to Zapier:', error)
+      setError('Si è verificato un errore durante l\'invio. Riprova più tardi.')
+      setIsSubmitting(false)
+    }
   }
 
   const handleClose = () => {
     if (!isSubmitting) {
       setIsSubmitted(false)
+      setError(null)
       setFormData({ nome: '', cognome: '', cellulare: '', orarioChiamata: '' })
       onClose()
     }
@@ -163,6 +220,17 @@ export default function BookingPopup({ isOpen, onClose, packageType }) {
                       <option value="qualsiasi">Qualsiasi orario</option>
                     </select>
                   </div>
+
+                  {/* Error Message */}
+                  {error && (
+                    <motion.div
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      className="bg-red-50 border border-red-200 rounded-xl p-4"
+                    >
+                      <p className="text-red-600 text-sm font-medium">{error}</p>
+                    </motion.div>
+                  )}
 
                   {/* CTA Button */}
                   <motion.button
