@@ -27,9 +27,9 @@ export default function ClosingSection() {
             viewport={{ once: true }}
             className="relative"
           >
-            <h2 className="text-4xl md:text-6xl font-black text-primary leading-tight mb-8">
+            <h2 className="text-3xl md:text-4xl font-black text-primary leading-tight mb-8">
               <span className="block">Mobilitas 1<sup>st</sup> Walk</span>
-              <span className="block text-primary">E vogliamo che tu ci sia.</span>
+              <span className="block text-azure-dark">E vogliamo che tu ci sia.</span>
             </h2>
           </motion.div>
 
@@ -158,7 +158,7 @@ export default function ClosingSection() {
           >
             <motion.button 
               onClick={scrollToOffers}
-              className="group relative overflow-hidden bg-blue-dark text-cream font-black py-6 px-12 rounded-3xl text-xl shadow-2xl hover:shadow-blue-dark/50 transition-all duration-500 transform hover:scale-105 border-4 border-blue-dark hover:border-blue-dark/80"
+              className="group relative overflow-hidden bg-blue-dark text-cream font-black py-6 px-12 rounded-3xl text-xl shadow-2xl hover:shadow-blue-dark/50 transition-all duration-500 transform hover:scale-105 border-4 border-blue-dark hover:border-blue-dark/80 font-montserrat"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

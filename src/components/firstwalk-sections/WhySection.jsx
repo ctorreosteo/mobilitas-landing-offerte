@@ -47,7 +47,7 @@ export default function WhySection() {
             className="space-y-6"
           >
             {/* Benefits */}
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {[
                 { 
                   title: "Rigenerazione Naturale", 
@@ -81,7 +81,7 @@ export default function WhySection() {
                   <div className={`w-12 h-12 ${benefit.color === 'azure-dark' ? 'bg-azure-dark' : 'bg-blue-dark'} rounded-full flex items-center justify-center mb-4 mx-auto`}>
                     <benefit.icon className="w-6 h-6 text-cream" />
                   </div>
-                  <div className={`text-lg font-bold ${benefit.color === 'azure-dark' ? 'text-secondary' : 'text-primary'} mb-2`}>
+                  <div className={`text-sm font-bold ${benefit.color === 'azure-dark' ? 'text-secondary' : 'text-primary'} mb-2 leading-tight`}>
                     {benefit.title}
                   </div>
                   <div className={`text-sm ${benefit.color === 'azure-dark' ? 'text-secondary/70' : 'text-primary/70'} leading-relaxed`}>

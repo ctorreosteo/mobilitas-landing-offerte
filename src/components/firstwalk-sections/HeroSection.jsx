@@ -211,7 +211,7 @@ export default function HeroSection({ y }) {
         >
           {[
             { icon: Users, text: "Camminata guidata con il Team Mobilitas" },
-            { icon: Utensils, text: "Pranzo incluso" },
+            { icon: Utensils, text: "Merenda inclusa" },
             { icon: Heart, text: "Esperienza per il tuo benessere e la tua salute" },
             { icon: Gift, text: "Offerta speciale solo per pazienti" }
           ].map((feature, index) => (
@@ -237,11 +237,11 @@ export default function HeroSection({ y }) {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="text-center space-y-8"
+          className="text-center space-y-8 mb-12"
         >
           <motion.button 
             onClick={scrollToOffers}
-            className="group relative bg-blue-dark text-cream font-black py-6 px-12 rounded-3xl text-2xl shadow-2xl hover:shadow-blue-dark/50 transition-all duration-300 transform hover:scale-105 uppercase tracking-wide border-2 border-cream/30 hover:border-cream/60"
+            className="group relative bg-blue-dark text-cream font-black py-6 px-12 rounded-3xl text-2xl shadow-2xl hover:shadow-blue-dark/50 transition-all duration-300 transform hover:scale-105 uppercase tracking-wide border-2 border-cream/30 hover:border-cream/60 font-montserrat"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >

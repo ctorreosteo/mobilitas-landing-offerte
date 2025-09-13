@@ -4,7 +4,7 @@ import { Clock, MapPin, Route, Timer, Ruler, TrendingUp, Users, Calendar } from 
 export default function WalkDetailsSection() {
   const stats = [
     { icon: Timer, label: "Durata", value: "3 ore", color: "from-blue-dark to-blue-dark/80" },
-    { icon: Ruler, label: "Distanza", value: "8 km", color: "from-blue-dark to-blue-dark/80" },
+    { icon: Ruler, label: "Distanza", value: "4,5 km", color: "from-blue-dark to-blue-dark/80" },
     { icon: TrendingUp, label: "Difficoltà", value: "Facile", color: "from-blue-dark to-blue-dark/80" },
     { icon: Users, label: "Partecipanti", value: "Max 80", color: "from-blue-dark to-blue-dark/80" }
   ]
@@ -172,21 +172,21 @@ export default function WalkDetailsSection() {
 
                 <div className="mt-6 p-6 bg-gradient-to-r from-green/10 to-azure-dark/10 rounded-2xl border-2 border-green/20">
                   <h4 className="text-lg font-bold text-blue-dark mb-3">🗺️ Percorso</h4>
-                  <ul className="space-y-2 text-blue-dark/80">
+                  <ul className="space-y-2 text-blue-dark/80 -ml-6">
                     <li className="flex items-center">
-                      <div className="w-2 h-2 bg-green rounded-full mr-3"></div>
+                      <div className="w-3 h-3 bg-green rounded-full mr-3 flex-shrink-0"></div>
                       Partenza dal parcheggio del parco
                     </li>
                     <li className="flex items-center">
-                      <div className="w-2 h-2 bg-azure-dark rounded-full mr-3"></div>
+                      <div className="w-3 h-3 bg-azure-dark rounded-full mr-3 flex-shrink-0"></div>
                       Sentiero panoramico attraverso la foresta
                     </li>
                     <li className="flex items-center">
-                      <div className="w-2 h-2 bg-blue-dark rounded-full mr-3"></div>
+                      <div className="w-3 h-3 bg-blue-dark rounded-full mr-3 flex-shrink-0"></div>
                       Pausa merenda con vista
                     </li>
                     <li className="flex items-center">
-                      <div className="w-2 h-2 bg-green rounded-full mr-3"></div>
+                      <div className="w-3 h-3 bg-green rounded-full mr-3 flex-shrink-0"></div>
                       Rientro attraverso il sentiero alternativo
                     </li>
                   </ul>
@@ -205,8 +205,8 @@ export default function WalkDetailsSection() {
           className="text-center mt-16"
         >
           <div className="bg-gradient-to-r from-blue-dark to-blue-dark/90 p-8 rounded-3xl shadow-2xl border-4 border-blue-dark/20">
-            <div className="flex items-center justify-center mb-4">
-              <div className="w-12 h-12 bg-cream rounded-2xl flex items-center justify-center mr-4 border-2 border-cream/20">
+            <div className="text-center mb-4">
+              <div className="w-12 h-12 bg-cream rounded-full flex items-center justify-center mx-auto -mb-17 border-2 border-cream/20">
                 <Calendar className="w-6 h-6 text-blue-dark" />
               </div>
               <h3 className="text-2xl font-black text-cream">Tutto pronto per la tua avventura!</h3>
@@ -222,7 +222,7 @@ export default function WalkDetailsSection() {
                   offerSection.scrollIntoView({ behavior: 'smooth' });
                 }
               }}
-              className="bg-blue-dark text-green font-black py-4 px-8 rounded-2xl text-xl shadow-xl hover:shadow-blue-dark/50 transition-all duration-300 transform hover:scale-105 uppercase tracking-wide"
+              className="bg-blue-dark text-green font-black py-4 px-8 rounded-2xl text-xl shadow-xl hover:shadow-blue-dark/50 transition-all duration-300 transform hover:scale-105 uppercase tracking-wide font-montserrat"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

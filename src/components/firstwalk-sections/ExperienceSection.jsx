@@ -116,7 +116,7 @@ export default function ExperienceSection() {
           
           <motion.button 
             onClick={scrollToOffers}
-            className="group relative overflow-hidden bg-gradient-to-r from-green to-green/90 text-primary font-black py-6 px-12 rounded-3xl text-xl shadow-2xl hover:shadow-green/50 transition-all duration-500 transform hover:scale-105 border-4 border-green/30 hover:border-green/60"
+            className="group relative overflow-hidden bg-gradient-to-r from-green to-green/90 text-primary font-black py-6 px-12 rounded-3xl text-xl shadow-2xl hover:shadow-green/50 transition-all duration-500 transform hover:scale-105 border-4 border-green/30 hover:border-green/60 font-montserrat"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             initial={{ opacity: 0, y: 20 }}

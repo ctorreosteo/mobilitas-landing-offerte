@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { Check, Star, Clock } from 'lucide-react'
 import { useState } from 'react'
-import BookingPopup from './BookingPopup'
+import BookingPopup from '../BookingPopup'
 
 export default function OfferSection() {
   const [isPopupOpen, setIsPopupOpen] = useState(false)
@@ -76,7 +76,7 @@ export default function OfferSection() {
               <p className="text-gray-400 mb-6">Per chi vuole solo iniziare, senza impegno. Ma con qualità Mobilitas.</p>
               <motion.button 
                 onClick={() => handlePackageSelection('base')}
-                className="group relative w-full overflow-hidden bg-cream text-primary font-bold py-4 px-8 rounded-2xl shadow-2xl hover:shadow-cream/50 transition-all duration-500 transform hover:scale-105 border-2 border-blue-dark hover:border-blue-dark/80"
+                className="group relative w-full overflow-hidden bg-cream text-primary font-bold py-4 px-8 rounded-2xl shadow-2xl hover:shadow-cream/50 transition-all duration-500 transform hover:scale-105 border-2 border-blue-dark hover:border-blue-dark/80 font-montserrat"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -153,7 +153,7 @@ export default function OfferSection() {
               <p className="text-gray-300 mb-6">Pensato per chi vuole continuare a sentirsi bene anche dopo la camminata.</p>
               <motion.button 
                 onClick={() => handlePackageSelection('premium')}
-                className="group relative w-full overflow-hidden bg-gradient-to-r from-green via-green to-azure-dark text-primary font-black py-5 px-8 rounded-2xl shadow-2xl hover:shadow-green/50 transition-all duration-500 transform hover:scale-105 border-4 border-cream hover:border-green/50"
+                className="group relative w-full overflow-hidden bg-gradient-to-r from-green via-green to-azure-dark text-primary font-black py-5 px-8 rounded-2xl shadow-2xl hover:shadow-green/50 transition-all duration-500 transform hover:scale-105 border-4 border-cream hover:border-green/50 font-montserrat"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >

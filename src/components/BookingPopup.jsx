@@ -118,11 +118,12 @@ export default function BookingPopup({ isOpen, onClose, packageType }) {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 30 }}
             transition={{ type: "spring", damping: 20, stiffness: 300 }}
-            className="bg-white rounded-2xl shadow-2xl max-w-lg w-full max-h-[90vh] overflow-hidden"
+            className="bg-white rounded-xl shadow-2xl max-w-md w-full max-h-[85vh] overflow-hidden"
+            style={{ maxWidth: '90%' }}
             onClick={(e) => e.stopPropagation()}
           >
             {/* Header - Minimal */}
-            <div className="relative bg-cream p-6 border-b border-blue-dark/10">
+            <div className="relative bg-cream p-4 border-b border-blue-dark/10">
               <button
                 onClick={handleClose}
                 disabled={isSubmitting}
@@ -132,10 +133,10 @@ export default function BookingPopup({ isOpen, onClose, packageType }) {
               </button>
               
               <div className="text-center">
-                <h2 className="text-2xl font-black mb-1" style={{ color: '#002552' }}>
+                <h2 className="text-xl font-black mb-1" style={{ color: '#002552' }}>
                   Prenota il tuo posto
                 </h2>
-                <p className="text-sm font-semibold mb-2" style={{ color: '#002552' }}>
+                <p className="text-sm font-semibold mb-1" style={{ color: '#002552' }}>
                   {packageType === 'base' ? 'Pacchetto Base - 5€' : 'Pacchetto Premium - 39€'}
                 </p>
                 <p className="text-xs italic font-bold" style={{ color: '#0ea5e9' }}>
@@ -145,12 +146,12 @@ export default function BookingPopup({ isOpen, onClose, packageType }) {
             </div>
 
             {/* Content */}
-            <div className="p-6">
+            <div className="p-4">
               {!isSubmitted ? (
-                <form onSubmit={handleSubmit} className="space-y-5">
+                <form onSubmit={handleSubmit} className="space-y-3">
                   {/* Nome */}
                   <div>
-                    <label htmlFor="nome" className="block text-sm font-bold text-blue-dark mb-2">
+                    <label htmlFor="nome" className="block text-xs font-bold text-blue-dark mb-1">
                       Nome *
                     </label>
                     <input
@@ -160,14 +161,15 @@ export default function BookingPopup({ isOpen, onClose, packageType }) {
                       value={formData.nome}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border border-blue-dark/20 rounded-xl focus:border-blue-dark focus:outline-none transition-colors duration-200 text-blue-dark font-medium bg-cream/30"
+                      className="w-full px-3 py-2 border border-blue-dark/20 rounded-lg focus:border-blue-dark focus:outline-none transition-colors duration-200 text-blue-dark font-medium bg-cream/30 text-sm"
+                      style={{ maxWidth: '70%' }}
                       placeholder="Il tuo nome"
                     />
                   </div>
 
                   {/* Cognome */}
                   <div>
-                    <label htmlFor="cognome" className="block text-sm font-bold text-blue-dark mb-2">
+                    <label htmlFor="cognome" className="block text-xs font-bold text-blue-dark mb-1">
                       Cognome *
                     </label>
                     <input
@@ -177,14 +179,15 @@ export default function BookingPopup({ isOpen, onClose, packageType }) {
                       value={formData.cognome}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border border-blue-dark/20 rounded-xl focus:border-blue-dark focus:outline-none transition-colors duration-200 text-blue-dark font-medium bg-cream/30"
+                      className="w-full px-3 py-2 border border-blue-dark/20 rounded-lg focus:border-blue-dark focus:outline-none transition-colors duration-200 text-blue-dark font-medium bg-cream/30 text-sm"
+                      style={{ maxWidth: '70%' }}
                       placeholder="Il tuo cognome"
                     />
                   </div>
 
                   {/* Cellulare */}
                   <div>
-                    <label htmlFor="cellulare" className="block text-sm font-bold text-blue-dark mb-2">
+                    <label htmlFor="cellulare" className="block text-xs font-bold text-blue-dark mb-1">
                       Numero di cellulare *
                     </label>
                     <input
@@ -194,14 +197,15 @@ export default function BookingPopup({ isOpen, onClose, packageType }) {
                       value={formData.cellulare}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border border-blue-dark/20 rounded-xl focus:border-blue-dark focus:outline-none transition-colors duration-200 text-blue-dark font-medium bg-cream/30"
+                      className="w-full px-3 py-2 border border-blue-dark/20 rounded-lg focus:border-blue-dark focus:outline-none transition-colors duration-200 text-blue-dark font-medium bg-cream/30 text-sm"
+                      style={{ maxWidth: '70%' }}
                       placeholder="+39 123 456 7890"
                     />
                   </div>
 
                   {/* Orario Chiamata */}
                   <div>
-                    <label htmlFor="orarioChiamata" className="block text-sm font-bold text-blue-dark mb-2">
+                    <label htmlFor="orarioChiamata" className="block text-xs font-bold text-blue-dark mb-1">
                       Orario in cui vuoi essere chiamato/a *
                     </label>
                     <select
@@ -210,7 +214,8 @@ export default function BookingPopup({ isOpen, onClose, packageType }) {
                       value={formData.orarioChiamata}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border border-blue-dark/20 rounded-xl focus:border-blue-dark focus:outline-none transition-colors duration-200 text-blue-dark font-medium bg-cream/30"
+                      className="w-full px-3 py-2 border border-blue-dark/20 rounded-lg focus:border-blue-dark focus:outline-none transition-colors duration-200 text-blue-dark font-medium bg-cream/30 text-sm"
+                      style={{ maxWidth: '85%' }}
                     >
                       <option value="">Seleziona un orario</option>
                       <option value="mattina">Mattina (9:00 - 12:00)</option>
@@ -236,7 +241,7 @@ export default function BookingPopup({ isOpen, onClose, packageType }) {
                   <motion.button
                     type="submit"
                     disabled={isSubmitting || !formData.nome.trim() || !formData.cognome.trim() || !formData.cellulare.trim() || !formData.orarioChiamata}
-                    className="w-full bg-blue-dark text-green font-black py-4 px-6 rounded-xl text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] uppercase tracking-wide disabled:cursor-not-allowed disabled:transform-none"
+                    className="w-full bg-blue-dark text-green font-black py-3 px-4 rounded-lg text-sm shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] uppercase tracking-wide disabled:cursor-not-allowed disabled:transform-none"
                     style={{ backgroundColor: '#002552', color: '#72fa93' }}
                     whileHover={{ scale: isSubmitting ? 1 : 1.02 }}
                     whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
