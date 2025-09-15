@@ -44,12 +44,12 @@ export default function PainPointsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-left mb-16"
         >
           <h2 className="text-4xl md:text-6xl font-black text-blue-dark mb-6">
-            Ti riconosci in questi <span style={{color: '#00BFFF'}}>dolori</span>?
+            Ti riconosci in queste <span style={{color: '#00BFFF'}}>situazioni</span>?
           </h2>
-          <p className="text-xl md:text-2xl text-blue-dark/80 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-blue-dark/80 max-w-4xl leading-relaxed">
             L'emicrania non è solo un sintomo. È un'esperienza che cambia la tua vita, 
             i tuoi rapporti, la tua identità. Ecco perché le soluzioni superficiali non funzionano.
           </p>
@@ -73,8 +73,8 @@ export default function PainPointsSection() {
                 </div>
                 
                 <div className="flex-1">
-                  <h3 className="text-lg font-bold text-blue-dark mb-2 leading-tight">
-                    "{point.title}"
+                  <h3 className="text-lg font-bold text-blue-dark mb-2 leading-tight mt-0">
+                    {point.title}
                   </h3>
                   
                   <p className="text-blue-dark text-sm leading-relaxed">
@@ -94,48 +94,49 @@ export default function PainPointsSection() {
           viewport={{ once: true }}
           className="text-center mt-16"
         >
-          <div className="bg-blue-dark text-cream p-8 md:p-12 rounded-2xl shadow-2xl">
+          <div style={{backgroundColor: 'rgba(255, 165, 0, 0.2)'}} className="text-blue-dark p-8 md:p-12 rounded-2xl shadow-2xl border border-orange-300 mb-8 text-left">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              Se ti sei riconosciuta in almeno 3 di questi punti...
+              Se ti riconosci anche in solo 1 di queste problematiche...
             </h3>
-            <p className="text-xl md:text-2xl leading-relaxed mb-8">
-              È il momento di smettere di <span className="text-green font-bold">sopportare</span> e iniziare a <span className="text-green font-bold">risolvere</span>.
+            <p className="text-xl md:text-2xl leading-relaxed">
+              È arrivato il momento di smettere di <span style={{color: '#00BFFF'}} className="font-bold">sopportare</span> e iniziare a <span style={{color: '#00BFFF'}} className="font-bold">risolvere</span>.
             </p>
-            
-            {/* CTA Button */}
-            <motion.button 
-              style={{
-                backgroundColor: '#72fa93',
-                color: '#002552',
-                padding: '16px 32px',
-                borderRadius: '50px',
-                fontSize: '18px',
-                fontWeight: '700',
-                border: 'none',
-                cursor: 'pointer',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                gap: '8px',
-                margin: '0 auto',
-                boxShadow: '0 10px 30px rgba(114, 250, 147, 0.4)',
-                transition: 'all 0.3s ease'
-              }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onMouseEnter={(e) => {
-                e.target.style.backgroundColor = '#5ddb7a';
-                e.target.style.boxShadow = '0 15px 40px rgba(114, 250, 147, 0.6)';
-              }}
-              onMouseLeave={(e) => {
-                e.target.style.backgroundColor = '#72fa93';
-                e.target.style.boxShadow = '0 10px 30px rgba(114, 250, 147, 0.4)';
-              }}
-            >
-              <ShoppingCart style={{width: '20px', height: '20px'}} />
-              ACQUISTA ORA
-            </motion.button>
           </div>
+          
+          {/* CTA Button */}
+          <motion.button 
+            className="mt-6"
+            style={{
+              backgroundColor: '#002552',
+              color: '#72fa93',
+              padding: '20px 40px',
+              borderRadius: '50px',
+              fontSize: '20px',
+              fontWeight: '700',
+              border: 'none',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '10px',
+              margin: '0 auto',
+              boxShadow: '0 10px 30px rgba(0, 37, 82, 0.4)',
+              transition: 'all 0.3s ease'
+            }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onMouseEnter={(e) => {
+              e.target.style.backgroundColor = '#001a3a';
+              e.target.style.boxShadow = '0 15px 40px rgba(0, 37, 82, 0.6)';
+            }}
+            onMouseLeave={(e) => {
+              e.target.style.backgroundColor = '#002552';
+              e.target.style.boxShadow = '0 10px 30px rgba(0, 37, 82, 0.4)';
+            }}
+          >
+            <ShoppingCart style={{width: '22px', height: '22px'}} />
+            ACQUISTA ORA
+          </motion.button>
         </motion.div>
       </div>
     </section>

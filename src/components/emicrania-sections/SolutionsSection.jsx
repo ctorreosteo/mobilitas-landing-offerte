@@ -58,12 +58,12 @@ export default function SolutionsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-left mb-16"
         >
           <h2 className="text-4xl md:text-6xl font-black text-cream mb-6">
             Perché le <span className="text-green">altre soluzioni</span> non funzionano?
           </h2>
-          <p className="text-xl md:text-2xl text-white max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-white max-w-4xl leading-relaxed">
             Hai provato di tutto, ma l'emicrania torna sempre. Ecco il motivo per cui 
             i trattamenti tradizionali falliscono nel risolvere definitivamente il problema.
           </p>
@@ -118,21 +118,21 @@ export default function SolutionsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
           viewport={{ once: true }}
-          className="text-center"
+          className="text-left"
         >
           <div className="bg-green/20 backdrop-blur-sm border border-green/30 p-8 md:p-12 rounded-2xl">
-            <div className="flex items-center justify-center mb-6">
+            <div className="flex items-center mb-6">
               <AlertTriangle className="w-12 h-12 text-green mr-4" />
               <h3 className="text-2xl md:text-3xl font-bold text-cream">
                 Il problema comune a tutti questi approcci
               </h3>
             </div>
-            <p className="text-xl md:text-2xl text-cream leading-relaxed max-w-4xl mx-auto">
+            <p className="text-xl md:text-2xl text-cream leading-relaxed max-w-4xl">
               <span className="text-green font-bold">Trattano il sintomo, non la causa.</span> 
               <br />
               L'emicrania è il risultato di disfunzioni posturali, tensioni muscolari e 
-              squilibri che si sono accumulati nel tempo. Solo un approccio osteopatico 
-              specifico può identificare e risolvere queste disfunzioni alla radice.
+              squilibri che si sono accumulati nel tempo. L'approccio osteopatico 
+              specifico identifica e risolve queste disfunzioni alla radice.
             </p>
           </div>
         </motion.div>

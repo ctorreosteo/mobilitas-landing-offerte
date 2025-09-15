@@ -36,7 +36,7 @@ export default function VSLSection({ y }) {
           }}
         >
           <Star className="w-4 h-4 mr-2 fill-current" style={{color: '#72fa93'}} />
-          Trattamento Specializzato
+          Trattamento Specifico
         </motion.div>
 
         {/* Main Title */}
@@ -101,7 +101,7 @@ export default function VSLSection({ y }) {
           transition={{ duration: 0.8, delay: 1.0 }}
           className="w-full max-w-4xl mx-auto mb-8"
         >
-          <h3 className="text-2xl md:text-3xl font-bold mb-6" style={{color: '#F4F4F4'}}>I 3 benefici del Trattamento Osteopatico:</h3>
+          <h3 className="text-2xl md:text-3xl font-bold mb-6" style={{color: '#F4F4F4'}}>I 3 benefici immediati del Trattamento Osteopatico:</h3>
           <div className="space-y-4">
             {[
               "Sollievo dal dolore senza farmaci",
@@ -152,26 +152,6 @@ export default function VSLSection({ y }) {
           </motion.button>
         </motion.div>
       </div>
-
-      {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1.4 }}
-        className="relative z-10 text-center pb-8"
-      >
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 2, repeat: Infinity }}
-          className="p-4 rounded-full shadow-xl border-2 mx-auto inline-block"
-          style={{backgroundColor: '#F4F4F4', borderColor: '#72fa93'}}
-        >
-          <ChevronDown className="w-8 h-8" style={{color: '#002552'}} />
-        </motion.div>
-        <p className="text-sm mt-3 font-semibold" style={{color: '#F4F4F4'}}>
-          Scorri per scoprire
-        </p>
-      </motion.div>
     </section>
   )
 }

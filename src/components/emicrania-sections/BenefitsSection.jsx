@@ -78,7 +78,7 @@ export default function BenefitsSection() {
           className="text-left mb-12"
         >
           <h2 className="text-4xl md:text-6xl font-black text-blue-dark mb-6">
-            Perché il <span style={{color: '#00BFFF'}}>trattamento osteopatico</span> funziona?
+            Perché invece il <span style={{color: '#00BFFF'}}>trattamento osteopatico</span> funziona?
           </h2>
           <p className="text-xl md:text-2xl text-blue-dark/80 max-w-4xl leading-relaxed">
             Un approccio scientifico e specializzato che agisce sulla causa dell'emicrania, 
@@ -121,7 +121,7 @@ export default function BenefitsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
           viewport={{ once: true }}
-          className="text-center"
+          className="text-left"
         >
           <div style={{backgroundColor: 'rgba(114, 250, 147, 0.3)'}} className="text-blue-dark p-8 md:p-12 rounded-2xl shadow-2xl border border-green-400 mb-8">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
