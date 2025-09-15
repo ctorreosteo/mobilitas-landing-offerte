@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { X, Pill, Stethoscope, Zap, Droplets, AlertTriangle } from 'lucide-react'
+import { X, Pill, Stethoscope, Zap, Droplets, AlertTriangle, ShoppingCart } from 'lucide-react'
 
 export default function SolutionsSection() {
   const solutions = [

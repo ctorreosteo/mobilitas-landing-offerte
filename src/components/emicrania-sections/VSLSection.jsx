@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { CheckCircle, Star, ChevronDown } from 'lucide-react'
+import { CheckCircle, Star, ChevronDown, ShoppingCart } from 'lucide-react'
 
 export default function VSLSection({ y }) {
   const scrollToNext = () => {
@@ -53,32 +53,6 @@ export default function VSLSection({ y }) {
           </h1>
         </motion.div>
 
-        {/* Offer */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          style={{
-            padding: '24px 32px',
-            borderRadius: '16px',
-            marginBottom: '32px',
-            maxWidth: '400px',
-            margin: '0 auto 32px auto',
-            boxShadow: '0 20px 40px rgba(0,0,0,0.3)',
-            border: '4px solid rgba(114, 250, 147, 0.3)',
-            backgroundColor: '#F4F4F4',
-            color: '#002552'
-          }}
-        >
-          <div style={{textAlign: 'center'}}>
-            <p style={{fontSize: '18px', fontWeight: '600', marginBottom: '8px'}}>Trattamento osteopatico specifico e mirato</p>
-            <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '16px'}}>
-              <span style={{fontSize: '24px', fontWeight: 'bold', textDecoration: 'line-through', color: 'rgba(0, 37, 82, 0.6)'}}>€90</span>
-              <span style={{fontSize: '40px', fontWeight: '900', color: '#72fa93'}}>€60</span>
-            </div>
-            <p style={{fontSize: '14px', marginTop: '8px', color: 'rgba(0, 37, 82, 0.8)'}}>Sconto del 33% - Offerta limitata</p>
-          </div>
-        </motion.div>
 
         {/* VSL Video - Pure Video Box */}
         <motion.div
@@ -119,12 +93,13 @@ export default function VSLSection({ y }) {
           </div>
         </motion.div>
 
+
         {/* Benefits */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          className="w-full max-w-4xl mx-auto mb-8 px-4"
+          transition={{ duration: 0.8, delay: 1.0 }}
+          className="w-full max-w-4xl mx-auto mb-8"
         >
           <h3 className="text-2xl md:text-3xl font-bold mb-6" style={{color: '#F4F4F4'}}>I 3 benefici del Trattamento Osteopatico:</h3>
           <div className="space-y-4">
@@ -142,7 +117,7 @@ export default function VSLSection({ y }) {
                 style={{borderColor: 'rgba(114, 250, 147, 0.4)', backgroundColor: 'rgba(0, 37, 82, 0.3)'}}
               >
                 <CheckCircle className="w-6 h-6 flex-shrink-0" style={{color: '#72fa93'}} />
-                <span className="text-lg font-semibold" style={{color: '#F4F4F4'}}>{benefit}</span>
+                <span className="text-lg font-semibold" style={{color: '#F4F4F4', textAlign: 'left'}}>{benefit}</span>
               </motion.div>
             ))}
           </div>
@@ -164,8 +139,8 @@ export default function VSLSection({ y }) {
           >
             <div className="absolute inset-0 bg-gradient-to-r from-green/20 to-green/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
             <div className="relative flex items-center justify-center space-x-3">
-              <span className="text-xl">🎯</span>
-              <span>Scopri perché funziona</span>
+              <ShoppingCart style={{width: '24px', height: '24px'}} />
+              <span>ACQUISTA ORA</span>
               <motion.div
                 className="w-5 h-5"
                 animate={{ rotate: [0, 15, -15, 0] }}

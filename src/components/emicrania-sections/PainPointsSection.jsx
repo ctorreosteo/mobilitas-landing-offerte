@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { AlertTriangle, Clock, Heart, Users, Brain, Zap, Shield, Eye, Smile, Pill } from 'lucide-react'
+import { AlertTriangle, Clock, Heart, Users, Brain, Zap, Shield, Eye, Smile, Pill, ShoppingCart } from 'lucide-react'
 
 export default function PainPointsSection() {
   const painPoints = [
@@ -131,9 +131,43 @@ export default function PainPointsSection() {
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               Se ti sei riconosciuta in almeno 3 di questi punti...
             </h3>
-            <p className="text-xl md:text-2xl leading-relaxed">
+            <p className="text-xl md:text-2xl leading-relaxed mb-8">
               È il momento di smettere di <span className="text-green font-bold">sopportare</span> e iniziare a <span className="text-green font-bold">risolvere</span>.
             </p>
+            
+            {/* CTA Button */}
+            <motion.button 
+              style={{
+                backgroundColor: '#72fa93',
+                color: '#002552',
+                padding: '16px 32px',
+                borderRadius: '50px',
+                fontSize: '18px',
+                fontWeight: '700',
+                border: 'none',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '8px',
+                margin: '0 auto',
+                boxShadow: '0 10px 30px rgba(114, 250, 147, 0.4)',
+                transition: 'all 0.3s ease'
+              }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onMouseEnter={(e) => {
+                e.target.style.backgroundColor = '#5ddb7a';
+                e.target.style.boxShadow = '0 15px 40px rgba(114, 250, 147, 0.6)';
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.backgroundColor = '#72fa93';
+                e.target.style.boxShadow = '0 10px 30px rgba(114, 250, 147, 0.4)';
+              }}
+            >
+              <ShoppingCart style={{width: '20px', height: '20px'}} />
+              ACQUISTA ORA
+            </motion.button>
           </div>
         </motion.div>
       </div>

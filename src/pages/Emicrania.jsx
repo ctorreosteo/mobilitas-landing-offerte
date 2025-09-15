@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import VSLSection from '../components/emicrania-sections/VSLSection'
+import OfferSection from '../components/emicrania-sections/OfferSection'
 import PainPointsSection from '../components/emicrania-sections/PainPointsSection'
 import SolutionsSection from '../components/emicrania-sections/SolutionsSection'
 import BenefitsSection from '../components/emicrania-sections/BenefitsSection'
@@ -29,6 +30,9 @@ export default function Emicrania() {
       
       {/* Benefits Section */}
       <BenefitsSection />
+      
+      {/* Offer Section */}
+      <OfferSection />
       
       {/* Footer Section */}
       <FooterSection />
