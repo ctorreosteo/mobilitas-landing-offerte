@@ -195,10 +195,10 @@ export default function HeroSection({ y }) {
           <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-sm md:text-xl font-black">
             <div className="flex items-center space-x-2">
               <Clock className="w-5 h-5 md:w-8 md:h-8 text-primary" />
-              <span className="text-primary">POSTI LIMITATI A 80 persone</span>
+              <span className="text-primary">4 OTTOBRE 2024</span>
             </div>
             <span className="text-primary text-xl md:text-3xl hidden md:block">•</span>
-            <span className="text-primary text-center md:text-left">PRENOTAZIONI FINO AL 25 SETTEMBRE</span>
+            <span className="text-primary text-center md:text-left">PACCHETTO PREMIUM IN OFFERTA SOLO PER 20 PERSONE</span>
           </div>
         </motion.div>
 
@@ -241,7 +241,7 @@ export default function HeroSection({ y }) {
         >
           <motion.button 
             onClick={scrollToOffers}
-            className="group relative bg-blue-dark text-cream font-black py-6 px-12 rounded-3xl text-2xl shadow-2xl hover:shadow-blue-dark/50 transition-all duration-300 transform hover:scale-105 uppercase tracking-wide border-2 border-cream/30 hover:border-cream/60 font-montserrat"
+            className="group relative bg-blue-dark text-green font-black py-6 px-12 rounded-3xl text-2xl shadow-2xl hover:shadow-blue-dark/50 transition-all duration-300 transform hover:scale-105 uppercase tracking-wide border-2 border-green/30 hover:border-green/60 font-montserrat"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >

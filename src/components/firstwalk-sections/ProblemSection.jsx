@@ -142,14 +142,9 @@ export default function ProblemSection() {
           className="text-center bg-blue-dark text-cream p-6 md:p-12 rounded-2xl"
         >
           <Users className="w-12 h-12 md:w-16 md:h-16 text-cream mx-auto mb-4 md:mb-6" />
-          <h3 className="text-2xl md:text-4xl font-black mb-4 md:mb-6 text-green">
+          <h3 className="text-2xl md:text-4xl font-black mb-4 md:mb-6 text-cream">
             Sei parte di una community che condivide i tuoi valori. Insieme costruiamo il nostro benessere.
           </h3>
-          <p className="text-base md:text-xl text-cream/90 max-w-4xl mx-auto">
-            Insieme <strong>riscopriamo la nostra energia</strong> e la vitalità che ci appartiene.
-            <br />
-            Insieme <strong>scegliamo di essere vivi, attivi e consapevoli</strong> del nostro corpo e della nostra salute.
-          </p>
         </motion.div>
       </div>
     </section>

@@ -149,7 +149,7 @@ export default function OfferSection() {
             </div>
 
             <div className="text-center">
-              <p className="text-gray-400 italic text-base mb-2">⚠️ Solo 15 pacchetti disponibili con questo prezzo!</p>
+              <p className="text-gray-400 italic text-base mb-2">⚠️ Solo 20 pacchetti disponibili con questo prezzo!</p>
               <p className="text-gray-300 mb-6">Pensato per chi vuole continuare a sentirsi bene anche dopo la camminata.</p>
               <motion.button 
                 onClick={() => handlePackageSelection('premium')}
