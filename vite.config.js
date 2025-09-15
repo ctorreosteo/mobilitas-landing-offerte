@@ -7,5 +7,15 @@ export default defineConfig({
   server: {
     host: '0.0.0.0', // Permette connessioni da qualsiasi IP
     port: 5173,      // Porta specifica
-  }
+  },
+  build: {
+    // Assicura che il build sia ottimizzato per SPA
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+  },
+  // Configurazione per SPA - importante per il routing
+  base: '/',
 })
