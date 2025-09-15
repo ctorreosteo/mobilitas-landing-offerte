@@ -63,14 +63,14 @@ export default function SolutionsSection() {
           <h2 className="text-4xl md:text-6xl font-black text-cream mb-6">
             Perché le <span className="text-green">altre soluzioni</span> non funzionano?
           </h2>
-          <p className="text-xl md:text-2xl text-cream/80 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-white max-w-4xl mx-auto leading-relaxed">
             Hai provato di tutto, ma l'emicrania torna sempre. Ecco il motivo per cui 
             i trattamenti tradizionali falliscono nel risolvere definitivamente il problema.
           </p>
         </motion.div>
 
-        {/* Solutions Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        {/* Solutions Grid - Ultra Compact Design */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-16">
           {solutions.map((solution, index) => (
             <motion.div
               key={index}
@@ -78,33 +78,33 @@ export default function SolutionsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-cream/10 backdrop-blur-sm rounded-2xl p-8 border border-green/20 hover:border-green/40 transition-all duration-300"
+              className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 hover:border-green/40 transition-all duration-300"
             >
-              {/* Icon and Title */}
-              <div className="flex items-center space-x-4 mb-6">
-                <div className="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center">
-                  <solution.icon className="w-8 h-8 text-red-600" />
+              {/* Icon and Title - Perfectly Aligned */}
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <solution.icon className="w-5 h-5 text-red-600" />
                 </div>
-                <h3 className="text-2xl font-bold text-cream">
+                <h3 className="text-lg font-bold text-white leading-tight">
                   {solution.title}
                 </h3>
               </div>
 
-              {/* Problems List */}
-              <div className="space-y-3 mb-6">
+              {/* Problems List - Perfect Alignment */}
+              <div className="space-y-1 mb-3">
                 {solution.problems.map((problem, problemIndex) => (
-                  <div key={problemIndex} className="flex items-start space-x-3">
-                    <X className="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" />
-                    <p className="text-cream text-lg leading-relaxed">
+                  <div key={problemIndex} className="flex items-center gap-2">
+                    <X className="w-3.5 h-3.5 text-red-400 flex-shrink-0" />
+                    <p className="text-white text-xs leading-tight">
                       {problem}
                     </p>
                   </div>
                 ))}
               </div>
 
-              {/* Why it doesn't work */}
-              <div className="bg-green/30 border-l-4 border-green p-4 rounded-r-xl">
-                <p className="text-cream font-semibold text-lg leading-relaxed">
+              {/* Why it doesn't work - Ultra Compact */}
+              <div className="bg-green/20 border-l-2 border-green p-2.5 rounded-r-md">
+                <p className="text-white font-semibold text-xs leading-relaxed">
                   <span className="text-green font-bold">Perché fallisce:</span> {solution.why}
                 </p>
               </div>
