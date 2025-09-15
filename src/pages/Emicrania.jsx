@@ -5,6 +5,7 @@ import OfferSection from '../components/emicrania-sections/OfferSection'
 import PainPointsSection from '../components/emicrania-sections/PainPointsSection'
 import SolutionsSection from '../components/emicrania-sections/SolutionsSection'
 import BenefitsSection from '../components/emicrania-sections/BenefitsSection'
+import FAQSection from '../components/emicrania-sections/FAQSection'
 import FooterSection from '../components/emicrania-sections/FooterSection'
 
 export default function Emicrania() {
@@ -33,6 +34,9 @@ export default function Emicrania() {
       
       {/* Offer Section */}
       <OfferSection />
+      
+      {/* FAQ Section */}
+      <FAQSection />
       
       {/* Footer Section */}
       <FooterSection />

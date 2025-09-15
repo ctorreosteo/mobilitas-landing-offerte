@@ -75,7 +75,7 @@ export default function OfferSection() {
               fontWeight: '900',
               color: '#72fa93'
             }}>
-              €60
+              €69
             </span>
           </div>
 
