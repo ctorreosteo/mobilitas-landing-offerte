@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { CheckCircle, Star, ChevronDown } from 'lucide-react'
 
-export default function OfferSection({ y }) {
+export default function VSLSection({ y }) {
   const scrollToNext = () => {
     const nextSection = document.getElementById('pain-points-section');
     if (nextSection) {

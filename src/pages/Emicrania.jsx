@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
-import OfferSection from '../components/emicrania-sections/OfferSection'
+import VSLSection from '../components/emicrania-sections/VSLSection'
 import PainPointsSection from '../components/emicrania-sections/PainPointsSection'
 import SolutionsSection from '../components/emicrania-sections/SolutionsSection'
 import BenefitsSection from '../components/emicrania-sections/BenefitsSection'
@@ -18,8 +18,8 @@ export default function Emicrania() {
         style={{ scaleX: scrollYProgress }}
       />
 
-      {/* Offer Section */}
-      <OfferSection y={y} />
+      {/* VSL Section */}
+      <VSLSection y={y} />
       
       {/* Pain Points Section */}
       <PainPointsSection />
