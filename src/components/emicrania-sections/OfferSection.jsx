@@ -126,12 +126,12 @@ export default function OfferSection({ y }) {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="w-full max-w-4xl mx-auto mb-8 px-4"
         >
-          <h3 className="text-2xl md:text-3xl font-bold mb-6" style={{color: '#F4F4F4'}}>I 3 benefici più polarizzanti:</h3>
+          <h3 className="text-2xl md:text-3xl font-bold mb-6" style={{color: '#F4F4F4'}}>I 3 benefici del Trattamento Osteopatico:</h3>
           <div className="space-y-4">
             {[
-              "Liberazione definitiva dal dolore senza farmaci",
+              "Sollievo dal dolore senza farmaci",
               "Ripristino del controllo sulla tua vita quotidiana", 
-              "Soluzione alla radice, non solo sintomatica"
+              "Trattamento al radice del problema, non solo sintomatica"
             ].map((benefit, index) => (
               <motion.div 
                 key={index}
