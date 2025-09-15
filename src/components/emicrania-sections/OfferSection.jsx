@@ -2,11 +2,8 @@ import { motion } from 'framer-motion'
 import { CheckCircle, ShoppingCart } from 'lucide-react'
 
 export default function OfferSection() {
-  const scrollToOffer = () => {
-    const offerSection = document.getElementById('offer-section');
-    if (offerSection) {
-      offerSection.scrollIntoView({ behavior: 'smooth' });
-    }
+  const handlePurchaseClick = () => {
+    window.open('https://studiomobilitas.it/cart/47282780963146:1?discount=EMI69', '_blank');
   };
 
   // Calcola i posti rimasti basandosi sui giorni del mese
@@ -94,6 +91,31 @@ export default function OfferSection() {
             color: '#002552'
           }}
         >
+          {/* Reviews Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            style={{
+              backgroundColor: '#e8f5e8',
+              border: '2px solid #72fa93',
+              borderRadius: '12px',
+              padding: '16px 20px',
+              marginBottom: '20px',
+              textAlign: 'center'
+            }}
+          >
+            <p style={{
+              fontSize: '16px',
+              fontWeight: '700',
+              color: '#002552',
+              margin: 0,
+              lineHeight: '1.4'
+            }}>
+              Abbiamo 376 recensioni Google di persone che raccontano storie incredibili sui nostri trattamenti
+            </p>
+          </motion.div>
+
           {/* Treatment Title */}
           <h3 style={{
             fontSize: '24px',
@@ -101,7 +123,7 @@ export default function OfferSection() {
             marginBottom: '16px',
             color: '#002552'
           }}>
-            Trattamento osteopatico per emicrania
+            Trattamento osteopatico per Emicrania
           </h3>
 
           {/* Price */}
@@ -181,7 +203,7 @@ export default function OfferSection() {
 
           {/* CTA Button */}
           <motion.button 
-            onClick={scrollToOffer}
+            onClick={handlePurchaseClick}
             style={{
               backgroundColor: '#002552',
               color: '#72fa93',

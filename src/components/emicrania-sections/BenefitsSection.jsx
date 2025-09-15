@@ -11,43 +11,27 @@ export default function BenefitsSection() {
   const benefits = [
     {
       icon: Target,
-      title: "Approccio Causale, Non Sintomatico",
-      description: "Identifichiamo e risolviamo le disfunzioni posturali e muscolo-scheletriche che causano l'emicrania, non solo il dolore.",
-      details: [
-        "Valutazione globale della postura e delle tensioni",
-        "Identificazione delle disfunzioni specifiche",
-        "Trattamento mirato alla radice del problema"
-      ]
+      title: "Trattiamo la Vera Causa, Non Sopprimiamo il Sintomo",
+      description: "Se hai provato farmaci, integratori o massaggi senza risultato duraturo, è perché nessuno ha affrontato la vera origine del problema: tensioni profonde, disfunzioni cervicali o diaframmatiche che alterano l'equilibrio del tuo corpo. Noi partiamo da lì. Niente palliativi.",
+      details: []
     },
     {
       icon: Brain,
-      title: "Ripristino dell'Equilibrio Neuro-Muscolare",
-      description: "Riequilibriamo le tensioni che causano compressioni nervose e alterazioni del flusso sanguigno cerebrale.",
-      details: [
-        "Rilascio delle tensioni cervicali e craniali",
-        "Miglioramento della circolazione cerebrale",
-        "Riduzione della sensibilità nervosa"
-      ]
+      title: "Liberiamo il Cervello dalle Compressioni Invisibili",
+      description: "Molte crisi emicraniche sono legate a disfunzioni che bloccano il flusso sanguigno cerebrale o irritano il sistema nervoso autonomo. Il nostro trattamento scioglie queste restrizioni con tecniche manuali mirate, riportando equilibrio e ossigenazione dove serve davvero.",
+      details: []
     },
     {
       icon: Heart,
-      title: "Trattamento Personalizzato e Olistico",
-      description: "Ogni trattamento è unico, basato sulla tua storia clinica e sulle tue specifiche disfunzioni.",
-      details: [
-        "Anamnesi dettagliata del tuo caso",
-        "Piano terapeutico personalizzato",
-        "Monitoraggio dei progressi nel tempo"
-      ]
+      title: "Ogni Trattamento È un Progetto su Misura",
+      description: "Non usiamo protocolli standard. Analizziamo il tuo caso nel dettaglio – postura, stress, traumi, abitudini – e creiamo un piano specifico per sbloccare il tuo corpo, riequilibrare il sistema e prevenire le ricadute. È un approccio sartoriale, non industriale.",
+      details: []
     },
     {
       icon: Shield,
-      title: "Risultati Duraturi e Definitivi",
-      description: "Non solo sollievo temporaneo, ma risoluzione stabile che ti permette di riprendere il controllo della tua vita.",
-      details: [
-        "Riduzione significativa della frequenza",
-        "Diminuzione dell'intensità del dolore",
-        "Miglioramento della qualità di vita"
-      ]
+      title: "Vivere Senza Dolore Non È Utopia, È Strategia",
+      description: "Il nostro obiettivo non è farti stare \"meglio\" per qualche giorno. È eliminare alla radice le cause dell'emicrania, per restituirti energia, lucidità e libertà mentale. Perché quando smetti di combattere il dolore, puoi iniziare a progettare la tua vita con potere.",
+      details: []
     },
     {
       icon: Clock,
