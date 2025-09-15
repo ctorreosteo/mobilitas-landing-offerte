@@ -2,10 +2,10 @@ import { motion } from 'framer-motion'
 import { CheckCircle, Star, ChevronDown, ShoppingCart } from 'lucide-react'
 
 export default function VSLSection({ y }) {
-  const scrollToNext = () => {
-    const nextSection = document.getElementById('pain-points-section');
-    if (nextSection) {
-      nextSection.scrollIntoView({ behavior: 'smooth' });
+  const scrollToOffer = () => {
+    const offerSection = document.getElementById('offer-section');
+    if (offerSection) {
+      offerSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -131,8 +131,8 @@ export default function VSLSection({ y }) {
           className="text-center space-y-8 mb-12"
         >
           <motion.button 
-            onClick={scrollToNext}
-            className="group relative font-black py-6 px-12 rounded-3xl text-2xl shadow-2xl transition-all duration-300 transform hover:scale-105 uppercase tracking-wide border-2"
+            onClick={scrollToOffer}
+            className="group relative font-black py-6 px-12 rounded-3xl text-2xl shadow-2xl transition-all duration-300 transform hover:scale-105 uppercase tracking-wide border-2 font-montserrat"
             style={{backgroundColor: '#72fa93', color: '#002552', borderColor: 'rgba(114, 250, 147, 0.3)'}}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

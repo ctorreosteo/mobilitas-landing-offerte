@@ -2,15 +2,38 @@ import { motion } from 'framer-motion'
 import { CheckCircle, ShoppingCart } from 'lucide-react'
 
 export default function OfferSection() {
-  const scrollToNext = () => {
-    const nextSection = document.getElementById('pain-points-section');
-    if (nextSection) {
-      nextSection.scrollIntoView({ behavior: 'smooth' });
+  const scrollToOffer = () => {
+    const offerSection = document.getElementById('offer-section');
+    if (offerSection) {
+      offerSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
+  // Calcola i posti rimasti basandosi sui giorni del mese
+  const calculateRemainingSpots = () => {
+    const today = new Date();
+    const dayOfMonth = today.getDate();
+    const totalSpots = 60;
+    const remainingSpots = Math.max(1, totalSpots - (2 * dayOfMonth)); // Minimo 1 posto
+    return remainingSpots;
+  };
+
+  const remainingSpots = calculateRemainingSpots();
+
+  // Ottieni il nome del mese corrente
+  const getCurrentMonthName = () => {
+    const months = [
+      'gennaio', 'febbraio', 'marzo', 'aprile', 'maggio', 'giugno',
+      'luglio', 'agosto', 'settembre', 'ottobre', 'novembre', 'dicembre'
+    ];
+    const today = new Date();
+    return months[today.getMonth()];
+  };
+
+  const currentMonth = getCurrentMonthName();
+
   return (
-    <section style={{background: 'linear-gradient(to bottom right, #002552, rgba(0, 37, 82, 0.9))', padding: '48px 16px', position: 'relative'}}>
+    <section id="offer-section" style={{background: 'linear-gradient(to bottom right, #002552, rgba(0, 37, 82, 0.9))', padding: '48px 16px', position: 'relative'}}>
       {/* Content */}
       <div style={{maxWidth: '1200px', margin: '0 auto', textAlign: 'center', padding: '0 8px'}}>
         
@@ -36,7 +59,7 @@ export default function OfferSection() {
             margin: '0 auto 20px auto'
           }}
         >
-          ⚠️ 28 posti rimasti su 60
+          ⚠️ {remainingSpots} posti rimasti su 60
         </motion.div>
         
         {/* Offer Title */}
@@ -49,6 +72,7 @@ export default function OfferSection() {
           <h2 style={{fontSize: '36px', fontWeight: '900', lineHeight: '1.1', marginBottom: '16px'}}>
             <div style={{color: '#F4F4F4', display: 'block'}}>LA NOSTRA</div>
             <div style={{color: '#72fa93', display: 'block'}}>OFFERTA</div>
+            <div style={{color: '#F4F4F4', display: 'block'}}>DI {currentMonth.toUpperCase()}</div>
             <div style={{color: '#F4F4F4', display: 'block'}}>PER TE</div>
           </h2>
         </motion.div>
@@ -157,7 +181,7 @@ export default function OfferSection() {
 
           {/* CTA Button */}
           <motion.button 
-            onClick={scrollToNext}
+            onClick={scrollToOffer}
             style={{
               backgroundColor: '#002552',
               color: '#72fa93',
@@ -173,7 +197,8 @@ export default function OfferSection() {
               gap: '8px',
               margin: '0 auto',
               boxShadow: '0 10px 30px rgba(0, 37, 82, 0.4)',
-              transition: 'all 0.3s ease'
+              transition: 'all 0.3s ease',
+              fontFamily: 'Montserrat, sans-serif'
             }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -212,7 +237,7 @@ export default function OfferSection() {
             margin: 0,
             textAlign: 'center'
           }}>
-            ⚡ Offerta limitata - Fino ad esaurimento posti
+            ⚡ Offerta limitata SOLO per QUESTO MESE - Fino ad esaurimento posti
           </p>
         </motion.div>
       </div>

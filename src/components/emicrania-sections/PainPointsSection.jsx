@@ -2,6 +2,12 @@ import { motion } from 'framer-motion'
 import { AlertTriangle, Clock, Heart, Users, Brain, Zap, Shield, Eye, Smile, Pill, ShoppingCart } from 'lucide-react'
 
 export default function PainPointsSection() {
+  const scrollToOffer = () => {
+    const offerSection = document.getElementById('offer-section');
+    if (offerSection) {
+      offerSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   const painPoints = [
     {
       icon: Clock,
@@ -105,6 +111,7 @@ export default function PainPointsSection() {
           
           {/* CTA Button */}
           <motion.button 
+            onClick={scrollToOffer}
             className="mt-6"
             style={{
               backgroundColor: '#002552',
@@ -121,7 +128,8 @@ export default function PainPointsSection() {
               gap: '10px',
               margin: '0 auto',
               boxShadow: '0 10px 30px rgba(0, 37, 82, 0.4)',
-              transition: 'all 0.3s ease'
+              transition: 'all 0.3s ease',
+              fontFamily: 'Montserrat, sans-serif'
             }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

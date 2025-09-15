@@ -2,6 +2,12 @@ import { motion } from 'framer-motion'
 import { CheckCircle, Target, Brain, Heart, Shield, Clock, Users, Zap } from 'lucide-react'
 
 export default function BenefitsSection() {
+  const scrollToOffer = () => {
+    const offerSection = document.getElementById('offer-section');
+    if (offerSection) {
+      offerSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   const benefits = [
     {
       icon: Target,
@@ -133,7 +139,8 @@ export default function BenefitsSection() {
           </div>
           
           <motion.button 
-            className="bg-blue-dark text-green font-black py-6 px-12 rounded-3xl text-2xl shadow-2xl hover:shadow-blue-dark/50 transition-all duration-300 transform hover:scale-105 uppercase tracking-wide border-2 border-blue-dark/30 hover:border-blue-dark/60"
+            onClick={scrollToOffer}
+            className="bg-blue-dark text-green font-black py-6 px-12 rounded-3xl text-2xl shadow-2xl hover:shadow-blue-dark/50 transition-all duration-300 transform hover:scale-105 uppercase tracking-wide border-2 border-blue-dark/30 hover:border-blue-dark/60 font-montserrat"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
