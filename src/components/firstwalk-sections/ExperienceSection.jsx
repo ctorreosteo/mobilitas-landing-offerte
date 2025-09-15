@@ -30,7 +30,7 @@ export default function ExperienceSection() {
     },
     {
       icon: Utensils,
-      title: "Pausa pranzo al sacco",
+      title: "Pausa merenda al sacco",
       description: "Ti consegniamo il pranzo preparato per te, da gustare nella natura.",
       color: "azure"
     },

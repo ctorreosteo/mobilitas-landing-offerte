@@ -60,8 +60,8 @@ export default function OfferSection() {
             <div className="space-y-4 mb-8">
               {[
                 "Camminata guidata con osteopati",
-                "Pranzo al sacco fornito da noi",
-                "Sacchetta brandizzata Mobilitas",
+                "Merenda al sacco fornita da noi",
+                "Esercizi di respirazione e stretching",
                 "Accesso al gruppo riservato su WhatsApp",
                 "Foto e riprese dell'evento in omaggio"
               ].map((feature, index) => (
