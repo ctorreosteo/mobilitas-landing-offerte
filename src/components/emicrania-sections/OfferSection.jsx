@@ -14,16 +14,42 @@ export default function OfferSection() {
       {/* Content */}
       <div style={{maxWidth: '1200px', margin: '0 auto', textAlign: 'center', padding: '0 8px'}}>
         
+        {/* Urgency Banner */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            padding: '12px 24px',
+            borderRadius: '50px',
+            fontSize: '14px',
+            fontWeight: 'bold',
+            textTransform: 'uppercase',
+            letterSpacing: '1px',
+            boxShadow: '0 10px 25px rgba(0,0,0,0.3)',
+            border: '2px solid rgba(255, 140, 0, 0.4)',
+            backgroundColor: 'rgba(255, 140, 0, 0.3)',
+            color: '#F4F4F4',
+            margin: '0 auto 20px auto'
+          }}
+        >
+          ⚠️ 28 posti rimasti su 60
+        </motion.div>
+        
         {/* Offer Title */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
           style={{marginBottom: '32px'}}
         >
           <h2 style={{fontSize: '36px', fontWeight: '900', lineHeight: '1.1', marginBottom: '16px'}}>
             <div style={{color: '#F4F4F4', display: 'block'}}>LA NOSTRA</div>
             <div style={{color: '#72fa93', display: 'block'}}>OFFERTA</div>
+            <div style={{color: '#F4F4F4', display: 'block'}}>PER TE</div>
           </h2>
         </motion.div>
 
@@ -31,7 +57,7 @@ export default function OfferSection() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
           style={{
             padding: '32px 24px',
             borderRadius: '20px',
@@ -73,7 +99,7 @@ export default function OfferSection() {
             <span style={{
               fontSize: '48px',
               fontWeight: '900',
-              color: '#72fa93'
+              color: '#00BFFF'
             }}>
               €69
             </span>
@@ -112,7 +138,7 @@ export default function OfferSection() {
                     style={{
                       width: '20px',
                       height: '20px',
-                      color: '#72fa93',
+                      color: '#00BFFF',
                       marginRight: '12px',
                       flexShrink: 0
                     }} 
@@ -133,8 +159,8 @@ export default function OfferSection() {
           <motion.button 
             onClick={scrollToNext}
             style={{
-              backgroundColor: '#72fa93',
-              color: '#002552',
+              backgroundColor: '#002552',
+              color: '#72fa93',
               padding: '16px 32px',
               borderRadius: '50px',
               fontSize: '18px',
@@ -146,18 +172,18 @@ export default function OfferSection() {
               justifyContent: 'center',
               gap: '8px',
               margin: '0 auto',
-              boxShadow: '0 10px 30px rgba(114, 250, 147, 0.4)',
+              boxShadow: '0 10px 30px rgba(0, 37, 82, 0.4)',
               transition: 'all 0.3s ease'
             }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onMouseEnter={(e) => {
-              e.target.style.backgroundColor = '#5ddb7a';
-              e.target.style.boxShadow = '0 15px 40px rgba(114, 250, 147, 0.6)';
+              e.target.style.backgroundColor = '#001a3a';
+              e.target.style.boxShadow = '0 15px 40px rgba(0, 37, 82, 0.6)';
             }}
             onMouseLeave={(e) => {
-              e.target.style.backgroundColor = '#72fa93';
-              e.target.style.boxShadow = '0 10px 30px rgba(114, 250, 147, 0.4)';
+              e.target.style.backgroundColor = '#002552';
+              e.target.style.boxShadow = '0 10px 30px rgba(0, 37, 82, 0.4)';
             }}
           >
             <ShoppingCart style={{width: '20px', height: '20px'}} />
@@ -186,7 +212,7 @@ export default function OfferSection() {
             margin: 0,
             textAlign: 'center'
           }}>
-            ⚡ Offerta limitata - Sconto del 33% valido solo per i primi 10 prenotati
+            ⚡ Offerta limitata - Fino ad esaurimento posti
           </p>
         </motion.div>
       </div>
