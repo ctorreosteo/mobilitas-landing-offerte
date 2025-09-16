@@ -102,7 +102,7 @@ export default function PainPointsSection() {
         >
           <div style={{backgroundColor: 'rgba(255, 165, 0, 0.2)'}} className="text-blue-dark p-8 md:p-12 rounded-2xl shadow-2xl border border-orange-300 mb-8 text-left">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              Se ti riconosci anche in solo 1 di queste problematiche...
+            Se ti capita anche solo una di queste situazioni…
             </h3>
             <p className="text-xl md:text-2xl leading-relaxed">
               È arrivato il momento di smettere di <span style={{color: '#00BFFF'}} className="font-bold">sopportare</span> e iniziare a <span style={{color: '#00BFFF'}} className="font-bold">risolvere</span>.

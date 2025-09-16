@@ -45,7 +45,7 @@ export default function SolutionsSection() {
         "Approccio sintomatico, non causale",
         "Durata del trattamento indefinita"
       ],
-      why: "Anche se possono dare sollievo temporaneo, non identificano e risolvono le disfunzioni strutturali che causano l'emicrania."
+      why: "l’emicrania è neurologica, ma senza valutare anche trigger e comorbidità (es. cervicale/ATM, sonno, stress) il miglioramento può essere solo parziale."
     }
   ]
 

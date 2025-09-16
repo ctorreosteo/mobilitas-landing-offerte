@@ -88,8 +88,8 @@ export default function BenefitsSection() {
               className="flex items-start gap-4 mb-3 last:mb-0"
             >
               {/* Icon */}
-              <div className="w-10 h-10 bg-green/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                <benefit.icon className="w-5 h-5 text-green" />
+              <div className="w-10 h-10 bg-blue-400/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                <benefit.icon className="w-5 h-5 text-blue-400" />
               </div>
               
               {/* Content */}
@@ -111,9 +111,9 @@ export default function BenefitsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
           viewport={{ once: true }}
-          className="text-left"
+          className="text-center"
         >
-          <div style={{backgroundColor: 'rgba(114, 250, 147, 0.3)'}} className="text-blue-dark p-8 md:p-12 rounded-2xl shadow-2xl border border-green-400 mb-8">
+          <div style={{backgroundColor: 'rgba(114, 250, 147, 0.3)'}} className="text-blue-dark p-8 md:p-12 rounded-2xl shadow-2xl border border-green-400 mb-8 text-left">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               Pronta a liberarti definitivamente dall'emicrania?
             </h3>

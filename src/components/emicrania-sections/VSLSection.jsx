@@ -106,7 +106,7 @@ export default function VSLSection({ y }) {
             {[
               "Sollievo dal dolore senza farmaci",
               "Ripristino del controllo sulla tua vita quotidiana", 
-              "Trattamento al radice del problema, non solo sintomatica"
+              "Risoviamo il problema alla radice, non solo il sintomo"
             ].map((benefit, index) => (
               <motion.div 
                 key={index}
