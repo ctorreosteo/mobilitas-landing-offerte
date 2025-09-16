@@ -1,7 +1,19 @@
 import { motion } from 'framer-motion'
 import { CheckCircle, Clock, Phone, Mail } from 'lucide-react'
+import { useEffect } from 'react'
 
 export default function ThankYou() {
+  // Track purchase event with Meta Pixel
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.fbq) {
+      window.fbq('track', 'Purchase', {
+        value: 69.00,
+        currency: 'EUR',
+        content_name: 'Trattamento osteopatico per Emicrania',
+        content_category: 'Osteopatia'
+      });
+    }
+  }, []);
   return (
     <div className="min-h-screen" style={{background: 'linear-gradient(to bottom right, #002552, rgba(0, 37, 82, 0.9))'}}>
       <div className="container mx-auto px-4 py-16">
