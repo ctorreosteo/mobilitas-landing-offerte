@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import FirstWalk from './pages/FirstWalk'
 import Emicrania from './pages/Emicrania'
+import ThankYou from './pages/ThankYou'
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
           
           {/* Emicrania page */}
           <Route path="/emicrania" element={<Emicrania />} />
+          
+          {/* Thank You page */}
+          <Route path="/conferma" element={<ThankYou />} />
           
           {/* Catch all route - redirect to /first-walk */}
           <Route path="*" element={<Navigate to="/first-walk" replace />} />

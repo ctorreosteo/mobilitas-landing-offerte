@@ -3,7 +3,8 @@ import { CheckCircle, ShoppingCart } from 'lucide-react'
 
 export default function OfferSection() {
   const handlePurchaseClick = () => {
-    window.open('https://studiomobilitas.it/cart/47282780963146:1?discount=EMI69', '_blank');
+    // Redirect to Stripe payment page
+    window.location.href = 'https://buy.stripe.com/8x24gBgjJdi9fVdfVjdIA00';
   };
 
   // Calcola i posti rimasti basandosi sui giorni del mese
