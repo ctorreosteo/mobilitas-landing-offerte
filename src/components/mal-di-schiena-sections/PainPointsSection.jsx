@@ -315,7 +315,7 @@ export default function PainPointsSection() {
                     className="relative p-12 text-white"
                     style={{
                       background: 'linear-gradient(45deg, #00BFFF, #40E0D0, #00BFFF)',
-                      clipPath: 'polygon(0 20%, 100% 0%, 100% 80%, 0 100%)'
+                      clipPath: 'polygon(0 0%, 100% 0%, 95% 100%, 0 100%)'
                     }}
                   >
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
