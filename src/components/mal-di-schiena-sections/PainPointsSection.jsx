@@ -17,7 +17,7 @@ export default function PainPointsSection() {
     },
     {
       icon: Zap,
-      painPoint: "Il dolore peggiora con il movimento e l'attività",
+      painPoint: "Il dolore peggiora con il movimento, oppure se stai tanto tempo nella stessa posizione",
       empathy: "Ti senti limitato nelle tue attività preferite e questo influisce negativamente sulla tua qualità di vita",
       solution: "Il trattamento osteopatico ripristina la mobilità articolare e la funzionalità muscolare, permettendoti di tornare alle tue attività con fiducia"
     },
@@ -187,54 +187,45 @@ export default function PainPointsSection() {
             }
             
             if (index === 2) {
-              // Circular design
+              // Timeline style (inverted)
               return (
                 <motion.div
                   key={index}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
+                  initial={{ opacity: 0, x: 50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.8, delay: 0.3 }}
                   viewport={{ once: true }}
-                  className="flex justify-center"
+                  className="relative"
                 >
-                  <div className="relative">
-                    {/* Outer circle - problem */}
-                    <div 
-                      className="w-96 h-96 rounded-full flex items-center justify-center text-center p-8"
-                      style={{
-                        background: 'conic-gradient(from 0deg, #FF6363, #FF8E8E, #FFB3B3, #FF6363)'
-                      }}
-                    >
-                      <div className="w-80 h-80 bg-white rounded-full flex flex-col items-center justify-center p-8">
-                        <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4">
-                          <item.icon className="w-8 h-8 text-red-600" />
-                        </div>
-                        <h3 className="text-lg font-bold mb-3 text-gray-800 leading-tight">
+                  <div className="flex items-center gap-8">
+                    {/* Content */}
+                    <div className="flex-1">
+                      <div className="bg-white rounded-2xl p-8 shadow-lg mb-4">
+                        <h3 className="text-2xl font-bold mb-3 text-gray-800">
                           {item.painPoint}
                         </h3>
-                        <p className="text-sm text-gray-600 italic leading-relaxed px-2">
+                        <p className="text-gray-600 italic">
                           {item.empathy}
+                        </p>
+                      </div>
+                      <div className="bg-green-50 rounded-2xl p-8 shadow-lg border-l-4 border-green-400">
+                        <h4 className="text-xl font-bold mb-3 text-green-700">
+                          La Soluzione Osteopatica
+                        </h4>
+                        <p className="text-gray-700">
+                          {item.solution}
                         </p>
                       </div>
                     </div>
                     
-                    {/* Inner circle - solution */}
-                    <div 
-                      className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-56 h-56 rounded-full flex items-center justify-center text-center p-6"
-                      style={{
-                        background: 'conic-gradient(from 180deg, #2E7D32, #4CAF50, #81C784, #2E7D32)'
-                      }}
-                    >
-                      <div className="w-44 h-44 bg-white rounded-full flex flex-col items-center justify-center p-4">
-                        <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-3">
-                          <CheckCircle className="w-6 h-6 text-green-600" />
-                        </div>
-                        <h4 className="text-sm font-bold mb-2 text-green-700 leading-tight">
-                          Soluzione Osteopatica
-                        </h4>
-                        <p className="text-xs text-gray-700 leading-relaxed px-1">
-                          {item.solution}
-                        </p>
+                    {/* Timeline line */}
+                    <div className="flex flex-col items-center">
+                      <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4">
+                        <item.icon className="w-8 h-8 text-red-600" />
+                      </div>
+                      <div className="w-1 h-32 bg-gradient-to-b from-red-400 to-blue-400"></div>
+                      <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mt-4">
+                        <CheckCircle className="w-8 h-8 text-green-600" />
                       </div>
                     </div>
                   </div>
@@ -243,54 +234,43 @@ export default function PainPointsSection() {
             }
             
             if (index === 3) {
-              // Hexagonal design
+              // Timeline style (normal)
               return (
                 <motion.div
                   key={index}
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
+                  initial={{ opacity: 0, x: -50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
                   viewport={{ once: true }}
-                  className="flex justify-center"
+                  className="relative"
                 >
-                  <div className="relative">
-                    {/* Problem hexagon */}
-                    <div 
-                      className="w-72 h-72 relative"
-                      style={{
-                        clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)',
-                        background: 'linear-gradient(45deg, #FF6363, #FF8E8E)'
-                      }}
-                    >
-                      <div className="absolute inset-6 bg-white rounded-lg flex flex-col items-center justify-center p-6 text-center">
-                        <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mb-4">
-                          <item.icon className="w-6 h-6 text-red-600" />
-                        </div>
-                        <h3 className="text-base font-bold mb-3 text-gray-800 leading-tight">
-                          {item.painPoint}
-                        </h3>
-                        <p className="text-sm text-gray-600 italic leading-relaxed">
-                          {item.empathy}
-                        </p>
+                  <div className="flex items-center gap-8">
+                    {/* Timeline line */}
+                    <div className="flex flex-col items-center">
+                      <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4">
+                        <item.icon className="w-8 h-8 text-red-600" />
+                      </div>
+                      <div className="w-1 h-32 bg-gradient-to-b from-red-400 to-blue-400"></div>
+                      <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mt-4">
+                        <CheckCircle className="w-8 h-8 text-green-600" />
                       </div>
                     </div>
                     
-                    {/* Solution hexagon */}
-                    <div 
-                      className="absolute -bottom-8 -right-8 w-56 h-56"
-                      style={{
-                        clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)',
-                        background: 'linear-gradient(45deg, #2E7D32, #4CAF50)'
-                      }}
-                    >
-                      <div className="absolute inset-5 bg-white rounded-lg flex flex-col items-center justify-center p-4 text-center">
-                        <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mb-3">
-                          <CheckCircle className="w-5 h-5 text-green-600" />
-                        </div>
-                        <h4 className="text-sm font-bold mb-2 text-green-700 leading-tight">
-                          Soluzione
+                    {/* Content */}
+                    <div className="flex-1">
+                      <div className="bg-white rounded-2xl p-8 shadow-lg mb-4">
+                        <h3 className="text-2xl font-bold mb-3 text-gray-800">
+                          {item.painPoint}
+                        </h3>
+                        <p className="text-gray-600 italic">
+                          {item.empathy}
+                        </p>
+                      </div>
+                      <div className="bg-green-50 rounded-2xl p-8 shadow-lg border-l-4 border-green-400">
+                        <h4 className="text-xl font-bold mb-3 text-green-700">
+                          La Soluzione Osteopatica
                         </h4>
-                        <p className="text-xs text-gray-700 leading-relaxed">
+                        <p className="text-gray-700">
                           {item.solution}
                         </p>
                       </div>
