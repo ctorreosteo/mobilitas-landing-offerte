@@ -77,7 +77,7 @@ export default function PainPointsSection() {
             <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 text-center">
               <div className="text-4xl font-black mb-2" style={{ color: '#2E7D32' }}>95%</div>
               <p className="text-sm font-semibold" style={{ color: '#002552' }}>
-                dei nostri pazienti risolve il problema in 3-5 sedute
+                dei nostri pazienti risolve il problema in 1-4 sedute
               </p>
             </div>
           </motion.div>
