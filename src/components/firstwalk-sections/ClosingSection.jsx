@@ -79,7 +79,7 @@ export default function ClosingSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.7 }}
               viewport={{ once: true }}
-              className="bg-blue-dark/5 border-2 border-blue-dark/20 p-8 md:p-12 rounded-3xl"
+              className="bg-gradient-to-br from-sky-100 to-blue-100 border-2 border-sky-300 p-8 md:p-12 rounded-3xl shadow-xl"
             >
               <div className="flex items-center justify-center mb-8">
                 <motion.div
@@ -119,7 +119,7 @@ export default function ClosingSection() {
                   transition={{ duration: 0.6, delay: 1.3 }}
                   viewport={{ once: true }}
                 >
-                  Per questo ci piacerebbe averti con noi!
+                  Per questo sarà un bel ricordo partecipare insieme!
                 </motion.p>
               </div>
             </motion.div>
@@ -158,7 +158,7 @@ export default function ClosingSection() {
           >
             <motion.button 
               onClick={scrollToOffers}
-              className="group relative overflow-hidden bg-blue-dark text-cream font-black py-6 px-12 rounded-3xl text-xl shadow-2xl hover:shadow-blue-dark/50 transition-all duration-500 transform hover:scale-105 border-4 border-blue-dark hover:border-blue-dark/80 font-montserrat"
+              className="group relative overflow-hidden bg-blue-dark text-green font-black py-6 px-12 rounded-3xl text-xl shadow-2xl hover:shadow-blue-dark/50 transition-all duration-500 transform hover:scale-105 border-4 border-blue-dark hover:border-blue-dark/80 font-montserrat"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

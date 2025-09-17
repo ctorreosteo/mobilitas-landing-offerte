@@ -56,6 +56,29 @@ export default function FAQSection({ faqs, faqOpen, setFaqOpen }) {
             </motion.div>
           ))}
         </div>
+
+        {/* CTA Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          viewport={{ once: true }}
+          className="text-center mt-16"
+        >
+          <motion.button
+            onClick={() => {
+              const offerSection = document.getElementById('offer-section');
+              if (offerSection) {
+                offerSection.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
+            className="bg-blue-dark text-green font-black py-4 px-8 rounded-2xl text-xl shadow-xl hover:shadow-blue-dark/50 transition-all duration-300 transform hover:scale-105 uppercase tracking-wide font-montserrat"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Scegli ora il tuo pacchetto
+          </motion.button>
+        </motion.div>
       </div>
     </section>
   )

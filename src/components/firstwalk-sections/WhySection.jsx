@@ -47,7 +47,7 @@ export default function WhySection() {
             className="space-y-6"
           >
             {/* Benefits */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 gap-6">
               {[
                 { 
                   title: "Rigenerazione Naturale", 
@@ -89,14 +89,6 @@ export default function WhySection() {
                   </div>
                 </motion.div>
               ))}
-            </div>
-
-            {/* Visual placeholder */}
-            <div className="w-full h-64 bg-gradient-to-br from-blue-dark/20 to-blue-dark/40 rounded-2xl flex items-center justify-center">
-              <div className="text-center text-primary">
-                <Mountain className="w-16 h-16 mx-auto mb-4" />
-                <p className="text-lg font-medium">Gruppo in cammino nella natura</p>
-              </div>
             </div>
           </motion.div>
         </div>

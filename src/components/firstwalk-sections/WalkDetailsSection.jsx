@@ -6,13 +6,13 @@ export default function WalkDetailsSection() {
     { icon: Timer, label: "Durata", value: "3 ore", color: "from-blue-dark to-blue-dark/80" },
     { icon: Ruler, label: "Distanza", value: "4,5 km", color: "from-blue-dark to-blue-dark/80" },
     { icon: TrendingUp, label: "Difficoltà", value: "Facile", color: "from-blue-dark to-blue-dark/80" },
-    { icon: Users, label: "Partecipanti", value: "Max 80", color: "from-blue-dark to-blue-dark/80" }
+    { icon: Calendar, label: "Data", value: "4 ottobre", color: "from-blue-dark to-blue-dark/80" }
   ]
 
   const timeline = [
     { time: "15:00", title: "Ritrovo", description: "Punto di partenza - Parcheggio gratuito disponibile" },
-    { time: "15:30", title: "Partenza", description: "Inizio della camminata guidata" },
-    { time: "17:00", title: "Pausa", description: "Moment di relax e ristoro" },
+    { time: "15:15", title: "Partenza", description: "Inizio della camminata guidata" },
+    { time: "16:30", title: "Pausetta", description: "Moment di relax e ristoro" },
     { time: "18:00", title: "Arrivo", description: "Rientro al punto di partenza" }
   ]
 
@@ -111,6 +111,13 @@ export default function WalkDetailsSection() {
                 </motion.div>
               ))}
             </div>
+            <div className="space-y-6 mt-10">
+                <div className="p-6 bg-gradient-to-r from-azure-dark/5 to-blue-dark/5 rounded-2xl border-l-4 border-azure-dark">
+                  <h4 className="text-lg font-bold text-blue-dark mb-2">📍 Punto di Partenza e arrivo</h4>
+                  <p className="text-blue-dark/80">Superga</p>
+                  <p className="text-sm text-blue-dark/60 mt-1 italic">Parcheggio gratuito disponibile</p>
+                </div>
+              </div>
           </motion.div>
 
           {/* Location & Route */}
@@ -121,29 +128,6 @@ export default function WalkDetailsSection() {
             viewport={{ once: true }}
             className="space-y-8"
           >
-            {/* Location Info */}
-            <div className="bg-white p-8 rounded-3xl shadow-xl border-2 border-blue-dark/10">
-              <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-cream rounded-2xl flex items-center justify-center mr-4 border-2 border-blue-dark/20">
-                  <MapPin className="w-6 h-6 text-blue-dark" />
-                </div>
-                <h3 className="text-3xl font-black text-blue-dark">Posizioni</h3>
-              </div>
-
-              <div className="space-y-6">
-                <div className="p-6 bg-gradient-to-r from-blue-dark/5 to-green/5 rounded-2xl border-l-4 border-green">
-                  <h4 className="text-lg font-bold text-blue-dark mb-2">📍 Punto di Partenza</h4>
-                  <p className="text-blue-dark/80">Parcheggio Parco Naturale - Via della Natura, 123</p>
-                  <p className="text-sm text-blue-dark/60 mt-1">Parcheggio gratuito disponibile</p>
-                </div>
-
-                <div className="p-6 bg-gradient-to-r from-azure-dark/5 to-blue-dark/5 rounded-2xl border-l-4 border-azure-dark">
-                  <h4 className="text-lg font-bold text-blue-dark mb-2">🏁 Punto di Arrivo</h4>
-                  <p className="text-blue-dark/80">Stesso punto di partenza</p>
-                  <p className="text-sm text-blue-dark/60 mt-1">Rientro previsto alle 18:00</p>
-                </div>
-              </div>
-            </div>
 
             {/* Route Map */}
             <div className="bg-white p-8 rounded-3xl shadow-xl border-2 border-blue-dark/10">
@@ -175,11 +159,11 @@ export default function WalkDetailsSection() {
                   <ul className="space-y-2 text-blue-dark/80 -ml-6">
                     <li className="flex items-center">
                       <div className="w-3 h-3 bg-green rounded-full mr-3 flex-shrink-0"></div>
-                      Partenza dal parcheggio del parco
+                      Partenza da Superga
                     </li>
                     <li className="flex items-center">
                       <div className="w-3 h-3 bg-azure-dark rounded-full mr-3 flex-shrink-0"></div>
-                      Sentiero panoramico attraverso la foresta
+                      Sentiero panoramico attraverso la natura
                     </li>
                     <li className="flex items-center">
                       <div className="w-3 h-3 bg-blue-dark rounded-full mr-3 flex-shrink-0"></div>
@@ -187,7 +171,7 @@ export default function WalkDetailsSection() {
                     </li>
                     <li className="flex items-center">
                       <div className="w-3 h-3 bg-green rounded-full mr-3 flex-shrink-0"></div>
-                      Rientro attraverso il sentiero alternativo
+                      Rientro attraverso il sentiero
                     </li>
                   </ul>
                 </div>
@@ -204,31 +188,19 @@ export default function WalkDetailsSection() {
           viewport={{ once: true }}
           className="text-center mt-16"
         >
-          <div className="bg-gradient-to-r from-blue-dark to-blue-dark/90 p-8 rounded-3xl shadow-2xl border-4 border-blue-dark/20">
-            <div className="text-center mb-4">
-              <div className="w-12 h-12 bg-cream rounded-full flex items-center justify-center mx-auto -mb-17 border-2 border-cream/20">
-                <Calendar className="w-6 h-6 text-blue-dark" />
-              </div>
-              <h3 className="text-2xl font-black text-cream">Tutto pronto per la tua avventura!</h3>
-            </div>
-            <p className="text-cream/90 text-lg mb-6 max-w-2xl mx-auto">
-              Hai tutte le informazioni per vivere al meglio la tua prima camminata Mobilitas. 
-              Non ti resta che scegliere il tuo pacchetto e prenotare il tuo posto!
-            </p>
-            <motion.button
-              onClick={() => {
-                const offerSection = document.getElementById('offer-section');
-                if (offerSection) {
-                  offerSection.scrollIntoView({ behavior: 'smooth' });
-                }
-              }}
-              className="bg-blue-dark text-green font-black py-4 px-8 rounded-2xl text-xl shadow-xl hover:shadow-blue-dark/50 transition-all duration-300 transform hover:scale-105 uppercase tracking-wide font-montserrat"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Prenota Ora
-            </motion.button>
-          </div>
+          <motion.button
+            onClick={() => {
+              const offerSection = document.getElementById('offer-section');
+              if (offerSection) {
+                offerSection.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
+            className="bg-blue-dark text-green font-black py-4 px-8 rounded-2xl text-xl shadow-xl hover:shadow-blue-dark/50 transition-all duration-300 transform hover:scale-105 uppercase tracking-wide font-montserrat"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Scegli ora il tuo pacchetto
+          </motion.button>
         </motion.div>
       </div>
     </section>

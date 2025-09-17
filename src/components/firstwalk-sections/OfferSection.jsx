@@ -60,8 +60,8 @@ export default function OfferSection() {
             <div className="space-y-4 mb-8">
               {[
                 "Camminata guidata con osteopati",
-                "Pranzo al sacco fornito da noi",
-                "Sacchetta brandizzata Mobilitas",
+                "Merenda al sacco fornita da noi",
+                "Esercizi di respirazione e stretching",
                 "Accesso al gruppo riservato su WhatsApp",
                 "Foto e riprese dell'evento in omaggio"
               ].map((feature, index) => (
@@ -149,7 +149,7 @@ export default function OfferSection() {
             </div>
 
             <div className="text-center">
-              <p className="text-gray-400 italic text-base mb-2">⚠️ Solo 15 pacchetti disponibili con questo prezzo!</p>
+              <p className="text-gray-400 italic text-base mb-2">⚠️ Solo 20 pacchetti disponibili con questo prezzo!</p>
               <p className="text-gray-300 mb-6">Pensato per chi vuole continuare a sentirsi bene anche dopo la camminata.</p>
               <motion.button 
                 onClick={() => handlePackageSelection('premium')}

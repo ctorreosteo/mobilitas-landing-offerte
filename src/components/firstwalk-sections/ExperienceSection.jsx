@@ -30,7 +30,7 @@ export default function ExperienceSection() {
     },
     {
       icon: Utensils,
-      title: "Pausa pranzo al sacco",
+      title: "Pausa merenda al sacco",
       description: "Ti consegniamo il pranzo preparato per te, da gustare nella natura.",
       color: "azure"
     },
@@ -76,105 +76,6 @@ export default function ExperienceSection() {
             Non serve essere allenati. Non serve preparazione. Basta venire con la voglia di respirare, muoverti e stare bene.
             Abbiamo pensato a ogni dettaglio per rendere questa camminata leggera, piacevole e accessibile a tutti.
           </p>
-        </motion.div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {steps.map((step, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className="bg-white/90 border-azure-dark/20 p-6 rounded-2xl border hover:shadow-lg transition-shadow backdrop-blur-sm"
-            >
-              <div className="w-12 h-12 bg-azure-dark/10 rounded-full flex items-center justify-center mb-4">
-                <step.icon className="w-6 h-6 text-secondary" />
-              </div>
-              <h3 className="text-xl font-semibold text-primary mb-3">{step.title}</h3>
-              <p className="text-primary leading-relaxed">{step.description}</p>
-            </motion.div>
-          ))}
-        </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center mt-16"
-        >
-          <motion.p 
-            className="text-xl md:text-2xl text-primary mb-8 font-medium"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            Ogni momento è pensato per farti stare bene.
-          </motion.p>
-          
-          <motion.button 
-            onClick={scrollToOffers}
-            className="group relative overflow-hidden bg-gradient-to-r from-green to-green/90 text-primary font-black py-6 px-12 rounded-3xl text-xl shadow-2xl hover:shadow-green/50 transition-all duration-500 transform hover:scale-105 border-4 border-green/30 hover:border-green/60 font-montserrat"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
-          >
-            {/* Background gradient overlay */}
-            <div className="absolute inset-0 bg-gradient-to-r from-green/80 to-green/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            
-            {/* Content */}
-            <div className="relative flex items-center justify-center space-x-4">
-              <motion.span 
-                className="text-2xl"
-                animate={{ scale: [1, 1.2, 1] }}
-                transition={{ duration: 1.5, repeat: Infinity }}
-              >
-                ✨
-              </motion.span>
-              <span>Scopri i pacchetti disponibili</span>
-              <motion.div
-                className="w-6 h-6"
-                animate={{ x: [0, 5, 0] }}
-                transition={{ duration: 1.5, repeat: Infinity }}
-              >
-                <ArrowRight className="w-6 h-6" />
-              </motion.div>
-            </div>
-            
-            {/* Shine effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 transform translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
-            
-            {/* Floating sparkles */}
-            <motion.div
-              className="absolute -top-2 -left-2 w-4 h-4 bg-white/30 rounded-full"
-              animate={{ 
-                y: [0, -10, 0],
-                opacity: [0, 1, 0]
-              }}
-              transition={{ 
-                duration: 2, 
-                repeat: Infinity,
-                delay: 0.5
-              }}
-            />
-            <motion.div
-              className="absolute -top-1 -right-3 w-3 h-3 bg-white/40 rounded-full"
-              animate={{ 
-                y: [0, -8, 0],
-                opacity: [0, 1, 0]
-              }}
-              transition={{ 
-                duration: 2.5, 
-                repeat: Infinity,
-                delay: 1
-              }}
-            />
-          </motion.button>
         </motion.div>
       </div>
     </section>
