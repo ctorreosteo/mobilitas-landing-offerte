@@ -60,7 +60,7 @@ export default function PainPointsSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-16"
+            className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto mb-16"
           >
             <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 text-center">
               <div className="text-4xl font-black mb-2" style={{ color: '#FF6363' }}>80%</div>
@@ -98,42 +98,41 @@ export default function PainPointsSection() {
                   className="relative overflow-hidden"
                 >
                   <div 
-                    className="relative p-12 text-white min-h-[400px]"
+                    className="relative p-3 sm:p-4 md:p-8 text-white rounded-2xl"
                     style={{
-                      background: 'linear-gradient(135deg, #FF6363 0%, #FF8E8E 50%, #FFB3B3 100%)',
-                      clipPath: 'polygon(0 0, 100% 0, 95% 100%, 0 100%)'
+                      background: 'linear-gradient(135deg, #FF6363 0%, #FF8E8E 50%, #FFB3B3 100%)'
                     }}
                   >
-                    <div className="max-w-4xl pr-8">
-                      <div className="flex items-start gap-6 mb-6">
-                        <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
-                          <item.icon className="w-10 h-10 text-white" />
+                    <div className="max-w-xl sm:max-w-2xl pr-2 sm:pr-3 md:pr-6">
+                      <div className="flex items-start gap-2 sm:gap-3 md:gap-4 mb-2 sm:mb-3 md:mb-4">
+                        <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0" style={{ marginTop: '20px' }}>
+                          <item.icon className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 text-white" />
                         </div>
                         <div className="flex-1 text-left">
-                          <h3 className="text-2xl md:text-3xl font-black leading-tight mb-4 text-left">
+                          <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-black leading-tight text-left">
                             {item.painPoint}
                           </h3>
-                          <p className="text-lg md:text-xl italic opacity-90 leading-relaxed text-left">
+                          <p className="text-xs sm:text-sm md:text-base lg:text-lg italic opacity-90 leading-relaxed text-left mb-4 sm:mb-6 md:mb-8">
                             {item.empathy}
                           </p>
+                          
+                          {/* Solution card positioned after empathy text */}
+                          <div className="bg-red-50 rounded-xl sm:rounded-2xl p-2 sm:p-3 md:p-4 shadow-2xl max-w-[200px] sm:max-w-[240px] md:max-w-[280px] text-left border-l-4 border-red-400">
+                            <div className="flex items-center gap-1 sm:gap-2 mb-1 sm:mb-2">
+                              <div className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <CheckCircle className="w-2 h-2 sm:w-3 sm:h-3 text-green-600" />
+                              </div>
+                              <h4 className="text-xs sm:text-xs md:text-sm font-bold text-red-600 text-left">
+                                La Soluzione
+                              </h4>
+                            </div>
+                            <p className="text-xs text-gray-700 leading-relaxed text-left">
+                              {item.solution}
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  
-                  {/* Solution card overlapping */}
-                  <div className="absolute bottom-8 left-12 bg-white rounded-2xl p-6 shadow-2xl max-w-sm text-left" style={{ marginTop: '24px' }}>
-                    <div className="flex items-center gap-3 mb-3">
-                      <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
-                        <CheckCircle className="w-5 h-5 text-green-600" />
-                      </div>
-                      <h4 className="text-lg font-bold text-green-600 text-left">
-                        La Soluzione
-                      </h4>
-                    </div>
-                    <p className="text-sm text-gray-700 leading-relaxed text-left">
-                      {item.solution}
-                    </p>
                   </div>
                 </motion.div>
               );
@@ -164,19 +163,19 @@ export default function PainPointsSection() {
                     
                     {/* Content */}
                     <div className="flex-1">
-                      <div className="bg-white rounded-2xl p-8 shadow-lg mb-4">
-                        <h3 className="text-2xl font-bold mb-3 text-gray-800">
+                      <div className="bg-white rounded-2xl p-6 shadow-lg mb-4">
+                        <h3 className="text-lg font-bold mb-2 text-gray-800">
                           {item.painPoint}
                         </h3>
-                        <p className="text-gray-600 italic">
+                        <p className="text-sm text-gray-600 italic">
                           {item.empathy}
                         </p>
                       </div>
-                      <div className="bg-green-50 rounded-2xl p-8 shadow-lg border-l-4 border-green-400">
-                        <h4 className="text-xl font-bold mb-3 text-green-700">
+                      <div className="bg-green-50 rounded-2xl p-6 shadow-lg border-l-4 border-green-400">
+                        <h4 className="text-base font-bold mb-2 text-green-700">
                           La Soluzione Osteopatica
                         </h4>
-                        <p className="text-gray-700">
+                        <p className="text-sm text-gray-700">
                           {item.solution}
                         </p>
                       </div>
@@ -200,19 +199,19 @@ export default function PainPointsSection() {
                   <div className="flex items-center gap-8">
                     {/* Content */}
                     <div className="flex-1">
-                      <div className="bg-white rounded-2xl p-8 shadow-lg mb-4">
-                        <h3 className="text-2xl font-bold mb-3 text-gray-800">
+                      <div className="bg-white rounded-2xl p-6 shadow-lg mb-4">
+                        <h3 className="text-lg font-bold mb-2 text-gray-800">
                           {item.painPoint}
                         </h3>
-                        <p className="text-gray-600 italic">
+                        <p className="text-sm text-gray-600 italic">
                           {item.empathy}
                         </p>
                       </div>
-                      <div className="bg-green-50 rounded-2xl p-8 shadow-lg border-l-4 border-green-400">
-                        <h4 className="text-xl font-bold mb-3 text-green-700">
+                      <div className="bg-green-50 rounded-2xl p-6 shadow-lg border-l-4 border-green-400">
+                        <h4 className="text-base font-bold mb-2 text-green-700">
                           La Soluzione Osteopatica
                         </h4>
-                        <p className="text-gray-700">
+                        <p className="text-sm text-gray-700">
                           {item.solution}
                         </p>
                       </div>
@@ -258,19 +257,19 @@ export default function PainPointsSection() {
                     
                     {/* Content */}
                     <div className="flex-1">
-                      <div className="bg-white rounded-2xl p-8 shadow-lg mb-4">
-                        <h3 className="text-2xl font-bold mb-3 text-gray-800">
+                      <div className="bg-white rounded-2xl p-6 shadow-lg mb-4">
+                        <h3 className="text-lg font-bold mb-2 text-gray-800">
                           {item.painPoint}
                         </h3>
-                        <p className="text-gray-600 italic">
+                        <p className="text-sm text-gray-600 italic">
                           {item.empathy}
                         </p>
                       </div>
-                      <div className="bg-green-50 rounded-2xl p-8 shadow-lg border-l-4 border-green-400">
-                        <h4 className="text-xl font-bold mb-3 text-green-700">
+                      <div className="bg-green-50 rounded-2xl p-6 shadow-lg border-l-4 border-green-400">
+                        <h4 className="text-base font-bold mb-2 text-green-700">
                           La Soluzione Osteopatica
                         </h4>
-                        <p className="text-gray-700">
+                        <p className="text-sm text-gray-700">
                           {item.solution}
                         </p>
                       </div>
@@ -292,37 +291,36 @@ export default function PainPointsSection() {
                   className="relative overflow-hidden"
                 >
                   <div 
-                    className="relative p-12 text-white"
+                    className="relative p-6 md:p-8 text-white rounded-2xl"
                     style={{
-                      background: 'linear-gradient(45deg, #00BFFF, #40E0D0, #00BFFF)',
-                      clipPath: 'polygon(0 0%, 100% 0%, 95% 100%, 0 100%)'
+                      background: 'linear-gradient(45deg, #00BFFF, #40E0D0, #00BFFF)'
                     }}
                   >
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center">
                       <div>
-                        <div className="flex items-center gap-4 mb-6">
-                          <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
-                            <item.icon className="w-8 h-8 text-white" />
+                        <div className="flex items-center gap-3 mb-4">
+                          <div className="w-12 h-12 md:w-16 md:h-16 bg-white/20 rounded-full flex items-center justify-center">
+                            <item.icon className="w-6 h-6 md:w-8 md:h-8 text-white" />
                           </div>
-                          <h3 className="text-2xl font-bold">
+                          <h3 className="text-lg md:text-xl font-bold">
                             {item.painPoint}
                           </h3>
                         </div>
-                        <p className="text-lg italic opacity-90">
+                        <p className="text-sm md:text-base italic opacity-90 my-0">
                           {item.empathy}
                         </p>
                       </div>
                       
-                      <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
-                        <div className="flex items-center gap-4 mb-4">
-                          <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
-                            <CheckCircle className="w-6 h-6 text-white" />
+                      <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 md:p-6">
+                        <div className="flex items-center gap-3 mb-3">
+                          <div className="w-8 h-8 md:w-10 md:h-10 bg-white/20 rounded-full flex items-center justify-center">
+                            <CheckCircle className="w-4 h-4 md:w-5 md:h-5 text-white" />
                           </div>
-                          <h4 className="text-xl font-bold">
+                          <h4 className="text-base md:text-lg font-bold">
                             La Soluzione Osteopatica
                           </h4>
                         </div>
-                        <p className="text-white/90 leading-relaxed">
+                        <p className="text-sm md:text-base text-white/90 leading-relaxed">
                           {item.solution}
                         </p>
                       </div>
@@ -358,7 +356,7 @@ export default function PainPointsSection() {
                   transition={{ duration: 0.6, delay: 0.1 }}
                   viewport={{ once: true }}
                   className="w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl font-black text-white"
-                  style={{ backgroundColor: '#FF6363' }}
+                  style={{ backgroundColor: '#90EE90' }}
                 >
                   1
                 </motion.div>
@@ -390,7 +388,7 @@ export default function PainPointsSection() {
                   transition={{ duration: 0.6, delay: 0.2 }}
                   viewport={{ once: true }}
                   className="w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl font-black text-white"
-                  style={{ backgroundColor: '#00BFFF' }}
+                  style={{ backgroundColor: '#32CD32' }}
                 >
                   2
                 </motion.div>
@@ -422,7 +420,7 @@ export default function PainPointsSection() {
                   transition={{ duration: 0.6, delay: 0.3 }}
                   viewport={{ once: true }}
                   className="w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl font-black text-white"
-                  style={{ backgroundColor: '#2E7D32' }}
+                  style={{ backgroundColor: '#228B22' }}
                 >
                   3
                 </motion.div>
@@ -442,8 +440,8 @@ export default function PainPointsSection() {
                 whileInView={{ scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
                 viewport={{ once: true }}
-                className="w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl font-black text-white"
-                style={{ backgroundColor: '#72fa93' }}
+                className="w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl font-black"
+                style={{ backgroundColor: '#002552', color: '#72fa93' }}
               >
                 4
               </motion.div>
@@ -454,39 +452,6 @@ export default function PainPointsSection() {
                 Recuperi la mobilità, elimini il dolore e previeni il ritorno del problema con i nostri consigli personalizzati
               </p>
             </div>
-          </div>
-        </motion.div>
-
-        {/* Bottom CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          viewport={{ once: true }}
-          className="text-center mt-16"
-        >
-          <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
-            <h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: '#002552' }}>
-              Non Lasciare che il Dolore Controlli la Tua Vita
-            </h3>
-            <p className="text-lg text-gray-600 mb-6 max-w-3xl mx-auto">
-              Il trattamento osteopatico specializzato per il mal di schiena può restituirti la libertà 
-              di movimento e la qualità di vita che meriti. Agisci ora, prima che il problema peggiori.
-            </p>
-            <motion.button
-              onClick={() => {
-                const offerSection = document.getElementById('offer-section');
-                if (offerSection) {
-                  offerSection.scrollIntoView({ behavior: 'smooth' });
-                }
-              }}
-              className="bg-blue-dark text-green font-black py-4 px-8 rounded-2xl text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 uppercase tracking-wide"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              style={{ backgroundColor: '#002552', color: '#72fa93' }}
-            >
-              Scopri la Nostra Offerta
-            </motion.button>
           </div>
         </motion.div>
       </div>
