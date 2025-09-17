@@ -13,7 +13,7 @@ export default function PainPointsSection() {
       icon: Target,
       painPoint: "I farmaci non risolvono il problema alla radice",
       empathy: "È normale sentirsi scoraggiati quando i farmaci alleviano temporaneamente ma il dolore torna sempre",
-      solution: "L'osteopatia identifica e corregge le disfunzioni strutturali che causano il dolore, offrendo una soluzione duratura senza dipendenza da farmaci"
+      solution: "L'osteopata identifica e corregge le disfunzioni strutturali che causano il dolore, offrendo una soluzione duratura senza dipendenza da farmaci"
     },
     {
       icon: Zap,
@@ -164,16 +164,16 @@ export default function PainPointsSection() {
                     {/* Content */}
                     <div className="flex-1">
                       <div className="bg-white rounded-2xl p-6 shadow-lg mb-4">
-                        <h3 className="text-lg font-bold mb-2 text-gray-800">
+                        <h3 className="text-lg font-bold mb-2" style={{ color: '#002552' }}>
                           {item.painPoint}
                         </h3>
-                        <p className="text-sm text-gray-600 italic">
+                        <p className="text-sm italic" style={{ color: '#002552' }}>
                           {item.empathy}
                         </p>
                       </div>
                       <div className="bg-green-50 rounded-2xl p-6 shadow-lg border-l-4 border-green-400">
                         <h4 className="text-base font-bold mb-2 text-green-700">
-                          La Soluzione Osteopatica
+                          La Soluzione dell'Osteopata
                         </h4>
                         <p className="text-sm text-gray-700">
                           {item.solution}
@@ -200,16 +200,16 @@ export default function PainPointsSection() {
                     {/* Content */}
                     <div className="flex-1">
                       <div className="bg-white rounded-2xl p-6 shadow-lg mb-4">
-                        <h3 className="text-lg font-bold mb-2 text-gray-800">
+                        <h3 className="text-lg font-bold mb-2" style={{ color: '#002552' }}>
                           {item.painPoint}
                         </h3>
-                        <p className="text-sm text-gray-600 italic">
+                        <p className="text-sm italic" style={{ color: '#002552' }}>
                           {item.empathy}
                         </p>
                       </div>
                       <div className="bg-green-50 rounded-2xl p-6 shadow-lg border-l-4 border-green-400">
                         <h4 className="text-base font-bold mb-2 text-green-700">
-                          La Soluzione Osteopatica
+                          La Soluzione dell'Osteopata
                         </h4>
                         <p className="text-sm text-gray-700">
                           {item.solution}
@@ -258,16 +258,16 @@ export default function PainPointsSection() {
                     {/* Content */}
                     <div className="flex-1">
                       <div className="bg-white rounded-2xl p-6 shadow-lg mb-4">
-                        <h3 className="text-lg font-bold mb-2 text-gray-800">
+                        <h3 className="text-lg font-bold mb-2" style={{ color: '#002552' }}>
                           {item.painPoint}
                         </h3>
-                        <p className="text-sm text-gray-600 italic">
+                        <p className="text-sm italic" style={{ color: '#002552' }}>
                           {item.empathy}
                         </p>
                       </div>
                       <div className="bg-green-50 rounded-2xl p-6 shadow-lg border-l-4 border-green-400">
                         <h4 className="text-base font-bold mb-2 text-green-700">
-                          La Soluzione Osteopatica
+                          La Soluzione dell'Osteopata
                         </h4>
                         <p className="text-sm text-gray-700">
                           {item.solution}
@@ -317,7 +317,7 @@ export default function PainPointsSection() {
                             <CheckCircle className="w-4 h-4 md:w-5 md:h-5 text-white" />
                           </div>
                           <h4 className="text-base md:text-lg font-bold">
-                            La Soluzione Osteopatica
+                            La Soluzione dell'Osteopata
                           </h4>
                         </div>
                         <p className="text-sm md:text-base text-white/90 leading-relaxed">

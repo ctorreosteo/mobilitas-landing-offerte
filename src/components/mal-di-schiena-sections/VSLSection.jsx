@@ -104,8 +104,8 @@ export default function VSLSection({ y }) {
           <h3 className="text-2xl md:text-3xl font-bold mb-6" style={{color: '#F4F4F4'}}>I 3 benefici immediati del Trattamento Osteopatico:</h3>
           <div className="space-y-4">
             {[
-              "Sollievo dal dolore senza farmaci",
-              "Ripristino della mobilità e libertà di movimento", 
+              "Risolviamo il dolore senza farmaci",
+              "Ripristiniamo la tua mobilità e libertà di movimento", 
               "Risolviamo il problema alla radice, non solo il sintomo"
             ].map((benefit, index) => (
               <motion.div 
