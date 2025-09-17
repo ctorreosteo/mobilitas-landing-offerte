@@ -130,19 +130,19 @@ export default function OfferSection() {
               display: 'inline-flex',
               alignItems: 'center',
               justifyContent: 'center',
-              padding: '12px 20px',
-              borderRadius: '50px',
-              fontSize: '14px',
+              padding: '8px 16px',
+              borderRadius: '25px',
+              fontSize: '12px',
               fontWeight: 'bold',
               textTransform: 'uppercase',
-              letterSpacing: '1px',
-              boxShadow: '0 4px 15px rgba(255, 190, 100, 0.3), inset 0 1px 0 rgba(255,255,255,0.4)',
-              border: '2px solid rgba(255, 190, 100, 0.8)',
+              letterSpacing: '0.8px',
+              boxShadow: '0 3px 12px rgba(255, 190, 100, 0.3), inset 0 1px 0 rgba(255,255,255,0.4)',
+              border: '1px solid rgba(255, 190, 100, 0.8)',
               background: 'linear-gradient(135deg, rgba(255, 218, 185, 0.8) 0%, rgba(255, 190, 100, 0.9) 100%)',
               color: '#002552',
-              margin: '0 auto 20px auto',
-              width: 'calc(100% - 16px)',
-              maxWidth: '500px',
+              margin: '0 auto 16px auto',
+              width: 'auto',
+              maxWidth: '400px',
               position: 'relative',
               overflow: 'hidden'
             }}
@@ -185,7 +185,7 @@ export default function OfferSection() {
               margin: 0,
               lineHeight: '1.4'
             }}>
-              Abbiamo 376 recensioni Google di persone che raccontano storie incredibili sui nostri trattamenti
+              Abbiamo 378 recensioni Google di persone che raccontano storie meravigliose sui nostri trattamenti
             </p>
           </motion.div>
 
@@ -233,7 +233,7 @@ export default function OfferSection() {
               color: '#002552',
               textAlign: 'left'
             }}>
-              Il trattamento è composto da:
+              Il trattamento di un'ora è composto da:
             </p>
             
             <div style={{textAlign: 'left'}}>

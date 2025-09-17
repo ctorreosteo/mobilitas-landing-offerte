@@ -10,7 +10,7 @@ export default function VSLSection({ y }) {
   };
 
   return (
-    <section style={{background: 'linear-gradient(to bottom right, #002552, rgba(0, 37, 82, 0.9))', minHeight: '100vh', padding: '48px 16px', position: 'relative'}}>
+    <section style={{background: 'linear-gradient(to bottom right, #002552, rgba(0, 37, 82, 0.9))', minHeight: '100vh', padding: '48px 16px', position: 'relative', paddingTop: '80px'}}>
       {/* Content */}
       <div style={{maxWidth: '1200px', margin: '0 auto', textAlign: 'center', padding: '0 16px'}}>
         {/* Badge */}
