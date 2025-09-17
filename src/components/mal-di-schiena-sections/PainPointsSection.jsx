@@ -44,12 +44,12 @@ export default function PainPointsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-left mb-16"
         >
           <h2 className="text-4xl md:text-6xl font-black mb-6" style={{ color: '#002552' }}>
-            Ti Riconosci in <span style={{ color: '#00BFFF' }}>Questi Problemi?</span>
+            Il Mal di Schiena Sta <span style={{ color: '#00BFFF' }}>Rovinando le Tue Giornate</span><span style={{ color: '#002552' }}>?</span>
           </h2>
-          <p className="text-xl md:text-2xl max-w-4xl mx-auto leading-relaxed mb-12" style={{ color: '#002552' }}>
+          <p className="text-xl md:text-2xl max-w-4xl leading-relaxed mb-12" style={{ color: '#002552' }}>
             Sappiamo quanto il mal di schiena possa influenzare ogni aspetto della tua vita. 
             Ecco perché il trattamento osteopatico è la soluzione che stavi cercando.
           </p>
@@ -63,19 +63,19 @@ export default function PainPointsSection() {
             className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto mb-16"
           >
             <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 text-center">
-              <div className="text-4xl font-black mb-2" style={{ color: '#FF6363' }}>80%</div>
+              <div className="text-4xl font-black mb-2" style={{ color: '#FF6363' }}>30%</div>
               <p className="text-sm font-semibold" style={{ color: '#002552' }}>
-                delle persone soffre di mal di schiena almeno una volta nella vita
+                degli adulti soffre di mal di schiena ricorrente
               </p>
             </div>
             <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 text-center">
-              <div className="text-4xl font-black mb-2" style={{ color: '#00BFFF' }}>60%</div>
+              <div className="text-4xl font-black mb-2" style={{ color: '#00BFFF' }}>70%</div>
               <p className="text-sm font-semibold" style={{ color: '#002552' }}>
-                dei casi di mal di schiena sono causati da problemi posturali
+                dei casi di mal di schiena sono causati da problemi muscolo-scheletrici
               </p>
             </div>
             <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 text-center">
-              <div className="text-4xl font-black mb-2" style={{ color: '#2E7D32' }}>95%</div>
+              <div className="text-4xl font-black mb-2" style={{ color: '#2E7D32' }}>98%</div>
               <p className="text-sm font-semibold" style={{ color: '#002552' }}>
                 dei nostri pazienti risolve il problema in 1-4 sedute
               </p>
@@ -117,7 +117,7 @@ export default function PainPointsSection() {
                           </p>
                           
                           {/* Solution card positioned after empathy text */}
-                          <div className="bg-red-50 rounded-xl sm:rounded-2xl p-2 sm:p-3 md:p-4 shadow-2xl max-w-[200px] sm:max-w-[240px] md:max-w-[280px] text-left border-l-4 border-red-400">
+                          <div className="bg-red-50 rounded-xl sm:rounded-2xl p-2 sm:p-3 md:p-4 shadow-2xl max-w-[85%] text-left border-l-4 border-red-400">
                             <div className="flex items-center gap-1 sm:gap-2 mb-1 sm:mb-2">
                               <div className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
                                 <CheckCircle className="w-2 h-2 sm:w-3 sm:h-3 text-green-600" />

@@ -19,8 +19,9 @@ export default function AnnouncementBar() {
       transition={{ duration: 0.6 }}
       className="fixed top-0 left-0 right-0 z-50 shadow-sm"
       style={{
-        backgroundColor: '#F4F4F4', // Color panna aziendale
-        borderBottom: '1px solid #E0E0E0'
+        background: 'linear-gradient(135deg, #FFB347 0%, #FFC966 50%, #FFD700 100%)',
+        borderBottom: '2px solid #FFB347',
+        boxShadow: '0 2px 10px rgba(255, 179, 71, 0.3)'
       }}
     >
       <div className="max-w-7xl mx-auto px-4 py-3">
@@ -39,7 +40,7 @@ export default function AnnouncementBar() {
           >
             <span className="text-lg">⚠️</span>
             <span>
-              {remainingSpots} posti rimasti su 60
+              Solo {remainingSpots} posti rimasti
             </span>
           </motion.div>
         </div>
