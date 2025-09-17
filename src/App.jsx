@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import FirstWalk from './pages/FirstWalk'
 import Emicrania from './pages/Emicrania'
+import MalDiSchiena from './pages/MalDiSchiena'
 import ThankYou from './pages/ThankYou'
 
 function App() {
@@ -16,6 +17,9 @@ function App() {
           
           {/* Emicrania page */}
           <Route path="/emicrania" element={<Emicrania />} />
+          
+          {/* Mal di Schiena page */}
+          <Route path="/mal-di-schiena" element={<MalDiSchiena />} />
           
           {/* Thank You page */}
           <Route path="/conferma" element={<ThankYou />} />

@@ -7,6 +7,7 @@ import SolutionsSection from '../components/emicrania-sections/SolutionsSection'
 import BenefitsSection from '../components/emicrania-sections/BenefitsSection'
 import FAQSection from '../components/emicrania-sections/FAQSection'
 import FooterSection from '../components/emicrania-sections/FooterSection'
+import WhatsAppButtonEmicrania from '../components/WhatsAppButtonEmicrania'
 
 export default function Emicrania() {
   const { scrollYProgress } = useScroll()
@@ -40,6 +41,9 @@ export default function Emicrania() {
       
       {/* Footer Section */}
       <FooterSection />
+      
+      {/* WhatsApp Button */}
+      <WhatsAppButtonEmicrania />
     </div>
   )
 }

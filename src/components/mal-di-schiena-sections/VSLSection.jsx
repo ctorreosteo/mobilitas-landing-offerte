@@ -49,7 +49,7 @@ export default function VSLSection({ y }) {
           <h1 style={{fontSize: '32px', fontWeight: '900', lineHeight: '1.1', marginBottom: '24px'}}>
             <div style={{color: '#F4F4F4', display: 'block'}}>TRATTAMENTO</div>
             <div style={{color: '#72fa93', display: 'block'}}>OSTEOPATICO</div>
-            <div style={{color: '#F4F4F4', display: 'block'}}>PER EMICRANIA</div>
+            <div style={{color: '#F4F4F4', display: 'block'}}>PER IL MAL DI SCHIENA 💪🏼</div>
           </h1>
         </motion.div>
 
@@ -76,7 +76,7 @@ export default function VSLSection({ y }) {
           >
             {/* Video Iframe - Solo Video */}
             <iframe 
-              src="https://player.vimeo.com/video/1118754358?badge=0&autopause=0&player_id=0&app_id=58479" 
+              src="https://player.vimeo.com/video/1119431291?badge=0&autopause=0&player_id=0&app_id=58479" 
               frameBorder="0" 
               allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
               referrerPolicy="strict-origin-when-cross-origin" 
@@ -88,7 +88,7 @@ export default function VSLSection({ y }) {
                 height: '100%',
                 border: 'none'
               }}
-              title="VSL_EMICRANIA01"
+              title="VSL_MAL_DI_SCHIENA01"
             />
           </div>
         </motion.div>
@@ -104,9 +104,9 @@ export default function VSLSection({ y }) {
           <h3 className="text-2xl md:text-3xl font-bold mb-6" style={{color: '#F4F4F4'}}>I 3 benefici immediati del Trattamento Osteopatico:</h3>
           <div className="space-y-4">
             {[
-              "Risolviamo il dolore senza farmaci",
-              "Ritorni a vivere liberamente", 
-              "Risoviamo il problema alla radice, non solo il sintomo"
+              "Sollievo dal dolore senza farmaci",
+              "Ripristino della mobilità e libertà di movimento", 
+              "Risolviamo il problema alla radice, non solo il sintomo"
             ].map((benefit, index) => (
               <motion.div 
                 key={index}
