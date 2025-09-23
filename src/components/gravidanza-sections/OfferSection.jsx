@@ -36,7 +36,7 @@ export default function OfferSection() {
   return (
     <section id="offer-section" style={{
       background: 'linear-gradient(135deg, #0a1a3a 0%, #002552 25%, #1a3a5c 50%, #002552 75%, #0a1a3a 100%)',
-      padding: '80px 16px',
+      padding: '60px 16px',
       position: 'relative',
       overflow: 'hidden'
     }}>
@@ -59,13 +59,13 @@ export default function OfferSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          style={{marginBottom: '48px'}}
+          className="mb-8 sm:mb-12"
         >
           <h2 style={{
             fontSize: 'clamp(28px, 5vw, 42px)',
             fontWeight: '900',
             lineHeight: '1.1',
-            marginBottom: '16px',
+            marginBottom: '12px',
             textShadow: '0 4px 20px rgba(0,0,0,0.3)'
           }}>
             <motion.div 
@@ -73,7 +73,7 @@ export default function OfferSection() {
               animate={{ textShadow: ['0 4px 20px rgba(0,0,0,0.3)', '0 4px 20px rgba(255, 104, 105, 0.3)', '0 4px 20px rgba(0,0,0,0.3)'] }}
               transition={{ duration: 3, repeat: Infinity }}
             >
-              LA NOSTRA
+              LA NOSTRA OFFERTA
             </motion.div>
             <motion.div 
               style={{color: '#FF6869', display: 'block'}}
@@ -86,10 +86,8 @@ export default function OfferSection() {
               }}
               transition={{ duration: 2, repeat: Infinity }}
             >
-              OFFERTA
+              DI {currentMonth.toUpperCase()} PER TE
             </motion.div>
-            <div style={{color: '#F4F4F4', display: 'block'}}>DI {currentMonth.toUpperCase()}</div>
-            <div style={{color: '#F4F4F4', display: 'block'}}>PER TE</div>
           </h2>
         </motion.div>
 
@@ -98,11 +96,8 @@ export default function OfferSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
+          className="p-4 sm:p-10 rounded-2xl sm:rounded-3xl max-w-2xl sm:max-w-3xl mx-auto mb-6 sm:mb-10"
           style={{
-            padding: '40px 32px',
-            borderRadius: '24px',
-            maxWidth: '650px',
-            margin: '0 auto 40px auto',
             boxShadow: '0 30px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.1)',
             border: '2px solid rgba(255, 104, 105, 0.4)',
             background: 'linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%)',
@@ -143,8 +138,8 @@ export default function OfferSection() {
               boxShadow: '0 3px 12px rgba(255, 104, 105, 0.3), inset 0 1px 0 rgba(255,255,255,0.4)',
               border: '1px solid rgba(255, 104, 105, 0.8)',
               background: 'linear-gradient(135deg, rgba(255, 104, 105, 0.8) 0%, rgba(255, 104, 105, 0.9) 100%)',
-              color: '#F4F4F4',
-              margin: '0 auto 16px auto',
+              color: '#002552',
+              margin: '0 auto 8px auto',
               width: 'auto',
               maxWidth: '400px',
               position: 'relative',
@@ -178,7 +173,7 @@ export default function OfferSection() {
               border: '2px solid rgba(255, 104, 105, 0.3)',
               borderRadius: '12px',
               padding: '16px 20px',
-              marginBottom: '20px',
+              marginBottom: '12px',
               textAlign: 'center'
             }}
           >
@@ -209,7 +204,7 @@ export default function OfferSection() {
             alignItems: 'center',
             justifyContent: 'center',
             gap: '20px',
-            marginBottom: '24px'
+            marginBottom: '16px'
           }}>
             <span style={{
               fontSize: '28px',
@@ -229,14 +224,8 @@ export default function OfferSection() {
           </div>
 
           {/* Treatment Description */}
-          <div style={{marginBottom: '32px'}}>
-            <p style={{
-              fontSize: '16px',
-              fontWeight: '600',
-              marginBottom: '16px',
-              color: '#002552',
-              textAlign: 'left'
-            }}>
+          <div style={{marginBottom: '20px'}}>
+            <p className="text-sm sm:text-base font-semibold mb-2 sm:mb-3 text-left" style={{color: '#002552'}}>
               Il trattamento di un'ora è composto da:
             </p>
             
@@ -251,26 +240,13 @@ export default function OfferSection() {
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.6, delay: 0.4 + index * 0.1 }}
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    marginBottom: '12px'
-                  }}
+                  className="flex items-center mb-2 sm:mb-3"
                 >
                   <CheckCircle 
-                    style={{
-                      width: '20px',
-                      height: '20px',
-                      color: '#FF6869',
-                      marginRight: '12px',
-                      flexShrink: 0
-                    }} 
+                    className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3 flex-shrink-0"
+                    style={{color: '#FF6869'}} 
                   />
-                  <span style={{
-                    fontSize: '16px',
-                    color: '#002552',
-                    fontWeight: '500'
-                  }}>
+                  <span className="text-sm sm:text-base font-medium" style={{color: '#002552'}}>
                     {item}
                   </span>
                 </motion.div>
@@ -281,20 +257,12 @@ export default function OfferSection() {
           {/* CTA Button */}
           <motion.button 
             onClick={handleBookingClick}
+            className="px-5 sm:px-9 py-2.5 sm:py-4 text-sm sm:text-lg font-bold rounded-full mx-auto mb-3 sm:mb-5 flex items-center justify-center gap-2 sm:gap-3"
             style={{
               backgroundColor: '#002552',
               color: '#FF6869',
-              padding: '18px 36px',
-              borderRadius: '50px',
-              fontSize: '19px',
-              fontWeight: '700',
               border: 'none',
               cursor: 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              gap: '10px',
-              margin: '0 auto 20px auto',
               boxShadow: '0 12px 35px rgba(0, 37, 82, 0.4), inset 0 1px 0 rgba(255, 104, 105, 0.2)',
               transition: 'all 0.3s ease',
               fontFamily: 'Montserrat, sans-serif',
@@ -312,7 +280,7 @@ export default function OfferSection() {
               e.target.style.boxShadow = '0 12px 35px rgba(0, 37, 82, 0.4), inset 0 1px 0 rgba(255, 104, 105, 0.2)';
             }}
           >
-            <Calendar style={{width: '22px', height: '22px'}} />
+            <Calendar className="w-4 h-4 sm:w-6 sm:h-6" />
             PRENOTA ORA CON SCONTO
           </motion.button>
 
@@ -321,18 +289,12 @@ export default function OfferSection() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
+            className="text-xs sm:text-sm font-bold italic text-center mx-auto leading-tight max-w-sm sm:max-w-lg"
             style={{
-              fontSize: '13px',
-              fontStyle: 'italic',
-              fontWeight: 'bold',
-              color: '#FF6869',
-              textAlign: 'center',
-              margin: '0 auto',
-              lineHeight: '1.4',
-              maxWidth: '500px'
+              color: '#FF6869'
             }}
           >
-            Dopo che prenoti, la nostra segretaria ti chiamerà per confermare l'appuntamento. Siamo aperti anche il sabato! 🤱
+            Dopo che compili il form, la nostra segretaria ti chiamerà per confermare l'appuntamento. Siamo aperti anche il sabato! 🤱
           </motion.p>
         </motion.div>
 
