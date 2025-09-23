@@ -5,22 +5,22 @@ export default function PainPointsSection() {
   const painPoints = [
     {
       icon: <AlertTriangle className="w-8 h-8" style={{color: '#FF6869'}} />,
-      title: "Dolori muscolo-scheletrici crescenti",
+      title: "Dolori e fastidi crescenti",
       description: "Il mal di schiena lombare diventa insopportabile e peggiora settimana dopo settimana, la sciatalgia ti impedisce di camminare normalmente, il bacino è sempre più rigido e limita ogni movimento, il dolore al pube ti accompagna tutto il giorno e il gonfiore alle gambe non ti dà tregua. Ogni settimana che passa sembra peggiorare e hai paura di non riuscire ad arrivare al parto."
     },
     {
       icon: <Moon className="w-8 h-8" style={{color: '#FF6869'}} />,
-      title: "Incapacità di dormire bene",
+      title: "Difficoltà a dormire bene",
       description: "La notte diventa un incubo: non riesci a trovare una posizione comoda nel letto, ogni volta che ti giri o cambi posizione provi dolore, i risvegli continui durante tutta la notte ti sfiancano, i crampi alle gambe ti svegliano di soprassalto e hai la sensazione di non aver mai riposato davvero. La stanchezza si accumula giorno dopo giorno e temi che questo stress possa danneggiare il bambino."
     },
     {
       icon: <Zap className="w-8 h-8" style={{color: '#FF6869'}} />,
-      title: "Stanchezza e affaticamento cronico",
+      title: "Sensazione di stanchezza e affaticamento",
       description: "Ti trascini tutto il giorno anche per le attività più semplici, la mancanza di fiato ti accompagna anche per piccoli sforzi quotidiani, l'impossibilità di concentrarti sul lavoro ti preoccupa, l'energia si esaurisce già a metà giornata e hai paura di non riuscire a gestire tutto quello che ti aspetta: lavoro, casa, preparativi per il bambino."
     },
     {
       icon: <Heart className="w-8 h-8" style={{color: '#FF6869'}} />,
-      title: "Ansia e bisogno di sicurezza",
+      title: "Sensazioni di ansia e a volte insicurezza",
       description: "I dubbi ti assillano continuamente: 'È tutto normale quello che provo?', 'Il dolore che provo è pericoloso per il bambino?', 'Posso fare qualcosa o rischio di peggiorare?', 'Cosa devo evitare per non danneggiare il bambino?'. L'amore per il bambino che porti in grembo si mescola alla paura di non fare la cosa giusta e all'ansia costante per la sua salute e il suo benessere."
     },
     {
@@ -42,7 +42,7 @@ export default function PainPointsSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-black mb-6" style={{color: '#002552'}}>
-            Sei in gravidanza e ti riconosci in questi problemi?
+            Sei in gravidanza, probabilmente stai vivendo almeno una di queste situazioni 😕
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
             Non sei sola. Questi sono i dolori e le preoccupazioni più comuni che vivono le donne in gravidanza.
