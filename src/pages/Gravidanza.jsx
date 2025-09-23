@@ -2,6 +2,7 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 import VSLSection from '../components/gravidanza-sections/VSLSection'
 import PainPointsSection from '../components/gravidanza-sections/PainPointsSection'
 import BenefitsSection from '../components/gravidanza-sections/BenefitsSection'
+import FooterSection from '../components/gravidanza-sections/FooterSection'
 
 export default function Gravidanza() {
   const { scrollYProgress } = useScroll()
@@ -23,6 +24,9 @@ export default function Gravidanza() {
       
       {/* Benefits Section */}
       <BenefitsSection />
+      
+      {/* Footer Section */}
+      <FooterSection />
     </div>
   )
 }
