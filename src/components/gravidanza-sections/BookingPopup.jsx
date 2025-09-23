@@ -2,6 +2,24 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { X, Calendar, Phone, Mail, User, MessageCircle } from 'lucide-react'
 import { useState } from 'react'
 
+// Utility functions for date and time formatting
+const formatCurrentDate = () => {
+  const now = new Date()
+  const day = String(now.getDate()).padStart(2, '0')
+  const month = String(now.getMonth() + 1).padStart(2, '0')
+  const year = now.getFullYear()
+  
+  return `${day}/${month}/${year}`
+}
+
+const formatCurrentTime = () => {
+  const now = new Date()
+  const hours = String(now.getHours()).padStart(2, '0')
+  const minutes = String(now.getMinutes()).padStart(2, '0')
+  
+  return `${hours}:${minutes}`
+}
+
 export default function BookingPopup({ isOpen, onClose }) {
   const [formData, setFormData] = useState({
     firstName: '',
@@ -12,6 +30,7 @@ export default function BookingPopup({ isOpen, onClose }) {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [submitError, setSubmitError] = useState(false)
 
   const handleInputChange = (e) => {
     setFormData({
@@ -23,25 +42,57 @@ export default function BookingPopup({ isOpen, onClose }) {
   const handleSubmit = async (e) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setSubmitError(false)
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000))
-    
-    setIsSubmitting(false)
-    setIsSubmitted(true)
-    
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false)
-      setFormData({
-        firstName: '',
-        lastName: '',
-        phone: '',
-        email: '',
-        pregnancyWeek: ''
+    try {
+      // Clean and format the form data
+      const cleanedData = {
+        data: formatCurrentDate(),
+        orario: formatCurrentTime(),
+        nome: formData.firstName.trim(),
+        cognome: formData.lastName.trim(),
+        telefono: formData.phone.trim(),
+        email: formData.email.trim(),
+        settimana_gravidanza: formData.pregnancyWeek,
+        fonte: 'Gravidanza'
+      }
+      
+      console.log('Sending data to Zapier:', cleanedData)
+      
+      // Send data to Zapier webhook (same format as walk popup)
+      const response = await fetch('https://hooks.zapier.com/hooks/catch/19401274/u1twbuc/', {
+        method: 'POST',
+        body: JSON.stringify(cleanedData)
       })
-      onClose()
-    }, 3000)
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`)
+      }
+      
+      const result = await response.json()
+      console.log('Zapier webhook response:', result)
+      
+      setIsSubmitting(false)
+      setIsSubmitted(true)
+      
+      // Reset form after 3 seconds
+      setTimeout(() => {
+        setIsSubmitted(false)
+        setFormData({
+          firstName: '',
+          lastName: '',
+          phone: '',
+          email: '',
+          pregnancyWeek: ''
+        })
+        onClose()
+      }, 3000)
+      
+    } catch (error) {
+      console.error('Error sending data to Zapier:', error)
+      setIsSubmitting(false)
+      setSubmitError(true)
+    }
   }
 
   if (!isOpen) return null
@@ -191,6 +242,15 @@ export default function BookingPopup({ isOpen, onClose }) {
                     <option value="37-40">37-40 settimane</option>
                   </select>
                 </div>
+
+                {/* Error Message */}
+                {submitError && (
+                  <div className="bg-red-50 border-2 border-red-200 rounded-lg p-4 mb-4">
+                    <p className="text-red-600 text-sm font-medium text-center">
+                      ❌ Errore nell'invio della richiesta. Riprova o contattaci direttamente al +39 3518198457
+                    </p>
+                  </div>
+                )}
 
                 <motion.button
                   type="submit"
