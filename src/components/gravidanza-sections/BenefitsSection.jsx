@@ -5,13 +5,13 @@ export default function BenefitsSection() {
   const benefits = [
     {
       icon: <CheckCircle className="w-12 h-12" style={{color: '#FF6869'}} />,
-      title: "Eliminiamo i dolori muscolo-scheletrici",
+      title: "Alleviamo dolori e fastidi vari",
       description: "Riduciamo drasticamente il mal di schiena lombare del 80-90%, la sciatalgia scompare gradualmente, il bacino diventa più mobile e flessibile, il dolore al pube si riduce significativamente e cervicale e spalle si rilassano. Il tuo corpo tornerà a muoversi liberamente senza più limitazioni.",
       highlight: "80-90% di riduzione del dolore"
     },
     {
       icon: <Moon className="w-12 h-12" style={{color: '#FF6869'}} />,
-      title: "Ripristiniamo il sonno ristoratore",
+      title: "Miglioriamo il sonno",
       description: "Torni a dormire con un sonno più profondo e continuo, i risvegli durante la notte diminuiscono drasticamente, trovi posizioni più comode nel letto, i crampi alle gambe si riducono e riacquisti energia e vitalità durante il giorno. Il riposo ti restituisce la forza per affrontare la gravidanza con serenità.",
       highlight: "Sonno profondo e continuo"
     },
@@ -23,7 +23,7 @@ export default function BenefitsSection() {
     },
     {
       icon: <Heart className="w-12 h-12" style={{color: '#FF6869'}} />,
-      title: "Ti diamo sicurezza e tranquillità",
+      title: "Maggior sensazione di sicurezza e tranquillità",
       description: "Hai la certezza che tutto è normale e sicuro, la tranquillità per la salute del bambino ti accompagna, conosci esattamente cosa si può fare e cosa evitare, la fiducia nel percorso di gravidanza diventa solida e la pace mentale e la serenità ritornano. Sai di fare la cosa giusta per te e il tuo bambino, senza più ansie o dubbi.",
       highlight: "100% di tranquillità"
     },

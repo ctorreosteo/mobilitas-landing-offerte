@@ -41,8 +41,8 @@ export default function PainPointsSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-black mb-6" style={{color: '#002552'}}>
-            Sei in gravidanza, probabilmente stai vivendo almeno una di queste situazioni 😕
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-6" style={{color: '#002552'}}>
+            Sei in gravidanza e probabilmente stai vivendo almeno una di queste situazioni 😕
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
             Non sei sola. Questi sono i dolori e le preoccupazioni più comuni che vivono le donne in gravidanza.

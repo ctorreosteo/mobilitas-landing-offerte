@@ -159,7 +159,7 @@ export default function OfferSection() {
               transition={{ duration: 2, repeat: Infinity, repeatDelay: 3 }}
             />
             <span style={{ position: 'relative', zIndex: 1 }}>
-              ⚠️ Solo {remainingSpots} posti rimasti su 40
+              ⚠️ Ultimi posti rimasti
             </span>
           </motion.div>
 

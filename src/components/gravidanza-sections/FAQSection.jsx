@@ -63,9 +63,9 @@ export default function FAQSection() {
           className="text-center mb-16"
         >
           <div className="flex items-center justify-center mb-6">
-            <HelpCircle className="w-8 h-8 mr-3" style={{color: '#FF6869'}} />
-            <h2 className="text-4xl md:text-5xl font-black" style={{color: '#002552'}}>
-              Domande Frequenti
+            <HelpCircle className="w-6 h-6 sm:w-8 sm:h-8 mr-2 sm:mr-3 flex-shrink-0" style={{color: '#FF6869'}} />
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black" style={{color: '#002552'}}>
+              Hai qualche domanda?
             </h2>
           </div>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
