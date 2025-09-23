@@ -129,7 +129,7 @@ export default function VSLSection({ y }) {
           <h3 className="text-2xl md:text-3xl font-bold mb-6" style={{color: '#F4F4F4'}}>I 3 benefici immediati del Trattamento Osteopatico:</h3>
           <div className="space-y-4">
             {[
-              "Riduciamo i dolori tipici della gravidanza (mal di schiena, tensioni al collo, pesantezza alle gambe, ecc.)",
+              "Alleviamo i problemi tipici della gravidanza (mal di schiena, tensioni al collo, pesantezza alle gambe, nausea ecc.)",
               "Miglioriamo il benessere di mamma e bambino", 
               "Prepariamo il corpo al parto in modo naturale, migliorando la mobilità del bacino"
             ].map((benefit, index) => (

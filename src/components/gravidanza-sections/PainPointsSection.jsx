@@ -6,27 +6,27 @@ export default function PainPointsSection() {
     {
       icon: <AlertTriangle className="w-8 h-8" style={{color: '#FF6869'}} />,
       title: "Dolori e fastidi crescenti",
-      description: "Il mal di schiena lombare diventa insopportabile e peggiora settimana dopo settimana, la sciatalgia ti impedisce di camminare normalmente, il bacino è sempre più rigido e limita ogni movimento, il dolore al pube ti accompagna tutto il giorno e il gonfiore alle gambe non ti dà tregua. Ogni settimana che passa sembra peggiorare e hai paura di non riuscire ad arrivare al parto."
+      description: "Il mal di schiena diventa insopportabile, la sciatalgia ti blocca, il bacino si irrigidisce e il dolore al pube ti accompagna tutto il giorno. Ogni settimana peggiora e temi di non farcela fino al parto. Capiamo la tua paura e il tuo dolore."
     },
     {
       icon: <Moon className="w-8 h-8" style={{color: '#FF6869'}} />,
       title: "Difficoltà a dormire bene",
-      description: "La notte diventa un incubo: non riesci a trovare una posizione comoda nel letto, ogni volta che ti giri o cambi posizione provi dolore, i risvegli continui durante tutta la notte ti sfiancano, i crampi alle gambe ti svegliano di soprassalto e hai la sensazione di non aver mai riposato davvero. La stanchezza si accumula giorno dopo giorno e temi che questo stress possa danneggiare il bambino."
+      description: "La notte è un tormento: nessuna posizione è comoda, ogni movimento fa male, i risvegli continui ti sfiancano e i crampi ti svegliano. Non riposi mai davvero e la stanchezza si accumula. Temi che questo stress possa far male al tuo bambino."
     },
     {
       icon: <Zap className="w-8 h-8" style={{color: '#FF6869'}} />,
-      title: "Sensazione di stanchezza e affaticamento",
-      description: "Ti trascini tutto il giorno anche per le attività più semplici, la mancanza di fiato ti accompagna anche per piccoli sforzi quotidiani, l'impossibilità di concentrarti sul lavoro ti preoccupa, l'energia si esaurisce già a metà giornata e hai paura di non riuscire a gestire tutto quello che ti aspetta: lavoro, casa, preparativi per il bambino."
+      title: "Stanchezza e affaticamento",
+      description: "Ti trascini tutto il giorno, anche per le cose più semplici. Mancanza di fiato, difficoltà a concentrarti, energia che si esaurisce a metà giornata. Temi di non riuscire a gestire tutto: lavoro, casa, preparativi per il bambino. La stanchezza ti fa sentire inadeguata."
     },
     {
       icon: <Heart className="w-8 h-8" style={{color: '#FF6869'}} />,
       title: "Sensazioni di ansia e a volte insicurezza",
-      description: "I dubbi ti assillano continuamente: 'È tutto normale quello che provo?', 'Il dolore che provo è pericoloso per il bambino?', 'Posso fare qualcosa o rischio di peggiorare?', 'Cosa devo evitare per non danneggiare il bambino?'. L'amore per il bambino che porti in grembo si mescola alla paura di non fare la cosa giusta e all'ansia costante per la sua salute e il suo benessere."
+      description: "I dubbi ti assillano: 'È normale quello che provo?', 'Il dolore è pericoloso per il bambino?', 'Posso fare qualcosa o rischio di peggiorare?'. L'amore per il tuo bambino si mescola alla paura di sbagliare e all'ansia per la sua salute. Non sei sola in questo."
     },
     {
       icon: <Shield className="w-8 h-8" style={{color: '#FF6869'}} />,
       title: "Paura del parto e del post-parto",
-      description: "Il bacino ti sembra sempre più bloccato e poco mobile, non senti il corpo fisicamente pronto per il parto, hai paura di complicazioni durante il travaglio e il parto, temi per il recupero post-parto e le sue difficoltà, e l'ansia per il benessere del bambino durante tutto il processo ti accompagna ogni giorno. L'amore per il bambino si mescola alla paura del momento più importante della tua vita."
+      description: "Il bacino si blocca, non senti il corpo pronto per il parto. Temi complicazioni, il recupero post-parto, l'ansia per il benessere del bambino. L'amore per il tuo bambino si mescola alla paura del momento più importante della tua vita. Ti accompagniamo in questo percorso."
     }
   ]
 
