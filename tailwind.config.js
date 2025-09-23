@@ -10,6 +10,7 @@ export default {
                     'blue-dark': '#002552',
                     'azure-dark': '#0ea5e9',
                     'green': '#72fa93',
+                    'pink': '#FF6869',
                     'cream': '#F4F4F4',
         slate: {
           50: '#f8fafc',

@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import FirstWalk from './pages/FirstWalk'
 import Emicrania from './pages/Emicrania'
 import MalDiSchiena from './pages/MalDiSchiena'
+import Gravidanza from './pages/Gravidanza'
 import ThankYou from './pages/ThankYou'
 
 function App() {
@@ -20,6 +21,9 @@ function App() {
           
           {/* Mal di Schiena page */}
           <Route path="/mal-di-schiena" element={<MalDiSchiena />} />
+          
+          {/* Gravidanza page */}
+          <Route path="/gravidanza" element={<Gravidanza />} />
           
           {/* Thank You page */}
           <Route path="/conferma" element={<ThankYou />} />
