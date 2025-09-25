@@ -195,7 +195,7 @@ export default function HeroSection({ y }) {
           <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-sm md:text-xl font-black">
             <div className="flex items-center space-x-2">
               <Clock className="w-5 h-5 md:w-8 md:h-8 text-primary" />
-              <span className="text-primary">4 OTTOBRE 2024</span>
+              <span className="text-primary">4 OTTOBRE 2025</span>
             </div>
             <span className="text-primary text-xl md:text-3xl hidden md:block">•</span>
             <span className="text-primary text-center md:text-left">PACCHETTO PREMIUM IN OFFERTA SOLO PER 20 PERSONE</span>
