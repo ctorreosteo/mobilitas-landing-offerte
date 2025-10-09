@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
-import VSLSection from '../components/emicrania-sections/VSLSection'
-import OfferSection from '../components/emicrania-sections/OfferSection'
-import PainPointsSection from '../components/emicrania-sections/PainPointsSection'
-import SolutionsSection from '../components/emicrania-sections/SolutionsSection'
-import BenefitsSection from '../components/emicrania-sections/BenefitsSection'
-import FAQSection from '../components/emicrania-sections/FAQSection'
-import FooterSection from '../components/emicrania-sections/FooterSection'
-import WhatsAppButtonEmicrania from '../components/WhatsAppButtonEmicrania'
+import VSLSection from '../../components/emicrania-sections/VSLSection'
+import OfferSection from '../../components/emicrania-sections/OfferSection'
+import PainPointsSection from '../../components/emicrania-sections/PainPointsSection'
+import SolutionsSection from '../../components/emicrania-sections/SolutionsSection'
+import BenefitsSection from '../../components/emicrania-sections/BenefitsSection'
+import FAQSection from '../../components/emicrania-sections/FAQSection'
+import FooterSection from '../../components/emicrania-sections/FooterSection'
+import WhatsAppButtonEmicrania from '../../components/WhatsAppButtonEmicrania'
 
 export default function Emicrania() {
   const { scrollYProgress } = useScroll()

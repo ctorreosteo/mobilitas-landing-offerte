@@ -1,37 +1,38 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
-import FirstWalk from './pages/FirstWalk'
-import Emicrania from './pages/Emicrania'
-import MalDiSchiena from './pages/MalDiSchiena'
-import Gravidanza from './pages/Gravidanza'
-import ThankYou from './pages/ThankYou'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Layout from './components/Layout'
+
+// Main website pages
+import Home from './pages/sito-web/Home'
+import Contatti from './pages/sito-web/Contatti'
+import LavoraConNoi from './pages/sito-web/LavoraConNoi'
+import ChiSiamo from './pages/sito-web/ChiSiamo'
+import FAQ from './pages/sito-web/FAQ'
+
+// Landing pages
+import FirstWalk from './pages/landing-pages/FirstWalk'
+import Emicrania from './pages/landing-pages/Emicrania'
+import MalDiSchiena from './pages/landing-pages/MalDiSchiena'
+import Gravidanza from './pages/landing-pages/Gravidanza'
+import ThankYou from './pages/landing-pages/ThankYou'
 
 function App() {
   return (
     <Router>
-      <div className="min-h-screen">
-        <Routes>
-          {/* Redirect root to /first-walk */}
-          <Route path="/" element={<Navigate to="/first-walk" replace />} />
-          
-          {/* FirstWalk page */}
-          <Route path="/first-walk" element={<FirstWalk />} />
-          
-          {/* Emicrania page */}
-          <Route path="/emicrania" element={<Emicrania />} />
-          
-          {/* Mal di Schiena page */}
-          <Route path="/mal-di-schiena" element={<MalDiSchiena />} />
-          
-          {/* Gravidanza page */}
-          <Route path="/gravidanza" element={<Gravidanza />} />
-          
-          {/* Thank You page */}
-          <Route path="/conferma" element={<ThankYou />} />
-          
-          {/* Catch all route - redirect to /first-walk */}
-          <Route path="*" element={<Navigate to="/first-walk" replace />} />
-        </Routes>
-      </div>
+      <Routes>
+        {/* Main website routes with layout */}
+        <Route path="/" element={<Layout><Home /></Layout>} />
+        <Route path="/chi-siamo" element={<Layout><ChiSiamo /></Layout>} />
+        <Route path="/contatti" element={<Layout><Contatti /></Layout>} />
+        <Route path="/lavora-con-noi" element={<Layout><LavoraConNoi /></Layout>} />
+        <Route path="/faq" element={<Layout><FAQ /></Layout>} />
+        
+        {/* Landing pages without main layout */}
+        <Route path="/first-walk" element={<FirstWalk />} />
+        <Route path="/emicrania" element={<Emicrania />} />
+        <Route path="/mal-di-schiena" element={<MalDiSchiena />} />
+        <Route path="/gravidanza" element={<Gravidanza />} />
+        <Route path="/conferma" element={<ThankYou />} />
+      </Routes>
     </Router>
   )
 }

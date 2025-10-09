@@ -7,11 +7,14 @@ export default {
   theme: {
     extend: {
                   colors: {
+                    // Colori principali del brand
                     'blue-dark': '#002552',
-                    'azure-dark': '#0ea5e9',
                     'green': '#72fa93',
-                    'pink': '#FF6869',
                     'cream': '#F4F4F4',
+                    'red': '#FF6869',
+                    
+                    // Colori secondari
+                    'azure-dark': '#0ea5e9',
         slate: {
           50: '#f8fafc',
           100: '#f1f5f9',
@@ -28,6 +31,7 @@ export default {
       },
       fontFamily: {
         'sans': ['Montserrat', 'sans-serif'],
+        'montserrat': ['Montserrat', 'sans-serif'],
       }
     },
   },

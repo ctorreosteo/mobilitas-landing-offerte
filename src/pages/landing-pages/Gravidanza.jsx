@@ -1,10 +1,10 @@
 import { motion, useScroll, useTransform } from 'framer-motion'
-import VSLSection from '../components/gravidanza-sections/VSLSection'
-import PainPointsSection from '../components/gravidanza-sections/PainPointsSection'
-import BenefitsSection from '../components/gravidanza-sections/BenefitsSection'
-import FAQSection from '../components/gravidanza-sections/FAQSection'
-import OfferSection from '../components/gravidanza-sections/OfferSection'
-import FooterSection from '../components/gravidanza-sections/FooterSection'
+import VSLSection from '../../components/gravidanza-sections/VSLSection'
+import PainPointsSection from '../../components/gravidanza-sections/PainPointsSection'
+import BenefitsSection from '../../components/gravidanza-sections/BenefitsSection'
+import FAQSection from '../../components/gravidanza-sections/FAQSection'
+import OfferSection from '../../components/gravidanza-sections/OfferSection'
+import FooterSection from '../../components/gravidanza-sections/FooterSection'
 
 export default function Gravidanza() {
   const { scrollYProgress } = useScroll()
