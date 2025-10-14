@@ -4,21 +4,21 @@ import { Link } from 'react-router-dom'
 const LavoraConNoi = () => {
   const jobRoles = [
     {
-      id: 'osteopata',
+      id: 'osteopata_junior',
       title: 'Osteopata Junior',
       type: 'Partita iva',
       location: 'In presenza',
       image: '/lavori/osteo_junior.png'
     },
     {
-      id: 'osteopata',
+      id: 'osteopata_senior',
       title: 'Osteopata Senior',
       type: 'Partita iva',
       location: 'In presenza',
       image: '/lavori/osteo_senior.png'
     },
     {
-      id: 'osteopata',
+      id: 'osteopata_leader',
       title: 'Osteopata Team Leader o Manager',
       type: 'Partita iva',
       location: 'In presenza',

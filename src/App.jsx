@@ -8,6 +8,9 @@ import LavoraConNoi from './pages/sito-web/LavoraConNoi'
 import ChiSiamo from './pages/sito-web/ChiSiamo'
 import FAQ from './pages/sito-web/FAQ'
 
+// Job position pages
+import Segretaria from './pages/sito-web/posizioni/Segretaria'
+
 // Landing pages
 import FirstWalk from './pages/landing-pages/FirstWalk'
 import Emicrania from './pages/landing-pages/Emicrania'
@@ -25,6 +28,9 @@ function App() {
         <Route path="/contatti" element={<Layout><Contatti /></Layout>} />
         <Route path="/lavora-con-noi" element={<Layout><LavoraConNoi /></Layout>} />
         <Route path="/faq" element={<Layout><FAQ /></Layout>} />
+        
+        {/* Job position routes with layout */}
+        <Route path="/lavora-con-noi/segretaria" element={<Layout><Segretaria /></Layout>} />
         
         {/* Landing pages without main layout */}
         <Route path="/first-walk" element={<FirstWalk />} />
