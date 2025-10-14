@@ -4,7 +4,7 @@ import { ArrowRight, Shield, Heart, Zap } from 'lucide-react'
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-gradient-to-br from-blue-dark via-blue-800 to-blue-900 text-white overflow-hidden">
+    <section className="relative bg-gradient-to-br from-blue-dark via-blue-800 to-blue-900 text-white overflow-hidden w-full max-w-full">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 w-32 h-32 bg-green rounded-full blur-3xl"></div>
@@ -15,7 +15,7 @@ const HeroSection = () => {
       {/* Overlay for better text contrast */}
       <div className="absolute inset-0 bg-black/20"></div>
 
-      <div className="relative container mx-auto px-4 py-12 lg:py-20">
+      <div className="relative container mx-auto px-4 py-12 lg:py-20 w-full max-w-full">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-green/50 rounded-full px-3 py-1.5 mb-6 shadow-lg">
@@ -39,33 +39,33 @@ const HeroSection = () => {
           </p>
 
           {/* Key Benefits */}
-          <div className="grid grid-cols-3 gap-3 mb-8 max-w-md mx-auto">
-            <div className="flex flex-col items-center gap-2 bg-white/15 backdrop-blur-sm rounded-lg p-3 shadow-lg border border-white/20">
-              <Heart className="w-5 h-5 text-green drop-shadow-sm" />
-              <span className="text-white font-medium font-montserrat text-xs drop-shadow-sm">Libertà dal dolore</span>
+          <div className="grid grid-cols-3 gap-2 sm:gap-3 mb-8 max-w-md mx-auto w-full">
+            <div className="flex flex-col items-center gap-1 sm:gap-2 bg-white/15 backdrop-blur-sm rounded-lg p-2 sm:p-3 shadow-lg border border-white/20 min-w-0">
+              <Heart className="w-4 h-4 sm:w-5 sm:h-5 text-green drop-shadow-sm" />
+              <span className="text-white font-medium font-montserrat text-xs drop-shadow-sm text-center">Libertà dal dolore</span>
             </div>
-            <div className="flex flex-col items-center gap-2 bg-white/15 backdrop-blur-sm rounded-lg p-3 shadow-lg border border-white/20">
-              <Zap className="w-5 h-5 text-green drop-shadow-sm" />
-              <span className="text-white font-medium font-montserrat text-xs drop-shadow-sm">Energia quotidiana</span>
+            <div className="flex flex-col items-center gap-1 sm:gap-2 bg-white/15 backdrop-blur-sm rounded-lg p-2 sm:p-3 shadow-lg border border-white/20 min-w-0">
+              <Zap className="w-4 h-4 sm:w-5 sm:h-5 text-green drop-shadow-sm" />
+              <span className="text-white font-medium font-montserrat text-xs drop-shadow-sm text-center">Energia quotidiana</span>
             </div>
-            <div className="flex flex-col items-center gap-2 bg-white/15 backdrop-blur-sm rounded-lg p-3 shadow-lg border border-white/20">
-              <Shield className="w-5 h-5 text-green drop-shadow-sm" />
-              <span className="text-white font-medium font-montserrat text-xs drop-shadow-sm">Controllo totale</span>
+            <div className="flex flex-col items-center gap-1 sm:gap-2 bg-white/15 backdrop-blur-sm rounded-lg p-2 sm:p-3 shadow-lg border border-white/20 min-w-0">
+              <Shield className="w-4 h-4 sm:w-5 sm:h-5 text-green drop-shadow-sm" />
+              <span className="text-white font-medium font-montserrat text-xs drop-shadow-sm text-center">Controllo totale</span>
             </div>
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-3 justify-center items-center mb-8">
+          <div className="flex flex-col sm:flex-row gap-3 justify-center items-center mb-8 w-full max-w-full px-4">
             <Link
               to="/contatti"
-              className="group bg-green hover:bg-green/90 text-blue-dark font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl font-montserrat border-2 border-green"
+              className="group bg-green hover:bg-green/90 text-blue-dark font-bold py-3 px-4 sm:px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl font-montserrat border-2 border-green w-full sm:w-auto text-center"
             >
               Riprendi il controllo
               <ArrowRight className="inline-block ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
               to="/chi-siamo"
-              className="group border-2 border-white text-white hover:bg-white hover:text-blue-dark font-bold py-3 px-6 rounded-lg transition-all duration-300 font-montserrat shadow-lg hover:shadow-xl backdrop-blur-sm"
+              className="group border-2 border-white text-white hover:bg-white hover:text-blue-dark font-bold py-3 px-4 sm:px-6 rounded-lg transition-all duration-300 font-montserrat shadow-lg hover:shadow-xl backdrop-blur-sm w-full sm:w-auto text-center"
             >
               Scopri la nostra missione
             </Link>
