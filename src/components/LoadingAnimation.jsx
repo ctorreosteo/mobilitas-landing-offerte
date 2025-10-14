@@ -43,7 +43,7 @@ const LoadingAnimation = ({ onComplete }) => {
           <div className="absolute inset-0 rounded-full border-2 border-[#72fa93] animate-pulse opacity-40"></div>
           
           {/* Logo principale */}
-          <div className="relative z-10 p-8 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
+          <div className="relative z-10 p-8 bg-cream/10 backdrop-blur-sm rounded-full border border-cream/20">
             <img
               src="/logo_blu.png"
               alt="Mobilitas Logo"

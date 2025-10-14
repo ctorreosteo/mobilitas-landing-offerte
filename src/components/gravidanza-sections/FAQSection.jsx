@@ -82,7 +82,7 @@ export default function FAQSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden"
+              className="bg-cream rounded-2xl shadow-lg border border-slate-200 overflow-hidden"
             >
               <button
                 onClick={() => toggleFAQ(index)}

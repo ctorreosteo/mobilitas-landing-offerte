@@ -58,7 +58,7 @@ const BioSection = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             {/* Left Side - Mission Statement */}
             <div>
-              <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
+              <div className="bg-cream rounded-2xl p-8 shadow-xl border border-gray-100">
                 {/* Quote */}
                 <div className="flex justify-center mb-6">
                   <div className="w-16 h-16 bg-green/15 rounded-full flex items-center justify-center border border-green/20">
@@ -104,7 +104,7 @@ const BioSection = () => {
                 {values.map((value, index) => {
                   const IconComponent = value.icon
                   return (
-                    <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+                    <div key={index} className="bg-cream rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
                       <div className="flex items-start gap-4">
                         <div className="w-12 h-12 bg-green/15 rounded-full flex items-center justify-center flex-shrink-0 border border-green/20">
                           <IconComponent className="w-6 h-6 text-green" />
@@ -159,7 +159,7 @@ const BioSection = () => {
 
           {/* Final Message */}
           <div className="text-center mt-16">
-            <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100 max-w-4xl mx-auto">
+            <div className="bg-cream rounded-2xl p-8 shadow-xl border border-gray-100 max-w-4xl mx-auto">
               <h4 className="text-xl font-bold text-blue-dark mb-4 font-montserrat">
                 Un nuovo modo di vivere la salute
               </h4>

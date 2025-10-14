@@ -23,7 +23,7 @@ const TargetAudienceSection = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Per chi è */}
-          <div className="bg-white rounded-2xl p-8 shadow-xl border-l-4 border-green border border-gray-100">
+          <div className="bg-cream rounded-2xl p-8 shadow-xl border-l-4 border-green border border-gray-100">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 bg-green/15 rounded-full flex items-center justify-center border border-green/20">
                 <Check className="w-6 h-6 text-blue-dark" />
@@ -74,7 +74,7 @@ const TargetAudienceSection = () => {
           </div>
 
           {/* Per chi non è */}
-          <div className="bg-white rounded-2xl p-8 shadow-xl border-l-4 border-red-500 border border-gray-100">
+          <div className="bg-cream rounded-2xl p-8 shadow-xl border-l-4 border-red-500 border border-gray-100">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center border border-red-200">
                 <X className="w-6 h-6 text-red-600" />

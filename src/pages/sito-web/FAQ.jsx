@@ -505,7 +505,7 @@ const FAQ = () => {
                   const answer = typeof item === 'object' && item.answer ? item.answer : null
                   
                   return (
-                    <div key={questionIndex} className="bg-white border border-blue-dark/10 rounded-xl shadow-sm">
+                    <div key={questionIndex} className="bg-cream border border-blue-dark/10 rounded-xl shadow-sm">
                       <button
                         onClick={() => toggleItem(sectionIndex, questionIndex)}
                         className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-blue-dark/5 transition-colors duration-200 rounded-xl"

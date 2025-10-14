@@ -5,7 +5,7 @@ import WhatsAppButtonSito from './WhatsAppButtonSito'
 
 const Layout = ({ children }) => {
   return (
-    <div className="min-h-screen bg-white w-full max-w-full overflow-x-hidden">
+    <div className="min-h-screen bg-cream w-full max-w-full overflow-x-hidden">
       {/* Header */}
       <Header />
 

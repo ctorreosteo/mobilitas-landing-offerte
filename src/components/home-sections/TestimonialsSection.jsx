@@ -61,7 +61,7 @@ const TestimonialsSection = () => {
           {stats.map((stat, index) => {
             const IconComponent = stat.icon
             return (
-              <div key={index} className="text-center bg-white rounded-xl p-6 shadow-sm">
+              <div key={index} className="text-center bg-cream rounded-xl p-6 shadow-sm">
                 <IconComponent className="w-8 h-8 text-green mx-auto mb-3" />
                 <div className="text-2xl md:text-3xl font-bold text-blue-dark mb-2 font-montserrat">
                   {stat.number}
@@ -77,7 +77,7 @@ const TestimonialsSection = () => {
         {/* Testimonials Grid */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+            <div key={index} className="bg-cream rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
               {/* Quote Icon */}
               <div className="flex justify-center mb-4">
                 <div className="w-12 h-12 bg-green/10 rounded-full flex items-center justify-center">
