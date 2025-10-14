@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
       <Header />
 
       {/* Main Content */}
-      <main>
+      <main className="pt-16 sm:pt-20">
         {children}
       </main>
 

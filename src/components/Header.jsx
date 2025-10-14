@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="bg-blue-dark shadow-lg border-b border-green/20 sticky top-0 z-40 w-full max-w-full">
+      <header className="bg-blue-dark shadow-lg border-b border-green/20 fixed top-0 left-0 right-0 z-50 w-full">
         <div className="container mx-auto px-4 w-full max-w-full">
           <div className="flex justify-between items-center h-16 sm:h-20">
             {/* Menu Hamburger - Sinistra */}
