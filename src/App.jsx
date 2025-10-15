@@ -20,6 +20,7 @@ import Abylsen from './pages/sito-web/partnership/Abylsen'
 import StampaSubalpina from './pages/sito-web/partnership/StampaSubalpina'
 import Robogest from './pages/sito-web/partnership/Robogest'
 import Edenred from './pages/sito-web/partnership/Edenred'
+import Allianz from './pages/sito-web/partnership/Allianz'
 
 // Landing pages
 import FirstWalk from './pages/landing-pages/FirstWalk'
@@ -53,6 +54,7 @@ function App() {
         <Route path="/partnership/stampa-subalpina" element={<Layout><StampaSubalpina /></Layout>} />
         <Route path="/partnership/robogest" element={<Layout><Robogest /></Layout>} />
         <Route path="/partnership/edenred" element={<Layout><Edenred /></Layout>} />
+        <Route path="/partnership/allianz" element={<Layout><Allianz /></Layout>} />
         
         {/* Landing pages without main layout */}
         <Route path="/first-walk" element={<FirstWalk />} />
