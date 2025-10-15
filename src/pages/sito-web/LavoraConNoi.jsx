@@ -8,77 +8,88 @@ const LavoraConNoi = () => {
       title: 'Osteopata Junior',
       type: 'Partita iva',
       location: 'In presenza',
-      image: '/lavori/osteo_junior.png'
+      image: '/lavori/osteo_junior.png',
+      status: 'closed'
     },
     {
       id: 'osteopata_senior',
       title: 'Osteopata Senior',
       type: 'Partita iva',
       location: 'In presenza',
-      image: '/lavori/osteo_senior.png'
+      image: '/lavori/osteo_senior.png',
+      status: 'closed'
     },
     {
       id: 'osteopata_leader',
       title: 'Osteopata Team Leader o Manager',
       type: 'Assunzione',
       location: 'In presenza',
-      image: '/lavori/osteo_leader.png'
+      image: '/lavori/osteo_leader.png',
+      status: 'closed'
     },
     {
       id: 'nutrizionista',
       title: 'Nutrizionista',
       type: 'Partita iva',
       location: 'In presenza',
-      image: '/lavori/nutrizionista.png'
+      image: '/lavori/nutrizionista.png',
+      status: 'closed'
     },
     {
       id: 'segretaria',
       title: 'Segretaria Generale',
       type: 'Assunzione',
       location: 'In presenza',
-      image: '/lavori/segretaria.png'
+      image: '/lavori/segretaria.png',
+      status: 'closed'
     },
     {
       id: 'commerciale',
       title: 'Commerciale',
       type: 'Partita iva',
       location: 'In presenza',
-      image: '/lavori/commerciale.png'
+      image: '/lavori/commerciale.png',
+      status: 'closed'
     },
     {
       id: 'pilates',
       title: 'Istruttore Pilates',
       type: 'Partita iva',
       location: 'In presenza',
-      image: '/lavori/pilates.png'
+      image: '/lavori/pilates.png',
+      status: 'closed'
     },
     {
       id: 'personal-trainer',
       title: 'Personal Trainer',
       type: 'Partita iva',
       location: 'In presenza',
-      image: '/lavori/pt.png'
+      image: '/lavori/pt.png',
+      status: 'closed'
     },
     {
       id: 'video-maker',
       title: 'Video Maker',
       type: 'Partita iva',
       location: 'In presenza',
-      image: '/lavori/video_maker.jpg'
+      image: '/lavori/video_maker.jpg',
+      status: 'closed'
     },
     {
       id: 'social-media-manager',
       title: 'Social Media Manager',
       type: 'Partita iva',
       location: 'In presenza',
-      image: '/lavori/smm.png'
+      image: '/lavori/smm.png',
+      status: 'closed'
     },
     {
       id: 'marketer-full-stack',
       title: 'Marketer Full Stack',
       type: 'Partita iva',
       location: 'In presenza',
-      image: '/lavori/marketer.png'
+      image: '/lavori/marketer.png',
+      status: 'closed'
     }
   ]
 
@@ -106,7 +117,7 @@ const LavoraConNoi = () => {
                 </h2>
                 <p className="text-lg text-gray-600 font-montserrat leading-relaxed">
                   In un mercato sempre più competitivo e spesso caratterizzato da ambienti tossici, 
-                  <span className="text-sky-600 font-semibold"> Mobilitas rappresenta un'alternativa reale</span> 
+                  <span className="text-sky-600 font-semibold"> Mobilitas rappresenta un'alternativa reale </span> 
                   a tutto quello che non funziona nelle aziende tradizionali.
                 </p>
               </div>
@@ -313,7 +324,7 @@ const LavoraConNoi = () => {
                     </span>
                   </div>
                   
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between mb-4">
                     <span className="text-sm text-gray-600 font-montserrat">
                       {job.location}
                     </span>
@@ -323,6 +334,19 @@ const LavoraConNoi = () => {
                     >
                       Candidati →
                     </Link>
+                  </div>
+
+                  {/* Status Indicator */}
+                  <div className="border-t border-gray-100 pt-3 pb-0">
+                    <div className="flex items-center justify-start">
+                      <span className={`text-sm font-medium font-montserrat px-3 py-1 rounded-full ${
+                        job.status === 'open' 
+                          ? 'bg-green-100 text-green-800' 
+                          : 'bg-red-100 text-red-800'
+                      }`}>
+                        {job.status === 'open' ? 'Posizione Aperta' : 'Posizione Chiusa'}
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
