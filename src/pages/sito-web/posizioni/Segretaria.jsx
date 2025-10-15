@@ -424,9 +424,9 @@ const Segretaria = () => {
                   📋 Documenti richiesti
                 </h3>
                 <ul className="space-y-2 text-gray-700 font-montserrat">
-                  <li>• <strong>CV aggiornato</strong></li>
-                  <li>• <strong>Certificazioni e attestati</strong> (se disponibili)</li>
-                  <li>• <strong>PLUS:</strong> allega un breve video personale per presentarti</li>
+                  <li><strong>CV aggiornato</strong></li>
+                  <li><strong>Certificazioni e attestati</strong> (se disponibili)</li>
+                  <li><strong>PLUS:</strong> allega un breve video personale per presentarti</li>
                 </ul>
               </div>
             </div>
