@@ -9,7 +9,7 @@ const LavoraConNoi = () => {
       type: 'Tirocinio',
       location: 'In presenza',
       image: '/lavori/osteo_tirocinante.png',
-      status: 'closed'
+      status: 'open'
     },
     {
       id: 'osteopata_junior',
@@ -17,7 +17,7 @@ const LavoraConNoi = () => {
       type: 'Partita iva',
       location: 'In presenza',
       image: '/lavori/osteo_junior.png',
-      status: 'closed'
+      status: 'open'
     },
     {
       id: 'osteopata_senior',
