@@ -20,7 +20,7 @@ const LavoraConNoi = () => {
     {
       id: 'osteopata_leader',
       title: 'Osteopata Team Leader o Manager',
-      type: 'Partita iva',
+      type: 'Assunzione',
       location: 'In presenza',
       image: '/lavori/osteo_leader.png'
     },
@@ -34,7 +34,7 @@ const LavoraConNoi = () => {
     {
       id: 'segretaria',
       title: 'Segretaria Generale',
-      type: 'Partita iva',
+      type: 'Assunzione',
       location: 'In presenza',
       image: '/lavori/segretaria.png'
     },
@@ -278,7 +278,7 @@ const LavoraConNoi = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-blue-dark font-montserrat mb-4">
-              Figure professionali
+              Figure professionali e Posizioni aperte
             </h1>
           </div>
         </div>
@@ -328,22 +328,6 @@ const LavoraConNoi = () => {
               </div>
             ))}
           </div>
-
-          {/* No Available Positions Message */}
-          <div className="text-center mt-16">
-            <p className="text-lg text-gray-600 font-montserrat">
-              No available positions right now.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Footer Info */}
-      <div className="bg-white border-t border-gray-200 py-8">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-sm text-gray-500 font-montserrat">
-            ©2025 Mobilitas - Tutti i diritti riservati
-          </p>
         </div>
       </div>
     </div>
