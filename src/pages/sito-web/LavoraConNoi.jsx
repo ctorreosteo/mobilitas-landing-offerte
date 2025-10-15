@@ -4,6 +4,14 @@ import { Link } from 'react-router-dom'
 const LavoraConNoi = () => {
   const jobRoles = [
     {
+      id: 'osteopata_tirocinante',
+      title: 'Osteopata Tirocinante',
+      type: 'Tirocinio',
+      location: 'In presenza',
+      image: '/lavori/osteo_tirocinante.png',
+      status: 'closed'
+    },
+    {
       id: 'osteopata_junior',
       title: 'Osteopata Junior',
       type: 'Partita iva',
@@ -315,11 +323,11 @@ const LavoraConNoi = () => {
                 
                 {/* Content */}
                 <div className="p-6">
-                  <div className="flex items-center justify-between mb-4">
-                    <h3 className="text-lg font-semibold text-blue-dark font-montserrat">
+                  <div className="flex items-start justify-between mb-4">
+                    <h3 className="text-lg font-semibold text-blue-dark font-montserrat mt-0">
                       {job.title}
                     </h3>
-                    <span className="text-sm text-gray-600 font-montserrat bg-sky-100 px-2 py-1 rounded min-w-[100px] whitespace-nowrap">
+                    <span className="text-sm text-gray-600 font-montserrat bg-sky-100 px-2 py-1 rounded whitespace-nowrap text-right">
                       {job.type}
                     </span>
                   </div>
