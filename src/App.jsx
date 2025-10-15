@@ -11,6 +11,7 @@ import FAQ from './pages/sito-web/FAQ'
 // Job position pages
 import Segretaria from './pages/sito-web/posizioni/Segretaria'
 import VideoMaker from './pages/sito-web/posizioni/VideoMaker'
+import Nutrizionista from './pages/sito-web/posizioni/Nutrizionista'
 
 // Landing pages
 import FirstWalk from './pages/landing-pages/FirstWalk'
@@ -33,6 +34,7 @@ function App() {
         {/* Job position routes with layout */}
         <Route path="/lavora-con-noi/segretaria" element={<Layout><Segretaria /></Layout>} />
         <Route path="/lavora-con-noi/video-maker" element={<Layout><VideoMaker /></Layout>} />
+        <Route path="/lavora-con-noi/nutrizionista" element={<Layout><Nutrizionista /></Layout>} />
         
         {/* Landing pages without main layout */}
         <Route path="/first-walk" element={<FirstWalk />} />

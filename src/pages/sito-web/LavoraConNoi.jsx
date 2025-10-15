@@ -38,10 +38,10 @@ const LavoraConNoi = () => {
     {
       id: 'nutrizionista',
       title: 'Nutrizionista',
-      type: 'Partita iva',
+      type: 'Assunzione',
       location: 'In presenza',
       image: '/lavori/nutrizionista.png',
-      status: 'closed'
+      status: 'open'
     },
     {
       id: 'segretaria',
