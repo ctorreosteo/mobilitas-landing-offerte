@@ -482,11 +482,11 @@ const FAQ = () => {
   return (
     <div className="min-h-screen bg-cream">
       <div className="container mx-auto px-4 py-16">
-        <div className="text-center mb-12">
+        <div className="text-left mb-12">
           <h1 className="text-5xl font-bold text-blue-dark mb-6 font-montserrat">
             Domande Frequenti
           </h1>
-          <p className="text-xl text-blue-dark/80 max-w-3xl mx-auto font-montserrat">
+          <p className="text-xl text-blue-dark/80 max-w-3xl font-montserrat">
             Trova risposte alle domande più comuni sui nostri servizi osteopatici, 
             i trattamenti e tutto quello che devi sapere prima di prenotare la tua visita.
           </p>
