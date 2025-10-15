@@ -31,6 +31,7 @@ const Sidebar = ({ isOpen, onClose }) => {
       name: 'Partnership',
       subItems: [
         { name: 'Abylsen', href: '/partnership/abylsen' },
+        { name: 'Stampa Subalpina', href: '/partnership/stampa-subalpina' },
         { name: 'Robogest', href: '/partnership/robogest' },
         { name: 'Edenred', href: '/partnership/edenred' },
         { name: 'Allianz', href: '/partnership/allianz' }

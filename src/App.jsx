@@ -17,6 +17,7 @@ import Influencer from './pages/sito-web/posizioni/Influencer'
 
 // Partnership pages
 import Abylsen from './pages/sito-web/partnership/Abylsen'
+import StampaSubalpina from './pages/sito-web/partnership/StampaSubalpina'
 
 // Landing pages
 import FirstWalk from './pages/landing-pages/FirstWalk'
@@ -47,6 +48,7 @@ function App() {
         
         {/* Partnership pages with layout */}
         <Route path="/partnership/abylsen" element={<Layout><Abylsen /></Layout>} />
+        <Route path="/partnership/stampa-subalpina" element={<Layout><StampaSubalpina /></Layout>} />
         
         {/* Landing pages without main layout */}
         <Route path="/first-walk" element={<FirstWalk />} />
