@@ -88,19 +88,19 @@ const Segretaria = () => {
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-red-500 rounded-full mt-3 flex-shrink-0"></div>
                 <p className="text-gray-700 font-montserrat leading-relaxed mt-0">
-                  <strong className="text-blue-dark">Esperienza minima di 2 anni</strong> in ruoli amministrativi o di segreteria
+                  <strong className="text-blue-dark">Volontù di imparare e mettersi in gioco</strong> continuamente
                 </p>
               </div>
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-red-500 rounded-full mt-3 flex-shrink-0"></div>
                 <p className="text-gray-700 font-montserrat leading-relaxed mt-0">
-                  <strong className="text-blue-dark">Ottima conoscenza del pacchetto Office</strong> (Word, Excel, Outlook)
+                  <strong className="text-blue-dark">Facilità e rapidità nell'utilizzo dei dispositivi digitali</strong> (computer, tablet, cellulare)
                 </p>
               </div>
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-red-500 rounded-full mt-3 flex-shrink-0"></div>
                 <p className="text-gray-700 font-montserrat leading-relaxed mt-0">
-                  <strong className="text-blue-dark">Disponibilità full-time</strong> (40 ore settimanali)
+                  <strong className="text-blue-dark">Disponibilità part-time 80% o full-time</strong> (40 ore settimanali)
                 </p>
               </div>
               <div className="flex items-start space-x-3">
@@ -113,6 +113,18 @@ const Segretaria = () => {
                 <div className="w-2 h-2 bg-red-500 rounded-full mt-3 flex-shrink-0"></div>
                 <p className="text-gray-700 font-montserrat leading-relaxed mt-0">
                   <strong className="text-blue-dark">Precisione e attenzione ai dettagli</strong>
+                </p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-red-500 rounded-full mt-3 flex-shrink-0"></div>
+                <p className="text-gray-700 font-montserrat leading-relaxed mt-0">
+                  <strong className="text-blue-dark">Essere una persona organizzata</strong>
+                </p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-red-500 rounded-full mt-3 flex-shrink-0"></div>
+                <p className="text-gray-700 font-montserrat leading-relaxed mt-0">
+                  <strong className="text-blue-dark">Ottima padronanza della lingua italiana scritta</strong>
                 </p>
               </div>
             </div>
@@ -167,7 +179,79 @@ const Segretaria = () => {
           </div>
         </section>
 
-        {/* 4. Possibilità di carriera */}
+        {/* 4. Attività principali */}
+        <section className="mb-16">
+          <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+            <div className="flex items-center mb-6">
+              <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mr-4">
+                <svg className="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                </svg>
+              </div>
+              <h2 className="text-3xl font-bold text-blue-dark font-montserrat">
+                Attività principali
+              </h2>
+            </div>
+            <div className="space-y-4">
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-orange-500 rounded-full mt-3 flex-shrink-0"></div>
+                <p className="text-gray-700 font-montserrat leading-relaxed mt-0">
+                  <strong className="text-blue-dark">Accoglienza dei pazienti</strong> e gestione della reception
+                </p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-orange-500 rounded-full mt-3 flex-shrink-0"></div>
+                <p className="text-gray-700 font-montserrat leading-relaxed mt-0">
+                  <strong className="text-blue-dark">Gestione degli appuntamenti</strong> e ottimizzazione del calendario dello studio
+                </p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-orange-500 rounded-full mt-3 flex-shrink-0"></div>
+                <p className="text-gray-700 font-montserrat leading-relaxed mt-0">
+                  <strong className="text-blue-dark">Invio di promemoria</strong> e gestione delle comunicazioni con i pazienti
+                </p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-orange-500 rounded-full mt-3 flex-shrink-0"></div>
+                <p className="text-gray-700 font-montserrat leading-relaxed mt-0">
+                  <strong className="text-blue-dark">Gestione tempestiva di disdette</strong> e riprogrammazioni
+                </p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-orange-500 rounded-full mt-3 flex-shrink-0"></div>
+                <p className="text-gray-700 font-montserrat leading-relaxed mt-0">
+                  <strong className="text-blue-dark">Uso e aggiornamento del CRM</strong> dello studio
+                </p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-orange-500 rounded-full mt-3 flex-shrink-0"></div>
+                <p className="text-gray-700 font-montserrat leading-relaxed mt-0">
+                  <strong className="text-blue-dark">Fatturazione e contabilità di base</strong>
+                </p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-orange-500 rounded-full mt-3 flex-shrink-0"></div>
+                <p className="text-gray-700 font-montserrat leading-relaxed mt-0">
+                  <strong className="text-blue-dark">Gestione documentazione pazienti</strong>
+                </p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-orange-500 rounded-full mt-3 flex-shrink-0"></div>
+                <p className="text-gray-700 font-montserrat leading-relaxed mt-0">
+                  <strong className="text-blue-dark">Attività telefoniche per Customer Care</strong>
+                </p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-orange-500 rounded-full mt-3 flex-shrink-0"></div>
+                <p className="text-gray-700 font-montserrat leading-relaxed mt-0">
+                  <strong className="text-blue-dark">Disponibilità a comparire in eventuali video</strong> di presentazione e promozione dello studio
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 5. Possibilità di carriera */}
         <section className="mb-16">
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
             <div className="flex items-center mb-6">
@@ -232,7 +316,7 @@ const Segretaria = () => {
           </div>
         </section>
 
-        {/* 5. Iter di selezione */}
+        {/* 6. Iter di selezione */}
         <section className="mb-16">
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
             <div className="flex items-center mb-6">
@@ -246,6 +330,12 @@ const Segretaria = () => {
               </h2>
             </div>
             
+            <div className="mb-6">
+              <p className="text-gray-700 font-montserrat leading-relaxed text-lg">
+                Il processo di selezione si articolerà in <strong className="text-blue-dark">tre fasi</strong>:
+              </p>
+            </div>
+            
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
                 <div className="w-8 h-8 bg-sky-600 text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0 mt-1">
@@ -253,11 +343,11 @@ const Segretaria = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-blue-dark font-montserrat mb-2 mt-0">
-                    Invio candidatura
+                    Primo colloquio
                   </h3>
                   <p className="text-gray-700 font-montserrat leading-relaxed mt-0">
-                    Invia il tuo CV e una lettera di presentazione attraverso il form di candidatura. 
-                    Valuteremo il tuo profilo entro 48 ore.
+                    Breve, conoscitivo e orientato a rispondere a eventuali domande sul ruolo e sulle attività quotidiane, 
+                    per valutare l'idoneità del candidato.
                   </p>
                 </div>
               </div>
@@ -268,56 +358,24 @@ const Segretaria = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-blue-dark font-montserrat mb-2 mt-0">
-                    Colloquio telefonico (15-20 min)
+                    Secondo colloquio
                   </h3>
                   <p className="text-gray-700 font-montserrat leading-relaxed mt-0">
-                    Breve colloquio telefonico per conoscerti meglio e verificare la compatibilità 
-                    con la posizione e l'ambiente di lavoro.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-4">
-                <div className="w-8 h-8 bg-sky-600 text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0 mt-1">
-                  3
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-blue-dark font-montserrat mb-2 mt-0">
-                    Colloquio in presenza (45-60 min)
-                  </h3>
-                  <p className="text-gray-700 font-montserrat leading-relaxed mt-0">
-                    Colloquio approfondito con il team HR e il responsabile amministrativo. 
-                    Visita del centro e presentazione dell'ambiente di lavoro.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-4">
-                <div className="w-8 h-8 bg-sky-600 text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0 mt-1">
-                  4
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-blue-dark font-montserrat mb-2 mt-0">
-                    Test pratico (30 min)
-                  </h3>
-                  <p className="text-gray-700 font-montserrat leading-relaxed mt-0">
-                    Test pratico su Excel e gestione di situazioni tipiche della segreteria 
-                    per valutare le competenze operative.
+                    Esercitazione pratica sulle capacità di ragionamento e problem-solving utilizzando Google Sheets.
                   </p>
                 </div>
               </div>
               
               <div className="flex items-start space-x-4">
                 <div className="w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0 mt-1">
-                  ✓
+                  3
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-blue-dark font-montserrat mb-2 mt-0">
-                    Comunicazione esito
+                    Terzo colloquio
                   </h3>
                   <p className="text-gray-700 font-montserrat leading-relaxed mt-0">
-                    Comunicazione dell'esito entro 3 giorni lavorativi. In caso di esito positivo, 
-                    definizione delle modalità di inserimento e formazione.
+                    Presentazione dell'offerta lavorativa e conclusione del processo di selezione.
                   </p>
                 </div>
               </div>
@@ -325,7 +383,7 @@ const Segretaria = () => {
           </div>
         </section>
 
-        {/* 6. Come candidarti */}
+        {/* 7. Come candidarti */}
         <section className="mb-16">
           <div className="bg-gradient-to-br from-sky-50 to-blue-50 rounded-2xl p-8 shadow-lg border border-sky-200">
             <div className="flex items-center mb-6">
@@ -342,73 +400,37 @@ const Segretaria = () => {
             <div className="space-y-6">
               <div className="bg-white p-6 rounded-xl border border-sky-200">
                 <h3 className="text-xl font-bold text-blue-dark font-montserrat mb-4 mt-0">
-                  📋 Documenti richiesti
-                </h3>
-                <ul className="space-y-2 text-gray-700 font-montserrat">
-                  <li>• <strong>CV aggiornato</strong> in formato PDF</li>
-                  <li>• <strong>Lettera di presentazione</strong> personalizzata</li>
-                  <li>• <strong>Certificazioni</strong> e attestati (se disponibili)</li>
-                  <li>• <strong>Referenze</strong> di precedenti esperienze lavorative</li>
-                </ul>
-              </div>
-              
-              <div className="bg-white p-6 rounded-xl border border-sky-200">
-                <h3 className="text-xl font-bold text-blue-dark font-montserrat mb-4 mt-0">
                   📧 Modalità di invio
                 </h3>
                 <div className="space-y-3">
                   <p className="text-gray-700 font-montserrat mt-0">
                     <strong>Email:</strong> 
-                    <a href="mailto:lavora@mobilitas.it" className="text-sky-600 hover:text-sky-700 ml-2">
-                      lavora@mobilitas.it
+                    <a href="mailto:colloqui@studiomobilitas.it" className="text-sky-600 hover:text-sky-700 ml-2">
+                      colloqui@studiomobilitas.it
                     </a>
+                  </p>
+                  <p className="text-gray-700 font-montserrat mt-0">
+                    Inviaci il tuo CV
                   </p>
                   <p className="text-gray-700 font-montserrat mt-0">
                     <strong>Oggetto:</strong> Candidatura Segretaria Generale - [Nome Cognome]
                   </p>
-                  <p className="text-gray-700 font-montserrat mt-0">
-                    <strong>WhatsApp:</strong> 
-                    <a href="https://wa.me/393401234567" className="text-sky-600 hover:text-sky-700 ml-2">
-                      +39 340 123 4567
-                    </a>
-                  </p>
                 </div>
               </div>
               
-              <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-xl border border-green-200">
+              <div className="bg-white p-6 rounded-xl border border-sky-200">
                 <h3 className="text-xl font-bold text-blue-dark font-montserrat mb-4 mt-0">
-                  ⚡ Candidatura rapida
+                  📋 Documenti richiesti
                 </h3>
-                <p className="text-gray-700 font-montserrat leading-relaxed mb-4 mt-0">
-                  Per una candidatura più veloce, puoi inviare il tuo CV direttamente via WhatsApp 
-                  con una breve presentazione di te stesso e del perché vorresti lavorare con noi.
-                </p>
-                <a 
-                  href="https://wa.me/393401234567?text=Ciao! Sono interessato/a alla posizione di Segretaria Generale. Ecco il mio CV:"
-                  className="inline-flex items-center px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition-colors font-montserrat"
-                >
-                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
-                  </svg>
-                  Candidati via WhatsApp
-                </a>
+                <ul className="space-y-2 text-gray-700 font-montserrat">
+                  <li>• <strong>CV aggiornato</strong></li>
+                  <li>• <strong>Certificazioni e attestati</strong> (se disponibili)</li>
+                  <li>• <strong>PLUS:</strong> allega un breve video personale per presentarti</li>
+                </ul>
               </div>
             </div>
           </div>
         </section>
-
-        {/* Back to Jobs */}
-        <div className="text-center">
-          <Link
-            to="/lavora-con-noi"
-            className="inline-flex items-center px-6 py-3 bg-sky-600 text-white font-semibold rounded-lg hover:bg-sky-700 transition-colors font-montserrat"
-          >
-            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-            </svg>
-            Torna alle posizioni disponibili
-          </Link>
-        </div>
       </div>
     </div>
   )
