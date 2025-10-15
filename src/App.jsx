@@ -15,6 +15,9 @@ import Nutrizionista from './pages/sito-web/posizioni/Nutrizionista'
 import SocialMediaManager from './pages/sito-web/posizioni/SocialMediaManager'
 import Influencer from './pages/sito-web/posizioni/Influencer'
 
+// Partnership pages
+import Abylsen from './pages/sito-web/partnership/Abylsen'
+
 // Landing pages
 import FirstWalk from './pages/landing-pages/FirstWalk'
 import Emicrania from './pages/landing-pages/Emicrania'
@@ -41,6 +44,9 @@ function App() {
         
         {/* Influencer page - direct menu item */}
         <Route path="/influencer" element={<Layout><Influencer /></Layout>} />
+        
+        {/* Partnership pages with layout */}
+        <Route path="/partnership/abylsen" element={<Layout><Abylsen /></Layout>} />
         
         {/* Landing pages without main layout */}
         <Route path="/first-walk" element={<FirstWalk />} />
