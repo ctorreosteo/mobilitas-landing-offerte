@@ -125,7 +125,7 @@ const StampaSubalpina = () => {
           <div className="max-w-4xl mx-auto mb-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               {/* Left Column - Event Image */}
-              <div className="flex items-center justify-center">
+              <div className="flex items-start justify-start">
                 <div className="relative w-full max-w-md">
                   {/* Background Glow Effect */}
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-blue-dark/10 rounded-3xl blur-xl transform scale-110"></div>
