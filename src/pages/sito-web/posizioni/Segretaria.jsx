@@ -20,7 +20,7 @@ const Segretaria = () => {
             </h1>
             <div className="flex items-center justify-center space-x-4 text-gray-600 font-montserrat">
               <span className="bg-sky-100 px-3 py-1 rounded-full text-sm">
-                Partita IVA
+                Contratto a tempo determinato o indeterminato
               </span>
               <span className="bg-gray-100 px-3 py-1 rounded-full text-sm">
                 In presenza
@@ -282,10 +282,10 @@ const Segretaria = () => {
                     📈 Percorsi di sviluppo
                   </h4>
                   <ul className="space-y-2 text-gray-700 font-montserrat">
-                    <li>• Coordinatrice amministrativa</li>
-                    <li>• Responsabile reception e accoglienza</li>
-                    <li>• Assistente di direzione</li>
-                    <li>• Responsabile amministrativo</li>
+                    <li>Coordinatrice amministrativa</li>
+                    <li>Responsabile studio</li>
+                    <li>Assistente di direzione</li>
+                    <li>Responsabile amministrativo</li>
                   </ul>
                 </div>
                 
@@ -294,10 +294,11 @@ const Segretaria = () => {
                     💼 Competenze da sviluppare
                   </h4>
                   <ul className="space-y-2 text-gray-700 font-montserrat">
-                    <li>• Leadership e gestione team</li>
-                    <li>• Project management</li>
-                    <li>• Gestione budget e contabilità</li>
-                    <li>• Marketing e comunicazione</li>
+                    <li>Leadership e gestione team</li>
+                    <li>Project management</li>
+                    <li>Gestione budget e contabilità</li>
+                    <li>Marketing e comunicazione</li>
+                    <li>Capacità di vendita</li>
                   </ul>
                 </div>
               </div>
@@ -308,7 +309,7 @@ const Segretaria = () => {
                 </h3>
                 <p className="text-gray-700 font-montserrat leading-relaxed mt-0">
                   Per i collaboratori più meritevoli, Mobilitas offre la possibilità di entrare in società 
-                  e sviluppare progetti imprenditoriali insieme, con accesso a know-how, risorse umane 
+                  e/o sviluppare progetti imprenditoriali insieme, con accesso a know-how, risorse umane 
                   qualificate e capitali per realizzare le idee.
                 </p>
               </div>
