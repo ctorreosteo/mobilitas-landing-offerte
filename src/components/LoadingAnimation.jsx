@@ -4,6 +4,14 @@ const LoadingAnimation = ({ onComplete }) => {
   const [isVisible, setIsVisible] = useState(true)
   const [showContent, setShowContent] = useState(false)
 
+  const hideAnimation = () => {
+    setIsVisible(false)
+    // Chiama la callback dopo che l'animazione di uscita è completata
+    setTimeout(() => {
+      onComplete()
+    }, 800) // Durata dell'animazione di uscita
+  }
+
   useEffect(() => {
     // Mostra il contenuto dopo un breve delay per l'animazione di entrata
     const showTimer = setTimeout(() => {
@@ -12,16 +20,26 @@ const LoadingAnimation = ({ onComplete }) => {
 
     // Nasconde l'animazione dopo 3 secondi
     const hideTimer = setTimeout(() => {
-      setIsVisible(false)
-      // Chiama la callback dopo che l'animazione di uscita è completata
-      setTimeout(() => {
-        onComplete()
-      }, 800) // Durata dell'animazione di uscita
+      hideAnimation()
     }, 3000)
+
+    // Listener per l'evento scroll - nasconde l'animazione immediatamente
+    const handleScroll = () => {
+      hideAnimation()
+    }
+
+    // Aggiungi il listener per scroll
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    window.addEventListener('wheel', handleScroll, { passive: true })
+    window.addEventListener('touchmove', handleScroll, { passive: true })
 
     return () => {
       clearTimeout(showTimer)
       clearTimeout(hideTimer)
+      // Rimuovi tutti i listener
+      window.removeEventListener('scroll', handleScroll)
+      window.removeEventListener('wheel', handleScroll)
+      window.removeEventListener('touchmove', handleScroll)
     }
   }, [onComplete])
 
