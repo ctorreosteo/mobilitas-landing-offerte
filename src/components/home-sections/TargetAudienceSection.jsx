@@ -1,143 +1,186 @@
-import React from 'react'
-import { Check, X, Target, Users } from 'lucide-react'
+import React, { useState, useEffect } from 'react'
+import { Check, X, Target, Users, Heart, Zap, Shield, Star, ArrowRight, Sparkles } from 'lucide-react'
 
 const TargetAudienceSection = () => {
+  const [isVisible, setIsVisible] = useState(false)
+
+  useEffect(() => {
+    setIsVisible(true)
+  }, [])
+
+  const targetPoints = [
+    {
+      icon: Heart,
+      title: "Chi è stanco di dipendere dai farmaci",
+      description: "e vuole una soluzione duratura"
+    },
+    {
+      icon: Zap,
+      title: "Chi vuole capire il proprio corpo",
+      description: "invece di delegare tutto alla medicina tradizionale"
+    },
+    {
+      icon: Shield,
+      title: "Chi è pronto a impegnarsi",
+      description: "per cambiare le proprie abitudini"
+    },
+    {
+      icon: Star,
+      title: "Chi vuole invecchiare in salute",
+      description: "e godersi la pensione"
+    }
+  ]
+
+  const notTargetPoints = [
+    "Chi cerca soluzioni rapide senza voler cambiare nulla",
+    "Chi vuole solo \"la pillola magica\" per risolvere tutto",
+    "Chi non è disposto a prendersi responsabilità per la propria salute",
+    "Chi preferisce delegare tutto alla medicina tradizionale senza partecipare",
+    "Chi accetta il dolore come parte inevitabile della vita"
+  ]
+
   return (
-    <section className="py-20 bg-cream">
-      <div className="container mx-auto px-4">
+    <section className="relative py-12 bg-gradient-to-br from-white via-cream/30 to-white overflow-hidden">
+      {/* Background Elements */}
+      <div className="absolute inset-0">
+        <div className="absolute top-10 left-8 w-24 h-24 bg-green/10 rounded-full blur-2xl animate-pulse"></div>
+        <div className="absolute top-20 right-12 w-20 h-20 bg-blue-dark/10 rounded-full blur-xl animate-pulse delay-1000"></div>
+        <div className="absolute bottom-20 left-1/4 w-28 h-28 bg-green/15 rounded-full blur-2xl animate-pulse delay-2000"></div>
+        <div className="absolute bottom-10 right-1/3 w-16 h-16 bg-blue-dark/15 rounded-full blur-xl animate-pulse delay-3000"></div>
+      </div>
+
+      <div className="relative z-10 container mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-green/15 rounded-full px-4 py-2 mb-6 border border-green/20">
-            <Target className="w-5 h-5 text-blue-dark" />
-            <span className="text-sm font-medium text-blue-dark font-montserrat">
+        <div className={`text-left mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div className="inline-flex items-center gap-3 bg-sky-400/10 border border-sky-400/30 rounded-full px-6 py-3 mb-6 shadow-lg backdrop-blur-sm">
+            <Target className="w-5 h-5 text-sky-400" />
+            <span className="text-sm font-semibold text-sky-400 font-montserrat">
               Chi siamo noi per te
             </span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-dark mb-6 font-montserrat">
+          
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-dark mb-6 font-montserrat leading-tight">
             Non siamo per tutti
           </h2>
-          <p className="text-lg text-blue-dark/90 max-w-2xl mx-auto font-montserrat">
-            Siamo per chi è pronto a <span className="font-semibold text-blue-dark bg-green/20 px-3 py-1.5 rounded border border-green/30">prendere il controllo</span> della propria salute
-          </p>
-        </div>
-
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          {/* Per chi è */}
-          <div className="bg-cream rounded-2xl p-8 shadow-xl border-l-4 border-green border border-gray-100">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-green/15 rounded-full flex items-center justify-center border border-green/20">
-                <Check className="w-6 h-6 text-blue-dark" />
-              </div>
-              <h3 className="text-2xl font-bold text-blue-dark font-montserrat">
-                Per chi è Mobilitas
-              </h3>
-            </div>
-            
-            <div className="space-y-4">
-              <div className="flex items-center gap-3">
-                <Check className="w-5 h-5 text-blue-dark flex-shrink-0" />
-                <p className="text-blue-dark/90 font-montserrat">
-                  <span className="font-semibold">Chi è stanco di dipendere dai farmaci</span> e vuole una soluzione duratura
-                </p>
-              </div>
-              <div className="flex items-center gap-3">
-                <Check className="w-5 h-5 text-blue-dark flex-shrink-0" />
-                <p className="text-blue-dark/90 font-montserrat">
-                  <span className="font-semibold">Chi vuole capire il proprio corpo</span> invece di delegare tutto ai medici
-                </p>
-              </div>
-              <div className="flex items-center gap-3">
-                <Check className="w-5 h-5 text-blue-dark flex-shrink-0" />
-                <p className="text-blue-dark/90 font-montserrat">
-                  <span className="font-semibold">Chi è pronto a impegnarsi</span> per cambiare le proprie abitudini
-                </p>
-              </div>
-              <div className="flex items-center gap-3">
-                <Check className="w-5 h-5 text-blue-dark flex-shrink-0" />
-                <p className="text-blue-dark/90 font-montserrat">
-                  <span className="font-semibold">Chi vuole invecchiare in salute</span> e godersi la pensione
-                </p>
-              </div>
-              <div className="flex items-center gap-3">
-                <Check className="w-5 h-5 text-blue-dark flex-shrink-0" />
-                <p className="text-blue-dark/90 font-montserrat">
-                  <span className="font-semibold">Chi cerca un approccio olistico</span> che guarda alla persona nella sua totalità
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-8 p-4 rounded-lg border" style={{backgroundColor: '#0ea5e9', borderColor: '#0ea5e9'}}>
-              <p className="text-white font-semibold font-montserrat text-center">
-                "Sei pronto a diventare il leader della tua salute?"
-              </p>
-            </div>
-          </div>
-
-          {/* Per chi non è */}
-          <div className="bg-cream rounded-2xl p-8 shadow-xl border-l-4 border-red-500 border border-gray-100">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center border border-red-200">
-                <X className="w-6 h-6 text-red-600" />
-              </div>
-              <h3 className="text-2xl font-bold text-blue-dark font-montserrat">
-                Per chi non è Mobilitas
-              </h3>
-            </div>
-            
-            <div className="space-y-4">
-              <div className="flex items-center gap-3">
-                <X className="w-5 h-5 text-red-600 flex-shrink-0" />
-                <p className="text-blue-dark/90 font-montserrat">
-                  <span className="font-semibold">Chi cerca soluzioni rapide</span> senza voler cambiare nulla
-                </p>
-              </div>
-              <div className="flex items-center gap-3">
-                <X className="w-5 h-5 text-red-600 flex-shrink-0" />
-                <p className="text-blue-dark/90 font-montserrat">
-                  <span className="font-semibold">Chi vuole solo "la pillola magica"</span> per risolvere tutto
-                </p>
-              </div>
-              <div className="flex items-center gap-3">
-                <X className="w-5 h-5 text-red-600 flex-shrink-0" />
-                <p className="text-blue-dark/90 font-montserrat">
-                  <span className="font-semibold">Chi non è disposto a prendersi responsabilità</span> per la propria salute
-                </p>
-              </div>
-              <div className="flex items-center gap-3">
-                <X className="w-5 h-5 text-red-600 flex-shrink-0" />
-                <p className="text-blue-dark/90 font-montserrat">
-                  <span className="font-semibold">Chi preferisce delegare tutto</span> ai medici senza partecipare
-                </p>
-              </div>
-              <div className="flex items-center gap-3">
-                <X className="w-5 h-5 text-red-600 flex-shrink-0" />
-                <p className="text-blue-dark/90 font-montserrat">
-                  <span className="font-semibold">Chi accetta il dolore</span> come parte inevitabile della vita
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-8 p-4 bg-red-100 rounded-lg border border-red-300">
-              <p className="text-red-700 font-semibold font-montserrat text-center">
-                "Se cerchi scorciatoie, non siamo la soluzione giusta per te"
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Bottom CTA */}
-        <div className="text-center mt-16">
-          <div className="inline-flex items-center gap-2 bg-blue-dark/10 rounded-full px-6 py-3 mb-6 border border-blue-dark/20">
-            <Users className="w-5 h-5 text-blue-dark" />
-            <span className="text-sm font-medium text-blue-dark font-montserrat">
-              Riconosci te stesso in una di queste categorie?
+          
+          <p className="text-xl md:text-2xl text-blue-dark/80 max-w-4xl font-montserrat leading-relaxed">
+            Siamo per chi è pronto a&nbsp;
+            <span className="text-sky-400 font-bold">
+              prendere il controllo
             </span>
-          </div>
-          <p className="text-lg text-blue-dark/90 font-montserrat max-w-2xl mx-auto">
-            Se ti sei riconosciuto nella prima categoria, sei nel posto giusto. 
-            <span className="font-semibold text-blue-dark bg-green/20 px-3 py-1.5 rounded border border-green/30"> Iniziamo insieme il tuo viaggio verso una salute duratura.</span>
+            &nbsp;della propria salute
           </p>
         </div>
+
+        <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          {/* Per chi è - Enhanced Design */}
+          <div className={`relative transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <div className="relative bg-white/90 backdrop-blur-md rounded-2xl p-4 shadow-xl border border-blue-dark/20 overflow-hidden">
+              {/* Gradient Background */}
+              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-sky-400 via-sky-400/80 to-sky-400/60"></div>
+              
+              {/* Floating Elements */}
+              <div className="absolute top-2 right-2 w-8 h-8 bg-sky-400/20 rounded-full flex items-center justify-center">
+                <Sparkles className="w-4 h-4 text-sky-400" />
+              </div>
+              
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-gradient-to-br from-sky-400 to-sky-400/80 rounded-lg flex items-center justify-center shadow-lg">
+                  <Check className="w-5 h-5 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-blue-dark font-montserrat mb-0">
+                    Per chi è Mobilitas
+                  </h3>
+                  <p className="text-blue-dark/70 font-montserrat text-xs">Il tuo profilo ideale</p>
+                </div>
+              </div>
+              
+              <div className="space-y-2">
+                {targetPoints.map((point, index) => (
+                  <div key={index} className="group flex items-start gap-2 p-2 rounded-lg hover:bg-sky-400/5 transition-all duration-300">
+                    <div className="w-6 h-6 bg-sky-400/20 rounded-md flex items-center justify-center flex-shrink-0 group-hover:bg-sky-400/30 transition-colors">
+                      <point.icon className="w-3 h-3 text-sky-400" />
+                    </div>
+                    <div>
+                      <p className="text-blue-dark font-semibold font-montserrat text-xs mb-0.5 mt-0">
+                        {point.title}
+                      </p>
+                      <p className="text-blue-dark/80 font-montserrat text-xs">
+                        {point.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Call to Action Card */}
+              <div className="mt-4 p-3 bg-gradient-to-r from-sky-400 to-sky-400/80 rounded-lg shadow-lg">
+                <div className="flex items-center gap-2 mb-1">
+                  <div className="w-5 h-5 bg-white/20 rounded-sm flex items-center justify-center">
+                    <Heart className="w-3 h-3 text-white" />
+                  </div>
+                  <span className="text-white/90 font-semibold font-montserrat text-xs">La tua domanda</span>
+                </div>
+                <p className="text-white font-bold font-montserrat text-xs">
+                  "Sei pronto a diventare il leader della tua salute?"
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Per chi non è - Enhanced Design */}
+          <div className={`relative transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <div className="relative bg-white/90 backdrop-blur-md rounded-2xl p-4 shadow-xl border border-red-200/50 overflow-hidden">
+              {/* Gradient Background */}
+              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-red-400 to-red-500"></div>
+              
+              {/* Floating Elements */}
+              <div className="absolute top-2 right-2 w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
+                <X className="w-4 h-4 text-red-500" />
+              </div>
+              
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-gradient-to-br from-red-400 to-red-500 rounded-lg flex items-center justify-center shadow-lg">
+                  <X className="w-5 h-5 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-blue-dark font-montserrat mb-0">
+                    Per chi non è Mobilitas
+                  </h3>
+                  <p className="text-blue-dark/70 font-montserrat text-xs">Non è il momento giusto</p>
+                </div>
+              </div>
+              
+              <div className="space-y-2">
+                {notTargetPoints.map((point, index) => (
+                  <div key={index} className="flex items-start gap-2 p-2 rounded-lg hover:bg-red-50/50 transition-all duration-300">
+                    <div className="w-6 h-6 bg-red-100 rounded-md flex items-center justify-center flex-shrink-0">
+                      <X className="w-3 h-3 text-red-500" />
+                    </div>
+                    <p className="text-blue-dark/90 font-montserrat text-xs mt-0">
+                      <span className="font-semibold">{point}</span>
+                    </p>
+                  </div>
+                ))}
+              </div>
+
+              {/* Warning Card */}
+              <div className="mt-4 p-3 bg-gradient-to-r from-red-50 to-red-100 border border-red-200 rounded-lg">
+                <div className="flex items-center gap-2 mb-1">
+                  <div className="w-5 h-5 bg-red-200 rounded-sm flex items-center justify-center">
+                    <X className="w-3 h-3 text-red-600" />
+                  </div>
+                  <span className="text-red-700 font-semibold font-montserrat text-xs">Attenzione</span>
+                </div>
+                <p className="text-red-700 font-bold font-montserrat text-xs">
+                  "Se cerchi scorciatoie, non siamo la soluzione giusta per te"
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   )

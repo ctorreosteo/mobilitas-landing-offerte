@@ -96,73 +96,88 @@ const ServicesOverviewSection = () => {
     <section className="py-20 bg-cream">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-green/10 rounded-full px-4 py-2 mb-6">
-            <Target className="w-5 h-5 text-green" />
-            <span className="text-sm font-medium text-green font-montserrat">
+        <div className="text-left mb-16">
+          <div className="inline-flex items-center gap-3 bg-sky-400/10 border border-sky-400/30 rounded-full px-6 py-3 mb-6 shadow-lg backdrop-blur-sm">
+            <Target className="w-5 h-5 text-sky-400" />
+            <span className="text-sm font-semibold text-sky-400 font-montserrat">
               Il nostro approccio olistico
             </span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-dark mb-6 font-montserrat">
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-dark mb-6 mt-0 font-montserrat">
             I 5 pilastri della salute
           </h2>
-          <p className="text-lg text-blue-dark/80 max-w-3xl mx-auto font-montserrat">
+          <p className="text-lg text-blue-dark/80 max-w-3xl font-montserrat">
             Non ci limitiamo a trattare i sintomi. 
-            <span className="font-semibold text-green"> Il nostro approccio tocca ogni area della vita</span> per garantire risultati concreti e duraturi.
+            <span className="font-semibold text-blue-dark"> Il nostro approccio tocca ogni area della vita</span> per garantire risultati concreti e duraturi.
           </p>
         </div>
 
-        {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {services.map((service, index) => {
-            const IconComponent = service.icon
-            const colors = getColorClasses(service.color)
-            
-            return (
-              <div key={index} className="bg-cream rounded-2xl p-8 hover:shadow-lg transition-shadow">
-                {/* Icon */}
-                <div className={`w-16 h-16 ${colors.bg} rounded-2xl flex items-center justify-center mb-6`}>
-                  <IconComponent className={`w-8 h-8 ${colors.icon}`} />
-                </div>
+        {/* Services Carousel */}
+        <div className="relative max-w-7xl mx-auto mb-16">
+          <div className="overflow-x-auto scrollbar-hide">
+            <div className="flex gap-6 pb-4" style={{ width: 'max-content' }}>
+              {services.map((service, index) => {
+                const IconComponent = service.icon
+                const colors = getColorClasses(service.color)
+                
+                return (
+                  <div key={index} className="flex-shrink-0 w-80 bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-xl border border-blue-dark/20 hover:shadow-2xl transition-all duration-300 hover:scale-105">
+                    <div className="flex flex-col h-full">
+                      {/* Icon */}
+                      <div className={`w-12 h-12 ${colors.bg} rounded-xl flex items-center justify-center mb-4`}>
+                        <IconComponent className={`w-6 h-6 ${colors.icon}`} />
+                      </div>
 
-                {/* Title & Subtitle */}
-                <h3 className="text-xl font-bold text-blue-dark mb-2 font-montserrat">
-                  {service.title}
-                </h3>
-                <p className="text-sm text-blue-dark/60 mb-4 font-montserrat italic">
-                  {service.subtitle}
-                </p>
+                      {/* Title & Subtitle */}
+                      <h3 className="text-lg font-bold text-blue-dark mb-2 font-montserrat">
+                        {service.title}
+                      </h3>
+                      <p className="text-xs text-blue-dark/60 mb-3 font-montserrat italic">
+                        {service.subtitle}
+                      </p>
 
-                {/* Description */}
-                <p className="text-blue-dark/80 mb-6 font-montserrat leading-relaxed">
-                  {service.description}
-                </p>
+                      {/* Description */}
+                      <p className="text-blue-dark/80 mb-4 font-montserrat leading-relaxed text-sm flex-1">
+                        {service.description}
+                      </p>
 
-                {/* Benefits */}
-                <div className="space-y-2 mb-6">
-                  {service.benefits.map((benefit, benefitIndex) => (
-                    <div key={benefitIndex} className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-green flex-shrink-0" />
-                      <span className="text-sm text-blue-dark/80 font-montserrat">
-                        {benefit}
-                      </span>
+                      {/* Benefits */}
+                      <div className="space-y-1 mb-4">
+                        {service.benefits.map((benefit, benefitIndex) => (
+                          <div key={benefitIndex} className="flex items-center gap-2">
+                            <CheckCircle className="w-3 h-3 text-blue-dark flex-shrink-0" />
+                            <span className="text-xs text-blue-dark/80 font-montserrat">
+                              {benefit}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+
+                      {/* CTA Button */}
+                      <button className={`w-full ${colors.button} font-bold py-2 px-3 rounded-lg transition-all duration-300 font-montserrat text-xs mt-auto`}>
+                        Scopri di più
+                        <ArrowRight className="inline-block ml-1 w-3 h-3" />
+                      </button>
                     </div>
-                  ))}
-                </div>
-
-                {/* CTA Button */}
-                <button className={`w-full ${colors.button} font-bold py-3 px-4 rounded-lg transition-all duration-300 font-montserrat text-sm`}>
-                  Scopri di più
-                  <ArrowRight className="inline-block ml-2 w-4 h-4" />
-                </button>
-              </div>
-            )
-          })}
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+          
+          {/* Scroll indicator */}
+          <div className="flex justify-center mt-4">
+            <div className="flex gap-2">
+              {services.map((_, index) => (
+                <div key={index} className="w-2 h-2 bg-blue-dark/30 rounded-full"></div>
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* Osteopathic Treatment Highlight */}
         <div className="bg-gradient-to-r from-blue-dark to-blue-900 rounded-2xl p-8 md:p-12 text-white">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto text-left">
             <div className="inline-flex items-center gap-2 bg-green/20 rounded-full px-4 py-2 mb-6">
               <Zap className="w-5 h-5 text-green" />
               <span className="text-sm font-medium text-green font-montserrat">
@@ -180,23 +195,23 @@ const ServicesOverviewSection = () => {
 
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <Activity className="w-8 h-8 text-green mx-auto mb-3" />
+                <Activity className="w-8 h-8 text-green mb-3" />
                 <p className="font-semibold font-montserrat">Trattamento d'eccellenza</p>
                 <p className="text-sm text-cream/80 font-montserrat">Tecniche osteopatiche avanzate</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <Brain className="w-8 h-8 text-green mx-auto mb-3" />
+                <Brain className="w-8 h-8 text-green mb-3" />
                 <p className="font-semibold font-montserrat">Educazione continua</p>
                 <p className="text-sm text-cream/80 font-montserrat">Imparare a prendersi cura di sé</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <Heart className="w-8 h-8 text-green mx-auto mb-3" />
+                <Heart className="w-8 h-8 text-green mb-3" />
                 <p className="font-semibold font-montserrat">Supporto personalizzato</p>
                 <p className="text-sm text-cream/80 font-montserrat">Accompagnamento nel cambiamento</p>
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/contatti"
                 className="group bg-green hover:bg-green/90 text-blue-dark font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl font-montserrat"
@@ -212,9 +227,9 @@ const ServicesOverviewSection = () => {
         </div>
 
         {/* Bottom Message */}
-        <div className="text-center mt-16">
-          <p className="text-lg text-blue-dark/80 font-montserrat max-w-3xl mx-auto">
-            <span className="font-semibold text-green">"Non ti offriamo scorciatoie, ti offriamo una strada chiara e sicura per stare bene davvero."</span>
+        <div className="text-left mt-16">
+          <p className="text-lg text-blue-dark/80 font-montserrat max-w-3xl">
+            <span className="font-semibold text-blue-dark">"Non ti offriamo scorciatoie, ti offriamo una strada chiara e sicura per stare bene davvero."</span>
             <br />
             La salute non è qualcosa che ottieni da altri, è qualcosa che costruisci ogni giorno.
           </p>

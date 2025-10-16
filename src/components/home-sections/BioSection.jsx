@@ -40,18 +40,18 @@ const BioSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 bg-green/10 rounded-full px-4 py-2 mb-6">
-              <Users className="w-5 h-5 text-green" />
-              <span className="text-sm font-medium text-green font-montserrat">
+          <div className="text-left mb-16">
+            <div className="inline-flex items-center gap-2 bg-blue-dark/10 rounded-full px-4 py-2 mb-6">
+              <Users className="w-5 h-5 text-blue-dark" />
+              <span className="text-sm font-medium text-blue-dark font-montserrat">
                 Chi siamo
               </span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-blue-dark mb-6 font-montserrat">
               Non siamo semplici osteopati
             </h2>
-            <p className="text-lg text-blue-dark/90 max-w-3xl mx-auto font-montserrat">
-              Siamo <span className="font-semibold text-blue-dark bg-green/10 px-2 py-1 rounded">coach del benessere, leader del cambiamento, catalizzatori di trasformazioni reali.</span>
+            <p className="text-lg text-blue-dark/90 max-w-3xl font-montserrat">
+              Siamo <span className="font-semibold text-blue-dark bg-blue-dark/10 px-2 py-1 rounded">coach del benessere, leader del cambiamento, catalizzatori di trasformazioni reali.</span>
             </p>
           </div>
 
@@ -60,33 +60,33 @@ const BioSection = () => {
             <div>
               <div className="bg-cream rounded-2xl p-8 shadow-xl border border-gray-100">
                 {/* Quote */}
-                <div className="flex justify-center mb-6">
-                  <div className="w-16 h-16 bg-green/15 rounded-full flex items-center justify-center border border-green/20">
-                    <Quote className="w-8 h-8 text-green" />
+                <div className="flex mb-6">
+                  <div className="w-16 h-16 bg-blue-dark/15 rounded-full flex items-center justify-center border border-blue-dark/20">
+                    <Quote className="w-8 h-8 text-blue-dark" />
                   </div>
                 </div>
 
-                <blockquote className="text-xl text-blue-dark mb-8 font-montserrat leading-relaxed text-center">
+                <blockquote className="text-xl text-blue-dark mb-8 font-montserrat leading-relaxed text-left">
                   "Ogni giorno ci alziamo con una missione chiara e potente: 
-                  <span className="font-semibold text-blue-dark bg-green/10 px-2 py-1 rounded"> restituire alle persone il diritto di vivere senza dolore</span>, 
+                  <span className="font-semibold text-blue-dark bg-blue-dark/10 px-2 py-1 rounded"> restituire alle persone il diritto di vivere senza dolore</span>, 
                   di sentirsi libere nel proprio corpo, di riprendersi in mano la propria salute."
                 </blockquote>
 
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
-                    <Target className="w-5 h-5 text-green mt-1 flex-shrink-0" />
+                    <Target className="w-5 h-5 text-blue-dark mt-1 flex-shrink-0" />
                     <p className="text-blue-dark/90 font-montserrat">
                       <span className="font-semibold">La nostra visione:</span> Un mondo in cui le persone camminano senza paura di muoversi, lavorano con energia e vivono con gioia.
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
-                    <Heart className="w-5 h-5 text-green mt-1 flex-shrink-0" />
+                    <Heart className="w-5 h-5 text-blue-dark mt-1 flex-shrink-0" />
                     <p className="text-blue-dark/90 font-montserrat">
                       <span className="font-semibold">Il nostro impegno:</span> Liberare le persone dal dolore, prevenire anziché curare, diffondere una cultura del benessere.
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
-                    <Shield className="w-5 h-5 text-green mt-1 flex-shrink-0" />
+                    <Shield className="w-5 h-5 text-blue-dark mt-1 flex-shrink-0" />
                     <p className="text-blue-dark/90 font-montserrat">
                       <span className="font-semibold">La nostra causa:</span> Un mondo senza dolori evitabili, una società più consapevole e responsabile del proprio benessere.
                     </p>
@@ -97,7 +97,7 @@ const BioSection = () => {
 
             {/* Right Side - Values */}
             <div>
-              <h3 className="text-2xl font-bold text-blue-dark mb-8 font-montserrat text-center lg:text-left">
+              <h3 className="text-2xl font-bold text-blue-dark mb-8 font-montserrat text-left">
                 I nostri principi guida
               </h3>
               <div className="space-y-6">
@@ -106,8 +106,8 @@ const BioSection = () => {
                   return (
                     <div key={index} className="bg-cream rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
                       <div className="flex items-start gap-4">
-                        <div className="w-12 h-12 bg-green/15 rounded-full flex items-center justify-center flex-shrink-0 border border-green/20">
-                          <IconComponent className="w-6 h-6 text-green" />
+                        <div className="w-12 h-12 bg-blue-dark/15 rounded-full flex items-center justify-center flex-shrink-0 border border-blue-dark/20">
+                          <IconComponent className="w-6 h-6 text-blue-dark" />
                         </div>
                         <div>
                           <h4 className="text-lg font-bold text-blue-dark mb-2 font-montserrat">
@@ -126,7 +126,7 @@ const BioSection = () => {
           </div>
 
           {/* Bottom CTA */}
-          <div className="bg-gradient-to-r from-blue-dark to-blue-900 rounded-2xl p-8 md:p-12 text-white text-center relative overflow-hidden">
+          <div className="bg-gradient-to-r from-blue-dark to-blue-900 rounded-2xl p-8 md:p-12 text-white text-left relative overflow-hidden">
             {/* Overlay for better text contrast */}
             <div className="absolute inset-0 bg-black/20"></div>
             <div className="relative z-10 max-w-4xl mx-auto">
@@ -139,7 +139,7 @@ const BioSection = () => {
                 <span className="font-semibold text-green bg-white/20 px-2 py-1 rounded drop-shadow-md"> combattere l'inerzia</span> e rompere lo schema mentale che ci fa pensare che essere "malati" sia normale.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/chi-siamo"
                   className="group bg-green hover:bg-green/90 text-blue-dark font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl font-montserrat border-2 border-green"
@@ -158,7 +158,7 @@ const BioSection = () => {
           </div>
 
           {/* Final Message */}
-          <div className="text-center mt-16">
+          <div className="text-left mt-16">
             <div className="bg-cream rounded-2xl p-8 shadow-xl border border-gray-100 max-w-4xl mx-auto">
               <h4 className="text-xl font-bold text-blue-dark mb-4 font-montserrat">
                 Un nuovo modo di vivere la salute
@@ -167,7 +167,7 @@ const BioSection = () => {
                 Entrare a fare un percorso in Mobilitas significa fare una scelta diversa. 
                 Significa smettere di delegare la propria salute a terzi e prenderne il controllo, giorno dopo giorno.
                 <br />
-                <span className="font-semibold text-blue-dark bg-green/10 px-2 py-1 rounded">Noi siamo la guida, tu sei il protagonista.</span>
+                <span className="font-semibold text-blue-dark bg-blue-dark/10 px-2 py-1 rounded">Noi siamo la guida, tu sei il protagonista.</span>
               </p>
             </div>
           </div>
