@@ -9,6 +9,7 @@ import ChiSiamo from './pages/sito-web/ChiSiamo'
 import FAQ from './pages/sito-web/FAQ'
 import Blog from './pages/sito-web/Blog'
 import Risorse from './pages/sito-web/Risorse'
+import Testimonianze from './pages/sito-web/Testimonianze'
 
 // Job position pages
 import Segretaria from './pages/sito-web/posizioni/Segretaria'
@@ -43,6 +44,7 @@ function App() {
         <Route path="/faq" element={<Layout><FAQ /></Layout>} />
         <Route path="/blog" element={<Layout><Blog /></Layout>} />
         <Route path="/risorse" element={<Layout><Risorse /></Layout>} />
+        <Route path="/testimonianze" element={<Layout><Testimonianze /></Layout>} />
         
         {/* Job position routes with layout */}
         <Route path="/lavora-con-noi/segretaria" element={<Layout><Segretaria /></Layout>} />
