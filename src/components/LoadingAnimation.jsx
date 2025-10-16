@@ -18,10 +18,10 @@ const LoadingAnimation = ({ onComplete }) => {
       setShowContent(true)
     }, 300)
 
-    // Nasconde l'animazione dopo 3 secondi
+    // Nasconde l'animazione dopo 2 secondi
     const hideTimer = setTimeout(() => {
       hideAnimation()
-    }, 3000)
+    }, 2000)
 
     // Listener per l'evento scroll - nasconde l'animazione immediatamente
     const handleScroll = () => {
@@ -110,7 +110,7 @@ const LoadingAnimation = ({ onComplete }) => {
               left: `${20 + i * 15}%`,
               top: `${30 + (i % 2) * 40}%`,
               animationDelay: `${i * 0.5}s`,
-              animationDuration: '3s'
+              animationDuration: '2s'
             }}
           ></div>
         ))}

@@ -49,17 +49,17 @@ const TargetAudienceSection = () => {
         <div className="absolute bottom-10 right-1/3 w-16 h-16 bg-blue-dark/15 rounded-full blur-xl animate-pulse delay-3000"></div>
       </div>
 
-      <div className="relative z-10 container mx-auto px-6">
+      <div className="relative z-10 max-w-7xl mx-auto px-[24px]">
         {/* Section Header */}
         <div className={`text-left mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="inline-flex items-center gap-3 bg-sky-400/10 border border-sky-400/30 rounded-full px-6 py-3 mb-6 shadow-lg backdrop-blur-sm">
             <Target className="w-5 h-5 text-sky-400" />
             <span className="text-sm font-semibold text-sky-400 font-montserrat">
-              Chi siamo noi per te
+              Per chi è Mobilitas?
             </span>
           </div>
           
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-dark mb-6 font-montserrat leading-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-dark mb-6 mt-0 font-montserrat leading-tight">
             Non siamo per tutti
           </h2>
           
@@ -70,6 +70,15 @@ const TargetAudienceSection = () => {
             </span>
             &nbsp;della propria salute
           </p>
+          
+          {/* Target Audience Image */}
+          <div className="mt-8 mb-8">
+            <img 
+              src="/home/home4.png" 
+              alt="Siamo per chi è pronto a prendere il controllo della propria salute" 
+              className="w-full max-w-4xl mx-auto rounded-2xl shadow-2xl"
+            />
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">

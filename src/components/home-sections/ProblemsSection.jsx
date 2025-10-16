@@ -31,7 +31,7 @@ const ProblemsSection = () => {
 
   return (
     <section className="py-20 bg-cream">
-      <div className="container mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-[24px]">
         {/* Section Header */}
         <div className="text-left mb-16">
           <div className="inline-flex items-center gap-2 bg-red-50 rounded-full px-4 py-2 mb-6">
@@ -45,7 +45,7 @@ const ProblemsSection = () => {
           </h2>
           <p className="text-lg text-blue-dark/80 max-w-3xl font-montserrat">
             Viviamo in un mondo che ci ha abituati ad accettare il dolore come parte inevitabile della vita. 
-            <span className="font-semibold text-red-600"> Ma tu non devi accettarlo.</span>
+            <span className="font-semibold text-blue-dark"> Ma tu non devi accettarlo.</span>
           </p>
         </div>
 
@@ -117,6 +117,15 @@ const ProblemsSection = () => {
               <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-dark mb-6 font-montserrat leading-tight">
                 Ma c'è una verità che nessuno ti ha mai detto
               </h3>
+              
+              {/* Problems Section Image */}
+              <div className="mt-8 mb-8">
+                <img 
+                  src="/home/home1.png" 
+                  alt="Ma c'è una verità che nessuno ti ha mai detto" 
+                  className="w-full max-w-4xl mx-auto rounded-2xl shadow-2xl"
+                />
+              </div>
             </div>
 
             {/* Main Content Cards */}
@@ -191,8 +200,8 @@ const ProblemsSection = () => {
             {/* Bottom CTA Section */}
             <div className="text-left">
               <div className="relative bg-gradient-to-r from-green/10 to-sky-400/10 border border-green/20 rounded-3xl p-8 shadow-xl backdrop-blur-sm">
-                <div className="absolute top-2 right-2 w-12 h-12 bg-green/20 rounded-full flex items-center justify-center">
-                  <Zap className="w-6 h-6 text-green" />
+                <div className="absolute top-2 right-2 w-12 h-12 bg-blue-dark/20 rounded-full flex items-center justify-center">
+                  <Zap className="w-6 h-6 text-blue-dark" />
                 </div>
                 
                 <h4 className="text-2xl md:text-3xl font-bold text-blue-dark mb-4 font-montserrat">
@@ -202,8 +211,8 @@ const ProblemsSection = () => {
                   È ora di iniziare a costruire la vita che desideri
                 </p>
                 
-                <div className="inline-flex items-center gap-2 bg-gradient-to-r from-green to-green/80 text-white font-bold py-4 px-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 font-montserrat">
-                  <span>Inizia il tuo cambiamento</span>
+                <div className="inline-flex items-center gap-2 bg-blue-dark hover:bg-blue-dark/90 text-green font-bold py-4 px-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 font-montserrat">
+                  <span>Prenota la tua prima visita scontata</span>
                   <Zap className="w-5 h-5" />
                 </div>
               </div>

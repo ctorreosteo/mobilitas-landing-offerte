@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowRight, Sparkles, Zap, Shield, Heart, Users, TrendingUp, Star, CheckCircle } from 'lucide-react'
+import { ArrowRight, Sparkles, Zap, Shield, Heart, Users, TrendingUp, Star, CheckCircle, MessageCircle, Calendar } from 'lucide-react'
 
 const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -29,7 +29,7 @@ const HeroSection = () => {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 container mx-auto px-6 pt-8 pb-20 lg:pb-32">
+      <div className="relative z-10 max-w-7xl mx-auto px-[24px] pt-8 pb-20 lg:pb-32">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
             
@@ -46,7 +46,7 @@ const HeroSection = () => {
 
               {/* Main Headline */}
               <div className="space-y-6">
-                <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold font-montserrat leading-tight text-left">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold font-montserrat leading-tight text-left">
                   <span className="text-blue-dark">La tua salute</span>
                   <br />
                   <span className="text-blue-dark">
@@ -56,6 +56,15 @@ const HeroSection = () => {
                 <p className="text-xl md:text-2xl text-blue-dark/80 font-montserrat leading-relaxed max-w-2xl text-left">
                   <span className="text-blue-dark font-bold"> Riprendi il controllo</span> con un approccio scientifico e personalizzato che ti restituisce l'autonomia sulla tua salute.
                 </p>
+                
+                {/* Hero Image */}
+                <div className="mt-8 mb-8">
+                  <img 
+                    src="/home/home7.png" 
+                    alt="Approccio scientifico e personalizzato per la salute" 
+                    className="w-full max-w-2xl mx-auto rounded-2xl shadow-2xl"
+                  />
+                </div>
               </div>
 
               {/* Key Benefits Grid */}
@@ -93,20 +102,26 @@ const HeroSection = () => {
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 mb-16">
-                <Link
-                  to="/contatti"
-                  className="group border-2 border-sky-400 text-sky-400 hover:bg-sky-400 hover:text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl font-montserrat text-center flex items-center justify-center"
+                <button
+                  onClick={() => {
+                    const message = encodeURIComponent("Ciao, vorrei effettuare una breve consulenza conoscitiva per comprendere se potete essermi di aiuto. Quando ci sarebbe posto? Grazie");
+                    window.open(`https://wa.me/393518198457?text=${message}`, '_blank');
+                  }}
+                  className="group bg-sky-400 hover:bg-sky-400/90 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl font-montserrat text-center flex items-center justify-center"
                 >
                   Prenota una consulenza gratuita
-                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </Link>
-                <Link
-                  to="/contatti"
+                  <MessageCircle className="ml-2 w-5 h-5 group-hover:scale-110 transition-transform" />
+                </button>
+                <button
+                  onClick={() => {
+                    const message = encodeURIComponent("Ciao, vorrei effettuare una prima visita con sconto. Quando ci sarebbe posto? Grazie");
+                    window.open(`https://wa.me/393518198457?text=${message}`, '_blank');
+                  }}
                   className="group bg-blue-dark hover:bg-blue-dark/90 text-green font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl font-montserrat text-center flex items-center justify-center"
                 >
                   Prenota una prima visita con sconto
-                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </Link>
+                  <Calendar className="ml-2 w-5 h-5 group-hover:scale-110 transition-transform" />
+                </button>
               </div>
 
               {/* Trust Indicators */}
@@ -161,7 +176,7 @@ const HeroSection = () => {
                         <Star key={i} className="w-5 h-5 text-blue-dark fill-current" />
                       ))}
                     </div>
-                    <span className="text-blue-dark/80 font-montserrat font-semibold">Recensioni 5/5 su Google</span>
+                    <span className="text-blue-dark/80 font-montserrat font-semibold">Recensioni 5.0/5 su Google</span>
                   </div>
                 </div>
 
@@ -169,7 +184,7 @@ const HeroSection = () => {
                 <div className="absolute top-3 right-3 w-10 h-10 bg-blue-dark rounded-full flex items-center justify-center shadow-lg">
                   <TrendingUp className="w-5 h-5 text-white" />
                 </div>
-                <div className="absolute bottom-3 left-3 w-10 h-10 bg-blue-dark/10 rounded-full flex items-center justify-center shadow-lg">
+                <div className="absolute bottom-3 right-3 w-10 h-10 bg-blue-dark/10 rounded-full flex items-center justify-center shadow-lg">
                   <Users className="w-5 h-5 text-blue-dark" />
                 </div>
               </div>

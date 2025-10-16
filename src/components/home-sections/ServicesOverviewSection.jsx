@@ -94,7 +94,7 @@ const ServicesOverviewSection = () => {
 
   return (
     <section className="py-20 bg-cream">
-      <div className="container mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-[24px]">
         {/* Section Header */}
         <div className="text-left mb-16">
           <div className="inline-flex items-center gap-3 bg-sky-400/10 border border-sky-400/30 rounded-full px-6 py-3 mb-6 shadow-lg backdrop-blur-sm">
@@ -153,11 +153,6 @@ const ServicesOverviewSection = () => {
                         ))}
                       </div>
 
-                      {/* CTA Button */}
-                      <button className={`w-full ${colors.button} font-bold py-2 px-3 rounded-lg transition-all duration-300 font-montserrat text-xs mt-auto`}>
-                        Scopri di più
-                        <ArrowRight className="inline-block ml-1 w-3 h-3" />
-                      </button>
                     </div>
                   </div>
                 )
@@ -175,56 +170,6 @@ const ServicesOverviewSection = () => {
           </div>
         </div>
 
-        {/* Osteopathic Treatment Highlight */}
-        <div className="bg-gradient-to-r from-blue-dark to-blue-900 rounded-2xl p-8 md:p-12 text-white">
-          <div className="max-w-4xl mx-auto text-left">
-            <div className="inline-flex items-center gap-2 bg-green/20 rounded-full px-4 py-2 mb-6">
-              <Zap className="w-5 h-5 text-green" />
-              <span className="text-sm font-medium text-green font-montserrat">
-                Il trattamento osteopatico
-              </span>
-            </div>
-            
-            <h3 className="text-2xl md:text-3xl font-bold mb-6 font-montserrat">
-              Il teatro della trasformazione
-            </h3>
-            
-            <p className="text-lg text-cream/90 mb-8 font-montserrat leading-relaxed">
-              Il trattamento osteopatico diventa il <span className="font-semibold text-green">teatro in cui possiamo educare le persone</span> e condurle a prendere nuove scelte, per vivere ogni singolo giorno in salute.
-            </p>
-
-            <div className="grid md:grid-cols-3 gap-6 mb-8">
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <Activity className="w-8 h-8 text-green mb-3" />
-                <p className="font-semibold font-montserrat">Trattamento d'eccellenza</p>
-                <p className="text-sm text-cream/80 font-montserrat">Tecniche osteopatiche avanzate</p>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <Brain className="w-8 h-8 text-green mb-3" />
-                <p className="font-semibold font-montserrat">Educazione continua</p>
-                <p className="text-sm text-cream/80 font-montserrat">Imparare a prendersi cura di sé</p>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <Heart className="w-8 h-8 text-green mb-3" />
-                <p className="font-semibold font-montserrat">Supporto personalizzato</p>
-                <p className="text-sm text-cream/80 font-montserrat">Accompagnamento nel cambiamento</p>
-              </div>
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                to="/contatti"
-                className="group bg-green hover:bg-green/90 text-blue-dark font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl font-montserrat"
-              >
-                Inizia il tuo percorso
-                <ArrowRight className="inline-block ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Link>
-              <button className="group border-2 border-cream text-cream hover:bg-cream hover:text-blue-dark font-bold py-4 px-8 rounded-lg transition-all duration-300 font-montserrat">
-                Scopri i trattamenti
-              </button>
-            </div>
-          </div>
-        </div>
 
         {/* Bottom Message */}
         <div className="text-left mt-16">

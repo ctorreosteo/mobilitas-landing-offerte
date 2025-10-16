@@ -6,6 +6,7 @@ import TestimonialsSection from '../../components/home-sections/TestimonialsSect
 import ServicesOverviewSection from '../../components/home-sections/ServicesOverviewSection'
 import BioSection from '../../components/home-sections/BioSection'
 import LoadingAnimation from '../../components/LoadingAnimation'
+import SectionDivider from '../../components/SectionDivider'
 
 const Home = () => {
   const [showContent, setShowContent] = useState(false)
@@ -19,10 +20,15 @@ const Home = () => {
       {!showContent && <LoadingAnimation onComplete={handleLoadingComplete} />}
       <div className={`min-h-screen transition-opacity duration-500 ${showContent ? 'opacity-100' : 'opacity-0'}`}>
         <HeroSection />
+        <SectionDivider />
         <TargetAudienceSection />
+        <SectionDivider />
         <ProblemsSection />
+        <SectionDivider />
         <TestimonialsSection />
+        <SectionDivider />
         <ServicesOverviewSection />
+        <SectionDivider />
         <BioSection />
       </div>
     </>

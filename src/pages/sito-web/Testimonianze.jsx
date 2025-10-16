@@ -6,7 +6,7 @@ const Testimonianze = () => {
 
   const stats = [
     { number: "420+", label: "Recensioni verificate", icon: Star, color: "text-yellow-500" },
-    { number: "5/5", label: "Valutazione media", icon: Award, color: "text-azure-dark" },
+    { number: "5.0/5", label: "Valutazione media", icon: Award, color: "text-azure-dark" },
     { number: "95%", label: "Soddisfazione clienti", icon: Heart, color: "text-azure-dark" },
     { number: "1°", label: "Studio più richiesto d'Italia", icon: TrendingUp, color: "text-blue-dark" }
   ]
@@ -67,7 +67,7 @@ const Testimonianze = () => {
               </h1>
               
               <p className="text-xl md:text-2xl text-blue-dark/80 mb-12 font-montserrat leading-relaxed">
-                Con oltre <span className="font-bold text-azure-dark">420 recensioni verificate</span> e una valutazione di <span className="font-bold text-azure-dark">5/5 stelle</span>, 
+                Con oltre <span className="font-bold text-azure-dark">420+ recensioni verificate</span> e una valutazione di <span className="font-bold text-azure-dark">5.0/5 stelle</span>, 
                 siamo lo studio osteopatico con più testimonianze e richieste di tutta Italia.
               </p>
 
@@ -85,7 +85,7 @@ const Testimonianze = () => {
                   <Star className="w-5 h-5 text-yellow-400 fill-current" />
                   <Star className="w-5 h-5 text-yellow-400 fill-current" />
                   <Star className="w-5 h-5 text-yellow-400 fill-current" />
-                  <span className="font-montserrat">5/5 su Google Reviews</span>
+                  <span className="font-montserrat">5.0/5 su Google Reviews</span>
                 </div>
               </div>
             </div>
@@ -169,7 +169,7 @@ const Testimonianze = () => {
               </h3>
               
               <p className="text-lg text-blue-dark/80 mb-8 font-montserrat">
-                Su Google puoi trovare oltre <span className="font-semibold text-azure-dark">420 recensioni verificate</span> di persone che hanno scelto di cambiare vita con noi.
+                Su Google puoi trovare oltre <span className="font-semibold text-azure-dark">420+ recensioni verificate</span> di persone che hanno scelto di cambiare vita con noi.
               </p>
 
               <button 

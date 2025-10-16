@@ -31,63 +31,67 @@ const BioSection = () => {
     {
       icon: Zap,
       title: "Essere dei leader",
-      description: "Siamo i primi a trattare i nostri corpi come un tempio, migliorando giorno dopo giorno"
+      description: "Siamo i primi a trattare i nostri corpi come un tempio, migliorando giorno dopo giorno e incarnando i principi e valori"
     }
   ]
 
   return (
     <section className="py-20 bg-cream">
-      <div className="container mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-[24px]">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-left mb-16">
-            <div className="inline-flex items-center gap-2 bg-blue-dark/10 rounded-full px-4 py-2 mb-6">
-              <Users className="w-5 h-5 text-blue-dark" />
-              <span className="text-sm font-medium text-blue-dark font-montserrat">
+            <div className="inline-flex items-center gap-3 bg-sky-400/10 border border-sky-400/30 rounded-full px-6 py-3 mb-6 shadow-lg backdrop-blur-sm">
+              <Users className="w-5 h-5 text-sky-400" />
+              <span className="text-sm font-semibold text-sky-400 font-montserrat">
                 Chi siamo
               </span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-dark mb-6 font-montserrat">
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-dark mb-6 mt-0 font-montserrat">
               Non siamo semplici osteopati
             </h2>
             <p className="text-lg text-blue-dark/90 max-w-3xl font-montserrat">
-              Siamo <span className="font-semibold text-blue-dark bg-blue-dark/10 px-2 py-1 rounded">coach del benessere, leader del cambiamento, catalizzatori di trasformazioni reali.</span>
+              Siamo<span className="font-semibold text-blue-dark bg-blue-dark/10 px-2 py-1 rounded">coach del benessere, leader del cambiamento, catalizzatori di trasformazioni reali.</span>
             </p>
+            
+            {/* Bio Image */}
+            <div className="mt-8 mb-8">
+              <img 
+                src="/home/home8.png" 
+                alt="Coach del benessere, leader del cambiamento" 
+                className="w-full max-w-3xl mx-auto rounded-2xl shadow-2xl"
+              />
+            </div>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             {/* Left Side - Mission Statement */}
             <div>
               <div className="bg-cream rounded-2xl p-8 shadow-xl border border-gray-100">
-                {/* Quote */}
-                <div className="flex mb-6">
-                  <div className="w-16 h-16 bg-blue-dark/15 rounded-full flex items-center justify-center border border-blue-dark/20">
-                    <Quote className="w-8 h-8 text-blue-dark" />
-                  </div>
+                {/* Mission Statement */}
+                <div className="flex items-start gap-3 mb-6">
+                  <Award className="w-5 h-5 text-blue-dark mt-1 flex-shrink-0" />
+                  <p className="text-xl text-blue-dark mb-8 mt-0 font-montserrat leading-relaxed text-left">
+                    Ogni giorno ci alziamo con una missione chiara e potente:<span className="font-semibold text-blue-dark bg-blue-dark/10 py-1 rounded">restituire alle persone il diritto di vivere senza dolore</span>, di sentirsi libere nel proprio corpo, di riprendersi in mano la propria salute.
+                  </p>
                 </div>
-
-                <blockquote className="text-xl text-blue-dark mb-8 font-montserrat leading-relaxed text-left">
-                  "Ogni giorno ci alziamo con una missione chiara e potente: 
-                  <span className="font-semibold text-blue-dark bg-blue-dark/10 px-2 py-1 rounded"> restituire alle persone il diritto di vivere senza dolore</span>, 
-                  di sentirsi libere nel proprio corpo, di riprendersi in mano la propria salute."
-                </blockquote>
 
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
                     <Target className="w-5 h-5 text-blue-dark mt-1 flex-shrink-0" />
-                    <p className="text-blue-dark/90 font-montserrat">
+                    <p className="text-blue-dark/90 font-montserrat mt-0">
                       <span className="font-semibold">La nostra visione:</span> Un mondo in cui le persone camminano senza paura di muoversi, lavorano con energia e vivono con gioia.
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
                     <Heart className="w-5 h-5 text-blue-dark mt-1 flex-shrink-0" />
-                    <p className="text-blue-dark/90 font-montserrat">
+                    <p className="text-blue-dark/90 font-montserrat mt-0">
                       <span className="font-semibold">Il nostro impegno:</span> Liberare le persone dal dolore, prevenire anziché curare, diffondere una cultura del benessere.
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
                     <Shield className="w-5 h-5 text-blue-dark mt-1 flex-shrink-0" />
-                    <p className="text-blue-dark/90 font-montserrat">
+                    <p className="text-blue-dark/90 font-montserrat mt-0">
                       <span className="font-semibold">La nostra causa:</span> Un mondo senza dolori evitabili, una società più consapevole e responsabile del proprio benessere.
                     </p>
                   </div>
@@ -110,7 +114,7 @@ const BioSection = () => {
                           <IconComponent className="w-6 h-6 text-blue-dark" />
                         </div>
                         <div>
-                          <h4 className="text-lg font-bold text-blue-dark mb-2 font-montserrat">
+                          <h4 className="text-lg font-bold text-blue-dark mb-2 mt-0 font-montserrat">
                             {value.title}
                           </h4>
                           <p className="text-blue-dark/90 font-montserrat leading-relaxed">
@@ -125,41 +129,20 @@ const BioSection = () => {
             </div>
           </div>
 
-          {/* Bottom CTA */}
-          <div className="bg-gradient-to-r from-blue-dark to-blue-900 rounded-2xl p-8 md:p-12 text-white text-left relative overflow-hidden">
-            {/* Overlay for better text contrast */}
-            <div className="absolute inset-0 bg-black/20"></div>
-            <div className="relative z-10 max-w-4xl mx-auto">
-              <h3 className="text-2xl md:text-3xl font-bold mb-6 font-montserrat drop-shadow-lg">
-                Vuoi conoscere meglio la nostra storia?
-              </h3>
-              
-              <p className="text-lg text-white/95 mb-8 font-montserrat leading-relaxed drop-shadow-md">
-                Scopri come è nata Mobilitas, chi siamo veramente e perché abbiamo scelto di 
-                <span className="font-semibold text-green bg-white/20 px-2 py-1 rounded drop-shadow-md"> combattere l'inerzia</span> e rompere lo schema mentale che ci fa pensare che essere "malati" sia normale.
-              </p>
 
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                  to="/chi-siamo"
-                  className="group bg-green hover:bg-green/90 text-blue-dark font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl font-montserrat border-2 border-green"
-                >
-                  Scopri la nostra storia
-                  <ArrowRight className="inline-block ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </Link>
-                <Link
-                  to="/contatti"
-                  className="group border-2 border-white text-white hover:bg-white hover:text-blue-dark font-bold py-4 px-8 rounded-lg transition-all duration-300 font-montserrat shadow-lg hover:shadow-xl backdrop-blur-sm"
-                >
-                  Incontra il team
-                </Link>
-              </div>
-            </div>
-          </div>
 
           {/* Final Message */}
           <div className="text-left mt-16">
-            <div className="bg-cream rounded-2xl p-8 shadow-xl border border-gray-100 max-w-4xl mx-auto">
+            <div className="max-w-4xl mx-auto">
+              {/* Final Message Image */}
+              <div className="mb-8">
+                <img 
+                  src="/home/home3.png" 
+                  alt="Un nuovo modo di vivere la salute" 
+                  className="w-full max-w-4xl mx-auto rounded-2xl shadow-2xl"
+                />
+              </div>
+              
               <h4 className="text-xl font-bold text-blue-dark mb-4 font-montserrat">
                 Un nuovo modo di vivere la salute
               </h4>
@@ -167,7 +150,7 @@ const BioSection = () => {
                 Entrare a fare un percorso in Mobilitas significa fare una scelta diversa. 
                 Significa smettere di delegare la propria salute a terzi e prenderne il controllo, giorno dopo giorno.
                 <br />
-                <span className="font-semibold text-blue-dark bg-blue-dark/10 px-2 py-1 rounded">Noi siamo la guida, tu sei il protagonista.</span>
+                <span className="font-semibold text-blue-dark">Noi siamo la guida, tu sei il protagonista.</span>
               </p>
             </div>
           </div>
