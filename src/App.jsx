@@ -11,6 +11,7 @@ import Blog from './pages/sito-web/Blog'
 import Risorse from './pages/sito-web/Risorse'
 import Testimonianze from './pages/sito-web/Testimonianze'
 import LaNostraStoria from './pages/sito-web/LaNostraStoria'
+import MobilitasCard from './pages/sito-web/MobilitasCard'
 
 // Job position pages
 import Segretaria from './pages/sito-web/posizioni/Segretaria'
@@ -47,6 +48,7 @@ function App() {
         <Route path="/risorse" element={<Layout><Risorse /></Layout>} />
         <Route path="/testimonianze" element={<Layout><Testimonianze /></Layout>} />
         <Route path="/la-nostra-storia" element={<Layout><LaNostraStoria /></Layout>} />
+        <Route path="/carta-fedelta" element={<Layout><MobilitasCard /></Layout>} />
         
         {/* Job position routes with layout */}
         <Route path="/lavora-con-noi/segretaria" element={<Layout><Segretaria /></Layout>} />

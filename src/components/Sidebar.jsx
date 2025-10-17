@@ -24,7 +24,7 @@ const Sidebar = ({ isOpen, onClose }) => {
       ]
     },
     {
-      name: 'Carta Fedeltà',
+      name: 'Mobilitas Card',
       href: '/carta-fedelta'
     },
     {
