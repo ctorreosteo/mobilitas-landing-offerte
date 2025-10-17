@@ -91,11 +91,11 @@ const Allianz = () => {
             <div className="space-y-8">
               {/* Main Reason */}
               <div className="bg-gradient-to-r from-blue-400/5 to-blue-dark/5 border border-blue-400/20 rounded-3xl p-8">
-                <div className="flex items-start space-x-4 mb-6">
+                <div className="flex flex-col sm:flex-row sm:items-start sm:space-x-4 space-y-4 sm:space-y-0 mb-6">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center text-white text-xl flex-shrink-0">
                     🤝
                   </div>
-                  <div>
+                  <div className="text-left">
                     <h3 className="text-2xl font-bold text-blue-dark mb-3 mt-0">Convenzione Diretta</h3>
                     <p className="text-blue-dark/80 leading-relaxed">
                       Abbiamo stipulato una <strong>convenzione diretta con Allianz Assicurazioni</strong> che offre <strong>prezzi specifici e vantaggiosi</strong> per tutti i clienti Allianz che desiderano usufruire dei nostri servizi di osteopatia e benessere.
@@ -106,11 +106,11 @@ const Allianz = () => {
 
               {/* Benefits */}
               <div className="bg-gradient-to-r from-blue-dark/5 to-blue-400/5 border border-blue-dark/20 rounded-3xl p-8">
-                <div className="flex items-start space-x-4 mb-6">
+                <div className="flex flex-col sm:flex-row sm:items-start sm:space-x-4 space-y-4 sm:space-y-0 mb-6">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-dark to-blue-600 rounded-xl flex items-center justify-center text-white text-xl flex-shrink-0">
                     💰
                   </div>
-                  <div>
+                  <div className="text-left">
                     <h3 className="text-2xl font-bold text-blue-dark mb-3 mt-0">Vantaggi della Convenzione</h3>
                     <div className="space-y-3">
                       {[
@@ -134,12 +134,12 @@ const Allianz = () => {
           </div>
 
           {/* Bottom Highlight */}
-          <div className="bg-gradient-to-r from-blue-400/10 to-blue-dark/10 border border-blue-400/30 rounded-3xl p-8 md:p-12 text-center">
+          <div className="bg-gradient-to-r from-blue-400/10 to-blue-dark/10 border border-blue-400/30 rounded-3xl p-8 md:p-12 text-left">
             <div className="text-5xl mb-6">🏆</div>
             <h3 className="text-2xl md:text-3xl font-bold text-blue-dark mb-4 mt-0">
               Convenzione diretta per il tuo benessere
             </h3>
-            <p className="text-lg text-blue-dark/80 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg text-blue-dark/80 max-w-2xl leading-relaxed">
               Grazie alla convenzione diretta con Allianz Assicurazioni, tutti i clienti possono accedere ai nostri servizi di osteopatia e benessere con prezzi specifici e vantaggiosi.
             </p>
           </div>
@@ -196,11 +196,11 @@ const Allianz = () => {
                   description: "Ricevi i nostri trattamenti osteopatici e servizi di benessere con i prezzi specifici della convenzione"
                 }
               ].map((item, index) => (
-                <div key={index} className="flex items-start space-x-4">
+                <div key={index} className="flex flex-col sm:flex-row sm:items-start sm:space-x-4 space-y-4 sm:space-y-0">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg flex-shrink-0">
                     {item.step}
                   </div>
-                  <div>
+                  <div className="text-left">
                     <h3 className="text-xl font-bold text-blue-dark mb-2 mt-0">{item.title}</h3>
                     <p className="text-blue-dark/80 leading-relaxed">{item.description}</p>
                   </div>

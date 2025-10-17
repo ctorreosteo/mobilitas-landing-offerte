@@ -91,11 +91,11 @@ const Robogest = () => {
             <div className="space-y-8">
               {/* Introduction */}
               <div className="bg-gradient-to-r from-blue-dark/5 to-blue-400/5 border border-blue-dark/20 rounded-3xl p-8">
-                <div className="flex items-start space-x-4 mb-6">
+                <div className="flex flex-col sm:flex-row sm:items-start sm:space-x-4 space-y-4 sm:space-y-0 mb-6">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-dark to-blue-600 rounded-xl flex items-center justify-center text-white text-xl flex-shrink-0">
                     👨‍💼
                   </div>
-                  <div>
+                  <div className="text-left">
                     <h3 className="text-2xl font-bold text-blue-dark mb-3 mt-0">Una Famiglia di Imprenditori Visionari</h3>
                     <p className="text-blue-dark/80 leading-relaxed">
                       La partnership tra Mobilitas e Robogest è nata grazie alla visione di <strong>Mauro Bigelli</strong>, imprenditore titolare di Robogest, e di suo figlio <strong>Mattia Bigelli</strong>. Una famiglia di leader che ha sempre creduto nell'importanza di portare innovazione sulla salute per la loro impresa e i loro dipendenti.
@@ -106,11 +106,11 @@ const Robogest = () => {
 
               {/* Vision */}
               <div className="bg-gradient-to-r from-blue-400/5 to-blue-dark/5 border border-blue-400/20 rounded-3xl p-8">
-                <div className="flex items-start space-x-4 mb-6">
+                <div className="flex flex-col sm:flex-row sm:items-start sm:space-x-4 space-y-4 sm:space-y-0 mb-6">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center text-white text-xl flex-shrink-0">
                     💡
                   </div>
-                  <div>
+                  <div className="text-left">
                     <h3 className="text-2xl font-bold text-blue-dark mb-3 mt-0">L'Idea dell'Innovazione</h3>
                     <p className="text-blue-dark/80 leading-relaxed">
                       Mauro e Mattia Bigelli hanno riconosciuto che l'innovazione non riguarda solo la tecnologia robotica, ma anche il benessere delle persone che lavorano con essa. Una visione olistica che unisce l'eccellenza tecnologica alla cura del capitale umano.
@@ -153,7 +153,7 @@ const Robogest = () => {
                 <div>
                   <h3 className="text-2xl font-bold text-blue-dark mb-4 mt-0">8 Novembre 2024: Il Primo Evento</h3>
                   <p className="text-lg text-blue-dark/80 leading-relaxed">
-                    L'<strong>8 Novembre 2024</strong> si è tenuto il primo evento di formazione presso Robogest. Durante l'evento si è parlato di <strong>sedentarietà, conseguenze sulla salute, consigli per una postura adeguata</strong> e come prevenire problemi e malattie legate al lavoro in ufficio e alla robotica industriale con posture scorrette.
+                    L'<strong>8 Novembre 2024</strong> si è tenuto il primo evento di formazione presso Robogest. Durante l'evento il Dr. Ricciardi ha parlato di <strong>sedentarietà, conseguenze sulla salute, consigli per una postura adeguata</strong> e come prevenire problemi e malattie legate al lavoro in ufficio e alla robotica industriale con posture scorrette.
                   </p>
                 </div>
               </div>
@@ -204,11 +204,11 @@ const Robogest = () => {
             <div className="space-y-8">
               {/* Company Description */}
               <div className="bg-gradient-to-r from-blue-400/5 to-blue-dark/5 border border-blue-400/20 rounded-3xl p-8">
-                <div className="flex items-start space-x-4 mb-6">
+                <div className="flex flex-col sm:flex-row sm:items-start sm:space-x-4 space-y-4 sm:space-y-0 mb-6">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center text-white text-xl flex-shrink-0">
                     🤖
                   </div>
-                  <div>
+                  <div className="text-left">
                     <h3 className="text-2xl font-bold text-blue-dark mb-3 mt-0">Trasformiamo le Idee in Robot</h3>
                     <p className="text-blue-dark/80 leading-relaxed">
                       Robogest è un'azienda specializzata nella programmazione robotica, assistenza tecnica e formazione. Trasformiamo le idee dell'imprenditore nella lingua dei robot, velocizzando e migliorando la produzione industriale.
@@ -219,11 +219,11 @@ const Robogest = () => {
 
               {/* Mission */}
               <div className="bg-gradient-to-r from-blue-dark/5 to-blue-400/5 border border-blue-dark/20 rounded-3xl p-8">
-                <div className="flex items-start space-x-4 mb-6">
+                <div className="flex flex-col sm:flex-row sm:items-start sm:space-x-4 space-y-4 sm:space-y-0 mb-6">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-dark to-blue-600 rounded-xl flex items-center justify-center text-white text-xl flex-shrink-0">
                     🎯
                   </div>
-                  <div>
+                  <div className="text-left">
                     <h3 className="text-2xl font-bold text-blue-dark mb-3 mt-0">La Nostra Missione</h3>
                     <p className="text-blue-dark/80 leading-relaxed">
                       Offriamo programmazione robot, assistenza tecnica specializzata e formazione continua. Siamo sempre alla ricerca di modi per diffondere la conoscenza e la comprensione dei robot, unita alla nostra esperienza pluriennale.
@@ -237,11 +237,11 @@ const Robogest = () => {
             <div className="space-y-8">
               {/* Services */}
               <div className="bg-gradient-to-r from-blue-400/5 to-blue-dark/5 border border-blue-400/20 rounded-3xl p-8">
-                <div className="flex items-start space-x-4 mb-6">
+                <div className="flex flex-col sm:flex-row sm:items-start sm:space-x-4 space-y-4 sm:space-y-0 mb-6">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center text-white text-xl flex-shrink-0">
                     🛠️
                   </div>
-                  <div>
+                  <div className="text-left">
                     <h3 className="text-2xl font-bold text-blue-dark mb-4 mt-0">I Nostri Servizi</h3>
                     <div className="space-y-3">
                       {[
@@ -264,11 +264,11 @@ const Robogest = () => {
 
               {/* Values */}
               <div className="bg-gradient-to-r from-blue-dark/5 to-blue-400/5 border border-blue-dark/20 rounded-3xl p-8">
-                <div className="flex items-start space-x-4 mb-6">
+                <div className="flex flex-col sm:flex-row sm:items-start sm:space-x-4 space-y-4 sm:space-y-0 mb-6">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-dark to-blue-600 rounded-xl flex items-center justify-center text-white text-xl flex-shrink-0">
                     ⭐
                   </div>
-                  <div>
+                  <div className="text-left">
                     <h3 className="text-2xl font-bold text-blue-dark mb-4 mt-0">I Valori di Robogest</h3>
                     <div className="space-y-3">
                       {[
@@ -297,11 +297,11 @@ const Robogest = () => {
           {/* Company Stats Section */}
           <div className="max-w-4xl mx-auto mb-16">
             <div className="bg-gradient-to-r from-blue-400/10 to-blue-dark/10 border border-blue-400/30 rounded-3xl p-8">
-              <div className="flex items-start space-x-4 mb-6">
+              <div className="flex flex-col sm:flex-row sm:items-start sm:space-x-4 space-y-4 sm:space-y-0 mb-6">
                 <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center text-white text-xl flex-shrink-0">
                   📊
                 </div>
-                <div>
+                <div className="text-left">
                   <h3 className="text-2xl font-bold text-blue-dark mb-3 mt-0">I Numeri di Robogest</h3>
                   <p className="text-blue-dark/80 leading-relaxed mb-6">
                     Robogest vanta una solida esperienza nel settore della robotica industriale, con risultati che testimoniano la qualità e l'affidabilità dei nostri servizi.
@@ -326,12 +326,12 @@ const Robogest = () => {
           </div>
 
           {/* Bottom Highlight */}
-          <div className="bg-gradient-to-r from-blue-400/10 to-blue-dark/10 border border-blue-400/30 rounded-3xl p-8 md:p-12 text-center">
+          <div className="bg-gradient-to-r from-blue-400/10 to-blue-dark/10 border border-blue-400/30 rounded-3xl p-8 md:p-12 text-left">
             <div className="text-5xl mb-6">🤖</div>
             <h3 className="text-2xl md:text-3xl font-bold text-blue-dark mb-4 mt-0">
               Robogest: il futuro della robotica industriale
             </h3>
-            <p className="text-lg text-blue-dark/80 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-blue-dark/80 max-w-3xl leading-relaxed">
               Con sede a Grugliasco (TO), Robogest continua a innovare nel settore della robotica industriale, offrendo soluzioni all'avanguardia per l'automazione e il benessere dei dipendenti.
             </p>
           </div>
@@ -414,12 +414,12 @@ const Robogest = () => {
           </div>
 
           {/* Bottom Highlight */}
-          <div className="bg-gradient-to-r from-blue-400/10 to-blue-dark/10 border border-blue-400/30 rounded-3xl p-8 md:p-12 text-center">
+          <div className="bg-gradient-to-r from-blue-400/10 to-blue-dark/10 border border-blue-400/30 rounded-3xl p-8 md:p-12 text-left">
             <div className="text-5xl mb-6">🏆</div>
             <h3 className="text-2xl md:text-3xl font-bold text-blue-dark mb-4 mt-0">
               Una partnership che premia l'eccellenza tecnologica
             </h3>
-            <p className="text-lg text-blue-dark/80 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-blue-dark/80 max-w-3xl leading-relaxed">
               La partnership tra Mobilitas e Robogest rappresenta un modello di collaborazione che unisce l'innovazione tecnologica al benessere dei dipendenti, offrendo vantaggi concreti e misurabili per migliorare la qualità della vita lavorativa e personale.
             </p>
           </div>

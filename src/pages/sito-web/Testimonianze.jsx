@@ -54,9 +54,9 @@ const Testimonianze = () => {
         <section className="py-8 bg-cream mt-4">
           <div className="container mx-auto px-4">
             <div className="text-left max-w-4xl mx-auto">
-              <div className="inline-flex items-center gap-2 bg-blue-dark/10 rounded-full p-0 m-0">
-                <Award className="w-6 h-6 text-blue-dark" />
-                <span className="text-lg font-bold text-blue-dark font-montserrat">
+              <div className="flex items-center gap-3 bg-sky-400/10 border border-sky-400/30 rounded-full px-6 py-3 shadow-lg backdrop-blur-sm w-fit">
+                <Award className="w-6 h-6 text-sky-400 flex-shrink-0" />
+                <span className="text-lg font-bold text-sky-400 font-montserrat leading-tight">
                   #1 Studio Osteopatico d'Italia
                 </span>
               </div>

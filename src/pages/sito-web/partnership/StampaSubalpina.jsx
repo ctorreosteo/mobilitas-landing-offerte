@@ -91,11 +91,11 @@ const StampaSubalpina = () => {
             <div className="space-y-8">
               {/* Introduction */}
               <div className="bg-gradient-to-r from-blue-dark/5 to-blue-400/5 border border-blue-dark/20 rounded-3xl p-8">
-                <div className="flex items-start space-x-4 mb-6">
+                <div className="flex flex-col sm:flex-row sm:items-start sm:space-x-4 space-y-4 sm:space-y-0 mb-6">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-dark to-blue-600 rounded-xl flex items-center justify-center text-white text-xl flex-shrink-0">
                     🤝
                   </div>
-                  <div>
+                  <div className="text-left">
                     <h3 className="text-2xl font-bold text-blue-dark mb-3 mt-0">Un Incontro Professionale</h3>
                     <p className="text-blue-dark/80 leading-relaxed">
                       La partnership tra Mobilitas e Stampa Subalpina è nata da un incontro tra <strong>Carlos</strong> (di Mobilitas) e <strong>Roberta Pellegrini</strong> della direzione della Subalpina. Un dialogo tra professionisti che ha portato a una collaborazione di valore.
@@ -106,11 +106,11 @@ const StampaSubalpina = () => {
 
               {/* Vision */}
               <div className="bg-gradient-to-r from-blue-400/5 to-blue-dark/5 border border-blue-400/20 rounded-3xl p-8">
-                <div className="flex items-start space-x-4 mb-6">
+                <div className="flex flex-col sm:flex-row sm:items-start sm:space-x-4 space-y-4 sm:space-y-0 mb-6">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center text-white text-xl flex-shrink-0">
                     💡
                   </div>
-                  <div>
+                  <div className="text-left">
                     <h3 className="text-2xl font-bold text-blue-dark mb-3 mt-0">L'Idea della Collaborazione</h3>
                     <p className="text-blue-dark/80 leading-relaxed">
                       L'obiettivo comune era quello di portare consapevolezza sui temi del benessere e della prevenzione nel mondo del giornalismo, una professione che spesso comporta stress e posture scorrette durante il lavoro.
@@ -205,11 +205,11 @@ const StampaSubalpina = () => {
             <div className="space-y-8">
               {/* Organization Description */}
               <div className="bg-gradient-to-r from-blue-400/5 to-blue-dark/5 border border-blue-400/20 rounded-3xl p-8">
-                <div className="flex items-start space-x-4 mb-6">
+                <div className="flex flex-col sm:flex-row sm:items-start sm:space-x-4 space-y-4 sm:space-y-0 mb-6">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center text-white text-xl flex-shrink-0">
                     🏛️
                   </div>
-                  <div>
+                  <div className="text-left">
                     <h3 className="text-2xl font-bold text-blue-dark mb-3 mt-0">Sindacato dei Giornalisti del Piemonte</h3>
                     <p className="text-blue-dark/80 leading-relaxed">
                       Stampa Subalpina è il sindacato unitario dei giornalisti del Piemonte, rappresentanza territoriale della Federazione Nazionale Stampa Italiana (FNSI). Opera per la tutela e la rappresentanza dei professionisti dell'informazione.
@@ -220,11 +220,11 @@ const StampaSubalpina = () => {
 
               {/* Mission */}
               <div className="bg-gradient-to-r from-blue-dark/5 to-blue-400/5 border border-blue-dark/20 rounded-3xl p-8">
-                <div className="flex items-start space-x-4 mb-6">
+                <div className="flex flex-col sm:flex-row sm:items-start sm:space-x-4 space-y-4 sm:space-y-0 mb-6">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-dark to-blue-600 rounded-xl flex items-center justify-center text-white text-xl flex-shrink-0">
                     🎯
                   </div>
-                  <div>
+                  <div className="text-left">
                     <h3 className="text-2xl font-bold text-blue-dark mb-3 mt-0">La Nostra Missione</h3>
                     <p className="text-blue-dark/80 leading-relaxed">
                       Fornire informazioni e consulenze sulla corretta applicazione dei contratti di lavoro, sui compensi previsti per le prestazioni professionali autonome, e offrire assistenza legale e tutela per i giornalisti.
@@ -238,11 +238,11 @@ const StampaSubalpina = () => {
             <div className="space-y-8">
               {/* Services */}
               <div className="bg-gradient-to-r from-blue-400/5 to-blue-dark/5 border border-blue-400/20 rounded-3xl p-8">
-                <div className="flex items-start space-x-4 mb-6">
+                <div className="flex flex-col sm:flex-row sm:items-start sm:space-x-4 space-y-4 sm:space-y-0 mb-6">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center text-white text-xl flex-shrink-0">
                     🛠️
                   </div>
-                  <div>
+                  <div className="text-left">
                     <h3 className="text-2xl font-bold text-blue-dark mb-4 mt-0">Servizi agli Associati</h3>
                     <div className="space-y-2">
                       {[
@@ -265,11 +265,11 @@ const StampaSubalpina = () => {
 
               {/* Values */}
               <div className="bg-gradient-to-r from-blue-dark/5 to-blue-400/5 border border-blue-dark/20 rounded-3xl p-8">
-                <div className="flex items-start space-x-4 mb-6">
+                <div className="flex flex-col sm:flex-row sm:items-start sm:space-x-4 space-y-4 sm:space-y-0 mb-6">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-dark to-blue-600 rounded-xl flex items-center justify-center text-white text-xl flex-shrink-0">
                     ⭐
                   </div>
-                  <div>
+                  <div className="text-left">
                     <h3 className="text-2xl font-bold text-blue-dark mb-4 mt-0">I Valori di Stampa Subalpina</h3>
                     <div className="space-y-3">
                       {[
@@ -298,11 +298,11 @@ const StampaSubalpina = () => {
           {/* Casa dei Giornalisti Section */}
           <div className="max-w-4xl mx-auto mb-16">
             <div className="bg-gradient-to-r from-blue-400/10 to-blue-dark/10 border border-blue-400/30 rounded-3xl p-8">
-              <div className="flex items-start space-x-4 mb-6">
+              <div className="flex flex-col sm:flex-row sm:items-start sm:space-x-4 space-y-4 sm:space-y-0 mb-6">
                 <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center text-white text-xl flex-shrink-0">
                   🏢
                 </div>
-                <div>
+                <div className="text-left">
                   <h3 className="text-2xl font-bold text-blue-dark mb-3 mt-0">Casa dei Giornalisti</h3>
                   <p className="text-blue-dark/80 leading-relaxed mb-4">
                     La sede di Stampa Subalpina si trova presso il <strong>Circolo della Stampa - Palazzo Ceriana Mayneri</strong> in Corso Stati Uniti 27 a Torino. Un punto di riferimento per tutti i giornalisti piemontesi.
@@ -331,12 +331,12 @@ const StampaSubalpina = () => {
           </div>
 
           {/* Bottom Highlight */}
-          <div className="bg-gradient-to-r from-blue-400/10 to-blue-dark/10 border border-blue-400/30 rounded-3xl p-8 md:p-12 text-center">
+          <div className="bg-gradient-to-r from-blue-400/10 to-blue-dark/10 border border-blue-400/30 rounded-3xl p-8 md:p-12 text-left">
             <div className="text-5xl mb-6">📰</div>
             <h3 className="text-2xl md:text-3xl font-bold text-blue-dark mb-4 mt-0">
               Stampa Subalpina: il punto di riferimento per i giornalisti piemontesi
             </h3>
-            <p className="text-lg text-blue-dark/80 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-blue-dark/80 max-w-3xl leading-relaxed">
               Da oltre 50 anni, Stampa Subalpina rappresenta e tutela i giornalisti del Piemonte, promuovendo la formazione, la solidarietà e l'eccellenza professionale nel mondo dell'informazione.
             </p>
           </div>
@@ -419,12 +419,12 @@ const StampaSubalpina = () => {
           </div>
 
           {/* Bottom Highlight */}
-          <div className="bg-gradient-to-r from-blue-400/10 to-blue-dark/10 border border-blue-400/30 rounded-3xl p-8 md:p-12 text-center">
+          <div className="bg-gradient-to-r from-blue-400/10 to-blue-dark/10 border border-blue-400/30 rounded-3xl p-8 md:p-12 text-left">
             <div className="text-5xl mb-6">🏆</div>
             <h3 className="text-2xl md:text-3xl font-bold text-blue-dark mb-4 mt-0">
               Una partnership che premia l'eccellenza professionale
             </h3>
-            <p className="text-lg text-blue-dark/80 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-blue-dark/80 max-w-3xl leading-relaxed">
               La partnership tra Mobilitas e Stampa Subalpina rappresenta un modello di collaborazione che mette al centro il benessere dei professionisti dell'informazione, offrendo vantaggi concreti e misurabili per migliorare la qualità della vita lavorativa e personale.
             </p>
           </div>

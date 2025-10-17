@@ -115,11 +115,11 @@ const Abylsen = () => {
             <div className="space-y-8">
               {/* Introduction */}
               <div className="bg-gradient-to-r from-blue-dark/5 to-blue-400/5 border border-blue-dark/20 rounded-3xl p-8">
-                <div className="flex items-start space-x-4 mb-6">
+                <div className="flex flex-col sm:flex-row sm:items-start sm:space-x-4 space-y-4 sm:space-y-0 mb-6">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-dark to-blue-600 rounded-xl flex items-center justify-center text-white text-xl flex-shrink-0">
                     👩‍💼
                   </div>
-                  <div>
+                  <div className="text-left">
                     <h3 className="text-2xl font-bold text-blue-dark mb-3 mt-0">Una Visionaria al Comando</h3>
                     <p className="text-blue-dark/80 leading-relaxed">
                       La partnership tra Mobilitas e Abylsen Italia è nata grazie alla visione di <strong>Mélody Bouvelle</strong>, Country Manager di Abylsen Italia. Una leader che ha sempre creduto nell'importanza del benessere dei propri dipendenti.
@@ -130,11 +130,11 @@ const Abylsen = () => {
 
               {/* Patient Experience */}
               <div className="bg-gradient-to-r from-blue-400/5 to-blue-dark/5 border border-blue-400/20 rounded-3xl p-8">
-                <div className="flex items-start space-x-4 mb-6">
+                <div className="flex flex-col sm:flex-row sm:items-start sm:space-x-4 space-y-4 sm:space-y-0 mb-6">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center text-white text-xl flex-shrink-0">
                     💆‍♀️
                   </div>
-                  <div>
+                  <div className="text-left">
                     <h3 className="text-2xl font-bold text-blue-dark mb-3 mt-0">Un'Esperienza Personale</h3>
                     <p className="text-blue-dark/80 leading-relaxed">
                       Mélody è sempre stata una paziente del nostro studio. Ha sperimentato in prima persona i grandi benefici dei nostri trattamenti osteopatici, vivendo un miglioramento significativo del suo benessere fisico e mentale.
@@ -145,11 +145,11 @@ const Abylsen = () => {
 
               {/* Vision */}
               <div className="bg-gradient-to-r from-blue-dark/5 to-blue-400/5 border border-blue-dark/20 rounded-3xl p-8">
-                <div className="flex items-start space-x-4 mb-6">
+                <div className="flex flex-col sm:flex-row sm:items-start sm:space-x-4 space-y-4 sm:space-y-0 mb-6">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-dark to-blue-600 rounded-xl flex items-center justify-center text-white text-xl flex-shrink-0">
                     💡
                   </div>
-                  <div>
+                  <div className="text-left">
                     <h3 className="text-2xl font-bold text-blue-dark mb-3 mt-0">L'Idea Geniale</h3>
                     <p className="text-blue-dark/80 leading-relaxed">
                       Un giorno, Mélody ha avuto un'intuizione: <strong>"Sarebbe meraviglioso dare la possibilità a tutti i dipendenti di Abylsen di usufruire di una convenzione con il vostro studio"</strong>. Una visione che ha trasformato un'esperienza personale in un beneficio per tutta l'azienda.
@@ -200,12 +200,12 @@ const Abylsen = () => {
           </div>
 
           {/* Bottom Highlight */}
-          <div className="bg-gradient-to-r from-blue-400/10 to-blue-dark/10 border border-blue-400/30 rounded-3xl p-8 md:p-12 text-center">
+          <div className="bg-gradient-to-r from-blue-400/10 to-blue-dark/10 border border-blue-400/30 rounded-3xl p-8 md:p-12 text-left">
             <div className="text-5xl mb-6">🤝</div>
             <h3 className="text-2xl md:text-3xl font-bold text-blue-dark mb-4 mt-0">
               Da un'idea personale a un beneficio aziendale
             </h3>
-            <p className="text-lg text-blue-dark/80 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-blue-dark/80 max-w-3xl leading-relaxed">
               Grazie alla visione di Mélody Bouvelle, oggi tutti i dipendenti di Abylsen Italia possono accedere ai trattamenti osteopatici di Mobilitas attraverso una convenzione esclusiva, trasformando il benessere personale in un valore aziendale condiviso.
             </p>
           </div>
@@ -243,11 +243,11 @@ const Abylsen = () => {
             <div className="space-y-8">
               {/* Company Description */}
               <div className="bg-gradient-to-r from-blue-400/5 to-blue-dark/5 border border-blue-400/20 rounded-3xl p-8">
-                <div className="flex items-start space-x-4 mb-6">
+                <div className="flex flex-col sm:flex-row sm:items-start sm:space-x-4 space-y-4 sm:space-y-0 mb-6">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center text-white text-xl flex-shrink-0">
                     🏢
                   </div>
-                  <div>
+                  <div className="text-left">
                     <h3 className="text-2xl font-bold text-blue-dark mb-3 mt-0">Gruppo Internazionale di Consulenza</h3>
                     <p className="text-blue-dark/80 leading-relaxed">
                       Abylsen è un gruppo internazionale di consulenza ingegneristica che, da oltre 15 anni, esplora nuovi orizzonti per sviluppare soluzioni innovative e creare valore per i propri partner.
@@ -258,11 +258,11 @@ const Abylsen = () => {
 
               {/* Mission */}
               <div className="bg-gradient-to-r from-blue-dark/5 to-blue-400/5 border border-blue-dark/20 rounded-3xl p-8">
-                <div className="flex items-start space-x-4 mb-6">
+                <div className="flex flex-col sm:flex-row sm:items-start sm:space-x-4 space-y-4 sm:space-y-0 mb-6">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-dark to-blue-600 rounded-xl flex items-center justify-center text-white text-xl flex-shrink-0">
                     🎯
                   </div>
-                  <div>
+                  <div className="text-left">
                     <h3 className="text-2xl font-bold text-blue-dark mb-3 mt-0">La Nostra Missione</h3>
                     <p className="text-blue-dark/80 leading-relaxed">
                       I nostri ingegneri operano quotidianamente in diversi settori industriali e terziari, contribuendo al successo dei clienti attraverso l'innovazione e lo sviluppo di tecnologie all'avanguardia.
@@ -276,11 +276,11 @@ const Abylsen = () => {
             <div className="space-y-8">
               {/* Sectors */}
               <div className="bg-gradient-to-r from-blue-400/5 to-blue-dark/5 border border-blue-400/20 rounded-3xl p-8">
-                <div className="flex items-start space-x-4 mb-6">
+                <div className="flex flex-col sm:flex-row sm:items-start sm:space-x-4 space-y-4 sm:space-y-0 mb-6">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center text-white text-xl flex-shrink-0">
                     🚀
                   </div>
-                  <div>
+                  <div className="text-left">
                     <h3 className="text-2xl font-bold text-blue-dark mb-4 mt-0">Settori di Innovazione</h3>
                     <div className="grid grid-cols-2 gap-2">
                       {[
@@ -305,11 +305,11 @@ const Abylsen = () => {
 
               {/* Values */}
               <div className="bg-gradient-to-r from-blue-dark/5 to-blue-400/5 border border-blue-dark/20 rounded-3xl p-8">
-                <div className="flex items-start space-x-4 mb-6">
+                <div className="flex flex-col sm:flex-row sm:items-start sm:space-x-4 space-y-4 sm:space-y-0 mb-6">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-dark to-blue-600 rounded-xl flex items-center justify-center text-white text-xl flex-shrink-0">
                     ⭐
                   </div>
-                  <div>
+                  <div className="text-left">
                     <h3 className="text-2xl font-bold text-blue-dark mb-4 mt-0">I Valori di Abylsen Italia</h3>
                     <div className="space-y-3">
                       {[
@@ -336,12 +336,12 @@ const Abylsen = () => {
           </div>
 
           {/* Bottom Highlight */}
-          <div className="bg-gradient-to-r from-blue-400/10 to-blue-dark/10 border border-blue-400/30 rounded-3xl p-8 md:p-12 text-center">
+          <div className="bg-gradient-to-r from-blue-400/10 to-blue-dark/10 border border-blue-400/30 rounded-3xl p-8 md:p-12 text-left">
             <div className="text-5xl mb-6">🌟</div>
             <h3 className="text-2xl md:text-3xl font-bold text-blue-dark mb-4 mt-0">
               Abylsen trasforma il modo di pensare, lavorare e vivere
             </h3>
-            <p className="text-lg text-blue-dark/80 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-blue-dark/80 max-w-3xl leading-relaxed">
               Abylsen immagina e sviluppa tecnologie all'avanguardia, concentrandosi su aree strategiche per il futuro e promuovendo un ambiente di lavoro collaborativo e responsabile.
             </p>
           </div>
@@ -424,12 +424,12 @@ const Abylsen = () => {
           </div>
 
           {/* Bottom Highlight */}
-          <div className="bg-gradient-to-r from-blue-400/10 to-blue-dark/10 border border-blue-400/30 rounded-3xl p-8 md:p-12 text-center">
+          <div className="bg-gradient-to-r from-blue-400/10 to-blue-dark/10 border border-blue-400/30 rounded-3xl p-8 md:p-12 text-left">
             <div className="text-5xl mb-6">🏆</div>
             <h3 className="text-2xl md:text-3xl font-bold text-blue-dark mb-4 mt-0">
               Una partnership che premia l'eccellenza
             </h3>
-            <p className="text-lg text-blue-dark/80 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-blue-dark/80 max-w-3xl leading-relaxed">
               La partnership tra Mobilitas e Abylsen Italia rappresenta un modello di collaborazione che mette al centro il benessere dei dipendenti, offrendo vantaggi concreti e misurabili per migliorare la qualità della vita lavorativa e personale.
             </p>
           </div>
