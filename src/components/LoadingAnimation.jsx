@@ -78,7 +78,7 @@ const LoadingAnimation = ({ onComplete }) => {
         }`}
       >
         <h1 className="text-2xl md:text-3xl font-bold text-white mb-2 font-montserrat">
-          Benvenuti in Mobilitas
+          Scopri Mobilitas
         </h1>
         <p className="text-lg md:text-xl text-[#72fa93] font-medium font-montserrat">
           lo Studio Osteopatico più Esclusivo d'Italia

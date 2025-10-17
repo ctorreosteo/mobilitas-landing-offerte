@@ -7,7 +7,7 @@ const Sidebar = ({ isOpen, onClose }) => {
 
   const menuItems = [
     {
-      name: 'Benvenuti in Mobilitas',
+      name: 'Scopri Mobilitas',
       href: '/'
     },
     {
