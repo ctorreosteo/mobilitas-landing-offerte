@@ -58,12 +58,12 @@ const Sidebar = ({ isOpen, onClose }) => {
       href: '/newsletter'
     },
     {
-      name: 'Magazine',
-      href: '/magazine'
-    },
-    {
       name: 'Domande frequenti',
       href: '/faq'
+    },
+    {
+      name: 'Magazine',
+      href: '/magazine'
     },
     {
       name: 'Blog',

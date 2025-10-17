@@ -13,6 +13,7 @@ import Testimonianze from './pages/sito-web/Testimonianze'
 import LaNostraStoria from './pages/sito-web/LaNostraStoria'
 import MobilitasCard from './pages/sito-web/MobilitasCard'
 import Newsletter from './pages/sito-web/Newsletter'
+import Magazine from './pages/sito-web/Magazine'
 
 // Job position pages
 import Segretaria from './pages/sito-web/posizioni/Segretaria'
@@ -51,6 +52,7 @@ function App() {
         <Route path="/la-nostra-storia" element={<Layout><LaNostraStoria /></Layout>} />
         <Route path="/carta-fedelta" element={<Layout><MobilitasCard /></Layout>} />
         <Route path="/newsletter" element={<Layout><Newsletter /></Layout>} />
+        <Route path="/magazine" element={<Layout><Magazine /></Layout>} />
         
         {/* Job position routes with layout */}
         <Route path="/lavora-con-noi/segretaria" element={<Layout><Segretaria /></Layout>} />
