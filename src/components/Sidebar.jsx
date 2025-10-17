@@ -54,7 +54,7 @@ const Sidebar = ({ isOpen, onClose }) => {
       href: '/lavora-con-noi'
     },
     {
-      name: 'Newsletter',
+      name: 'Mobilitas Insider',
       href: '/newsletter'
     },
     {
