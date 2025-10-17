@@ -73,7 +73,7 @@ const LoadingAnimation = ({ onComplete }) => {
 
       {/* Testo di benvenuto */}
       <div
-        className={`mt-8 text-center transition-all duration-700 delay-200 ease-out ${
+        className={`mt-8 text-center px-6 transition-all duration-700 delay-200 ease-out ${
           showContent ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
         }`}
       >

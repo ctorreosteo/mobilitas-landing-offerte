@@ -29,7 +29,11 @@ const Header = () => {
             </button>
 
             {/* Logo - Centro */}
-            <Link to="/" className="flex items-center">
+            <Link 
+              to="/" 
+              className="flex items-center"
+              onClick={() => window.location.href = '/'}
+            >
               <img 
                 src="/logo_verde.png" 
                 alt="Mobilitas Logo" 
