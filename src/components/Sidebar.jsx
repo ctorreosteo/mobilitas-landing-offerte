@@ -42,6 +42,10 @@ const Sidebar = ({ isOpen, onClose }) => {
       href: '/testimonianze'
     },
     {
+      name: 'La nostra storia',
+      href: '/la-nostra-storia'
+    },
+    {
       name: 'Influencer',
       href: '/influencer'
     },
