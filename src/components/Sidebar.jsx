@@ -51,17 +51,7 @@ const Sidebar = ({ isOpen, onClose }) => {
     },
     {
       name: 'Lavora con noi',
-      subItems: [
-        { name: 'Osteopata', href: '/lavora-con-noi/osteopata' },
-        { name: 'Nutrizionista', href: '/lavora-con-noi/nutrizionista' },
-        { name: 'Segretaria', href: '/lavora-con-noi/segretaria' },
-        { name: 'Commerciale', href: '/lavora-con-noi/commerciale' },
-        { name: 'Pilates', href: '/lavora-con-noi/pilates' },
-        { name: 'Personal Trainer', href: '/lavora-con-noi/personal-trainer' },
-        { name: 'Video maker', href: '/lavora-con-noi/video-maker' },
-        { name: 'Social media manager', href: '/lavora-con-noi/social-media-manager' },
-        { name: 'Marketer full stack', href: '/lavora-con-noi/marketer-full-stack' }
-      ]
+      href: '/lavora-con-noi'
     },
     {
       name: 'Newsletter',
