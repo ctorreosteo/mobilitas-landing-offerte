@@ -115,7 +115,7 @@ const Newsletter = () => {
                 <h2 className="text-4xl md:text-5xl font-black text-blue-dark mb-8 leading-tight mt-0">
                   Sei uno di
                   <span className="block bg-gradient-to-r from-blue-600 to-green-500 bg-clip-text text-transparent">
-                    noi?
+                    NOI?
                   </span>
                 </h2>
               </div>

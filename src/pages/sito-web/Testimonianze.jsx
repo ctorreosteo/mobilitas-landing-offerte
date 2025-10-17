@@ -49,15 +49,13 @@ const Testimonianze = () => {
   }
 
   return (
-    <div className="min-h-screen">
-        {/* Hero Section */}
-        <section className="py-8 bg-cream mt-4">
-          <div className="container mx-auto px-4">
-            <div className="text-left max-w-4xl mx-auto">
+    <div className="min-h-screen bg-cream">
+      <div className="max-w-7xl mx-auto px-8 py-16">
+        <div className="text-left">
               <div className="flex items-center gap-3 bg-sky-400/10 border border-sky-400/30 rounded-full px-6 py-3 shadow-lg backdrop-blur-sm w-fit">
                 <Award className="w-6 h-6 text-sky-400 flex-shrink-0" />
                 <span className="text-lg font-bold text-sky-400 font-montserrat leading-tight">
-                  #1 Studio Osteopatico d'Italia
+                  #1 Studio Osteopatico<br />d'Italia
                 </span>
               </div>
               
@@ -88,14 +86,9 @@ const Testimonianze = () => {
                   <span className="font-montserrat">5.0/5 su Google Reviews</span>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
+        </div>
 
-        {/* Achievements Section */}
-        <section className="py-8 bg-cream mt-4">
-          <div className="container mx-auto px-4">
-            <div className="text-left mb-16">
+        <div className="text-left mb-16 mt-16">
               <h2 className="text-3xl md:text-4xl font-bold text-blue-dark mb-6 font-montserrat">
                 Perché siamo il <span className="text-azure-dark">#1</span>
               </h2>
@@ -150,13 +143,8 @@ const Testimonianze = () => {
                 )
               })}
             </div>
-          </div>
-        </section>
 
-        {/* CTA Section */}
-        <section className="py-8 bg-cream mt-4">
-          <div className="container mx-auto px-4">
-            <div className="text-left max-w-4xl mx-auto">
+        <div className="text-left mt-16">
               <div className="inline-flex items-center gap-2 bg-blue-dark/10 rounded-full p-0 m-0">
                 <ExternalLink className="w-5 h-5 text-blue-dark" />
                 <span className="text-sm font-medium text-blue-dark font-montserrat">
@@ -179,10 +167,8 @@ const Testimonianze = () => {
                 <ExternalLink className="inline-block mr-3 w-6 h-6" />
                 Leggi tutte le recensioni su Google
               </button>
-            </div>
-          </div>
-        </section>
-
+        </div>
+      </div>
     </div>
   )
 }

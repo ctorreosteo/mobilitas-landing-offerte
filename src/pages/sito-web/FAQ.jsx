@@ -481,7 +481,7 @@ const FAQ = () => {
 
   return (
     <div className="min-h-screen bg-cream">
-      <div className="container mx-auto px-4 py-16">
+      <div className="max-w-7xl mx-auto px-8 py-16">
         <div className="text-left mb-12">
           <h1 className="text-5xl font-bold text-blue-dark mb-6 font-montserrat">
             Domande Frequenti

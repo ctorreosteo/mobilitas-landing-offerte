@@ -11,11 +11,8 @@ const Sidebar = ({ isOpen, onClose }) => {
       href: '/'
     },
     {
-      name: 'Mobilitas Fitness',
-      subItems: [
-        { name: 'Walking Club', href: '/walking-club' },
-        { name: 'Running Club', href: '/running-club' }
-      ]
+      name: 'Mobilitas Fitness Club',
+      href: '/mobilitas-fitness'
     },
     {
       name: 'Mobilitas Card',
