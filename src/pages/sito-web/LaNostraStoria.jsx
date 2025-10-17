@@ -42,7 +42,7 @@ const LaNostraStoria = () => {
                     Carlos Torre
                   </div>
                 </div>
-                <div className="bg-green/10 rounded-2xl p-8 text-left">
+                <div className="bg-green/10 rounded-2xl p-4 text-left">
                   <h3 className="text-2xl font-bold text-blue-dark mb-4 font-montserrat">
                     Ex Calciatore e Ingegnere
                   </h3>
@@ -75,7 +75,7 @@ const LaNostraStoria = () => {
                     Nicolas Ricciardi
                   </div>
                 </div>
-                <div className="bg-green/10 rounded-2xl p-8 text-left">
+                <div className="bg-green/10 rounded-2xl p-4 text-left">
                   <h3 className="text-2xl font-bold text-blue-dark mb-4 font-montserrat">
                     L'Ex Nuotatore che Cambiò le Regole
                   </h3>
@@ -145,7 +145,7 @@ const LaNostraStoria = () => {
                   ad ammalarci, creando un sistema nazionale che semplicemente <strong className="text-blue-dark">non funziona</strong>.
                 </p>
 
-                <div className="bg-green/20 rounded-2xl p-8 mt-8 border-l-4 border-azure-dark">
+                <div className="bg-green/20 rounded-2xl p-6 mt-8 border-l-4 border-azure-dark">
                   <p className="text-xl font-bold text-blue-dark mb-4">
                     E da qui abbiamo capito...
                   </p>
@@ -184,7 +184,7 @@ const LaNostraStoria = () => {
               </div>
 
               {/* Testo */}
-              <div className="bg-gradient-to-br from-green/20 to-azure-dark/20 rounded-3xl p-10 border border-green/30">
+              <div className="bg-gradient-to-br from-green/20 to-azure-dark/20 rounded-3xl p-6 border border-green/30">
                 <div className="text-left mb-6">
                   <div className="w-16 h-16 bg-green rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-2xl">✍️</span>
@@ -215,7 +215,7 @@ const LaNostraStoria = () => {
                     <strong className="text-blue-dark"> sensazionale</strong>.
                   </p>
 
-                  <div className="bg-green/20 rounded-xl p-6 border-l-4 border-azure-dark">
+                  <div className="bg-green/20 rounded-xl p-4 border-l-4 border-azure-dark">
                     <p className="font-bold text-blue-dark mb-2">
                       La forza che li ha spinti?
                     </p>
@@ -279,9 +279,11 @@ const LaNostraStoria = () => {
                   Il segreto? Lavorare attivamente sulle <span className="text-azure-dark font-semibold">5 aree fondamentali della salute</span>:
                 </p>
 
-                <HealthAreasCarousel variant="story" />
+                <div className="mb-16">
+                  <HealthAreasCarousel variant="story" />
+                </div>
 
-                <div className="bg-green/20 rounded-2xl p-6 mt-8 border-l-4 border-azure-dark">
+                <div className="bg-green/20 rounded-2xl p-4 mt-8 border-l-4 border-azure-dark">
                   <p className="text-lg font-bold text-blue-dark mb-2">
                     Il risultato?
                   </p>
@@ -298,7 +300,7 @@ const LaNostraStoria = () => {
 
         {/* Call to Action */}
         <section className="text-left">
-          <div className="bg-gradient-to-r from-green/20 to-azure-dark/20 rounded-3xl p-12 border border-green/30 max-w-4xl mx-auto">
+          <div className="bg-gradient-to-r from-green/20 to-azure-dark/20 rounded-3xl p-6 border border-green/30 max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-blue-dark mb-6 font-montserrat">
               Vuoi Far Parte di Questa Rivoluzione?
             </h2>

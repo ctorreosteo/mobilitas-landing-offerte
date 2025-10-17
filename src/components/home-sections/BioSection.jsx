@@ -8,7 +8,9 @@ import {
   Quote,
   Shield,
   Zap,
-  Target
+  Target,
+  MessageCircle,
+  Calendar
 } from 'lucide-react'
 
 const BioSection = () => {
@@ -154,6 +156,34 @@ const BioSection = () => {
               </p>
             </div>
           </div>
+        </div>
+
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row gap-4 mt-16 max-w-4xl mx-auto">
+          <button
+            onClick={() => {
+              const message = encodeURIComponent("Ciao, vorrei effettuare una breve consulenza conoscitiva per comprendere se potete essermi di aiuto. Quando ci sarebbe posto? Grazie");
+              window.open(`https://wa.me/393518198457?text=${message}`, '_blank');
+            }}
+            className="group bg-blue-dark hover:bg-blue-dark/90 text-green font-bold py-6 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl font-montserrat text-left flex items-center justify-between text-lg md:text-base uppercase min-h-[100px] w-full"
+          >
+            <div className="flex-1 pr-4">
+              Prenota un<br />consulto gratuito
+            </div>
+            <MessageCircle className="w-5 h-5 group-hover:scale-110 transition-transform flex-shrink-0" />
+          </button>
+          <button
+            onClick={() => {
+              const message = encodeURIComponent("Ciao, vorrei effettuare una prima visita con sconto. Quando ci sarebbe posto? Grazie");
+              window.open(`https://wa.me/393518198457?text=${message}`, '_blank');
+            }}
+            className="group bg-blue-dark hover:bg-blue-dark/90 text-green font-bold py-6 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl font-montserrat text-left flex items-center justify-between text-lg md:text-base uppercase min-h-[100px] w-full"
+          >
+            <div className="flex-1 pr-4">
+              Prenota una prima<br />visita con sconto
+            </div>
+            <Calendar className="w-5 h-5 group-hover:scale-110 transition-transform flex-shrink-0" />
+          </button>
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Star, Users, Award, TrendingUp, ExternalLink, MessageCircle, ThumbsUp } from 'lucide-react'
+import SectionDivider from '../SectionDivider'
 
 const TestimonialsSection = () => {
   const stats = [
@@ -57,12 +58,16 @@ const TestimonialsSection = () => {
         </div>
 
         {/* Google Reviews CTA - Main Section */}
-        <div className="bg-sky-400/10 backdrop-blur-md border border-sky-400/30 rounded-3xl p-8 md:p-12 text-blue-dark text-left mb-16 shadow-2xl">
+        <div className="bg-emerald-100 rounded-3xl p-8 md:p-12 text-blue-dark text-left mb-16 shadow-2xl">
           <div className="max-w-4xl mx-auto">
             {/* Google Logo and Rating */}
             <div className="flex items-center gap-4 mb-8">
-              <div className="w-16 h-16 bg-blue-dark/10 rounded-full flex items-center justify-center backdrop-blur-sm">
-                <span className="text-2xl font-bold text-blue-dark">G</span>
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center backdrop-blur-sm shadow-lg">
+                <img 
+                  src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
+                  alt="Google Logo" 
+                  className="w-10 h-10 object-contain"
+                />
               </div>
               <div className="text-left">
                 <div className="flex items-center gap-2 mb-2">
@@ -108,6 +113,9 @@ const TestimonialsSection = () => {
           </div>
         </div>
 
+        {/* Divider */}
+        <SectionDivider />
+
         {/* Il Teatro della Trasformazione - Vertical Journey */}
         <div className="space-y-8">
           {/* Header Section */}
@@ -131,7 +139,7 @@ const TestimonialsSection = () => {
               <img 
                 src="/home/home5.png" 
                 alt="Il trattamento osteopatico diventa il teatro della trasformazione" 
-                className="w-full max-w-2xl mx-auto rounded-2xl shadow-2xl"
+                className="w-full max-w-2xl mx-auto rounded-2xl shadow-2xl mb-8"
               />
             </div>
           </div>
@@ -150,13 +158,13 @@ const TestimonialsSection = () => {
                   Non sai se possiamo esserti di aiuto?
                 </h4>
                 <p className="text-blue-dark/80 font-montserrat leading-relaxed mb-6">
-                  Una consulenza gratuita per capire come possiamo aiutarti a raggiungere i tuoi obiettivi di salute e benessere.
+                  Un consulto gratuita per capire come possiamo aiutarti a raggiungere i tuoi obiettivi di salute e benessere.
                 </p>
                 <a 
                   href="/contatti"
-                  className="inline-flex items-center gap-2 bg-sky-400 hover:bg-sky-400/90 text-white font-bold py-3 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl font-montserrat"
+                  className="inline-flex items-center gap-2 bg-blue-dark hover:bg-blue-dark/90 text-green font-bold py-3 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl font-montserrat"
                 >
-                  <span>Prenota consulenza gratuita</span>
+                  <span>Prenota un consulto gratuito</span>
                   <ExternalLink className="w-4 h-4" />
                 </a>
               </div>
