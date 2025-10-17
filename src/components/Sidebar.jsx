@@ -7,14 +7,8 @@ const Sidebar = ({ isOpen, onClose }) => {
 
   const menuItems = [
     {
-      name: 'Home',
-      href: '/',
-      subItems: [
-        { name: 'Mission', href: '/mission' },
-        { name: 'Servizi', href: '/servizi' },
-        { name: 'Contatti', href: '/contatti' },
-        { name: 'Dove siamo', href: '/dove-siamo' }
-      ]
+      name: 'Benvenuti in Mobilitas',
+      href: '/'
     },
     {
       name: 'Mobilitas Fitness',

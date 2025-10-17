@@ -25,11 +25,17 @@ const Home = () => {
         <SectionDivider />
         <ProblemsSection />
         <SectionDivider />
-        <TestimonialsSection />
+        <div id="testimonianze">
+          <TestimonialsSection />
+        </div>
         <SectionDivider />
-        <ServicesOverviewSection />
+        <div id="servizi">
+          <ServicesOverviewSection />
+        </div>
         <SectionDivider />
-        <BioSection />
+        <div id="bio">
+          <BioSection />
+        </div>
       </div>
     </>
   )

@@ -263,9 +263,9 @@ const Abylsen = () => {
                     🎯
                   </div>
                   <div className="text-left">
-                    <h3 className="text-2xl font-bold text-blue-dark mb-3 mt-0">La Nostra Missione</h3>
+                    <h3 className="text-2xl font-bold text-blue-dark mb-3 mt-0">La Missione di Abylsen</h3>
                     <p className="text-blue-dark/80 leading-relaxed">
-                      I nostri ingegneri operano quotidianamente in diversi settori industriali e terziari, contribuendo al successo dei clienti attraverso l'innovazione e lo sviluppo di tecnologie all'avanguardia.
+                      I loro ingegneri operano quotidianamente in diversi settori industriali e terziari, contribuendo al successo dei clienti attraverso l'innovazione e lo sviluppo di tecnologie all'avanguardia.
                     </p>
                   </div>
                 </div>

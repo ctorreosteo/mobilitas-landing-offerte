@@ -224,9 +224,9 @@ const Robogest = () => {
                     🎯
                   </div>
                   <div className="text-left">
-                    <h3 className="text-2xl font-bold text-blue-dark mb-3 mt-0">La Nostra Missione</h3>
+                    <h3 className="text-2xl font-bold text-blue-dark mb-3 mt-0">La Missione di Robogest</h3>
                     <p className="text-blue-dark/80 leading-relaxed">
-                      Offriamo programmazione robot, assistenza tecnica specializzata e formazione continua. Siamo sempre alla ricerca di modi per diffondere la conoscenza e la comprensione dei robot, unita alla nostra esperienza pluriennale.
+                      Offriamo programmazione robot, assistenza tecnica specializzata e formazione continua. Siamo sempre alla ricerca di modi per diffondere la conoscenza e la comprensione dei robot, unita alla loro esperienza pluriennale.
                     </p>
                   </div>
                 </div>
@@ -242,7 +242,7 @@ const Robogest = () => {
                     🛠️
                   </div>
                   <div className="text-left">
-                    <h3 className="text-2xl font-bold text-blue-dark mb-4 mt-0">I Nostri Servizi</h3>
+                    <h3 className="text-2xl font-bold text-blue-dark mb-4 mt-0">I Servizi di Robogest</h3>
                     <div className="space-y-3">
                       {[
                         "Programmazione robot",
@@ -304,7 +304,7 @@ const Robogest = () => {
                 <div className="text-left">
                   <h3 className="text-2xl font-bold text-blue-dark mb-3 mt-0">I Numeri di Robogest</h3>
                   <p className="text-blue-dark/80 leading-relaxed mb-6">
-                    Robogest vanta una solida esperienza nel settore della robotica industriale, con risultati che testimoniano la qualità e l'affidabilità dei nostri servizi.
+                    Robogest vanta una solida esperienza nel settore della robotica industriale, con risultati che testimoniano la qualità e l'affidabilità dei loro servizi.
                   </p>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div className="text-center">

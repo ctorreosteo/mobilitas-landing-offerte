@@ -225,7 +225,7 @@ const StampaSubalpina = () => {
                     🎯
                   </div>
                   <div className="text-left">
-                    <h3 className="text-2xl font-bold text-blue-dark mb-3 mt-0">La Nostra Missione</h3>
+                    <h3 className="text-2xl font-bold text-blue-dark mb-3 mt-0">La Missione di Stampa Subalpina</h3>
                     <p className="text-blue-dark/80 leading-relaxed">
                       Fornire informazioni e consulenze sulla corretta applicazione dei contratti di lavoro, sui compensi previsti per le prestazioni professionali autonome, e offrire assistenza legale e tutela per i giornalisti.
                     </p>
