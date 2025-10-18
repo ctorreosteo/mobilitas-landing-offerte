@@ -31,10 +31,10 @@ const HeroSection = () => {
       {/* Main Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-[24px] pt-8 pb-20 lg:pb-32">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
+          <div className="grid lg:grid-cols-3 gap-16 lg:gap-20 items-start">
             
-            {/* Left Column - Content */}
-            <div className={`space-y-10 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            {/* Left Column - Content (2/3 width) */}
+            <div className={`lg:col-span-2 space-y-10 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               
               {/* Badge */}
               <div className="inline-flex items-center gap-3 bg-sky-400/10 border border-sky-400/30 rounded-full px-6 py-3 mt-4 mb-2 shadow-lg backdrop-blur-sm">
@@ -67,8 +67,8 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              {/* Key Benefits Grid - Horizontal Layout */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {/* Key Benefits Grid - Vertical Layout for Desktop */}
+              <div className="grid grid-cols-1 lg:grid-cols-1 gap-4">
                 <div className="group relative">
                   <div className="relative bg-gradient-to-br from-red-50 to-orange-100 border border-white/50 rounded-3xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-2">
                     <div className="flex items-center gap-4">
@@ -127,34 +127,6 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-6 mb-16">
-                <button
-                  onClick={() => {
-                    const message = encodeURIComponent("Ciao, vorrei effettuare una breve consulenza conoscitiva per comprendere se potete essermi di aiuto. Quando ci sarebbe posto? Grazie");
-                    window.open(`https://wa.me/393518198457?text=${message}`, '_blank');
-                  }}
-                  className="group bg-blue-dark hover:bg-blue-dark/90 text-green font-bold py-6 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl font-montserrat text-left flex items-center justify-between text-lg md:text-base uppercase min-h-[100px] w-full"
-                >
-            <div className="flex-1 pr-4">
-              Prenota un<br />consulto gratuito
-            </div>
-            <MessageCircle className="w-5 h-5 group-hover:scale-110 transition-transform flex-shrink-0" />
-                </button>
-                <button
-                  onClick={() => {
-                    const message = encodeURIComponent("Ciao, vorrei effettuare una prima visita con sconto. Quando ci sarebbe posto? Grazie");
-                    window.open(`https://wa.me/393518198457?text=${message}`, '_blank');
-                  }}
-                  className="group bg-blue-dark hover:bg-blue-dark/90 text-green font-bold py-6 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl font-montserrat text-left flex items-center justify-between text-lg md:text-base uppercase min-h-[100px] w-full"
-                >
-            <div className="flex-1 pr-4">
-              Prenota una prima<br />visita con sconto
-            </div>
-            <Calendar className="w-5 h-5 group-hover:scale-110 transition-transform flex-shrink-0" />
-                </button>
-              </div>
-
               {/* Trust Indicators */}
               <div className="flex flex-wrap items-center gap-6 pt-6 border-t border-blue-dark/20">
                 <div className="flex items-center gap-2">
@@ -172,12 +144,12 @@ const HeroSection = () => {
               </div>
             </div>
 
-            {/* Right Column - Visual Elements */}
-            <div className={`relative transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            {/* Right Column - Visual Elements (1/3 width) */}
+            <div className={`lg:col-span-1 relative transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               
               {/* Main Stats Card */}
-              <div className="relative bg-white/90 backdrop-blur-md border border-blue-dark/30 rounded-3xl p-8 shadow-2xl">
-                <div className="space-y-8">
+              <div className="relative bg-white/90 backdrop-blur-md border border-blue-dark/30 rounded-3xl p-8 lg:p-10 shadow-2xl">
+                <div className="space-y-8 lg:space-y-10">
                   {/* Header */}
                   <div className="text-left">
                     <h3 className="text-2xl font-bold text-blue-dark font-montserrat mb-2">I nostri risultati</h3>
@@ -185,7 +157,7 @@ const HeroSection = () => {
                   </div>
                   
                   {/* Stats */}
-                  <div className="grid grid-cols-1 gap-6">
+                  <div className="grid grid-cols-1 gap-6 lg:gap-8">
                     <div className="text-left">
                       <div className="text-4xl font-bold text-blue-dark font-montserrat mb-1">4000+</div>
                       <div className="text-blue-dark/80 font-montserrat">Pazienti soddisfatti</div>
@@ -201,7 +173,7 @@ const HeroSection = () => {
                   </div>
                   
                   {/* Rating */}
-                  <div className="flex items-center gap-2 pt-4 border-t border-blue-dark/20">
+                  <div className="flex items-center gap-2 pt-6 lg:pt-8 border-t border-blue-dark/20">
                     <div className="flex gap-1">
                       {[...Array(5)].map((_, i) => (
                         <Star key={i} className="w-5 h-5 text-blue-dark fill-current" />
