@@ -44,12 +44,14 @@ const Header = () => {
             </Link>
 
             {/* Icona Utente - Destra */}
-            <button
+            <Link 
+              to="/login" 
               className="text-cream hover:text-green transition-colors bg-transparent border-none outline-none cursor-pointer"
               aria-label="Accedi al tuo account"
+              onClick={() => window.scrollTo(0, 0)}
             >
               <User size={24} />
-            </button>
+            </Link>
           </div>
         </div>
       </header>
