@@ -66,68 +66,87 @@ const BioSection = () => {
             </div>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-            {/* Left Side - Mission Statement */}
-            <div>
-              <div className="bg-cream rounded-2xl p-8 shadow-xl border border-gray-100">
-                {/* Mission Statement */}
-                <div className="flex items-start gap-3 mb-6">
-                  <Award className="w-5 h-5 text-blue-dark mt-1 flex-shrink-0" />
-                  <p className="text-xl text-blue-dark mb-8 mt-0 font-montserrat leading-relaxed text-left">
-                    Ogni giorno ci alziamo con una missione chiara e potente:<span className="font-semibold text-blue-dark bg-blue-dark/10 py-1 rounded">restituire alle persone il diritto di vivere senza dolore</span>, di sentirsi libere nel proprio corpo, di riprendersi in mano la propria salute.
-                  </p>
+          {/* Mission Statement - Minimal Paragraph */}
+          <div className="mb-12">
+            <p className="text-lg md:text-xl text-blue-dark/90 font-montserrat leading-relaxed mb-6">
+              Ogni giorno ci alziamo con una missione chiara e potente: <span className="font-semibold text-blue-dark">restituire alle persone il diritto di vivere senza dolore</span>, di sentirsi libere nel proprio corpo, di riprendersi in mano la propria salute.
+            </p>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3">
+                <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <Target className="w-4 h-4 text-white" />
                 </div>
+                <p className="text-lg md:text-xl text-blue-dark/90 font-montserrat leading-relaxed">
+                  <span className="font-semibold">La nostra visione:</span> Un mondo in cui le persone camminano senza paura di muoversi, lavorano con energia e vivono con gioia.
+                </p>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-8 h-8 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <Heart className="w-4 h-4 text-white" />
+                </div>
+                <p className="text-lg md:text-xl text-blue-dark/90 font-montserrat leading-relaxed">
+                  <span className="font-semibold">Il nostro impegno:</span> Liberare le persone dal dolore, prevenire anziché curare, diffondere una cultura del benessere.
+                </p>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-8 h-8 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <Shield className="w-4 h-4 text-white" />
+                </div>
+                <p className="text-lg md:text-xl text-blue-dark/90 font-montserrat leading-relaxed">
+                  <span className="font-semibold">La nostra causa:</span> Un mondo senza dolori evitabili, una società più consapevole e responsabile del proprio benessere.
+                </p>
+              </li>
+            </ul>
+          </div>
 
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <Target className="w-5 h-5 text-blue-dark mt-1 flex-shrink-0" />
-                    <p className="text-blue-dark/90 font-montserrat mt-0">
-                      <span className="font-semibold">La nostra visione:</span> Un mondo in cui le persone camminano senza paura di muoversi, lavorano con energia e vivono con gioia.
-                    </p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Heart className="w-5 h-5 text-blue-dark mt-1 flex-shrink-0" />
-                    <p className="text-blue-dark/90 font-montserrat mt-0">
-                      <span className="font-semibold">Il nostro impegno:</span> Liberare le persone dal dolore, prevenire anziché curare, diffondere una cultura del benessere.
-                    </p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Shield className="w-5 h-5 text-blue-dark mt-1 flex-shrink-0" />
-                    <p className="text-blue-dark/90 font-montserrat mt-0">
-                      <span className="font-semibold">La nostra causa:</span> Un mondo senza dolori evitabili, una società più consapevole e responsabile del proprio benessere.
-                    </p>
-                  </div>
-                </div>
-              </div>
+          {/* Values Section */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-blue-dark mb-8 font-montserrat text-left">
+              I nostri principi guida
+            </h3>
+            
+            {/* Image moved here */}
+            <div className="mb-8">
+              <img 
+                src="/home/home3.png" 
+                alt="Un nuovo modo di vivere la salute" 
+                className="w-full max-w-4xl mx-auto rounded-2xl shadow-2xl"
+              />
             </div>
-
-            {/* Right Side - Values */}
-            <div>
-              <h3 className="text-2xl font-bold text-blue-dark mb-8 font-montserrat text-left">
-                I nostri principi guida
-              </h3>
-              <div className="space-y-6">
-                {values.map((value, index) => {
-                  const IconComponent = value.icon
-                  return (
-                    <div key={index} className="bg-cream rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
-                      <div className="flex items-start gap-4">
-                        <div className="w-12 h-12 bg-blue-dark/15 rounded-full flex items-center justify-center flex-shrink-0 border border-blue-dark/20">
-                          <IconComponent className="w-6 h-6 text-blue-dark" />
-                        </div>
-                        <div>
-                          <h4 className="text-lg font-bold text-blue-dark mb-2 mt-0 font-montserrat">
-                            {value.title}
-                          </h4>
-                          <p className="text-blue-dark/90 font-montserrat leading-relaxed">
-                            {value.description}
-                          </p>
-                        </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {values.map((value, index) => {
+                const IconComponent = value.icon
+                const gradients = [
+                  { icon: "from-blue-500 to-blue-600", bg: "from-blue-50 to-blue-100" },
+                  { icon: "from-green-500 to-green-600", bg: "from-green-50 to-green-100" },
+                  { icon: "from-purple-500 to-purple-600", bg: "from-purple-50 to-purple-100" },
+                  { icon: "from-orange-500 to-orange-600", bg: "from-orange-50 to-orange-100" }
+                ]
+                const gradient = gradients[index]
+                
+                return (
+                  <div key={index} className="group relative">
+                    <div className={`relative bg-gradient-to-br ${gradient.bg} border border-white/50 rounded-3xl p-6 text-left shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-2`}>
+                      {/* Icon */}
+                      <div className={`w-14 h-14 bg-gradient-to-br ${gradient.icon} rounded-2xl flex items-center justify-center text-white mb-4 shadow-lg`}>
+                        <IconComponent className="w-7 h-7" />
                       </div>
+                      
+                      {/* Content */}
+                      <h4 className="text-xl font-bold text-blue-dark mb-3 mt-0 font-montserrat">
+                        {value.title}
+                      </h4>
+                      <p className="text-blue-dark/70 font-montserrat leading-relaxed text-sm">
+                        {value.description}
+                      </p>
+                      
+                      {/* Hover Effect */}
+                      <div className={`absolute inset-0 bg-gradient-to-br ${gradient.icon} rounded-3xl opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
                     </div>
-                  )
-                })}
-              </div>
+                  </div>
+                )
+              })}
             </div>
           </div>
 
@@ -136,15 +155,6 @@ const BioSection = () => {
           {/* Final Message */}
           <div className="text-left mt-16">
             <div className="max-w-4xl mx-auto">
-              {/* Final Message Image */}
-              <div className="mb-8">
-                <img 
-                  src="/home/home3.png" 
-                  alt="Un nuovo modo di vivere la salute" 
-                  className="w-full max-w-4xl mx-auto rounded-2xl shadow-2xl"
-                />
-              </div>
-              
               <h4 className="text-xl font-bold text-blue-dark mb-4 font-montserrat">
                 Un nuovo modo di vivere la salute
               </h4>

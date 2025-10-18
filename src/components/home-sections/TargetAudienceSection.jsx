@@ -82,109 +82,111 @@ const TargetAudienceSection = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {/* Per chi è - Enhanced Design */}
+          {/* Per chi è - Newsletter Style */}
           <div className={`relative transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <div className="relative bg-white/90 backdrop-blur-md rounded-2xl p-4 shadow-xl border border-blue-dark/20 overflow-hidden">
-              {/* Gradient Background */}
-              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-sky-400 via-sky-400/80 to-sky-400/60"></div>
-              
-              {/* Floating Elements */}
-              <div className="absolute top-2 right-2 w-8 h-8 bg-sky-400/20 rounded-full flex items-center justify-center">
-                <Sparkles className="w-4 h-4 text-sky-400" />
-              </div>
-              
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-gradient-to-br from-sky-400 to-sky-400/80 rounded-lg flex items-center justify-center shadow-lg">
-                  <Check className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-blue-dark font-montserrat mb-0">
-                    Per chi è Mobilitas
-                  </h3>
-                  <p className="text-blue-dark/70 font-montserrat text-xs">Il tuo profilo ideale</p>
-                </div>
-              </div>
-              
-              <div className="space-y-2">
-                {targetPoints.map((point, index) => (
-                  <div key={index} className="group flex items-start gap-2 p-2 rounded-lg hover:bg-sky-400/5 transition-all duration-300">
-                    <div className="w-6 h-6 bg-sky-400/20 rounded-md flex items-center justify-center flex-shrink-0 group-hover:bg-sky-400/30 transition-colors">
-                      <point.icon className="w-3 h-3 text-sky-400" />
-                    </div>
-                    <div>
-                      <p className="text-blue-dark font-semibold font-montserrat text-xs mb-0.5 mt-0">
-                        {point.title}
-                      </p>
-                      <p className="text-blue-dark/80 font-montserrat text-xs">
-                        {point.description}
-                      </p>
-                    </div>
+            <div className="group relative">
+              <div className="relative bg-gradient-to-br from-green-50 to-green-100 border border-white/50 rounded-3xl p-4 md:p-8 text-left shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-2">
+                {/* Header with Icon and Text */}
+                <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
+                  {/* Icon */}
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center text-white shadow-lg flex-shrink-0">
+                    <Check className="w-6 h-6 md:w-8 md:h-8" />
                   </div>
-                ))}
-              </div>
+                  
+                  {/* Content */}
+                  <div>
+                    <h3 className="text-lg md:text-2xl font-bold text-blue-dark mb-1 md:mb-2 font-montserrat">
+                      Per chi è Mobilitas
+                    </h3>
+                    <p className="text-blue-dark/70 font-montserrat text-xs md:text-sm">Il tuo profilo ideale</p>
+                  </div>
+                </div>
+                
+                <div className="space-y-0">
+                  {targetPoints.map((point, index) => (
+                    <div key={index} className="flex items-start gap-2 md:gap-3 p-2 md:p-3 rounded-lg hover:bg-green-400/5 transition-all duration-300">
+                      <div className="w-6 h-6 md:w-8 md:h-8 bg-green-400/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <point.icon className="w-3 h-3 md:w-4 md:h-4 text-green-500" />
+                      </div>
+                      <div>
+                        <p className="text-blue-dark font-semibold font-montserrat text-xs md:text-sm mb-0.5 md:mb-1 mt-0">
+                          {point.title}
+                        </p>
+                        <p className="text-blue-dark/80 font-montserrat text-xs">
+                          {point.description}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
 
-              {/* Call to Action Card */}
-              <div className="mt-4 p-3 bg-gradient-to-r from-sky-400 to-sky-400/80 rounded-lg shadow-lg">
-                <div className="flex items-center gap-2 mb-1">
-                  <div className="w-5 h-5 bg-white/20 rounded-sm flex items-center justify-center">
-                    <Heart className="w-3 h-3 text-white" />
+                {/* Call to Action Card */}
+                <div className="mt-4 md:mt-6 p-3 md:p-4 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl shadow-lg">
+                  <div className="flex items-center gap-2 md:gap-3 mb-1 md:mb-2">
+                    <div className="w-5 h-5 md:w-6 md:h-6 bg-white/20 rounded-lg flex items-center justify-center">
+                      <Heart className="w-2.5 h-2.5 md:w-3 md:h-3 text-white" />
+                    </div>
+                    <span className="text-white/90 font-semibold font-montserrat text-xs md:text-sm">La tua domanda</span>
                   </div>
-                  <span className="text-white/90 font-semibold font-montserrat text-xs">La tua domanda</span>
+                  <p className="text-white font-bold font-montserrat text-xs md:text-sm">
+                    "Sei pronto a diventare il leader della tua salute?"
+                  </p>
                 </div>
-                <p className="text-white font-bold font-montserrat text-xs">
-                  "Sei pronto a diventare il leader della tua salute?"
-                </p>
+                
+                {/* Hover Effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-green-600 rounded-3xl opacity-0 group-hover:opacity-5 transition-opacity duration-500"></div>
               </div>
             </div>
           </div>
 
-          {/* Per chi non è - Enhanced Design */}
+          {/* Per chi non è - Newsletter Style */}
           <div className={`relative transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <div className="relative bg-white/90 backdrop-blur-md rounded-2xl p-4 shadow-xl border border-red-200/50 overflow-hidden">
-              {/* Gradient Background */}
-              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-red-400 to-red-500"></div>
-              
-              {/* Floating Elements */}
-              <div className="absolute top-2 right-2 w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
-                <X className="w-4 h-4 text-red-500" />
-              </div>
-              
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-gradient-to-br from-red-400 to-red-500 rounded-lg flex items-center justify-center shadow-lg">
-                  <X className="w-5 h-5 text-white" />
+            <div className="group relative">
+              <div className="relative bg-gradient-to-br from-red-50 to-orange-100 border border-white/50 rounded-3xl p-4 md:p-8 text-left shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-2">
+                {/* Header with Icon and Text */}
+                <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
+                  {/* Icon */}
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-red-500 to-orange-500 rounded-2xl flex items-center justify-center text-white shadow-lg flex-shrink-0">
+                    <X className="w-6 h-6 md:w-8 md:h-8" />
+                  </div>
+                  
+                  {/* Content */}
+                  <div>
+                    <h3 className="text-lg md:text-2xl font-bold text-blue-dark mb-1 md:mb-2 font-montserrat">
+                      Per chi non è Mobilitas
+                    </h3>
+                    <p className="text-blue-dark/70 font-montserrat text-xs md:text-sm">Non è il momento giusto</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-xl font-bold text-blue-dark font-montserrat mb-0">
-                    Per chi non è Mobilitas
-                  </h3>
-                  <p className="text-blue-dark/70 font-montserrat text-xs">Non è il momento giusto</p>
-                </div>
-              </div>
-              
-              <div className="space-y-2">
-                {notTargetPoints.map((point, index) => (
-                  <div key={index} className="flex items-start gap-2 p-2 rounded-lg hover:bg-red-50/50 transition-all duration-300">
-                    <div className="w-6 h-6 bg-red-100 rounded-md flex items-center justify-center flex-shrink-0">
-                      <X className="w-3 h-3 text-red-500" />
+                
+                <div className="space-y-0">
+                  {notTargetPoints.map((point, index) => (
+                    <div key={index} className="flex items-start gap-2 md:gap-3 p-2 md:p-3 rounded-lg hover:bg-red-400/5 transition-all duration-300">
+                      <div className="w-6 h-6 md:w-8 md:h-8 bg-red-400/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <X className="w-3 h-3 md:w-4 md:h-4 text-red-500" />
+                      </div>
+                      <p className="text-blue-dark/90 font-montserrat text-xs md:text-sm mt-0" style={{marginTop: '2px'}}>
+                        <span className="font-semibold">{point}</span>
+                      </p>
                     </div>
-                    <p className="text-blue-dark/90 font-montserrat text-xs mt-0">
-                      <span className="font-semibold">{point}</span>
-                    </p>
-                  </div>
-                ))}
-              </div>
-
-              {/* Warning Card */}
-              <div className="mt-4 p-3 bg-gradient-to-r from-red-50 to-red-100 border border-red-200 rounded-lg">
-                <div className="flex items-center gap-2 mb-1">
-                  <div className="w-5 h-5 bg-red-200 rounded-sm flex items-center justify-center">
-                    <X className="w-3 h-3 text-red-600" />
-                  </div>
-                  <span className="text-red-700 font-semibold font-montserrat text-xs">Attenzione</span>
+                  ))}
                 </div>
-                <p className="text-red-700 font-bold font-montserrat text-xs">
-                  "Se cerchi scorciatoie, non siamo la soluzione giusta per te"
-                </p>
+
+                {/* Warning Card */}
+                <div className="mt-4 md:mt-6 p-3 md:p-4 bg-gradient-to-r from-red-500 to-orange-500 rounded-2xl shadow-lg">
+                  <div className="flex items-center gap-2 md:gap-3 mb-1 md:mb-2">
+                    <div className="w-5 h-5 md:w-6 md:h-6 bg-white/20 rounded-lg flex items-center justify-center">
+                      <X className="w-2.5 h-2.5 md:w-3 md:h-3 text-white" />
+                    </div>
+                    <span className="text-white font-semibold font-montserrat text-xs md:text-sm">Attenzione</span>
+                  </div>
+                  <p className="text-white font-bold font-montserrat text-xs md:text-sm">
+                    "Se cerchi scorciatoie, non siamo la soluzione giusta per te"
+                  </p>
+                </div>
+                
+                {/* Hover Effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-red-500 to-orange-500 rounded-3xl opacity-0 group-hover:opacity-5 transition-opacity duration-500"></div>
               </div>
             </div>
           </div>

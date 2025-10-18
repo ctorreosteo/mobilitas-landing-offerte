@@ -1,5 +1,5 @@
 import React from 'react'
-import { AlertTriangle, Pill, Clock, UserX, Zap, Shield } from 'lucide-react'
+import { AlertTriangle, Pill, Clock, UserX, Zap, Shield, MessageCircle, Calendar } from 'lucide-react'
 
 const ProblemsSection = () => {
   const problems = [
@@ -128,94 +128,97 @@ const ProblemsSection = () => {
               </div>
             </div>
 
-            {/* Main Content Cards */}
-            <div className="grid lg:grid-cols-2 gap-8 mb-12">
-              {/* Left Card - The Truth */}
-              <div className="relative bg-white/90 backdrop-blur-md rounded-3xl p-8 shadow-2xl border border-green/20 overflow-hidden">
-                <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-green via-green/80 to-green/60"></div>
-                
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-12 h-12 bg-gradient-to-br from-green to-green/80 rounded-xl flex items-center justify-center shadow-lg">
-                    <Shield className="w-6 h-6 text-blue-dark" />
-                  </div>
-                  <div>
-                    <h4 className="text-2xl font-bold text-blue-dark font-montserrat mb-0">
-                      La verità nascosta
-                    </h4>
-                    <p className="text-blue-dark/70 font-montserrat text-sm">Quello che nessuno ti dice</p>
-                  </div>
-                </div>
-                
-                <div className="space-y-4">
-                  <div className="p-4 bg-green/5 rounded-xl border border-green/20">
-                    <p className="text-blue-dark font-semibold font-montserrat text-lg mb-2">
-                      Il dolore non è una condanna, è un segnale.
-                    </p>
-                    <p className="text-blue-dark/80 font-montserrat">
-                      Un segnale che indica la necessità di cambiare, di evolvere, di prendersi cura di sé in modo profondo e duraturo.
-                    </p>
-                  </div>
-                </div>
-              </div>
+            {/* Truth Paragraph */}
+            <div className="mb-8">
+              <p className="text-lg md:text-xl text-blue-dark/90 font-montserrat leading-relaxed">
+                <span className="font-semibold">Il dolore non è una condanna, è un segnale.</span> Un segnale che indica la necessità di cambiare, di evolvere, di prendersi cura di sé in modo profondo e duraturo.
+              </p>
+            </div>
 
-              {/* Right Card - Your Power */}
-              <div className="relative bg-white/90 backdrop-blur-md rounded-3xl p-8 shadow-2xl border border-sky-400/20 overflow-hidden">
-                <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-sky-400 via-sky-400/80 to-sky-400/60"></div>
-                
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-12 h-12 bg-gradient-to-br from-sky-400 to-sky-400/80 rounded-xl flex items-center justify-center shadow-lg">
-                    <Zap className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h4 className="text-2xl font-bold text-blue-dark font-montserrat mb-0">
-                      Il tuo potere
-                    </h4>
-                    <p className="text-blue-dark/70 font-montserrat text-sm">Quello che hai sempre avuto</p>
-                  </div>
-                </div>
-                
-                <div className="space-y-3">
-                  <div className="flex items-center gap-3 p-3 rounded-lg hover:bg-sky-400/5 transition-colors">
-                    <div className="w-8 h-8 bg-sky-400/20 rounded-lg flex items-center justify-center">
-                      <Shield className="w-4 h-4 text-sky-400" />
+            {/* Main Content Cards */}
+            <div className="grid lg:grid-cols-1 gap-8 mb-12">
+              {/* Your Power Card - Updated Design */}
+              <div className="group relative">
+                <div className="relative bg-gradient-to-br from-blue-50 to-blue-100 border border-white/50 rounded-3xl p-4 md:p-8 text-left shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-2">
+                  {/* Header with Icon and Text */}
+                  <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
+                    {/* Icon */}
+                    <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center text-white shadow-lg flex-shrink-0">
+                      <Zap className="w-6 h-6 md:w-8 md:h-8" />
                     </div>
-                    <p className="text-blue-dark font-semibold font-montserrat">Tu hai il controllo</p>
-                  </div>
-                  <div className="flex items-center gap-3 p-3 rounded-lg hover:bg-sky-400/5 transition-colors">
-                    <div className="w-8 h-8 bg-sky-400/20 rounded-lg flex items-center justify-center">
-                      <Zap className="w-4 h-4 text-sky-400" />
+                    
+                    {/* Content */}
+                    <div>
+                      <h4 className="text-lg md:text-2xl font-bold text-blue-dark font-montserrat mb-1 md:mb-2">
+                        Il tuo potere
+                      </h4>
+                      <p className="text-blue-dark/70 font-montserrat text-xs md:text-sm mt-0">La fortuna è che la scelta è nelle tue mani</p>
                     </div>
-                    <p className="text-blue-dark font-semibold font-montserrat">Il cambiamento è possibile</p>
                   </div>
-                  <div className="flex items-center gap-3 p-3 rounded-lg hover:bg-sky-400/5 transition-colors">
-                    <div className="w-8 h-8 bg-sky-400/20 rounded-lg flex items-center justify-center">
-                      <Shield className="w-4 h-4 text-sky-400" />
+                  
+                  <div className="space-y-0">
+                    <div className="flex items-center gap-2 md:gap-3 p-2 md:p-3 rounded-lg hover:bg-blue-400/5 transition-colors">
+                      <div className="w-6 h-6 md:w-8 md:h-8 bg-blue-400/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Shield className="w-3 h-3 md:w-4 md:h-4 text-blue-500" />
+                      </div>
+                      <p className="text-blue-dark font-semibold font-montserrat text-xs md:text-sm mt-0"><span className="font-bold">Tu hai il controllo</span> – <span className="font-normal">Le tue abitudini quotidiane influenzano in modo diretto la qualità del tuo corpo, del tuo recupero e della tua energia.</span></p>
                     </div>
-                    <p className="text-blue-dark font-semibold font-montserrat">La salute è una scelta</p>
+                    <div className="flex items-center gap-2 md:gap-3 p-2 md:p-3 rounded-lg hover:bg-blue-400/5 transition-colors">
+                      <div className="w-6 h-6 md:w-8 md:h-8 bg-blue-400/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Zap className="w-3 h-3 md:w-4 md:h-4 text-blue-500" />
+                      </div>
+                      <p className="text-blue-dark font-semibold font-montserrat text-xs md:text-sm mt-0"><span className="font-bold">Il cambiamento è possibile</span> – <span className="font-normal">Con il giusto approccio, anche dolori cronici e disturbi ricorrenti possono migliorare in modo misurabile.</span></p>
+                    </div>
+                    <div className="flex items-center gap-2 md:gap-3 p-2 md:p-3 rounded-lg hover:bg-blue-400/5 transition-colors">
+                      <div className="w-6 h-6 md:w-8 md:h-8 bg-blue-400/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Shield className="w-3 h-3 md:w-4 md:h-4 text-blue-500" />
+                      </div>
+                      <p className="text-blue-dark font-semibold font-montserrat text-xs md:text-sm mt-0"><span className="font-bold">La salute è una scelta</span> – <span className="font-normal">Non delegarla ad antidolorifici o rimedi temporanei: il tuo corpo può guarire, se lo metti nelle condizioni giuste.</span></p>
+                    </div>
                   </div>
+                  
+                  {/* Hover Effect */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-600 rounded-3xl opacity-0 group-hover:opacity-5 transition-opacity duration-500"></div>
                 </div>
               </div>
             </div>
 
-            {/* Bottom CTA Section */}
-            <div className="text-left">
-              <div className="relative bg-gradient-to-r from-green/10 to-sky-400/10 border border-green/20 rounded-3xl p-8 shadow-xl backdrop-blur-sm">
-                <div className="absolute top-2 right-2 w-12 h-12 bg-blue-dark/20 rounded-full flex items-center justify-center">
-                  <Zap className="w-6 h-6 text-blue-dark" />
+            {/* Bottom Message - Minimal */}
+            <div className="text-left mt-8">
+              <p className="text-lg md:text-xl text-blue-dark/80 font-montserrat leading-relaxed mb-4">
+                Ogni sintomo è un <span className="font-bold">segnale</span>, non un punto di arrivo. Rigidità, infiammazioni, dolori cronici: sono spesso il risultato di tensioni accumulate e compensazioni che il corpo non riesce più a gestire.
+              </p>
+              <p className="text-lg md:text-xl text-blue-dark/80 font-montserrat leading-relaxed">
+                Con il giusto <span className="font-bold">approccio manuale</span>, è possibile agire sulla causa e non solo sul sintomo (migliorando la mobilità, riducendo il dolore e prevenendo peggioramenti futuri).
+              </p>
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-6 mt-8 max-w-4xl mx-auto">
+              <button
+                onClick={() => {
+                  const message = encodeURIComponent("Ciao, vorrei effettuare una breve consulenza conoscitiva per comprendere se potete essermi di aiuto. Quando ci sarebbe posto? Grazie");
+                  window.open(`https://wa.me/393518198457?text=${message}`, '_blank');
+                }}
+                className="group bg-blue-dark hover:bg-blue-dark/90 text-green font-bold py-6 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl font-montserrat text-left flex items-center justify-between text-lg md:text-base uppercase min-h-[100px] w-full"
+              >
+                <div className="flex-1 pr-4">
+                  Prenota un<br />consulto gratuito
                 </div>
-                
-                <h4 className="text-2xl md:text-3xl font-bold text-blue-dark mb-4 font-montserrat">
-                  Non sei più una vittima delle circostanze
-                </h4>
-                <p className="text-xl text-blue-dark/80 font-montserrat mb-6">
-                  È ora di iniziare a costruire la vita che desideri
-                </p>
-                
-                <div className="inline-flex items-center gap-2 bg-blue-dark hover:bg-blue-dark/90 text-green font-bold py-4 px-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 font-montserrat">
-                  <span>Prenota la tua prima visita scontata</span>
-                  <Zap className="w-5 h-5" />
+                <MessageCircle className="w-5 h-5 group-hover:scale-110 transition-transform flex-shrink-0" />
+              </button>
+              <button
+                onClick={() => {
+                  const message = encodeURIComponent("Ciao, vorrei effettuare una prima visita con sconto. Quando ci sarebbe posto? Grazie");
+                  window.open(`https://wa.me/393518198457?text=${message}`, '_blank');
+                }}
+                className="group bg-blue-dark hover:bg-blue-dark/90 text-green font-bold py-6 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl font-montserrat text-left flex items-center justify-between text-lg md:text-base uppercase min-h-[100px] w-full"
+              >
+                <div className="flex-1 pr-4">
+                  Prenota una prima<br />visita con sconto
                 </div>
-              </div>
+                <Calendar className="w-5 h-5 group-hover:scale-110 transition-transform flex-shrink-0" />
+              </button>
             </div>
           </div>
         </div>

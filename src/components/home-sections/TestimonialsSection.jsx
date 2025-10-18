@@ -89,7 +89,7 @@ const TestimonialsSection = () => {
               </span>
             </div>
             
-            <h3 className="text-3xl md:text-4xl font-bold mb-6 font-montserrat text-blue-dark">
+            <h3 className="text-3xl md:text-4xl font-bold mb-6 font-montserrat text-blue-dark mt-0">
               Leggi le storie vere dei nostri clienti
             </h3>
             

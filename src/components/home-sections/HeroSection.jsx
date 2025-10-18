@@ -67,35 +67,62 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              {/* Key Benefits Grid */}
+              {/* Key Benefits Grid - Horizontal Layout */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                <div className="flex items-center gap-3 bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-blue-dark/20">
-                  <div className="w-10 h-10 bg-blue-dark/20 rounded-lg flex items-center justify-center">
-                    <Heart className="w-5 h-5 text-blue-dark" />
-                  </div>
-                  <div>
-                    <div className="text-lg font-bold text-blue-dark font-montserrat">Libertà</div>
-                    <div className="text-sm text-blue-dark/70 font-montserrat">dal dolore</div>
+                <div className="group relative">
+                  <div className="relative bg-gradient-to-br from-red-50 to-orange-100 border border-white/50 rounded-3xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-2">
+                    <div className="flex items-center gap-4">
+                      {/* Icon */}
+                      <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-orange-500 rounded-2xl flex items-center justify-center text-white shadow-lg flex-shrink-0">
+                        <Heart className="w-6 h-6" />
+                      </div>
+                      
+                       {/* Content */}
+                       <div>
+                         <div className="text-sm sm:text-xl font-bold text-blue-dark font-montserrat"><span className="font-bold">Dolori e problemi</span> - <span className="font-normal">elimina finalmente quei dolori che ti trascini da mesi o anni e che ti stanno rubando energia, movimento e libertà</span></div>
+                       </div>
+                    </div>
+                    
+                    {/* Hover Effect */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-red-500 to-orange-500 rounded-3xl opacity-0 group-hover:opacity-5 transition-opacity duration-500"></div>
                   </div>
                 </div>
                 
-                <div className="flex items-center gap-3 bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-blue-dark/20">
-                  <div className="w-10 h-10 bg-blue-dark/20 rounded-lg flex items-center justify-center">
-                    <Zap className="w-5 h-5 text-blue-dark" />
-                  </div>
-                  <div>
-                    <div className="text-lg font-bold text-blue-dark font-montserrat">Energia</div>
-                    <div className="text-sm text-blue-dark/70 font-montserrat">quotidiana</div>
+                <div className="group relative">
+                  <div className="relative bg-gradient-to-br from-blue-50 to-blue-100 border border-white/50 rounded-3xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-2">
+                    <div className="flex items-center gap-4">
+                      {/* Icon */}
+                      <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center text-white shadow-lg flex-shrink-0">
+                        <Zap className="w-6 h-6" />
+                      </div>
+                      
+                       {/* Content */}
+                       <div>
+                         <div className="text-sm sm:text-xl font-bold text-blue-dark font-montserrat"><span className="font-bold">Energia</span> - <span className="font-normal">Non è normale svegliarsi già stanchi. Ritrova la tua energia vera, ogni giorno, quella che ti permette di vivere, non solo sopravvivere.</span></div>
+                       </div>
+                    </div>
+                    
+                    {/* Hover Effect */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-600 rounded-3xl opacity-0 group-hover:opacity-5 transition-opacity duration-500"></div>
                   </div>
                 </div>
                 
-                <div className="flex items-center gap-3 bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-blue-dark/20">
-                  <div className="w-10 h-10 bg-blue-dark/20 rounded-lg flex items-center justify-center">
-                    <Shield className="w-5 h-5 text-blue-dark" />
-                  </div>
-                  <div>
-                    <div className="text-lg font-bold text-blue-dark font-montserrat">Controllo</div>
-                    <div className="text-sm text-blue-dark/70 font-montserrat">totale</div>
+                <div className="group relative">
+                  <div className="relative bg-gradient-to-br from-green-50 to-green-100 border border-white/50 rounded-3xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-2">
+                    <div className="flex items-center gap-4">
+                      {/* Icon */}
+                      <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center text-white shadow-lg flex-shrink-0">
+                        <Shield className="w-6 h-6" />
+                      </div>
+                      
+                       {/* Content */}
+                       <div>
+                         <div className="text-sm sm:text-xl font-bold text-blue-dark font-montserrat">Controllo totale - <span className="font-normal">Riprendi il controllo del tuo corpo oggi e costruisci una vecchiaia senza farmaci, dipendenze o rimpianti.</span></div>
+                       </div>
+                    </div>
+                    
+                    {/* Hover Effect */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-green-600 rounded-3xl opacity-0 group-hover:opacity-5 transition-opacity duration-500"></div>
                   </div>
                 </div>
               </div>
