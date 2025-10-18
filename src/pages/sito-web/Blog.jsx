@@ -3,7 +3,7 @@ import React from 'react'
 const Blog = () => {
   return (
     <div className="min-h-screen bg-white text-blue-dark font-montserrat">
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-6 py-16">
         <div className="max-w-4xl mx-auto text-center">
           {/* Icon */}
           <div className="mb-8">
@@ -23,7 +23,7 @@ const Blog = () => {
           </p>
 
           {/* Main Message */}
-          <div className="bg-gradient-to-r from-blue-400/10 to-blue-dark/10 border border-blue-400/30 rounded-3xl p-8 md:p-12 mb-8">
+          <div className="bg-gradient-to-r from-blue-400/10 to-blue-dark/10 border border-blue-400/30 rounded-3xl p-6 mb-8">
             <div className="text-5xl mb-6">🚀</div>
             <h2 className="text-2xl md:text-3xl font-bold text-blue-dark mb-4">
               Qualcosa di grande sta arrivando
@@ -39,17 +39,17 @@ const Blog = () => {
               Nel frattempo, puoi:
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
-              <div className="bg-white border border-blue-dark/10 rounded-xl p-6 shadow-sm">
+              <div className="bg-white border border-blue-dark/10 rounded-xl p-4 shadow-sm">
                 <div className="text-3xl mb-3">📞</div>
                 <h3 className="font-semibold text-blue-dark mb-2">Chiamaci</h3>
                 <p className="text-sm text-blue-dark/70">Per qualsiasi domanda sui nostri servizi</p>
               </div>
-              <div className="bg-white border border-blue-dark/10 rounded-xl p-6 shadow-sm">
+              <div className="bg-white border border-blue-dark/10 rounded-xl p-4 shadow-sm">
                 <div className="text-3xl mb-3">📋</div>
                 <h3 className="font-semibold text-blue-dark mb-2">Leggi le FAQ</h3>
                 <p className="text-sm text-blue-dark/70">Trova risposte alle domande più comuni</p>
               </div>
-              <div className="bg-white border border-blue-dark/10 rounded-xl p-6 shadow-sm">
+              <div className="bg-white border border-blue-dark/10 rounded-xl p-4 shadow-sm">
                 <div className="text-3xl mb-3">📅</div>
                 <h3 className="font-semibold text-blue-dark mb-2">Prenota</h3>
                 <p className="text-sm text-blue-dark/70">La tua visita presso il nostro studio</p>

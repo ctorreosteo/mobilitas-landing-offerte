@@ -17,7 +17,7 @@ const Magazine = () => {
             </p>
           </div>
 
-          <div className="bg-white/80 backdrop-blur-sm border border-white/50 rounded-3xl p-12 text-center">
+          <div className="bg-white/80 backdrop-blur-sm border border-white/50 rounded-3xl p-6 text-center">
             <div className="text-6xl mb-6">🚧</div>
             <h2 className="text-2xl md:text-3xl font-bold text-blue-dark mb-4">
               Pagina in Costruzione
@@ -27,7 +27,7 @@ const Magazine = () => {
               interviste e approfondimenti esclusivi sul mondo della salute e del benessere.
             </p>
             
-            <div className="bg-gradient-to-r from-blue-50 to-green-50 border border-blue-200 rounded-2xl p-6 mb-8">
+            <div className="bg-gradient-to-r from-blue-50 to-green-50 border border-blue-200 rounded-2xl p-4 mb-8">
               <h3 className="text-lg font-semibold text-blue-dark mb-3">Cosa troverai nel Magazine:</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
                 <div className="flex items-center space-x-2">
