@@ -102,9 +102,9 @@ const Sidebar = ({ isOpen, onClose }) => {
       />
       
       {/* Sidebar */}
-      <div className="fixed left-0 top-0 h-full w-72 bg-blue-dark shadow-2xl z-50 transform transition-transform duration-300 ease-in-out">
+      <div className="fixed left-0 top-0 h-full w-72 bg-blue-dark shadow-2xl z-50 transform transition-transform duration-300 ease-in-out flex flex-col">
         {/* Header */}
-        <div className="flex items-center justify-between p-6 border-b border-green">
+        <div className="flex items-center justify-between p-6 border-b border-green flex-shrink-0">
           <h2 className="text-cream font-bold text-xl font-montserrat">Menu</h2>
           <button
             onClick={onClose}
@@ -116,7 +116,7 @@ const Sidebar = ({ isOpen, onClose }) => {
         </div>
 
         {/* Menu Items */}
-        <nav className="flex-1 overflow-y-auto py-4 sidebar-scroll">
+        <nav className="flex-1 overflow-y-auto py-4 sidebar-scroll min-h-0">
           <div className="px-4 space-y-1">
             {menuItems.map((item, index) => (
               <div key={index}>
