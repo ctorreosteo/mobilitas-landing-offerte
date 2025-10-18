@@ -22,7 +22,7 @@ const Login = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-dark via-azure-dark to-green flex items-start justify-center pt-20 pb-8 px-4">
       {/* Main Container */}
-      <div className="w-full max-w-4xl max-h-[90vh] bg-white rounded-3xl shadow-2xl overflow-hidden">
+      <div className="w-full max-w-4xl max-h-[90vh] bg-cream rounded-3xl shadow-2xl overflow-hidden">
         <div className="flex">
           {/* Left Column - Login Form */}
           <div className="flex-1 md:flex-1 p-4">
@@ -47,7 +47,7 @@ const Login = () => {
             <div className="relative bg-gray-50 rounded-2xl p-1 border border-gray-200">
               {/* Active indicator */}
               <div 
-                className={`absolute top-1 bottom-1 w-1/2 bg-white rounded-xl shadow-sm transition-all duration-300 ease-out ${
+                className={`absolute top-1 bottom-1 w-1/2 bg-cream rounded-xl shadow-sm transition-all duration-300 ease-out ${
                   isLogin ? 'left-1' : 'left-1/2'
                 }`}
               />

@@ -550,7 +550,7 @@ const Influencer = () => {
               <div className="relative z-10">
                 {/* Warning Icon */}
                 <div className="text-left mb-0">
-                  <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-green/20 to-cream/10 rounded-full mb-0">
+                  <div className="inline-flex items-center justify-center h-20 bg-gradient-to-br from-green/20 to-cream/10 rounded-full mb-0">
                     <div className="text-4xl">⚠️</div>
                   </div>
                 </div>
@@ -594,8 +594,8 @@ const Influencer = () => {
                   ].map((step, index) => (
                     <div key={index} className="group relative">
                       <div className="bg-blue-dark/60 backdrop-blur-sm border border-green/20 rounded-2xl p-6 hover:border-green/60 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2">
-                        {/* Step Number */}
-                        <div className="absolute -top-3 -right-3 w-8 h-8 bg-gradient-to-br from-green to-cream rounded-full flex items-center justify-center text-blue-dark font-bold text-sm">
+                        {/* Step Number - Fixed positioning */}
+                        <div className="absolute top-6 right-6 w-12 h-12 bg-gradient-to-r from-green to-green-600 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
                           {index + 1}
                         </div>
                         
@@ -664,24 +664,24 @@ const Influencer = () => {
                   
                   <div className="space-y-6">
                     <div className="flex items-start space-x-4">
-                      <div className="w-8 h-8 bg-gradient-to-br from-green to-cream rounded-full flex items-center justify-center text-blue-dark font-bold text-sm flex-shrink-0 mt-1">
+                      <div className="w-8 h-8 bg-gradient-to-br from-green to-cream rounded-full flex items-center justify-center text-blue-dark font-bold text-sm flex-shrink-0 mt-0">
                         🎯
                       </div>
                       <div>
-                        <h4 className="text-lg font-bold text-cream mb-2 mt-0">Siamo in MISSIONE</h4>
-                        <p className="text-cream/80 leading-relaxed">
+                        <h4 className="text-lg font-bold text-cream mb-2 mt-1.5">Siamo in MISSIONE</h4>
+                        <p className="text-cream/80 leading-relaxed mt-0">
                           Abbiamo il sogno e l'ambizione di aiutare più persone possibili a liberarsi da tutti quei dolori dovuti allo stile di vita moderno.
                         </p>
                       </div>
                     </div>
                     
                     <div className="flex items-start space-x-4">
-                      <div className="w-8 h-8 bg-gradient-to-br from-green to-cream rounded-full flex items-center justify-center text-blue-dark font-bold text-sm flex-shrink-0 mt-1">
+                      <div className="w-8 h-8 bg-gradient-to-br from-green to-cream rounded-full flex items-center justify-center text-blue-dark font-bold text-sm flex-shrink-0 mt-0">
                         👨‍⚕️
                       </div>
                       <div>
-                        <h4 className="text-lg font-bold text-cream mb-2 mt-0">Esperti Specializzati</h4>
-                        <p className="text-cream/80 leading-relaxed">
+                        <h4 className="text-lg font-bold text-cream mb-2 mt-1.5">Esperti Specializzati</h4>
+                        <p className="text-cream/80 leading-relaxed mt-0">
                           I nostri professionisti sono esperti nelle loro aree (gravidanza&pediatria, fitness, ecc.) e seguiamo la salute dei nostri pazienti a 360 gradi.
                         </p>
                       </div>

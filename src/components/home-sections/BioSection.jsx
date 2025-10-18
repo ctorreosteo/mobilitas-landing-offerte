@@ -76,7 +76,7 @@ const BioSection = () => {
                 <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                   <Target className="w-4 h-4 text-white" />
                 </div>
-                <p className="text-lg md:text-xl text-blue-dark/90 font-montserrat leading-relaxed">
+                <p className="text-lg md:text-xl text-blue-dark/90 font-montserrat leading-relaxed mt-0">
                   <span className="font-semibold">La nostra visione:</span> Un mondo in cui le persone camminano senza paura di muoversi, lavorano con energia e vivono con gioia.
                 </p>
               </li>
@@ -84,7 +84,7 @@ const BioSection = () => {
                 <div className="w-8 h-8 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                   <Heart className="w-4 h-4 text-white" />
                 </div>
-                <p className="text-lg md:text-xl text-blue-dark/90 font-montserrat leading-relaxed">
+                <p className="text-lg md:text-xl text-blue-dark/90 font-montserrat leading-relaxed mt-0">
                   <span className="font-semibold">Il nostro impegno:</span> Liberare le persone dal dolore, prevenire anziché curare, diffondere una cultura del benessere.
                 </p>
               </li>
@@ -92,7 +92,7 @@ const BioSection = () => {
                 <div className="w-8 h-8 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                   <Shield className="w-4 h-4 text-white" />
                 </div>
-                <p className="text-lg md:text-xl text-blue-dark/90 font-montserrat leading-relaxed">
+                <p className="text-lg md:text-xl text-blue-dark/90 font-montserrat leading-relaxed mt-0">
                   <span className="font-semibold">La nostra causa:</span> Un mondo senza dolori evitabili, una società più consapevole e responsabile del proprio benessere.
                 </p>
               </li>

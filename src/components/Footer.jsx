@@ -46,7 +46,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Clock className="w-5 h-5 text-green" />
-                <span className="text-cream">Lun-Ven: 8:00-20:00 | Sab: 8:00-13:00</span>
+                <span className="text-cream">Lun-Ven: 8:00-21:00 | Sab: 9:00-18:00</span>
               </div>
             </div>
           </div>
