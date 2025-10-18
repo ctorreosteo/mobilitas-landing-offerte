@@ -253,9 +253,8 @@ const Newsletter = () => {
           </div>
 
           {/* Bottom Message */}
-          <div className="bg-white/80 backdrop-blur-sm border border-white/50 rounded-3xl p-12 text-left">
-            <div className="text-5xl mb-6">🚀</div>
-            <h3 className="text-3xl font-bold text-blue-dark mb-6">Contro ogni moda, contro ogni bugia mediatica</h3>
+          <div className="text-left">
+            <h3 className="text-3xl font-bold text-blue-dark mb-6">Contro ogni moda, contro ogni bugia mediatica 🚀</h3>
             <p className="text-lg text-blue-dark/80 max-w-3xl leading-relaxed">
               Questa non è una newsletter. È un sistema operativo per restare liberi dal dolore, dagli ospedali, dai farmaci. 
               Contro il declino che ti hanno insegnato ad accettare.
