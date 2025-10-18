@@ -258,10 +258,10 @@ const MobilitasFitness = () => {
           </div>
 
           {/* Bottom Message */}
-          <div className="bg-white/80 backdrop-blur-sm border border-white/50 rounded-3xl px-8 py-12 text-center mt-20">
+          <div className="bg-white/80 backdrop-blur-sm border border-white/50 rounded-3xl px-8 py-12 text-left mt-20">
             <div className="text-5xl mb-6">💪</div>
             <h3 className="text-3xl font-bold text-blue-dark mb-6">Pronto a muoverti con noi?</h3>
-            <p className="text-lg text-blue-dark/80 max-w-3xl mx-auto leading-relaxed mb-8">
+            <p className="text-lg text-blue-dark/80 max-w-3xl leading-relaxed mb-8">
               Unisciti alla community Mobilitas Fitness Club e scopri come l'attività fisica diventa più divertente e sostenibile quando la fai insieme ad altre persone.
             </p>
             
