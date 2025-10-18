@@ -1,6 +1,6 @@
-# React + Vite
+# Mobilitas Sito Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sito web per Mobilitas con landing pages e sezioni informative.
 
 Currently, two official plugins are available:
 
