@@ -61,7 +61,7 @@ const TestimonialsSection = () => {
         <div className="bg-emerald-100 rounded-3xl p-8 md:p-12 text-blue-dark text-left mb-16 shadow-2xl">
           <div className="max-w-4xl mx-auto">
             {/* Google Logo and Rating */}
-            <div className="flex items-center gap-4 mb-8">
+            <div className="flex items-center gap-4 mb-5">
               <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center backdrop-blur-sm shadow-lg">
                 <img 
                   src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
@@ -81,15 +81,8 @@ const TestimonialsSection = () => {
                 <p className="text-blue-dark/80 font-montserrat">+420 recensioni verificate</p>
               </div>
             </div>
-
-            <div className="inline-flex items-center gap-2 bg-sky-400/20 rounded-full px-4 py-2 mb-6">
-              <MessageCircle className="w-5 h-5 text-sky-400" />
-              <span className="text-sm font-medium text-sky-400 font-montserrat">
-                Recensioni autentiche
-              </span>
-            </div>
             
-            <h3 className="text-3xl md:text-4xl font-bold mb-6 font-montserrat text-blue-dark mt-0">
+            <h3 className="text-3xl md:text-4xl font-bold mb-4 font-montserrat text-blue-dark mt-0">
               Leggi le storie vere dei nostri clienti
             </h3>
             
