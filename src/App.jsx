@@ -38,6 +38,9 @@ import MalDiSchiena from './pages/landing-pages/MalDiSchiena'
 import Gravidanza from './pages/landing-pages/Gravidanza'
 import ThankYou from './pages/landing-pages/ThankYou'
 
+// 404 Page
+import NotFound from './pages/NotFound'
+
 function App() {
   return (
     <Router>
@@ -80,6 +83,9 @@ function App() {
         <Route path="/mal-di-schiena" element={<MalDiSchiena />} />
         <Route path="/gravidanza" element={<Gravidanza />} />
         <Route path="/conferma" element={<ThankYou />} />
+        
+        {/* 404 Page */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   )
