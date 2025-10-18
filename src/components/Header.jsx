@@ -32,7 +32,9 @@ const Header = () => {
             <Link 
               to="/" 
               className="flex items-center"
-              onClick={() => window.location.href = '/'}
+              onClick={() => {
+                window.scrollTo(0, 0)
+              }}
             >
               <img 
                 src="/logo_verde.png" 

@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
+import ScrollToTop from './components/ScrollToTop'
 
 // Main website pages
 import Home from './pages/sito-web/Home'
@@ -40,6 +41,7 @@ import ThankYou from './pages/landing-pages/ThankYou'
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         {/* Main website routes with layout */}
         <Route path="/" element={<Layout><Home /></Layout>} />

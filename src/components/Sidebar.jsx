@@ -81,11 +81,13 @@ const Sidebar = ({ isOpen, onClose }) => {
     if (item.subItems) {
       toggleExpanded(item.name)
     } else {
+      window.scrollTo(0, 0)
       onClose()
     }
   }
 
   const handleSubItemClick = () => {
+    window.scrollTo(0, 0)
     onClose()
   }
 
