@@ -104,7 +104,7 @@ const Testimonianze = () => {
                   <div key={index} className={`text-left p-8 rounded-2xl transition-all duration-300 hover:shadow-lg ${
                     achievement.highlight 
                       ? 'bg-gradient-to-br from-azure-dark/10 to-azure-dark/20 border-2 border-azure-dark/30' 
-                      : 'bg-white shadow-sm'
+                      : 'bg-cream shadow-sm'
                   }`}>
                     <div className={`w-16 h-16 mb-6 rounded-full flex items-center justify-center ${
                       achievement.highlight ? 'bg-azure-dark/20' : 'bg-blue-dark/10'
@@ -131,7 +131,7 @@ const Testimonianze = () => {
               {stats.map((stat, index) => {
                 const IconComponent = stat.icon
                 return (
-                  <div key={index} className="text-left bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                  <div key={index} className="text-left bg-cream rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
                     <IconComponent className={`w-8 h-8 mb-3 ${stat.color}`} />
                     <div className="text-2xl md:text-3xl font-bold text-blue-dark mb-2 font-montserrat">
                       {stat.number}

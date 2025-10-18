@@ -2,7 +2,7 @@ import React from 'react'
 
 const Risorse = () => {
   return (
-    <div className="min-h-screen bg-white text-blue-dark font-montserrat">
+    <div className="min-h-screen bg-cream text-blue-dark font-montserrat">
       <div className="container mx-auto px-6 py-16">
         <div className="max-w-4xl mx-auto text-center">
           {/* Icon */}
@@ -39,17 +39,17 @@ const Risorse = () => {
               Nel frattempo, puoi:
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
-              <div className="bg-white border border-blue-dark/10 rounded-xl p-4 shadow-sm">
+              <div className="bg-cream border border-blue-dark/10 rounded-xl p-4 shadow-sm">
                 <div className="text-3xl mb-3">📞</div>
                 <h3 className="font-semibold text-blue-dark mb-2">Chiamaci</h3>
                 <p className="text-sm text-blue-dark/70">Per qualsiasi domanda sui nostri servizi</p>
               </div>
-              <div className="bg-white border border-blue-dark/10 rounded-xl p-4 shadow-sm">
+              <div className="bg-cream border border-blue-dark/10 rounded-xl p-4 shadow-sm">
                 <div className="text-3xl mb-3">📋</div>
                 <h3 className="font-semibold text-blue-dark mb-2">Leggi le FAQ</h3>
                 <p className="text-sm text-blue-dark/70">Trova risposte alle domande più comuni</p>
               </div>
-              <div className="bg-white border border-blue-dark/10 rounded-xl p-4 shadow-sm">
+              <div className="bg-cream border border-blue-dark/10 rounded-xl p-4 shadow-sm">
                 <div className="text-3xl mb-3">📅</div>
                 <h3 className="font-semibold text-blue-dark mb-2">Prenota</h3>
                 <p className="text-sm text-blue-dark/70">La tua visita presso il nostro studio</p>

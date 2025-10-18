@@ -15,13 +15,13 @@ const StampaSubalpina = () => {
   }, [])
 
   return (
-    <div className="min-h-screen bg-white text-blue-dark font-montserrat">
+    <div className="min-h-screen bg-cream text-blue-dark font-montserrat">
       
       {/* HERO SECTION */}
-      <section className="relative flex items-start justify-center overflow-hidden bg-white pt-8 pb-0">
+      <section className="relative flex items-start justify-center overflow-hidden bg-cream pt-8 pb-0">
         {/* Clean Background */}
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-white"></div>
+          <div className="absolute inset-0 bg-cream"></div>
         </div>
 
         {/* Minimal Floating Elements */}
@@ -62,10 +62,10 @@ const StampaSubalpina = () => {
       </section>
 
       {/* COME È NATA LA PARTNERSHIP SECTION */}
-      <section className="pt-8 pb-20 bg-white relative overflow-hidden">
+      <section className="pt-8 pb-20 bg-cream relative overflow-hidden">
         {/* Clean Background */}
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-white"></div>
+          <div className="absolute inset-0 bg-cream"></div>
         </div>
 
         <div className="relative z-10 max-w-6xl mx-auto px-6">
@@ -175,10 +175,10 @@ const StampaSubalpina = () => {
       </section>
 
       {/* CHI È STAMPA SUBALPINA SECTION */}
-      <section className="pt-8 pb-20 bg-white relative overflow-hidden">
+      <section className="pt-8 pb-20 bg-cream relative overflow-hidden">
         {/* Clean Background */}
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-white"></div>
+          <div className="absolute inset-0 bg-cream"></div>
         </div>
 
         <div className="relative z-10 max-w-6xl mx-auto px-6">
@@ -344,10 +344,10 @@ const StampaSubalpina = () => {
       </section>
 
       {/* BENEFICI DELLA PARTNERSHIP SECTION */}
-      <section className="pt-8 pb-20 bg-white relative overflow-hidden">
+      <section className="pt-8 pb-20 bg-cream relative overflow-hidden">
         {/* Clean Background */}
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-white"></div>
+          <div className="absolute inset-0 bg-cream"></div>
         </div>
 
         <div className="relative z-10 max-w-6xl mx-auto px-6">

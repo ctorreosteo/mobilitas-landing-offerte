@@ -10,7 +10,7 @@ const HeroSection = () => {
   }, [])
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-cream via-white to-cream/50 overflow-hidden">
+    <section className="relative min-h-screen bg-cream overflow-hidden">
       {/* Modern Background Pattern */}
       <div className="absolute inset-0">
         {/* Geometric shapes with brand colors */}

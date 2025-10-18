@@ -40,7 +40,7 @@ const TargetAudienceSection = () => {
   ]
 
   return (
-    <section className="relative py-12 bg-gradient-to-br from-white via-cream/30 to-white overflow-hidden">
+    <section className="relative py-12 bg-cream overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-10 left-8 w-24 h-24 bg-green/10 rounded-full blur-2xl animate-pulse"></div>

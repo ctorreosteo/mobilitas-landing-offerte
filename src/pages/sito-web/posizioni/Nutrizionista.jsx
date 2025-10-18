@@ -5,7 +5,7 @@ const Nutrizionista = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header Section */}
-      <div className="bg-white pt-20 pb-8 border-b border-gray-200">
+      <div className="bg-cream pt-20 pb-8 border-b border-gray-200">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="mb-6">
@@ -35,7 +35,7 @@ const Nutrizionista = () => {
         
         {/* 1. Descrizione della posizione lavorativa */}
         <section className="mb-16">
-          <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+          <div className="bg-cream rounded-2xl p-8 shadow-lg border border-gray-100">
             <div className="flex items-center mb-6">
               <div className="w-12 h-12 bg-sky-100 rounded-full flex items-center justify-center mr-4">
                 <svg className="w-6 h-6 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -69,7 +69,7 @@ const Nutrizionista = () => {
 
         {/* 2. Requisiti obbligatori */}
         <section className="mb-16">
-          <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+          <div className="bg-cream rounded-2xl p-8 shadow-lg border border-gray-100">
             <div className="flex items-center mb-6">
               <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mr-4">
                 <svg className="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -123,7 +123,7 @@ const Nutrizionista = () => {
 
         {/* 3. Requisiti aggiuntivi graditi */}
         <section className="mb-16">
-          <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+          <div className="bg-cream rounded-2xl p-8 shadow-lg border border-gray-100">
             <div className="flex items-center mb-6">
               <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
                 <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -163,7 +163,7 @@ const Nutrizionista = () => {
 
         {/* 4. Attività principali */}
         <section className="mb-16">
-          <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+          <div className="bg-cream rounded-2xl p-8 shadow-lg border border-gray-100">
             <div className="flex items-center mb-6">
               <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mr-4">
                 <svg className="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -229,7 +229,7 @@ const Nutrizionista = () => {
 
         {/* 5. Possibilità di carriera */}
         <section className="mb-16">
-          <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+          <div className="bg-cream rounded-2xl p-8 shadow-lg border border-gray-100">
             <div className="flex items-center mb-6">
               <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
                 <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -253,7 +253,7 @@ const Nutrizionista = () => {
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-white border border-gray-200 p-6 rounded-xl">
+                <div className="bg-cream border border-gray-200 p-6 rounded-xl">
                   <h4 className="text-lg font-bold text-blue-dark font-montserrat mb-3 mt-0">
                     📈 Percorsi di sviluppo
                   </h4>
@@ -266,7 +266,7 @@ const Nutrizionista = () => {
                   </ul>
                 </div>
                 
-                <div className="bg-white border border-gray-200 p-6 rounded-xl">
+                <div className="bg-cream border border-gray-200 p-6 rounded-xl">
                   <h4 className="text-lg font-bold text-blue-dark font-montserrat mb-3 mt-0">
                     💼 Competenze da sviluppare
                   </h4>
@@ -296,7 +296,7 @@ const Nutrizionista = () => {
 
         {/* 6. Iter di selezione */}
         <section className="mb-16">
-          <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+          <div className="bg-cream rounded-2xl p-8 shadow-lg border border-gray-100">
             <div className="flex items-center mb-6">
               <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
                 <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -377,7 +377,7 @@ const Nutrizionista = () => {
             </div>
             
             <div className="space-y-6">
-              <div className="bg-white p-6 rounded-xl border border-sky-200">
+              <div className="bg-cream p-6 rounded-xl border border-sky-200">
                 <h3 className="text-xl font-bold text-blue-dark font-montserrat mb-4 mt-0">
                   📧 Modalità di invio
                 </h3>
@@ -397,7 +397,7 @@ const Nutrizionista = () => {
                 </div>
               </div>
               
-              <div className="bg-white p-6 rounded-xl border border-sky-200">
+              <div className="bg-cream p-6 rounded-xl border border-sky-200">
                 <h3 className="text-xl font-bold text-blue-dark font-montserrat mb-4 mt-0">
                   📋 Documenti richiesti
                 </h3>

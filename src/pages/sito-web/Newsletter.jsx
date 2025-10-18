@@ -96,7 +96,7 @@ const Newsletter = () => {
       </section>
 
       {/* TARGET MENTALE SECTION */}
-      <section className="relative py-20 bg-white overflow-hidden">
+      <section className="relative py-20 bg-cream overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-blue-100/30 to-transparent rounded-full blur-3xl"></div>
@@ -268,19 +268,19 @@ const Newsletter = () => {
         {/* Dynamic Background */}
         <div className="absolute inset-0">
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-900/90 via-blue-800/90 to-green-700/90"></div>
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-white/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cream/5 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-cream/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
           
           {/* Floating particles */}
-          <div className="absolute top-1/3 left-1/3 w-2 h-2 bg-white/30 rounded-full animate-bounce"></div>
-          <div className="absolute top-1/2 right-1/3 w-1.5 h-1.5 bg-white/40 rounded-full animate-bounce delay-500"></div>
-          <div className="absolute bottom-1/3 left-1/2 w-1 h-1 bg-white/50 rounded-full animate-bounce delay-1000"></div>
+          <div className="absolute top-1/3 left-1/3 w-2 h-2 bg-cream/30 rounded-full animate-bounce"></div>
+          <div className="absolute top-1/2 right-1/3 w-1.5 h-1.5 bg-cream/40 rounded-full animate-bounce delay-500"></div>
+          <div className="absolute bottom-1/3 left-1/2 w-1 h-1 bg-cream/50 rounded-full animate-bounce delay-1000"></div>
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <div className="text-white">
-            <div className="inline-flex items-center px-6 py-3 bg-white/10 border border-white/20 rounded-full mb-8">
-              <div className="w-3 h-3 bg-white rounded-full mr-3"></div>
+            <div className="inline-flex items-center px-6 py-3 bg-cream/10 border border-white/20 rounded-full mb-8">
+              <div className="w-3 h-3 bg-cream rounded-full mr-3"></div>
               <span className="text-white font-semibold text-sm uppercase tracking-wider">Iscriviti Ora</span>
             </div>
             
@@ -296,7 +296,7 @@ const Newsletter = () => {
             </p>
 
             {/* Closed Subscription Notice */}
-            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl p-8 mb-12">
+            <div className="bg-cream/10 backdrop-blur-sm border border-white/20 rounded-3xl p-8 mb-12">
               <div className="text-center">
                 <div className="text-4xl mb-4">⏳</div>
                 <h3 className="text-2xl font-bold text-white mb-4">Iscrizioni Temporaneamente Chiuse</h3>
@@ -318,18 +318,18 @@ const Newsletter = () => {
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="La tua email per la lista d'attesa"
                   required
-                  className="w-full px-6 py-4 bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/30 focus:border-transparent"
+                  className="w-full px-6 py-4 bg-cream/10 backdrop-blur-sm border border-white/20 rounded-2xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/30 focus:border-transparent"
                 />
               </div>
               <button
                 type="submit"
                 disabled={isSubscribing}
-                className="group relative w-full inline-flex items-center justify-center px-8 py-4 bg-white text-blue-900 font-bold rounded-2xl hover:bg-white/90 transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="group relative w-full inline-flex items-center justify-center px-8 py-4 bg-cream text-blue-900 font-bold rounded-2xl hover:bg-cream/90 transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 <span className="relative z-10">
                   {isSubscribing ? 'Aggiunta in corso...' : '📝 Mettimi in Lista d\'Attesa'}
                 </span>
-                <div className="absolute inset-0 bg-white/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-cream/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
             </form> */}
 
