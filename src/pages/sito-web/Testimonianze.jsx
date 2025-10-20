@@ -1,7 +1,64 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Star, Users, Award, TrendingUp, ExternalLink, Shield, CheckCircle, Heart } from 'lucide-react'
 
 const Testimonianze = () => {
+  // SEO metadata for Testimonianze page
+  useEffect(() => {
+    const previousTitle = document.title
+    document.title = 'Testimonianze Osteopata Torino | Recensioni Studio Mobilitas – 420+ Recensioni 5 Stelle'
+
+    const ensureMetaByName = (name, content) => {
+      let tag = document.querySelector(`meta[name="${name}"]`)
+      if (!tag) {
+        tag = document.createElement('meta')
+        tag.setAttribute('name', name)
+        document.head.appendChild(tag)
+      }
+      tag.setAttribute('content', content)
+    }
+
+    const ensureMetaByProperty = (property, content) => {
+      let tag = document.querySelector(`meta[property="${property}"]`)
+      if (!tag) {
+        tag = document.createElement('meta')
+        tag.setAttribute('property', property)
+        document.head.appendChild(tag)
+      }
+      tag.setAttribute('content', content)
+    }
+
+    const ensureCanonical = (href) => {
+      let link = document.querySelector('link[rel="canonical"]')
+      if (!link) {
+        link = document.createElement('link')
+        link.setAttribute('rel', 'canonical')
+        document.head.appendChild(link)
+      }
+      link.setAttribute('href', href)
+    }
+
+    const description = 'Leggi le testimonianze dei pazienti dello Studio Osteopatico Mobilitas Torino. 420+ recensioni verificate con 5 stelle su Google. Storie di successo su mal di schiena, cervicale, sciatalgia e postura.'
+    const pageUrl = `${window.location.origin}/testimonianze`
+
+    // Standard SEO
+    ensureMetaByName('description', description)
+    ensureMetaByName('robots', 'index, follow')
+    ensureMetaByName('keywords', 'testimonianze osteopata torino, recensioni mobilitas, osteopata recensioni, studio osteopatico recensioni torino, osteopatia testimonianze')
+
+    // Open Graph
+    ensureMetaByProperty('og:title', 'Testimonianze Osteopata Torino | Recensioni Studio Mobilitas')
+    ensureMetaByProperty('og:description', description)
+    ensureMetaByProperty('og:type', 'website')
+    ensureMetaByProperty('og:url', pageUrl)
+    ensureMetaByProperty('og:site_name', 'Mobilitas – Studio Osteopatico Torino')
+
+    // Canonical
+    ensureCanonical(pageUrl)
+
+    return () => {
+      document.title = previousTitle
+    }
+  }, [])
 
 
   const stats = [

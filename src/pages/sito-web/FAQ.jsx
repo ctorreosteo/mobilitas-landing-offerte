@@ -1,6 +1,63 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 const FAQ = () => {
+  // SEO metadata for FAQ page
+  useEffect(() => {
+    const previousTitle = document.title
+    document.title = 'FAQ Osteopatia | Domande Frequenti Studio Mobilitas Torino – Osteopata Risponde'
+
+    const ensureMetaByName = (name, content) => {
+      let tag = document.querySelector(`meta[name="${name}"]`)
+      if (!tag) {
+        tag = document.createElement('meta')
+        tag.setAttribute('name', name)
+        document.head.appendChild(tag)
+      }
+      tag.setAttribute('content', content)
+    }
+
+    const ensureMetaByProperty = (property, content) => {
+      let tag = document.querySelector(`meta[property="${property}"]`)
+      if (!tag) {
+        tag = document.createElement('meta')
+        tag.setAttribute('property', property)
+        document.head.appendChild(tag)
+      }
+      tag.setAttribute('content', content)
+    }
+
+    const ensureCanonical = (href) => {
+      let link = document.querySelector('link[rel="canonical"]')
+      if (!link) {
+        link = document.createElement('link')
+        link.setAttribute('rel', 'canonical')
+        document.head.appendChild(link)
+      }
+      link.setAttribute('href', href)
+    }
+
+    const description = 'Domande frequenti sull\'osteopatia e sui trattamenti dello Studio Mobilitas Torino. Risposte degli osteopati su mal di schiena, cervicale, sciatalgia, emicrania e postura. Tutto quello che devi sapere.'
+    const pageUrl = `${window.location.origin}/faq`
+
+    // Standard SEO
+    ensureMetaByName('description', description)
+    ensureMetaByName('robots', 'index, follow')
+    ensureMetaByName('keywords', 'faq osteopatia, domande frequenti osteopata, osteopatia torino, differenza osteopata fisioterapista, osteopatia gravidanza, osteopatia bambini')
+
+    // Open Graph
+    ensureMetaByProperty('og:title', 'FAQ Osteopatia | Domande Frequenti Studio Mobilitas Torino')
+    ensureMetaByProperty('og:description', description)
+    ensureMetaByProperty('og:type', 'website')
+    ensureMetaByProperty('og:url', pageUrl)
+    ensureMetaByProperty('og:site_name', 'Mobilitas – Studio Osteopatico Torino')
+
+    // Canonical
+    ensureCanonical(pageUrl)
+
+    return () => {
+      document.title = previousTitle
+    }
+  }, [])
   const [openItems, setOpenItems] = useState({})
 
   const toggleItem = (sectionIndex, questionIndex) => {
