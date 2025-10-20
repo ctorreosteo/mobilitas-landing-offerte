@@ -10,7 +10,7 @@ const OsteopataTorinoConferma = () => {
   // SEO metadata for confirmation page
   useEffect(() => {
     const prevTitle = document.title
-    document.title = 'Conferma richiesta | Osteopata Torino – Mobilitas'
+    document.title = 'Conferma richiesta | Osteopata Torino – Studio Osteopatico Mobilitas'
 
     const ensureMetaByName = (name, content) => {
       let tag = document.querySelector(`meta[name="${name}"]`)
@@ -42,16 +42,18 @@ const OsteopataTorinoConferma = () => {
       link.setAttribute('href', href)
     }
 
-    const description = 'Richiesta effettuata correttamente. Verrai contattato dalla segreteria di Mobilitas per fissare l\'appuntamento o puoi scriverci su WhatsApp per saltare la lista.'
+    const description = 'Conferma richiesta trattamento osteopatico. Mobilitas – Studio Osteopatico Torino (mal di schiena, cervicale, sciatalgia, emicrania, postura). Verrai richiamato dalla segreteria o contattaci su WhatsApp.'
     const pageUrl = `${window.location.origin}/osteopata-torino-conferma`
 
     ensureMetaByName('description', description)
     ensureMetaByName('robots', 'noindex, nofollow')
+    ensureMetaByName('keywords', 'osteopata torino, studio osteopatico torino, osteopatia, mal di schiena, cervicale, sciatalgia, emicrania, postura, prima visita 49€')
 
     ensureMetaByProperty('og:title', 'Conferma richiesta | Osteopata Torino – Mobilitas')
     ensureMetaByProperty('og:description', description)
     ensureMetaByProperty('og:type', 'website')
     ensureMetaByProperty('og:url', pageUrl)
+    ensureMetaByProperty('og:site_name', 'Mobilitas – Studio Osteopatico Torino')
 
     ensureCanonical(pageUrl)
 
