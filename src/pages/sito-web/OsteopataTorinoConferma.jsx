@@ -7,6 +7,59 @@ const OsteopataTorinoConferma = () => {
     setIsVisible(true)
   }, [])
 
+  // SEO metadata for confirmation page
+  useEffect(() => {
+    const prevTitle = document.title
+    document.title = 'Conferma richiesta | Osteopata Torino – Mobilitas'
+
+    const ensureMetaByName = (name, content) => {
+      let tag = document.querySelector(`meta[name="${name}"]`)
+      if (!tag) {
+        tag = document.createElement('meta')
+        tag.setAttribute('name', name)
+        document.head.appendChild(tag)
+      }
+      tag.setAttribute('content', content)
+    }
+
+    const ensureMetaByProperty = (property, content) => {
+      let tag = document.querySelector(`meta[property="${property}"]`)
+      if (!tag) {
+        tag = document.createElement('meta')
+        tag.setAttribute('property', property)
+        document.head.appendChild(tag)
+      }
+      tag.setAttribute('content', content)
+    }
+
+    const ensureCanonical = (href) => {
+      let link = document.querySelector('link[rel="canonical"]')
+      if (!link) {
+        link = document.createElement('link')
+        link.setAttribute('rel', 'canonical')
+        document.head.appendChild(link)
+      }
+      link.setAttribute('href', href)
+    }
+
+    const description = 'Richiesta effettuata correttamente. Verrai contattato dalla segreteria di Mobilitas per fissare l\'appuntamento o puoi scriverci su WhatsApp per saltare la lista.'
+    const pageUrl = `${window.location.origin}/osteopata-torino-conferma`
+
+    ensureMetaByName('description', description)
+    ensureMetaByName('robots', 'noindex, nofollow')
+
+    ensureMetaByProperty('og:title', 'Conferma richiesta | Osteopata Torino – Mobilitas')
+    ensureMetaByProperty('og:description', description)
+    ensureMetaByProperty('og:type', 'website')
+    ensureMetaByProperty('og:url', pageUrl)
+
+    ensureCanonical(pageUrl)
+
+    return () => {
+      document.title = prevTitle
+    }
+  }, [])
+
   const handleWhatsAppClick = () => {
     const message = `Ciao! Ho appena compilato il form per prenotare il trattamento osteopatico con l'offerta. Vorrei saltare la lista d'attesa e prenotare subito. Grazie!`
     const whatsappUrl = `https://wa.me/393518198457?text=${encodeURIComponent(message)}`

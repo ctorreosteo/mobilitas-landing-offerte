@@ -47,6 +47,64 @@ const OsteopataTorino = () => {
     }
   }, [showForm])
 
+  // SEO metadata for Osteopata Torino landing page (keyword-optimized)
+  useEffect(() => {
+    const previousTitle = document.title
+    document.title = 'Osteopata Torino | Studio Osteopatico Mobilitas: Mal di Schiena, Cervicale, Emicrania'
+
+    const ensureMetaByName = (name, content) => {
+      let tag = document.querySelector(`meta[name="${name}"]`)
+      if (!tag) {
+        tag = document.createElement('meta')
+        tag.setAttribute('name', name)
+        document.head.appendChild(tag)
+      }
+      tag.setAttribute('content', content)
+    }
+
+    const ensureMetaByProperty = (property, content) => {
+      let tag = document.querySelector(`meta[property="${property}"]`)
+      if (!tag) {
+        tag = document.createElement('meta')
+        tag.setAttribute('property', property)
+        document.head.appendChild(tag)
+      }
+      tag.setAttribute('content', content)
+    }
+
+    const ensureCanonical = (href) => {
+      let link = document.querySelector('link[rel="canonical"]')
+      if (!link) {
+        link = document.createElement('link')
+        link.setAttribute('rel', 'canonical')
+        document.head.appendChild(link)
+      }
+      link.setAttribute('href', href)
+    }
+
+    const description = 'Cerchi un osteopata a Torino? Mobilitas è lo studio osteopatico specializzato in mal di schiena, cervicale, sciatalgia, emicrania e postura. Valutazione + trattamento prima visita a 49€. Prenota online o via WhatsApp.'
+    const pageUrl = `${window.location.origin}/osteopata-torino`
+
+    // Standard SEO
+    ensureMetaByName('description', description)
+    ensureMetaByName('robots', 'index, follow')
+    ensureMetaByName('keywords', 'osteopata torino, studio osteopatico torino, osteopatia torino, mal di schiena torino, cervicale torino, sciatalgia torino, emicrania torino, postura torino, trattamento osteopatico, prima visita 49€')
+
+    // Open Graph
+    ensureMetaByProperty('og:title', 'Osteopata Torino | Studio Osteopatico Mobilitas')
+    ensureMetaByProperty('og:description', description)
+    ensureMetaByProperty('og:type', 'website')
+    ensureMetaByProperty('og:url', pageUrl)
+    ensureMetaByProperty('og:site_name', 'Mobilitas – Studio Osteopatico Torino')
+
+    // Canonical
+    ensureCanonical(pageUrl)
+
+    return () => {
+      document.title = previousTitle
+    }
+  }, [])
+
   const handleFormSubmit = async (e) => {
     e.preventDefault()
     console.log('Form submitted!') // Debug log
