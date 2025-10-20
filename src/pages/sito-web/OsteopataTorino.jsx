@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const OsteopataTorino = () => {
+  const navigate = useNavigate()
   const [scrollY, setScrollY] = useState(0)
   const [isVisible, setIsVisible] = useState(false)
   const [hoveredCard, setHoveredCard] = useState(null)
@@ -47,6 +49,7 @@ const OsteopataTorino = () => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault()
+    console.log('Form submitted!') // Debug log
     setFormErrors({})
     
     const errors = {}
@@ -82,17 +85,15 @@ const OsteopataTorino = () => {
       return
     }
     
-    const message = `Ciao! Ho compilato il form per prenotare il trattamento con sconto. I miei dati sono:
-Nome: ${formData.nome}
-Cognome: ${formData.cognome}
-Cellulare: ${formData.cellulare}
-Email: ${formData.email}
-
-Grazie!`
-    
-    const whatsappUrl = `https://wa.me/393518198457?text=${encodeURIComponent(message)}`
-    window.open(whatsappUrl, '_blank')
-    setShowForm(false)
+    console.log('Redirecting to confirmation page...') // Debug log
+    // Redirect to confirmation page
+    try {
+      navigate('/osteopata-torino-conferma')
+    } catch (error) {
+      console.error('Navigation error:', error)
+      // Fallback to window.location
+      window.location.href = '/osteopata-torino-conferma'
+    }
   }
 
   const handleInputChange = (e) => {
@@ -204,7 +205,7 @@ Grazie!`
             {/* Close Button */}
             <button
               onClick={() => setShowForm(false)}
-              className="absolute top-4 right-4 w-8 h-8 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center transition-colors"
+              className="absolute top-4 right-4 w-8 h-8 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center transition-colors font-montserrat"
             >
               <span className="text-gray-600 text-lg font-bold">×</span>
             </button>
@@ -295,7 +296,7 @@ Grazie!`
               <div className="pt-4">
                 <button
                   type="submit"
-                  className="w-full px-4 py-3 bg-gradient-to-r from-blue-600 to-green-500 text-white font-bold rounded-xl hover:from-blue-700 hover:to-green-600 transition-all"
+                  className="w-full px-4 py-3 bg-gradient-to-r from-blue-600 to-green-500 text-white font-bold rounded-xl hover:from-blue-700 hover:to-green-600 transition-all font-montserrat"
                 >
                   Prenota con sconto
                 </button>
@@ -386,7 +387,7 @@ Grazie!`
           <div className={`mt-8 flex justify-center transition-all duration-1500 delay-900 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`}>
             <button 
               onClick={() => setShowForm(true)}
-              className="group relative inline-flex items-center px-8 py-6 bg-gradient-to-r from-blue-600 to-green-500 text-white font-bold text-xl rounded-full shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105"
+              className="group relative inline-flex items-center px-8 py-6 bg-gradient-to-r from-blue-600 to-green-500 text-white font-bold text-xl rounded-full shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105 font-montserrat"
             >
               <span className="relative z-10 text-center uppercase">
                 <div>PRENOTA IL TRATTAMENTO</div>
@@ -524,7 +525,7 @@ Grazie!`
           <div className="text-center mt-12">
             <button 
               onClick={() => setShowForm(true)}
-              className="group relative inline-flex items-center px-12 py-6 bg-gradient-to-r from-blue-600 to-green-500 text-white font-bold text-lg rounded-full shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105"
+              className="group relative inline-flex items-center px-12 py-6 bg-gradient-to-r from-blue-600 to-green-500 text-white font-bold text-lg rounded-full shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105 font-montserrat"
             >
               <span className="relative z-10 text-center uppercase">
                 <div>PRENOTA LA TUA PRIMA</div>
@@ -596,7 +597,7 @@ Grazie!`
               <div className="flex justify-center">
                 <button 
                   onClick={() => setShowForm(true)}
-                  className="group relative inline-flex items-center px-8 py-4 bg-cream text-blue-900 font-bold rounded-2xl hover:bg-cream/90 transition-all duration-300 hover:scale-105"
+                  className="group relative inline-flex items-center px-8 py-4 bg-cream text-blue-900 font-bold rounded-2xl hover:bg-cream/90 transition-all duration-300 hover:scale-105 font-montserrat"
                 >
                   <span className="relative z-10 text-center uppercase">
                     <div>PRENOTA LA TUA PRIMA</div>
