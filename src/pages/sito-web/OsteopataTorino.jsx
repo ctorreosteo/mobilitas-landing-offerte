@@ -47,7 +47,7 @@ const OsteopataTorino = () => {
     }
   }, [showForm])
 
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = async (e) => {
     e.preventDefault()
     console.log('Form submitted!') // Debug log
     setFormErrors({})
@@ -86,6 +86,47 @@ const OsteopataTorino = () => {
     }
     
     console.log('Redirecting to confirmation page...') // Debug log
+    
+    // Send data to Zapier webhook
+    try {
+      // Format date and time as requested: dd/mm/yyyy and hh:mm
+      const now = new Date()
+      const day = String(now.getDate()).padStart(2, '0')
+      const month = String(now.getMonth() + 1).padStart(2, '0')
+      const year = now.getFullYear()
+      const hours = String(now.getHours()).padStart(2, '0')
+      const minutes = String(now.getMinutes()).padStart(2, '0')
+      
+      const webhookData = {
+        nome: formData.nome,
+        cognome: formData.cognome,
+        telefono: formData.cellulare,
+        email: formData.email,
+        data: `${day}/${month}/${year}`,
+        ora: `${hours}:${minutes}`,
+        offerta: 'Trattamento osteopatico da 90€ a 49€',
+        pagina: 'Osteopata Torino',
+        privacy_accettata: formData.privacy
+      }
+      
+      // Send data to Zapier webhook (same approach as gravidanza landing)
+      const response = await fetch('https://hooks.zapier.com/hooks/catch/19401274/urmpgqj/', {
+        method: 'POST',
+        body: JSON.stringify(webhookData)
+      })
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`)
+      }
+      
+      const result = await response.json()
+      console.log('Zapier webhook response:', result)
+      console.log('Data sent to Zapier successfully')
+    } catch (error) {
+      console.error('Error sending data to Zapier:', error)
+      // Don't block the user flow if webhook fails
+    }
+    
     // Redirect to confirmation page
     try {
       navigate('/osteopata-torino-conferma')
