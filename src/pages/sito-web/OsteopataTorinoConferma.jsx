@@ -7,6 +7,19 @@ const OsteopataTorinoConferma = () => {
     setIsVisible(true)
   }, [])
 
+  // Google Ads conversion tracking
+  useEffect(() => {
+    // Track conversion when user reaches confirmation page
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'conversion', {
+        'send_to': 'AW-16532564533/wZVSCMffzrAbELXUq8s9',
+        'value': 49.0,
+        'currency': 'EUR'
+      })
+      console.log('Conversion tracked: LEAD - Osteopata Torino')
+    }
+  }, [])
+
   // SEO metadata for confirmation page
   useEffect(() => {
     const prevTitle = document.title
