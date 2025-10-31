@@ -1,8 +1,19 @@
+import { useState } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
+import GpadelInfortuniPopup from '../../components/GpadelInfortuniPopup'
 import { CheckCircle2 } from 'lucide-react'
 
 export default function LmGPadelInfortuni() {
+  const [isPopupOpen, setIsPopupOpen] = useState(false)
+
+  const handleOpenPopup = () => {
+    setIsPopupOpen(true)
+  }
+
+  const handleClosePopup = () => {
+    setIsPopupOpen(false)
+  }
   return (
     <div className="bg-white min-h-screen">
       <Header />
@@ -50,13 +61,13 @@ export default function LmGPadelInfortuni() {
                     <span className="text-blue-dark/80">per te che arrivi dal GPADEL è</span>
                     <span className="text-4xl sm:text-5xl font-extrabold text-azure-dark">GRATIS</span>
                   </div>
-                  <a
-                    href="#"
-                    className="mt-4 inline-flex flex-col items-center justify-center text-center gap-0 w-full bg-blue-dark text-green font-bold px-7 py-4 rounded-xl shadow hover:brightness-110 transition no-underline"
+                  <button
+                    onClick={handleOpenPopup}
+                    className="mt-4 inline-flex flex-col items-center justify-center text-center gap-0 w-full bg-blue-dark text-green font-bold px-7 py-4 rounded-xl shadow hover:brightness-110 transition cursor-pointer"
                   >
                     <span className="block leading-tight uppercase">Scarica la guida gratis</span>
                     <span className="block text-green/90 text-sm leading-tight">(offerta per te)</span>
-                  </a>
+                  </button>
                   <p className="text-xs text-blue-dark/60 mt-2 text-center">Te la invieremo entro 48 ore lavorative dopo aver effettuato controllato manualmente che si tratti di una richiesta vera.</p>
                 </div>
               </div>
@@ -92,6 +103,12 @@ export default function LmGPadelInfortuni() {
       </main>
 
       <Footer />
+
+      {/* Gpadel Infortuni Popup */}
+      <GpadelInfortuniPopup 
+        isOpen={isPopupOpen}
+        onClose={handleClosePopup}
+      />
     </div>
   )
 }

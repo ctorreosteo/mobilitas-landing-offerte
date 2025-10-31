@@ -40,6 +40,7 @@ import MalDiSchiena from './pages/landing-pages/MalDiSchiena'
 import Gravidanza from './pages/landing-pages/Gravidanza'
 import ThankYou from './pages/landing-pages/ThankYou'
 import LmGPadelInfortuni from './pages/landing-pages/LmGPadelInfortuni'
+import GpadelInfortuniThankYou from './pages/landing-pages/GpadelInfortuniThankYou'
 
 // 404 Page
 import NotFound from './pages/NotFound'
@@ -92,6 +93,7 @@ function App() {
         <Route path="/gravidanza" element={<Gravidanza />} />
         <Route path="/conferma" element={<ThankYou />} />
         <Route path="/lm-gpadel-infortuni" element={<LmGPadelInfortuni />} />
+        <Route path="/lm-gpadel-infortuni-grazie" element={<GpadelInfortuniThankYou />} />
         
         {/* Login Page */}
         <Route path="/login" element={<Layout><Login /></Layout>} />
