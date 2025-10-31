@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { Menu, User } from 'lucide-react'
 import Sidebar from './Sidebar'
 
 const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
+  const location = useLocation()
+  const navigate = useNavigate()
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen)
@@ -12,6 +14,19 @@ const Header = () => {
 
   const closeSidebar = () => {
     setIsSidebarOpen(false)
+  }
+
+  const handleLogoClick = (e) => {
+    e.preventDefault()
+    window.scrollTo(0, 0)
+    
+    // Se siamo già sulla home, forza il reload completo
+    if (location.pathname === '/') {
+      window.location.href = '/'
+    } else {
+      // Altrimenti naviga normalmente
+      navigate('/')
+    }
   }
 
   return (
@@ -29,19 +44,17 @@ const Header = () => {
             </button>
 
             {/* Logo - Centro */}
-            <Link 
-              to="/" 
-              className="flex items-center"
-              onClick={() => {
-                window.scrollTo(0, 0)
-              }}
+            <a 
+              href="/" 
+              className="flex items-center cursor-pointer"
+              onClick={handleLogoClick}
             >
               <img 
                 src="/logo_verde.png" 
                 alt="Mobilitas Logo" 
                 className="h-6 sm:h-7.5 w-auto"
               />
-            </Link>
+            </a>
 
             {/* Icona Utente - Destra */}
             <Link 
