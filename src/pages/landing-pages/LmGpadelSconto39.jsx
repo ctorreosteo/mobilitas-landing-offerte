@@ -157,12 +157,12 @@ export default function LmGpadelSconto39() {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: isVisible ? 1 : 0, scale: isVisible ? 1 : 0.9 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="flex justify-start lg:justify-end mb-6 lg:mb-8"
+                className="flex justify-start mb-6 lg:mb-8"
               >
                 <img
                   src="/landing-pages/lm-gpadel-infortuni-foto1.png"
                   alt="Trattamento osteopatico per padelisti"
-                  className="w-full lg:max-w-lg rounded-2xl shadow-2xl"
+                  className="w-full rounded-2xl shadow-2xl"
                 />
               </motion.div>
 
