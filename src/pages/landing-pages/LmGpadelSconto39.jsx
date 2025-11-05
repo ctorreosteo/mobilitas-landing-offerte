@@ -11,6 +11,69 @@ export default function LmGpadelSconto39() {
     setIsVisible(true)
   }, [])
 
+  // SEO metadata for GPADEL Sconto 39€ landing page
+  useEffect(() => {
+    const previousTitle = document.title
+    document.title = 'Trattamento Osteopatico 39€ per Padelisti | Offerta Esclusiva GPADEL | Mobilitas Torino'
+
+    const ensureMetaByName = (name, content) => {
+      let tag = document.querySelector(`meta[name="${name}"]`)
+      if (!tag) {
+        tag = document.createElement('meta')
+        tag.setAttribute('name', name)
+        document.head.appendChild(tag)
+      }
+      tag.setAttribute('content', content)
+    }
+
+    const ensureMetaByProperty = (property, content) => {
+      let tag = document.querySelector(`meta[property="${property}"]`)
+      if (!tag) {
+        tag = document.createElement('meta')
+        tag.setAttribute('property', property)
+        document.head.appendChild(tag)
+      }
+      tag.setAttribute('content', content)
+    }
+
+    const ensureCanonical = (href) => {
+      let link = document.querySelector('link[rel="canonical"]')
+      if (!link) {
+        link = document.createElement('link')
+        link.setAttribute('rel', 'canonical')
+        document.head.appendChild(link)
+      }
+      link.setAttribute('href', href)
+    }
+
+    const description = 'Trattamento osteopatico completo a 39€ invece di 90€ per padelisti. Offerta esclusiva GPADEL: anamnesi, valutazione posturale, trattamento personalizzato e consigli. Prevenzione infortuni e miglioramento performance. Studio Mobilitas Torino.'
+    const pageUrl = `${window.location.origin}/lm-gpadel-sconto39`
+
+    // Standard SEO
+    ensureMetaByName('description', description)
+    ensureMetaByName('robots', 'index, follow')
+    ensureMetaByName('keywords', 'trattamento osteopatico padelisti, osteopata padel torino, sconto padelisti, offerta gpadel, trattamento osteopatico 39€, prevenzione infortuni padel, osteopatia sportiva torino, trattamento posturale padel, studio osteopatico torino padelisti')
+
+    // Open Graph
+    ensureMetaByProperty('og:title', 'Trattamento Osteopatico 39€ per Padelisti | Offerta Esclusiva GPADEL')
+    ensureMetaByProperty('og:description', description)
+    ensureMetaByProperty('og:type', 'website')
+    ensureMetaByProperty('og:url', pageUrl)
+    ensureMetaByProperty('og:site_name', 'Mobilitas – Studio Osteopatico Torino')
+
+    // Twitter Card
+    ensureMetaByName('twitter:card', 'summary_large_image')
+    ensureMetaByName('twitter:title', 'Trattamento Osteopatico 39€ per Padelisti | Offerta Esclusiva GPADEL')
+    ensureMetaByName('twitter:description', description)
+
+    // Canonical
+    ensureCanonical(pageUrl)
+
+    return () => {
+      document.title = previousTitle
+    }
+  }, [])
+
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent("Ciao, vorrei prenotare il trattamento osteopatico scontato a 39€ tramite offerta GPADEL. Quando avete posto? Grazie e a presto!");
     window.open(`https://wa.me/393518198457?text=${message}`, '_blank');
