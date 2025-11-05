@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Cursor IDE
+.cursor/
+
+# macOS
+.DS_Store
+**/.DS_Store
+
