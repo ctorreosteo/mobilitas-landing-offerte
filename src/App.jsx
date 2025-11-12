@@ -27,6 +27,7 @@ import SocialMediaManager from './pages/sito-web/posizioni/SocialMediaManager'
 import Influencer from './pages/sito-web/posizioni/Influencer'
 
 // Partnership pages
+import GPADEL from './pages/sito-web/partnership/GPADEL'
 import Abylsen from './pages/sito-web/partnership/Abylsen'
 import StampaSubalpina from './pages/sito-web/partnership/StampaSubalpina'
 import Robogest from './pages/sito-web/partnership/Robogest'
@@ -81,6 +82,7 @@ function App() {
         <Route path="/influencer" element={<Layout><Influencer /></Layout>} />
         
         {/* Partnership pages with layout */}
+        <Route path="/partnership/gpadel" element={<Layout><GPADEL /></Layout>} />
         <Route path="/partnership/abylsen" element={<Layout><Abylsen /></Layout>} />
         <Route path="/partnership/stampa-subalpina" element={<Layout><StampaSubalpina /></Layout>} />
         <Route path="/partnership/robogest" element={<Layout><Robogest /></Layout>} />
