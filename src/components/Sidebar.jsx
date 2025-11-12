@@ -122,40 +122,34 @@ const Sidebar = ({ isOpen, onClose }) => {
             {menuItems.map((item, index) => (
               <div key={index}>
                 {/* Main Item */}
-                <div
-                  className={`flex items-center justify-between px-4 py-3 rounded-lg cursor-pointer transition-colors ${
-                    item.subItems 
-                      ? 'hover:bg-green/10' 
-                      : 'hover:bg-green/10 hover:text-green'
-                  }`}
-                  onClick={() => handleItemClick(item)}
-                >
-                  <div className="flex items-center">
-                    {item.href ? (
-                      <Link 
-                        to={item.href} 
-                        className="text-cream font-medium font-montserrat no-underline"
-                        onClick={handleSubItemClick}
-                      >
-                        {item.name}
-                      </Link>
-                    ) : (
-                      <span className="text-cream font-medium font-montserrat">
-                        {item.name}
-                      </span>
+                {item.href ? (
+                  <Link
+                    to={item.href}
+                    className={`flex items-center justify-between px-4 py-3 rounded-lg cursor-pointer transition-colors hover:bg-green/10 hover:text-green text-cream font-medium font-montserrat no-underline w-full`}
+                    onClick={handleSubItemClick}
+                  >
+                    <span>{item.name}</span>
+                  </Link>
+                ) : (
+                  <div
+                    className={`flex items-center justify-between px-4 py-3 rounded-lg cursor-pointer transition-colors hover:bg-green/10`}
+                    onClick={() => handleItemClick(item)}
+                  >
+                    <span className="text-cream font-medium font-montserrat">
+                      {item.name}
+                    </span>
+                    
+                    {item.subItems && (
+                      <div className="text-green">
+                        {expandedItems[item.name] ? (
+                          <ChevronDown size={16} />
+                        ) : (
+                          <ChevronRight size={16} />
+                        )}
+                      </div>
                     )}
                   </div>
-                  
-                  {item.subItems && (
-                    <div className="text-green">
-                      {expandedItems[item.name] ? (
-                        <ChevronDown size={16} />
-                      ) : (
-                        <ChevronRight size={16} />
-                      )}
-                    </div>
-                  )}
-                </div>
+                )}
 
                 {/* Sub Items */}
                 {item.subItems && expandedItems[item.name] && (
@@ -164,7 +158,7 @@ const Sidebar = ({ isOpen, onClose }) => {
                       <Link
                         key={subIndex}
                         to={subItem.href}
-                        className="block px-4 py-2 text-sm text-cream hover:text-green hover:bg-green/10 rounded-lg transition-colors font-montserrat italic no-underline"
+                        className="block w-full px-4 py-2 text-sm text-cream hover:text-green hover:bg-green/10 rounded-lg transition-colors font-montserrat italic no-underline"
                         onClick={handleSubItemClick}
                       >
                         {subItem.name}
