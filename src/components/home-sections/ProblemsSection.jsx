@@ -17,8 +17,8 @@ const ProblemsSection = () => {
     },
     {
       icon: UserX,
-      title: "Visite in cui ti trattano come un numero, non come una persona",
-      description: "Vieni rimbalzato da uno specialista all'altro, senza che nessuno si prenda davvero cura di te. Ti senti perso, frustrato, e alla fine pensi che il tuo destino sia convivere con il dolore.",
+      title: "Un percorso frammentato, senza una vera guida",
+      description: "Dopo diversi tentativi, hai girato tra specialisti senza mai ottenere una visione completa del tuo problema. Ti manca qualcuno che ti segua davvero e ti aiuti a ritrovare equilibrio. Così finisci per convivere con il dolore, anche se dentro di te sai che meriti di meglio.",
       pain: "Ti senti invisibile e senza speranza"
     },
     {

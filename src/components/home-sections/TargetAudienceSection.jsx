@@ -16,8 +16,8 @@ const TargetAudienceSection = () => {
     },
     {
       icon: Zap,
-      title: "Chi vuole capire il proprio corpo",
-      description: "invece di delegare tutto alla medicina tradizionale"
+      title: "Chi desidera comprendere meglio il proprio corpo",
+      description: "e affiancare un approccio più attivo e consapevole a quello medico tradizionale."
     },
     {
       icon: Shield,
@@ -35,7 +35,7 @@ const TargetAudienceSection = () => {
     "Chi cerca soluzioni rapide senza voler cambiare nulla",
     "Chi vuole solo \"la pillola magica\" per risolvere tutto",
     "Chi non è disposto a prendersi responsabilità per la propria salute",
-    "Chi preferisce delegare tutto alla medicina tradizionale senza partecipare",
+    "Chi si affida solo a soluzioni standard senza voler partecipare attivamente al cambiamento.",
     "Chi accetta il dolore come parte inevitabile della vita"
   ]
 

@@ -47,14 +47,14 @@ const HeroSection = () => {
               {/* Main Headline */}
               <div className="space-y-6 mt-2">
                 <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold font-montserrat leading-tight text-left">
-                  <span className="text-blue-dark">La tua salute</span>
+                  <span className="text-blue-dark">Studio Osteopatico Specializzato</span>
                   <br />
                   <span className="text-blue-dark">
-                    nelle mani dello <span className="text-sky-400">Studio Osteopatico</span> più importante
+                    <span className="text-sky-400">Il più scelto di Torino</span>
                   </span>
                 </h1>
                 <p className="text-xl md:text-2xl text-blue-dark/80 font-montserrat leading-relaxed max-w-2xl text-left">
-                  <span className="text-blue-dark font-bold"> Riprendi il controllo</span> con un approccio scientifico e personalizzato che ti restituisce l'autonomia sulla tua salute.
+                  <span className="text-blue-dark font-bold"> Riprendi il controllo sulla tua salute</span> con un approccio scientifico e personalizzato che ti restituisce l'autonomia quotidiana.
                 </p>
                 
                 {/* Hero Image */}
