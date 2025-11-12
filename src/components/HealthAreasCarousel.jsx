@@ -92,20 +92,20 @@ const HealthAreasCarousel = ({ variant = 'home' }) => {
                 <div key={index} className="flex-shrink-0 w-80 bg-green/10 backdrop-blur-md rounded-2xl p-6 shadow-xl border border-green/30 hover:shadow-2xl transition-all duration-300 hover:scale-105">
                   <div className="flex flex-col h-full">
                     {/* Icon */}
-                    <div className={`w-12 h-12 ${colors.bg} rounded-xl flex items-center justify-center mb-4`}>
+                    <div className={`w-12 h-12 ${colors.bg} rounded-xl flex items-center justify-center mb-2`}>
                       <IconComponent className={`w-6 h-6 ${colors.icon}`} />
                     </div>
 
                     {/* Title & Subtitle */}
-                    <h3 className="text-lg font-bold text-blue-dark mb-2 font-montserrat">
+                    <h3 className="text-2xl md:text-2xl font-bold text-blue-dark mb-2 mt-2 font-montserrat">
                       {service.title}
                     </h3>
-                    <p className="text-xs text-cream/60 mb-3 font-montserrat italic">
+                    <p className="text-base md:text-base text-azure-dark mb-3 mt-0 font-montserrat font-bold italic">
                       {service.subtitle}
                     </p>
 
                     {/* Description */}
-                    <p className="text-cream/80 mb-4 font-montserrat leading-relaxed text-sm flex-1">
+                    <p className="text-lg md:text-lg text-cream/80 mb-4 font-montserrat leading-relaxed flex-1">
                       {service.description}
                     </p>
 
@@ -113,8 +113,8 @@ const HealthAreasCarousel = ({ variant = 'home' }) => {
                     <div className="space-y-1 mb-4">
                       {service.benefits.map((benefit, benefitIndex) => (
                         <div key={benefitIndex} className="flex items-center gap-2">
-                          <CheckCircle className="w-3 h-3 text-green flex-shrink-0" />
-                          <span className="text-xs text-cream/80 font-montserrat">
+                          <CheckCircle className="w-4 h-4 text-azure-dark flex-shrink-0" />
+                          <span className="text-base md:text-base text-cream/80 font-montserrat">
                             {benefit}
                           </span>
                         </div>
@@ -153,33 +153,33 @@ const HealthAreasCarousel = ({ variant = 'home' }) => {
               <div key={index} className="flex-shrink-0 w-80 bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-xl border border-blue-dark/20 hover:shadow-2xl transition-all duration-300 hover:scale-105">
                 <div className="flex flex-col h-full">
                   {/* Icon */}
-                  <div className={`w-12 h-12 ${colors.bg} rounded-xl flex items-center justify-center mb-4`}>
+                  <div className={`w-12 h-12 ${colors.bg} rounded-xl flex items-center justify-center mb-2`}>
                     <IconComponent className={`w-6 h-6 ${colors.icon}`} />
                   </div>
 
-                  {/* Title & Subtitle */}
-                  <h3 className="text-lg font-bold text-blue-dark mb-2 font-montserrat">
-                    {service.title}
-                  </h3>
-                  <p className="text-xs text-blue-dark/60 mb-3 font-montserrat italic">
-                    {service.subtitle}
-                  </p>
+                    {/* Title & Subtitle */}
+                    <h3 className="text-2xl md:text-2xl font-bold text-blue-dark mb-2 mt-2 font-montserrat">
+                      {service.title}
+                    </h3>
+                    <p className="text-base md:text-base text-azure-dark mb-3 mt-0 font-montserrat font-bold italic">
+                      {service.subtitle}
+                    </p>
 
-                  {/* Description */}
-                  <p className="text-blue-dark/80 mb-4 font-montserrat leading-relaxed text-sm flex-1">
-                    {service.description}
-                  </p>
+                    {/* Description */}
+                    <p className="text-lg md:text-lg text-blue-dark/80 mb-4 font-montserrat leading-relaxed flex-1">
+                      {service.description}
+                    </p>
 
-                  {/* Benefits */}
-                  <div className="space-y-1 mb-4">
-                    {service.benefits.map((benefit, benefitIndex) => (
-                      <div key={benefitIndex} className="flex items-center gap-2">
-                        <CheckCircle className="w-3 h-3 text-blue-dark flex-shrink-0" />
-                        <span className="text-xs text-blue-dark/80 font-montserrat">
-                          {benefit}
-                        </span>
-                      </div>
-                    ))}
+                    {/* Benefits */}
+                    <div className="space-y-1 mb-4">
+                      {service.benefits.map((benefit, benefitIndex) => (
+                        <div key={benefitIndex} className="flex items-center gap-2">
+                          <CheckCircle className="w-4 h-4 text-azure-dark flex-shrink-0" />
+                          <span className="text-base md:text-base text-blue-dark/80 font-montserrat">
+                            {benefit}
+                          </span>
+                        </div>
+                      ))}
                   </div>
 
                 </div>
