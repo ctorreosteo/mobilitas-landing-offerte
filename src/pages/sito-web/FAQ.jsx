@@ -551,7 +551,7 @@ const FAQ = () => {
         
         <div className="max-w-5xl mx-auto">
           {faqSections.map((section, sectionIndex) => (
-            <div key={sectionIndex} className="mb-12">
+            <div key={sectionIndex} className={`mb-32 ${sectionIndex > 0 ? "mt-32" : ""}`}>
               <h2 className="text-2xl font-bold text-blue-dark mb-6 font-montserrat border-b-2 border-green-primary pb-2">
                 {section.title}
               </h2>
