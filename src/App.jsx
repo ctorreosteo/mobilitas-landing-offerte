@@ -18,6 +18,7 @@ import Magazine from './pages/sito-web/Magazine'
 import MobilitasFitness from './pages/sito-web/MobilitasFitness'
 import OsteopataTorino from './pages/sito-web/OsteopataTorino'
 import OsteopataTorinoConferma from './pages/sito-web/OsteopataTorinoConferma'
+import OffertaYT from './pages/sito-web/OffertaYT'
 
 // Job position pages
 import Segretaria from './pages/sito-web/posizioni/Segretaria'
@@ -71,6 +72,7 @@ function App() {
         <Route path="/mobilitas-fitness" element={<Layout><MobilitasFitness /></Layout>} />
         <Route path="/osteopata-torino" element={<Layout><OsteopataTorino /></Layout>} />
         <Route path="/osteopata-torino-conferma" element={<Layout><OsteopataTorinoConferma /></Layout>} />
+        <Route path="/offerta-yt" element={<Layout><OffertaYT /></Layout>} />
         
         {/* Job position routes with layout */}
         <Route path="/lavora-con-noi/segretaria" element={<Layout><Segretaria /></Layout>} />
