@@ -16,6 +16,28 @@ const Mentorship = () => {
     setIsVisible(true)
   }, [])
 
+  // Meta Pixel Code - Second Pixel for Mentorship
+  useEffect(() => {
+    // Initialize second Meta Pixel (both pixels will be active)
+    if (typeof window !== 'undefined') {
+      // Wait a bit to ensure the first pixel from index.html is loaded
+      const initSecondPixel = () => {
+        // Initialize the second pixel (ID: 751362634658136) using the same fbq object
+        // This ensures both pixels are active
+        if (window.fbq) {
+          window.fbq('init', '751362634658136');
+          window.fbq('track', 'PageView', {}, {eventID: 'mentorship_pageview_' + Date.now()});
+        } else {
+          // If fbq doesn't exist yet, wait a bit more
+          setTimeout(initSecondPixel, 100);
+        }
+      }
+      
+      // Try after a short delay to ensure first pixel is ready
+      setTimeout(initSecondPixel, 500);
+    }
+  }, [])
+
   const painPoints = [
     {
       icon: '📊',
@@ -83,6 +105,16 @@ const Mentorship = () => {
 
   return (
     <div className="min-h-screen bg-cream text-blue-dark font-montserrat">
+      {/* Meta Pixel Noscript */}
+      <noscript>
+        <img 
+          height="1" 
+          width="1" 
+          style={{display: 'none'}}
+          src="https://www.facebook.com/tr?id=751362634658136&ev=PageView&noscript=1"
+          alt=""
+        />
+      </noscript>
       
       {/* HERO SECTION */}
       <section className="relative flex items-start justify-center overflow-hidden bg-cream pt-8 pb-0">
@@ -770,6 +802,14 @@ const Mentorship = () => {
                 <div className="mt-4 md:mt-8 text-center">
                   <button
                     onClick={() => {
+                      // Track Lead event ONLY for the mentorship pixel (ID: 751362634658136)
+                      if (typeof window !== 'undefined' && window.fbq) {
+                        const pixelId = '751362634658136'
+                        const eventId = 'mentorship_lead_' + Date.now()
+                        // Use trackSingle to track only for the specific pixel
+                        window.fbq('trackSingle', pixelId, 'Lead', {}, {eventID: eventId})
+                      }
+                      
                       const phoneNumber = '393518198457'
                       const message = encodeURIComponent('Ciao, vorrei candidarmi per la Mentorship Mobilitas con l\'offerta Black Friday')
                       const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`
