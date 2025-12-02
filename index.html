@@ -32,8 +32,36 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
+    
+    // Initialize first pixel
     fbq('init', '2672732213087780');
     fbq('track', 'PageView');
+    
+    // Initialize second pixel for Mentorship
+    // Ensure both pixels are initialized - fbq queue handles async loading
+    (function() {
+      function initSecondPixel() {
+        if (typeof fbq !== 'undefined') {
+          try {
+            fbq('init', '751362634658136');
+            fbq('track', 'PageView');
+          } catch(e) {
+            // Retry if initialization fails
+            setTimeout(initSecondPixel, 200);
+          }
+        } else {
+          // Retry if fbq is not ready
+          setTimeout(initSecondPixel, 100);
+        }
+      }
+      // Initialize immediately and also on window load as backup
+      initSecondPixel();
+      if (window.addEventListener) {
+        window.addEventListener('load', initSecondPixel);
+      } else if (window.attachEvent) {
+        window.attachEvent('onload', initSecondPixel);
+      }
+    })();
     </script>
     <!-- End Meta Pixel Code -->
   </head>
@@ -42,8 +70,13 @@
     <script type="module" src="/src/main.jsx"></script>
     
     <!-- Meta Pixel Noscript -->
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=2672732213087780&ev=PageView&noscript=1"
-    /></noscript>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=2672732213087780&ev=PageView&noscript=1"
+      />
+      <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=751362634658136&ev=PageView&noscript=1"
+      />
+    </noscript>
   </body>
 </html>

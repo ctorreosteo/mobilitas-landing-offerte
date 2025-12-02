@@ -16,25 +16,20 @@ const Mentorship = () => {
     setIsVisible(true)
   }, [])
 
-  // Meta Pixel Code - Second Pixel for Mentorship
+  // Ensure both Meta Pixels are initialized (backup check for production)
   useEffect(() => {
-    // Initialize second Meta Pixel (both pixels will be active)
-    if (typeof window !== 'undefined') {
-      // Wait a bit to ensure the first pixel from index.html is loaded
-      const initSecondPixel = () => {
-        // Initialize the second pixel (ID: 751362634658136) using the same fbq object
-        // This ensures both pixels are active
-        if (window.fbq) {
+    if (typeof window !== 'undefined' && window.fbq) {
+      // Ensure second pixel is initialized (in case it wasn't in index.html)
+      const checkAndInit = () => {
+        try {
+          // Try to initialize second pixel if not already done
           window.fbq('init', '751362634658136');
-          window.fbq('track', 'PageView', {}, {eventID: 'mentorship_pageview_' + Date.now()});
-        } else {
-          // If fbq doesn't exist yet, wait a bit more
-          setTimeout(initSecondPixel, 100);
+        } catch (e) {
+          // Pixel already initialized or error, that's ok
         }
       }
-      
-      // Try after a short delay to ensure first pixel is ready
-      setTimeout(initSecondPixel, 500);
+      // Check after a short delay to ensure fbq is ready
+      setTimeout(checkAndInit, 500);
     }
   }, [])
 
@@ -105,17 +100,6 @@ const Mentorship = () => {
 
   return (
     <div className="min-h-screen bg-cream text-blue-dark font-montserrat">
-      {/* Meta Pixel Noscript */}
-      <noscript>
-        <img 
-          height="1" 
-          width="1" 
-          style={{display: 'none'}}
-          src="https://www.facebook.com/tr?id=751362634658136&ev=PageView&noscript=1"
-          alt=""
-        />
-      </noscript>
-      
       {/* HERO SECTION */}
       <section className="relative flex items-start justify-center overflow-hidden bg-cream pt-8 pb-0">
         {/* Clean Background */}
