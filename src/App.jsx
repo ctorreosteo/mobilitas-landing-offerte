@@ -19,6 +19,8 @@ import MobilitasFitness from './pages/sito-web/MobilitasFitness'
 import OsteopataTorino from './pages/sito-web/OsteopataTorino'
 import OsteopataTorinoConferma from './pages/sito-web/OsteopataTorinoConferma'
 import OffertaYT from './pages/sito-web/OffertaYT'
+import OffertaInfluencer from './pages/sito-web/OffertaInfluencer'
+import OffertaInfluencerConferma from './pages/sito-web/OffertaInfluencerConferma'
 import Mentorship from './pages/sito-web/Mentorship'
 
 // Job position pages
@@ -74,6 +76,8 @@ function App() {
         <Route path="/osteopata-torino" element={<Layout><OsteopataTorino /></Layout>} />
         <Route path="/osteopata-torino-conferma" element={<Layout><OsteopataTorinoConferma /></Layout>} />
         <Route path="/offerta-yt" element={<Layout><OffertaYT /></Layout>} />
+        <Route path="/offerta-influencer" element={<Layout><OffertaInfluencer /></Layout>} />
+        <Route path="/offerta-influencer-conferma" element={<Layout><OffertaInfluencerConferma /></Layout>} />
         <Route path="/mentorship" element={<Layout><Mentorship /></Layout>} />
         
         {/* Job position routes with layout */}
