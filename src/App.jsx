@@ -47,6 +47,7 @@ import ThankYou from './pages/landing-pages/ThankYou'
 import LmGPadelInfortuni from './pages/landing-pages/LmGPadelInfortuni'
 import GpadelInfortuniThankYou from './pages/landing-pages/GpadelInfortuniThankYou'
 import LmGpadelSconto39 from './pages/landing-pages/LmGpadelSconto39'
+import CofanettoNatale from './pages/landing-pages/CofanettoNatale'
 
 // 404 Page
 import NotFound from './pages/NotFound'
@@ -106,6 +107,7 @@ function App() {
         <Route path="/lm-gpadel-infortuni" element={<LmGPadelInfortuni />} />
         <Route path="/lm-gpadel-infortuni-grazie" element={<GpadelInfortuniThankYou />} />
         <Route path="/lm-gpadel-sconto39-generico" element={<LmGpadelSconto39 />} />
+        <Route path="/cofanetto-natale" element={<CofanettoNatale />} />
         
         {/* Login Page */}
         <Route path="/login" element={<Layout><Login /></Layout>} />
